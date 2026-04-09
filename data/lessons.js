@@ -108,9 +108,43 @@ const sessionsData = [
         id: 4,
         title: "Module 4: An toàn thông tin",
         description: "Bảo vệ thông tin, dữ liệu cá nhân và hệ thống khỏi các nguy cơ mạng.",
-        totalLessons: 0,
+        totalLessons: 3,
         quiz: "MD4.csv",
-        lessons: []
+        lessons: [
+            {
+                id: 41,
+                sessionId: 4,
+                title: "Phần 1: Digital Safety Blueprint",
+                description: "Hiểu và lập kế hoạch an toàn số cơ bản.",
+                video: "Module_1-6/Video/Module_4/Phần 1_M4_T1_Digital_Safety_Blueprint/index.html",
+                docs: [
+                    { name: "Tài liệu PDF", file: "Module_1-6/Video/Module_4/Phần 1_M4_T1_Digital_Safety_Blueprint/M4_T1_Digital_Safety_Blueprint.pdf" }
+                ],
+                steps: []
+            },
+            {
+                id: 42,
+                sessionId: 4,
+                title: "Phần 2: An toàn Mạng và An sinh số",
+                description: "Bảo vệ bản thân và duy trì sức khỏe trong môi trường số.",
+                video: "Module_1-6/Video/Module_4/Phần 2_M4_T2_An_toàn_Mạng_và_An_sinh_số/index.html",
+                docs: [
+                    { name: "Tài liệu PDF", file: "Module_1-6/Video/Module_4/Phần 2_M4_T2_An_toàn_Mạng_và_An_sinh_số/M4_T2_An_toàn_Mạng_và_An_sinh_số.pdf" }
+                ],
+                steps: []
+            },
+            {
+                id: 43,
+                sessionId: 4,
+                title: "Phần 3: Digital Sustainability",
+                description: "Phát triển bền vững trong kỷ nguyên số.",
+                video: "Module_1-6/Video/Module_4/Phần 3_M4_T3_Digital_Sustainability/index.html",
+                docs: [
+                    { name: "Tài liệu PDF", file: "Module_1-6/Video/Module_4/Phần 3_M4_T3_Digital_Sustainability/M4_T3_Digital_Sustainability.pdf" }
+                ],
+                steps: []
+            }
+        ]
     },
     {
         id: 5,
