@@ -1,0 +1,252 @@
+﻿Slide 1: TRỞ THÀNH “THÁM TỬ SỐ” - LÀM CHỦ KỸ NĂNG XỬ LÝ SỰ CỐ CÔNG NGHỆ 
+Người 1: Chào các bạn sinh viên! Hôm nay chúng ta bước vào Module 5 - “Trở thành Thám tử số”. Chúng ta sẽ học cách làm chủ kỹ năng xử lý sự cố công nghệ. 
+Người 2: Thám tử Conan thì em biết, chứ “Thám tử số” là sao hả thầy? Em tưởng học chuyên ngành của mình thì chỉ tập trung vào kiến thức chuyên môn đặc thù thôi chứ? 
+Người 1: Thế này nhé. Khi em đang chạy deadline một dự án quan trọng mà máy tính tự nhiên sập nguồn, hoặc phần mềm báo lỗi không mở được, em sẽ làm gì? Em có khoanh tay đứng nhìn rồi khấn cho nó tự chạy lại không? 
+Người 2: Dạ không thầy. Chắc em phải tìm xem nó lỗi ở đâu, khởi động lại máy hoặc tra Google xem cách sửa chứ ạ. 
+Người 1: Chuẩn! Đó chính là công việc của một “thám tử số”. Module này giúp các em chuyển từ nạn nhân của lỗi công nghệ (ngồi khóc khi máy treo) trở thành người điều tra và giải quyết vấn đề. Đây là kỹ năng sống còn, vì thời đại bây giờ công việc nào cũng gắn liền với máy tính và công cụ số cả.
+
+Slide 2: SỨ MỆNH CỦA BẠN - TRANG BỊ TƯ DUY PHÂN TÍCH
+Người 1: Sang Slide 2. Sứ mệnh của chúng ta là trang bị “Tư duy phân tích”. Các em sẽ có năng lực nhận diện và xử lý các sự cố thường gặp. Thay vì thấy máy lỗi là đập bàn phím hay khởi động lại bừa bãi (phản ứng ngẫu nhiên), chúng ta sẽ học một quy trình điều tra 4 bước có hệ thống. 
+Người 2: Quy trình 4 bước này cụ thể là làm gì vậy thầy? 
+Người 1: Nhìn vào sơ đồ trên slide nhé:
+1. Quan sát Hiện trường: Ghi nhận lại chính xác chuyện gì đang xảy ra. Phải nhận diện được “triệu chứng” như máy đơ, rớt mạng hay màn hình đen.
+2. Xác định Đối tượng: Phải khoanh vùng xem lỗi này là do Phần mềm (ứng dụng, hệ điều hành) hay Phần cứng (RAM, ổ cứng, cáp mạng).
+3. Thu thập Manh mối: Đọc các thông báo lỗi trên màn hình. Đây là những dấu hiệu rõ ràng nhất mà hệ thống báo cho mình.
+4. Sử dụng Công cụ: Dùng các phần mềm chẩn đoán hoặc công cụ hệ thống chuyên dụng để xử lý. Mục tiêu cuối cùng là rèn luyện tư duy phân tích và thái độ chủ động. Đừng để máy móc “dắt mũi” mình. 
+
+Slide 3: BƯỚC 1 - KHÁM NGHIỆM HIỆN TRƯỜNG (CÁC DẤU HIỆU)
+Người 1: Chúng ta đi vào Bước 1 ở Slide 3: Khám nghiệm hiện trường. Làm sao biết một thiết bị hay chương trình đang có lỗi? Hãy nhìn vào các “triệu chứng” sau đây. 
+Người 2: Em thấy cái đầu tiên quen nhất nè thầy. “Treo máy”. 
+Người 1: Chính xác. Ứng dụng bị treo (Application Freeze): Chương trình dừng đột ngột, chuột không bấm được, phím không gõ được. Mọi thứ cứ đứng im bất động. Không phản hồi (Not Responding): Lúc này trên hệ thống thường hiện cái vòng tròn xoay xoay và dòng chữ “(Not Responding)”. Nó giống như em gọi điện thoại cho một người mà máy cứ đổ chuông nhưng không ai nhấc máy vậy. 
+Người 2: Thế còn cái “Thông báo lỗi” thì sao ạ? 
+Người 1: Cái này quan trọng nhất! Thông báo lỗi (Error Messages): Nó là dấu hiệu rõ ràng nhất, chứa mã lỗi hoặc mô tả vấn đề. Ví dụ nó hiện bảng: “Error 404” hay “Missing DLL”. Nó giống hệt cái chuông báo cháy hay đèn cảnh báo đỏ chót vậy. Nó hiện lên để báo cho em biết hệ thống đang “đau” ở đâu. Đây là manh mối quan trọng nhất để sửa chữa. Đừng bao giờ thấy nó hiện lên là bấm tắt vội mà không đọc nhé! Cuối cùng là Sai chức năng (Incorrect Functionality): Bấm Lưu mà nó không Lưu, bấm In mà nó không In. Giống như em bấm nút thang máy lên tầng 5 mà nó lại đưa em xuống tầng hầm vậy.
+
+Slide 4: BƯỚC 2 - LẬP HỒ SƠ NGHI PHẠM (AI LÀ THỦ PHẠM?)
+Người 1: Sau khi thấy triệu chứng, ta sang Slide 4: Lập hồ sơ nghi phạm. Trong thế giới máy tính, chỉ có 2 “băng đảng tội phạm” chính thôi. Xác định đúng ai gây án là chìa khóa để giải quyết. 
+Người 2: Chắc là Phần cứng và Phần mềm đúng không thầy? 
+Người 1: Chuẩn luôn! Nghi phạm #1: Lỗi Phần Mềm (Software Error). Bản chất nó là những “Bóng ma” vô hình trong cỗ máy. Nó là sai sót trong những dòng lệnh (code), hay sự xung đột giữa các ứng dụng. Ví dụ: Phần mềm đang dùng bị văng ra (crash), web không tải được. Nó giống như một bản nhạc bị in sai nốt, nhạc cụ không hỏng nhưng người nhạc công sẽ đánh ra giai điệu sai. Em không nhìn thấy, không sờ thấy phần mềm, nhưng nó làm mọi thứ hoạt động sai lệch. Nghi phạm #2: Lỗi Phần Cứng (Hardware Error). Bản chất là Lỗi vật lý. Là hư hỏng các linh kiện hữu hình như: RAM, Ổ cứng, Card mạng, hay đứt dây cáp… Ví dụ: Mất Wi-Fi do hỏng card, màn hình bị sọc rác. Cái này giống như nhạc cụ bị đứt dây hay vỡ thùng đàn vậy. Là hỏng đồ thật, em có thể sờ thấy được và thường phải mang đi thay thế hoặc sửa chữa vật lý.
+
+Slide 5: HỒ SƠ NGHI PHẠM #1 - CHI TIẾT LỖI PHẦN MỀM
+Người 1: Chúng ta xét hỏi “Nghi phạm số 1” trước nhé. Slide 5: Lỗi phần mềm. Lỗi phần mềm (Bug) là khiếm khuyết khiến chương trình chạy sai. Tại sao lại sinh ra lỗi này? 
+Người 2: Do người tạo ra ứng dụng đó làm ẩu hả thầy? 
+Người 1: Phần lớn là vậy. Có 3 nguyên nhân chính:
+1. Lỗi Lập trình (Programming Errors): Phổ biến nhất. Lập trình viên viết sai logic hoặc gõ sai mã nguồn. Ví dụ: Viết một câu lệnh lặp đi lặp lại vô tận khiến máy bị treo vì quá tải. Lỗi này là lỗi “từ trong trứng nước” của nhà sản xuất. 
+2. Xung đột Phần mềm (Software Conflicts): Xảy ra khi hai chương trình “đánh nhau” tranh giành tài nguyên của máy. Ví dụ: Em cài 2 phần mềm diệt virus cùng một lúc, chúng sẽ hiểu lầm nhau và chặn lẫn nhau, làm máy đơ luôn. Nó giống như hai người cùng muốn nói một lúc qua một chiếc micro vậy, cuối cùng chẳng ai nghe được gì. 
+3. Vấn đề Tương thích (Compatibility Issues): Phần mềm được viết cho hệ điều hành hoặc cấu hình này, nhưng lại bị bắt chạy ở môi trường khác. Ví dụ: Cố cài một phần mềm đồ họa đời mới 2025 vào một chiếc máy tính chạy Windows 7 cổ lỗ sĩ. Giống như em cố lắp một chiếc ốp lưng của iPhone 15 cho một chiếc iPhone 8 vậy. Cố ép thì nó cũng không vừa và không dùng được! 
+Người 2: À, em hiểu rồi. Tức là phần mềm và thiết bị phải “khớp” với nhau, đúng môi trường thì mới chạy mượt được. 
+Người 1: Chính xác! Hiểu nguyên nhân rồi thì lát nữa chúng ta mới biết cách khắc phục. 
+
+Slide 6: HỒ SƠ NGHI PHẠM #1 - PHƯƠNG THỨC HOẠT ĐỘNG CỦA LỖI PHẦN MỀM
+Người 1: Chúng ta đang điều tra “Nghi phạm Phần mềm”. Nhưng hắn ra tay bằng những cách nào? Slide 6 sẽ vạch trần 5 chiêu thức của hắn. Để giải quyết vấn đề, ta phải biết phân loại chúng. 
+Người 2: Nhìn mấy thuật ngữ Logic, Cú pháp, Runtime… lạ lẫm quá thầy ơi. 
+Người 1: Bình tĩnh, thầy sẽ lấy ví dụ đơn giản cho em dễ hình dung:
+1. Lỗi Logic (Logical Errors): Đây là loại “khó nhằn” nhất. Chương trình vẫn chạy bình thường, không hề báo lỗi, nhưng kết quả cho ra lại sai bét. Ví dụ: Dùng hàm tính tổng doanh thu nhưng lại gõ nhầm thành phép trừ. Nó giống như em nấu ăn theo đúng công thức nhưng đến bước nêm muối em lại múc nhầm đường vậy. Món ăn vẫn ra lò nhưng vị thì sai hoàn toàn. 
+2. Lỗi Hiệu năng (Performance Errors): Chương trình tính toán kết quả đúng nhưng lại chạy siêu chậm, ngốn rất nhiều RAM và CPU. Giống như một nhân viên làm việc rất chính xác nhưng để làm xong một báo cáo mất tới 3 ngày thay vì 3 giờ. Mọi thứ trở nên ì ạch, máy nóng ran.
+3. Lỗi Giao diện người dùng (UI Errors): Các thành phần hiển thị bị lỗi như nút bấm không ăn, chữ bị lệch, ảnh bị vỡ. Nó ảnh hưởng trải nghiệm người dùng nhưng không làm sập hệ thống. Giống như một cuốn sách bị in lệch lề, em vẫn đọc được nội dung nhưng cảm thấy rất khó chịu. 
+4. Lỗi Cú pháp (Syntax Errors): Lỗi này dễ phát hiện nhất. Khi lập trình viên viết sai quy tắc ngôn ngữ, máy tính sẽ báo lỗi ngay lập tức và từ chối chạy chương trình. Giống như em nộp một bài tiểu luận mà sai thể thức trình bày hoàn toàn, giảng viên sẽ trả lại ngay lập tức và không cần đọc nội dung. 
+5. Lỗi Thời gian chạy (Runtime Errors): Phần mềm đang chạy ngon trớn thì “Rầm!”… tự nhiên sập và văng ra ngoài. Thường do đang chạy thì gặp một yêu cầu không thể thực hiện (ví dụ lệnh chia một số cho 0). Giống như em đang chạy bộ rất hăng say trên đường thẳng thì bất ngờ bị vấp cục đá và ngã oạch xuống đất vậy. Mọi thứ dừng đột ngột. 
+
+Slide 7: HỒ SƠ NGHI PHẠM #2 - LỖI PHẦN CỨNG (THỦ PHẠM VẬT LÝ) 
+Người 1: Xong phần mềm, giờ ta sang Slide 7: Phần cứng. Nếu phần mềm là lỗi về “linh hồn”, thì phần cứng chính là lỗi về “thể xác” - tức là hỏng hóc vật lý. Những lỗi này ảnh hưởng trực tiếp đến sự ổn định của hệ thống. 
+Người 2: Cái này em biết nè. Phần cứng hỏng là phải mang đi bảo hành hoặc thay mới đúng không thầy? 
+Người 1: Đúng vậy, nhưng trước khi thay, ta phải bắt đúng bệnh đã. Nhìn vào các bộ phận thường gặp này:
+1. Lỗi Card Mạng/Wi-Fi: Gây mất mạng, sóng yếu. Tín hiệu Internet chập chờn hoặc mất hẳn, dù điện thoại bên cạnh vẫn bắt Wi-Fi bình thường. 
+2. Lỗi Ổ cứng (Hard Disk/SSD): Biểu hiện là máy khởi động cực kỳ chậm, hay bị mất file không rõ lý do, máy phát ra tiếng kêu “rè rè” (với ổ HDD cũ), hoặc tệ nhất là báo lỗi màn hình xanh chết chóc. Đây là lỗi rất nghiêm trọng vì ổ cứng hỏng đồng nghĩa với việc nguy cơ mất trắng toàn bộ dữ liệu quan trọng. 
+3. Lỗi RAM: Máy hay tự động khởi động lại, hoặc đang mở nhiều ứng dụng thì máy bị treo cứng. Bộ nhớ tạm thời bị lỗi khiến luồng công việc bị gián đoạn liên tục.
+4. Lỗi Card đồ họa (GPU) hoặc Màn hình: Màn hình hay bị nhấp nháy, hình ảnh bị vỡ, đổi màu lạ, hoặc xuất hiện các sọc ngang dọc làm chúng ta không thể nhìn rõ thông tin để làm việc.
+5. Lỗi Nguồn/Thiết bị ngoại vi: Đang dùng máy tắt cái rụp (lỗi nguồn), cắm chuột hoặc USB vào mà máy không nhận. Hệ thống bị ngắt điện đột ngột hoặc các cổng giao tiếp vật lý đã bị hỏng.
+
+Slide 8: BƯỚC 3 - THU THẬP MANH MỐI (GIẢI MÃ THÔNG BÁO LỖI) 
+Người 1: Máy tính hỏng thì báo cái gì? Sang Slide 8. Hệ thống luôn để lại “manh mối” qua các thông báo lỗi. Đọc hiểu nó là kỹ năng sống còn. 
+Người 2: Thú thật với thầy, hồi trước cứ hiện bảng lỗi là em bấm X tắt vội cho đỡ ngứa mắt. 
+Người 1: Sai lầm chết người! Em làm thế khác nào thấy chuông báo cháy kêu mà lại lấy đồ bịt tai lại để ngủ tiếp? Khi có lỗi, em phải đọc kỹ 3 thành phần này:
+1. Mã lỗi (Error Code): Là chuỗi số như 0x80070005 hay 404. Nó giống như mã số bưu điện hay mã định danh căn cước vậy. Em chỉ cần copy mã này quăng lên Google là ra ngay bệnh.
+2. Thông điệp lỗi (Error Message): Mô tả ngắn gọn bằng chữ, ví dụ “DNS server not responding” (Máy chủ DNS không phản hồi). Đọc dòng này là ta đã hiểu sơ sơ máy tính đang gặp vấn đề gì.
+3. Chi tiết kỹ thuật (Log Detail): Ghi chú tên file bị lỗi (ví dụ: ntdll.dll) và thời gian xảy ra sự cố. Chiến thuật cốt lõi: Đừng tắt vội! Hãy chụp ảnh màn hình lại, hoặc chép mã lỗi đó và tra Google. Đó là chìa khóa vạn năng để phá án.
+
+Slide 9: MANH MỐI ẨN - KIỂM TRA CÀI ĐẶT 
+Người 1: Đôi khi máy móc không hề hỏng, mà do chính chúng ta “chỉ đạo” sai. Slide 9: Kiểm tra cài đặt. Nhiều lỗi phát sinh do cấu hình bị sai lệch. 
+Người 2: Cấu hình sai cụ thể là sao ạ? Thầy ví dụ thử xem. 
+Người 1: Đây, rất hay gặp nhé: • Sai Ngày giờ hệ thống: Nếu máy tính hiển thị sai ngày giờ (ví dụ đang ở năm 2024 mà máy lại nhảy về 2010), em sẽ không thể truy cập bất kỳ trang web nào vì lỗi chứng chỉ bảo mật. Giống như em đi máy bay mà cầm nhầm vé của ngày hôm qua vậy, hệ thống bảo mật không cho em qua cổng. • Cài đặt mạng (DNS, Proxy): Nhập sai thông số thì nghỉ khỏe Internet. Giống như em gọi đồ ăn mà lại ghi nhầm địa chỉ nhà, shipper không bao giờ giao tới nơi. • Quyền người dùng (Permissions): Em không phải Admin (Quản trị viên) thì không cài được phần mềm. Giống như em chỉ là khách thuê trọ, em không thể tự ý đập tường xây lại nhà được, phải có quyền của Chủ nhà. • Thiếu thành phần phụ trợ (Dependencies): Máy tính báo thiếu .NET Framework hoặc Java nên không mở được ứng dụng. Giống như em muốn nướng bánh mà lại thiếu bột nở vậy, phải tải thêm cài vào thì app mới chạy được.
+
+Slide 10: BƯỚC 4 - BỘ CÔNG CỤ CỦA THÁM TỬ SỐ 
+Người 1: Thợ mộc thì có cưa, búa. Thám tử số có gì? Slide 10: Bộ công cụ. Hệ điều hành luôn trang bị sẵn đồ nghề mạnh mẽ cho em. 
+Người 2: Em biết mỗi cái Task Manager dùng để tắt ứng dụng bị đơ thôi thầy. 
+Người 1: Tốt, nhưng chưa đủ. Để thành “Thần đèn” công nghệ, em cần biết 4 món bảo bối này:
+1. Event Viewer (Windows): Đây là “Hộp đen” hoặc “Camera an ninh” của hệ thống. Nó ghi lại mọi lỗi lầm, mọi sự kiện từ quá khứ đến hiện tại. Máy sập nguồn lúc mấy giờ, do lỗi gì, vào đây xem là ra hết.
+2. Task Manager (Windows): Trạm kiểm soát không lưu. Nó giúp em giám sát xem phần mềm nào đang chạy, ứng dụng nào đang “ăn” hết RAM và CPU của máy tính theo thời gian thực.
+3. Công cụ dòng lệnh (CMD): Chỗ màn hình đen chữ trắng đấy. Dùng lệnh ping 8.8.8.8 để kiểm tra đường truyền Internet xem có bị đứt không. Giống như em gõ cửa một căn nhà xem có ai thưa không vậy.
+4. Công cụ chẩn đoán của nhà sản xuất: Các hãng như Dell, HP, Apple đều có sẵn phần mềm tự kiểm tra phần cứng (Hardware Diagnostics). Nhấn phím tắt lúc khởi động là máy tự quét toàn bộ linh kiện xem có ổ cứng hay thanh RAM nào sắp “hấp hối” không.
+
+Slide 11: VỤ ÁN THỰC TẾ - BÍ ẨN MẤT KẾT NỐI WI-FI 
+Người 1: Đã có đồ nghề trong tay, giờ hãy cùng nhau phá một vụ án thực tế ở Slide 11: “Bí ẩn mất kết nối Wi-Fi”. Tình huống: Em đang chạy deadline đồ án lúc 11h đêm, tự nhiên mạng rớt cái “bụp”. Biểu tượng Wi-Fi hiện dấu chấm than vàng. Không vào được web nào cả. 
+Người 2: Ôi tình huống này em bị hoài! Ức chế cực kỳ, đang làm dở mà mất mạng chỉ muốn đập máy. 
+Người 1: Bình tĩnh, nóng giận là hỏng việc. Hãy coi sự cố này là một bài test. Chúng ta không được đoán mò, mà phải áp dụng quy trình 4 bước để khoanh vùng thủ phạm: Khám hiện trường -> Kiểm tra tác nhân bên ngoài -> Soi phần mềm -> Dùng công cụ truy vết.
+
+Slide 12: BƯỚC 1 & 2 - KIỂM TRA SƠ BỘ (KHÁM NGOÀI) 
+Người 1: Đi vào chi tiết ở Slide 12. Bước 1: Khám ngoài. Hãy nhìn vào cái biểu tượng Wi-Fi ở góc màn hình. Nó là tín hiệu đèn báo quan trọng nhất. • Dấu “X” đỏ: Nghĩa là phần cứng đã bị ngắt. Hoặc em đã lỡ tay bấm nhầm nút tắt Wi-Fi trên bàn phím, hoặc card mạng trong máy bị lỏng. • Dấu chấm than (!): Nghĩa là máy tính vẫn kết nối được với cục Router (Cục phát Wi-Fi), nhưng bản thân cục Router lại không có Internet. • Mất hẳn biểu tượng Wi-Fi: Máy tính hoàn toàn không nhận diện được bộ phận bắt sóng nữa (Lỗi Driver hoặc hỏng phần cứng). Sau khi nhìn icon, ta nhìn sang cục Router/Modem. Đèn báo tín hiệu (LOS) có chớp đỏ không? Nếu cáp quang ngoài đường bị đứt, em có cài lại Windows cũng không có mạng. 
+Người 2: Nếu đèn Router vẫn xanh bình thường mà máy tính vẫn mất mạng thì sao thầy? 
+Người 1: Thì ta sang Bước 2: Khởi động lại (Reset) - Nghi thức giải quyết 90% các lỗi vặt. Rút điện cục Router, ĐỢI 30 GIÂY rồi cắm lại. 
+Người 2: Sao phải đợi 30 giây ạ? Bật luôn lại không được sao? 
+Người 1: 30 giây là khoảng thời gian cần thiết để các tụ điện bên trong thiết bị xả hết năng lượng còn sót lại, giúp bộ nhớ đệm (cache) được xóa sạch hoàn toàn và thiết bị khởi động lại với một cấu hình tươi mới.
+
+Slide 13: BƯỚC 3 & 4 - PHÂN TÍCH CHUYÊN SÂU (NỘI SOI) 
+Người 1: Nếu khởi động lại Router vẫn không được, ta chọc sâu hơn ở Slide 13. Bước 3: Kiểm tra Driver Card Mạng. Hãy tưởng tượng Card mạng là “phần cứng”, còn Driver là người “phiên dịch viên” giúp hệ điều hành Windows hiểu cách nói chuyện với card mạng đó. Nếu phiên dịch viên bị ốm hoặc lỗi thời, phần cứng có xịn đến mấy cũng vô dụng. Giải pháp là vào Device Manager và cập nhật (Update) lại Driver. 
+Người 1: Bước 4: Dùng công cụ truy vết. Mở CMD lên và gõ: ping 8.8.8.8 
+Người 2: Số 8.8.8.8 là gì vậy thầy? 
+Người 1: Đó là địa chỉ máy chủ DNS cực kỳ ổn định của Google. Ta “Ping” nó, tức là gửi một gói tin thử nghiệm (giống như ném một quả bóng) đến máy chủ Google xem nó có nảy ngược lại không. • Nếu kết quả báo “Reply from…”: Tức là quả bóng bay đi và về an toàn. Mạng của em hoàn toàn bình thường, lỗi có thể do trình duyệt web. • Nếu kết quả báo “Request timed out”: Tức là quả bóng bay đi mất hút. Đường truyền đã bị đứt ở đâu đó, lúc này mới cần gọi tổng đài nhà mạng để báo hỏng.
+
+Slide 14: TỪ BỊ ĐỘNG ĐẾN CHỦ ĐỘNG - VÒNG TRÒN CHẨN ĐOÁN 
+Người 1: Slide 14 tổng kết lại toàn bộ quy trình tư duy. Các em nhìn cái vòng tròn trên slide đi. Đây chính là “Khung tư duy Thám tử số”:
+1. Quan sát Triệu chứng (Symptoms): Nhìn biểu tượng lỗi (Máy treo? Màn hình xanh? Mất mạng?).
+2. Khoanh vùng Nghi phạm (Suspects): Lỗi này thiên về Phần cứng hay Phần mềm?
+3. Thu thập Manh mối (Clues): Chụp lại mã báo lỗi, xem các thông báo trên màn hình.
+4. Sử dụng Công cụ (Tools): Dùng Task Manager, Event Viewer, hoặc Google để tra cứu.
+5. Hành động & Kiểm chứng (Act & Verify): Sửa thử một bước (ví dụ: cài lại phần mềm), sau đó mở lên xem lỗi đã biến mất chưa. Nếu chưa, quay lại bước 1. Nó là một quy trình logic và khép kín.
+
+Slide 15: KẾT LUẬN - BẠN CHÍNH LÀ NGƯỜI GIẢI QUYẾT VẤN ĐỀ 
+Người 1: Chúng ta kết thúc phần kỹ năng chẩn đoán ở Slide 15. Các em nhớ này: Sự cố công nghệ không phải là bức tường chặn đường các em, nó là bài tập thực hành để các em rèn luyện tư duy logic. 
+Người 2: Tức là thay vì bực mình, mình nên xem nó như cơ hội luyện não đúng không thầy? 
+Người 1: Đúng tinh thần đấy! Sau bài này, các em đã chuyển từ một “người dùng bị động” (kêu cứu khi gặp lỗi) thành một “thám tử số chủ động” (tự phân tích và sửa chữa). Trong kỷ nguyên số, bất kể em làm ngành nghề gì, người giỏi là người biết cách giải quyết vấn đề chứ không phải chờ người khác dọn sẵn. Nhiệm vụ của các em đã bắt đầu. Phần tiếp theo chúng ta sẽ học cách tra cứu Google và “đào” tài liệu chuyên sâu. Nghỉ giải lao một chút nhé!
+
+Slide 16: BƯỚC VÀO BIỂN THÔNG TIN - GOOGLE LÀ VŨ KHÍ TỐI THƯỢNG 
+Người 1: Chào mừng các em quay lại. Chúng ta đi tiếp sang Slide 16: Kỹ năng tìm kiếm tài liệu. Nếu việc chẩn đoán lỗi là để biết bệnh, thì Google chính là nơi chúng ta tìm thuốc chữa. 
+Người 2: Tra Google thì sinh viên bọn em ngày nào chả dùng thầy ơi. Cứ gõ chữ vào là nó ra cả triệu kết quả mà. 
+Người 1: Đúng là ra hàng triệu kết quả, nhưng để tìm đúng cái tài liệu giải quyết được vấn đề của em trong vòng 5 giây, thay vì bơi trong đống “rác” thông tin mất cả buổi, thì đó là một nghệ thuật. Sinh viên xuất sắc khác sinh viên thường ở chỗ: Ai biết cách đặt câu hỏi cho Google chuẩn xác hơn.
+
+Slide 17: NGHỆ THUẬT TỪ KHÓA (KEYWORDS) - ĐỪNG KỂ CHUYỆN CHO GOOGLE 
+Người 1: Nhìn vào Slide 17. Sai lầm lớn nhất của người mới là gõ nguyên một câu dài thò lò vào ô tìm kiếm. Ví dụ: “Làm thế nào để sửa cái lỗi màn hình máy tính tự nhiên bị đen thui không lên hình hả mọi người”. 
+Người 2: Ơ, gõ chi tiết thì Google nó mới hiểu mình đang bị gì chứ ạ? 
+Người 1: Google là một cỗ máy bắt từ khóa, không phải bác sĩ tâm lý để nghe em kể chuyện. Khi em gõ quá dài, nó sẽ tìm cả những trang web chứa từ “tự nhiên”, “hả mọi người”, làm loãng kết quả. Chiến thuật ở đây là: Chỉ dùng Từ khóa cốt lõi (Keywords). Hãy chuyển câu trên thành: “lỗi màn hình đen Windows 11” hoặc kèm theo mã lỗi “black screen error 0x000000”. Ngắn gọn, trúng đích, máy móc dễ hiểu.
+
+Slide 18: TỐC ĐỘ ÁNH SÁNG VỚI TOÁN TỬ TÌM KIẾM (PHẦN 1) 
+Người 1: Sang Slide 18, thầy sẽ chỉ cho các em các “bùa chú” - gọi là Toán tử tìm kiếm nâng cao. Chỉ cần thêm vài ký tự, kết quả sẽ chính xác đến kinh ngạc. 
+Người 2: Nghe như hack luôn vậy thầy! 
+Người 1: Rất quyền lực đấy! Đầu tiên là Dấu ngoặc kép (” “). Khi em muốn tìm chính xác một cụm từ mà không bị Google tự động tách chữ ra. Ví dụ: Cần tìm tài liệu về trí tuệ nhân tạo, hãy gõ "Trí tuệ nhân tạo". Nó sẽ loại bỏ ngay những bài viết chỉ có từ “trí tuệ” nhưng không có chữ “nhân tạo”. Thứ hai là Dấu trừ (-). Dùng để loại bỏ những kết quả em không mong muốn. Ví dụ em muốn tìm hiểu về quả táo (Apple) nhưng Google toàn ra iPhone. Hãy gõ: Apple -điện thoại -iPhone. Lập tức, toàn bộ kết quả về điện thoại sẽ bốc hơi.
+
+Slide 19: TOÁN TỬ TÌM KIẾM (PHẦN 2) - BẮT ĐÚNG LOẠI FILE VÀ NGUỒN WEBSITE 
+Người 1: Slide 19, tiếp tục với 2 toán tử cực kỳ hữu ích cho việc làm tiểu luận và đồ án. Đó là filetype: (Tìm theo định dạng tệp). Em đang cần một cuốn giáo trình PDF thay vì đọc các bài báo mạng lăng nhăng? Hãy gõ: Kỹ năng giao tiếp filetype:pdf. Nó sẽ chỉ trả về các file PDF cho em tải xuống. Kế tiếp là site: (Tìm trong một trang web cụ thể). Khi em chỉ muốn lấy thông tin từ các trang web của trường đại học hoặc chính phủ cho uy tín. Hãy gõ: Biến đổi khí hậu site:edu.vn (chỉ lấy trang giáo dục Việt Nam) hoặc site:gov.vn (trang chính phủ). 
+Người 2: Tuyệt quá! Bình thường em toàn phải click vào từng trang xem nó là báo mạng hay trang giáo dục, mất thời gian cực kỳ.
+
+Slide 20: THỰC HÀNH TỔNG HỢP - TRUY TÌM TÀI LIỆU CHUẨN 
+Người 1: Sang Slide 20, ta kết hợp chúng lại nhé. Giả sử em đang làm đồ án về “Kinh tế vi mô”, em cần file PDF từ một trường đại học. Em sẽ gõ thế nào? 
+Người 2: Em sẽ gõ là: "Kinh tế vi mô" filetype:pdf site:edu.vn đúng không ạ? 
+Người 1: Xuất sắc! Kết quả trả về sẽ sạch sẽ, 100% là giáo trình hoặc đề tài nghiên cứu đúng chuẩn học thuật, không có quảng cáo khóa học hay những bài viết tào lao. Tiết kiệm được cho em hàng giờ đồng hồ tìm kiếm.
+
+Slide 21: CẠM BẪY THÔNG TIN - PHÂN BIỆT THẬT GIẢ GIỮA BIỂN INTERNET 
+Người 1: Có tài liệu rồi, nhưng Slide 21 đặt ra một vấn đề sống còn: Làm sao em biết cái em vừa tải về là đúng? Internet là một cái chợ khổng lồ, ai cũng có thể đăng bài. 
+Người 2: Thường thì em thấy trang nào nằm ở top 1 Google thì em tin thôi thầy. 
+Người 1: Top 1 Google nhiều khi chỉ là do họ chạy quảng cáo nhiều tiền, hoặc họ giỏi SEO (tối ưu hóa công cụ tìm kiếm), chứ không có nghĩa nội dung của họ là chân lý. Dùng sai tài liệu tham khảo cho bài luận thì rớt môn, áp dụng sai cách sửa lỗi máy tính thì hỏng luôn cả cái máy. Ta cần một “Bộ lọc”.
+
+Slide 22: TIÊU CHÍ CRAAP - BỘ LỌC THÔNG TIN HOÀN HẢO 
+Người 1: Ở Slide 22, thầy giới thiệu với các em tiêu chí CRAAP. Đây là bộ lọc tiêu chuẩn vàng của sinh viên trên toàn thế giới để đánh giá nguồn thông tin. CRAAP là viết tắt của 5 chữ cái tiếng Anh. 
+Người 2: Nghe tên đọc giống chữ “crap” (rác rưởi) trong tiếng Anh thế thầy? 
+Người 1: Đúng vậy! Nó chính là công cụ để giúp em lọc bỏ thông tin “rác rưởi”. 5 tiêu chí đó là: Currency (Tính cập nhật), Relevance (Độ liên quan), Authority (Thẩm quyền), Accuracy (Độ chính xác) và Purpose (Mục đích). Cùng đi sâu vào từng cái nhé.
+
+Slide 23: BỘ LỌC C & R - TÍNH CẬP NHẬT VÀ ĐỘ LIÊN QUAN 
+Người 1: Phân tích ở Slide 23.
+• C - Currency (Tính cập nhật): Thế giới công nghệ và tri thức thay đổi từng ngày. Một bài hướng dẫn cài đặt phần mềm từ năm 2015 sẽ hoàn toàn vô dụng, thậm chí gây lỗi nếu áp dụng cho hệ điều hành năm nay. Phải luôn xem ngày xuất bản của bài viết.
+• R - Relevance (Độ liên quan): Bài viết có đúng trọng tâm em cần không, hay chỉ “treo đầu dê bán thịt chó”? Tiêu đề thì đúng lỗi máy em đang gặp, nhưng đọc xuống dưới toàn quảng cáo bán phần mềm dọn rác máy tính. Gặp loại này thì tắt ngay.
+
+Slide 24: BỘ LỌC A, A & P - THẨM QUYỀN, CHÍNH XÁC VÀ MỤC ĐÍCH 
+Người 1: Slide 24, ba tiêu chí cuối cùng nhưng quan trọng nhất:
+• A - Authority (Thẩm quyền): Ai là người viết bài này? Một trang hỗ trợ chính thức của Microsoft, Adobe hay Apple chắc chắn đáng tin hơn một bài đăng ẩn danh trên diễn đàn nào đó. Tác giả có phải là chuyên gia trong lĩnh vực đó không?
+• A - Accuracy (Độ chính xác): Lời khuyên có cơ sở khoa học, có dẫn chứng rõ ràng không? Nếu một trang web xúi em xóa các file hệ thống (System32) để máy tính chạy nhanh hơn mà không đưa ra lời giải thích logic nào, đó là phá hoại chứ không phải sửa chữa.
+• P - Purpose (Mục đích): Mục đích của trang web này là gì? Để chia sẻ kiến thức giáo dục, hay để bán hàng, hoặc lừa đảo cài mã độc? Hãy cực kỳ cẩn thận với những trang giật tít câu view hoặc ép em phải tải file .exe lạ về máy để sửa lỗi.
+
+Slide 25: TỔNG KẾT BƯỚC TÌM KIẾM VÀ ĐÁNH GIÁ 
+Người 1: Vậy là ở Slide 25, chúng ta chốt lại phần này. Em không chỉ biết cách “gọi tên” vấn đề, dùng công cụ tìm kiếm nhanh nhất, mà còn sở hữu “chiếc khiên” CRAAP để bảo vệ bản thân khỏi thông tin độc hại, sai lệch. 
+Người 2: Giờ thì em tự tin hơn rồi. Tra lỗi là ra ngay, mà bài đọc thì phải soi qua cái “kính lúp” CRAAP mới áp dụng. 
+Người 1: Rất tốt! Tư duy phản biện chính là ở đó. Không tin tưởng mù quáng vào bất kỳ thứ gì trên mạng. Nắm vững kỹ năng này, việc làm đồ án hay tự học công nghệ mới với các em chỉ là chuyện nhỏ.
+
+Slide 26: KHÁM PHÁ VÙNG ĐẤT MỚI (NGHIÊN CỨU CHUYÊN SÂU) 
+Người 1: Chúng ta đã biết cách tìm kiếm và chẩn đoán căn bản. Giờ sang Slide 26, chúng ta sẽ bước vào “Vùng đất mới”: Tiếp cận các nguồn lực chuyên sâu. 
+Người 2: Mình chỉ cần biết cách dùng và sửa lỗi thông thường thôi, có cần thiết phải nghiên cứu chuyên sâu như mấy chuyên gia không thầy? 
+Người 1: Có chứ! Ví dụ, khi máy tính báo lỗi ổ cứng hoặc lỗi file hệ thống nặng, hướng dẫn cơ bản sẽ bảo em: “Cài lại Windows và xóa trắng ổ đĩa”. Nhưng nếu em có kiến thức chuyên sâu, em sẽ biết cách dùng môi trường cứu hộ (WinPE) để khôi phục và copy lại toàn bộ dữ liệu quan trọng trước khi làm lại máy. Đó là sự khác biệt giữa một “người dùng học vẹt” và một “người xử lý sự cố chuyên nghiệp”.
+
+Slide 27: KHI CẦN HIỂU SÂU - TÌM ĐẾN TÀI LIỆU HỌC THUẬT 
+Người 1: Vậy tìm kiến thức “gốc rễ” ở đâu? Slide 27 giới thiệu các kho tàng này. Tài liệu học thuật cung cấp nền tảng lý thuyết vững chắc nhất để em hiểu bản chất công nghệ. 
+Người 2: Em thấy logo Google Scholar quen quen ạ. 
+Người 1: Đúng rồi. Trên Google Scholar hoặc các chuyên trang nghiên cứu (như IEEE Xplore, ResearchGate), em có thể tra cứu nguyên lý hoạt động của các hệ thống phức tạp, từ cách AI xử lý dữ liệu đến cơ chế bảo mật mạng. Chúng giúp em trả lời câu hỏi “Tại sao nó hoạt động” thay vì chỉ biết “Làm sao để dùng”.
+
+Slide 28: SỨC MẠNH CỘNG ĐỒNG - KHAI THÁC DIỄN ĐÀN (HỎI ĐÚNG CÁCH) 
+Người 1: Học lý thuyết xong rồi, giờ quay lại thực chiến. Khi gặp những ca lỗi quá khó không có trong hướng dẫn chính thức, hãy hỏi cộng đồng. Slide 28: Các diễn đàn như Stack Overflow, Reddit, Tinh Tế hay các Group cộng đồng chuyên môn là nơi chứa hàng tỷ giải pháp thực tế. 
+Người 2: Thú thật là em hay lên mấy nhóm đó đăng bài kiểu “Cứu em với, file Word tự nhiên lỗi mất hết”, mà toàn bị Admin xóa bài hoặc bị các thành viên khác mắng là “hỏi ngớ ngẩn”. 
+Người 1: Bị nhắc nhở là đúng! Vì em hỏi sai cách. Trên các diễn đàn chuyên môn, muốn được giúp thì phải tuân thủ quy tắc ứng xử:
+1. Tìm kiếm trước khi hỏi: Rất có thể tình huống của em đã có người gặp và giải quyết rồi. Đừng làm rác diễn đàn bằng những câu hỏi trùng lặp.
+2. Tiêu đề rõ ràng: Đừng ghi “Cứu em với”. Hãy ghi cụ thể: “Lỗi không lưu được file Word trên macOS - báo mã lỗi Permission Denied”.
+3. Mô tả chi tiết: Đính kèm ảnh chụp màn hình, kể rõ em đang dùng máy gì, hệ điều hành nào và em đã thử làm những bước gì để tự sửa rồi (ví dụ: đã thử reset máy nhưng không được). Câu hỏi càng chi tiết, chứng tỏ em càng có trách nhiệm với vấn đề của mình, các cao thủ mới nể và nhiệt tình giúp.
+
+Slide 29: TÌNH HUỐNG THỰC TẾ - ÁP DỤNG QUY TRÌNH KẾP HỢP 
+Người 1: Sang Slide 29. Giả sử máy tính em bị lỗi kết nối máy in và hiện mã lỗi 0x80070005. Em search Google ra hai kết quả: Một bài trên trang Hỗ trợ chính thức của Microsoft mới cập nhật tháng trước, và một video YouTube vọc vạch của một cá nhân đăng từ 5 năm trước. Em chọn cái nào? 
+Người 2: Tất nhiên là bài của Microsoft ạ. Video 5 năm trước chắc làm cho Windows đời cũ, áp dụng vào máy đời mới bây giờ có khi lại hỏng thêm. 
+Người 1: Chuẩn! Ta ưu tiên tài liệu chính thống trước. Nếu áp dụng cách của Microsoft mà máy em vẫn “bệnh cũ tái phát”, lúc đó ta mới copy cái mã lỗi đó, lên các diễn đàn cộng đồng tìm xem có ai có mẹo (trick) sửa chuyên sâu từ kinh nghiệm thực tế hay không. Đó là quy trình kết hợp hoàn hảo.
+
+Slide 30: KẾT LUẬN - BIẾN INTERNET THÀNH THƯ VIỆN RIÊNG 
+Người 1: Chúng ta kết thúc phần kỹ năng tìm kiếm ở Slide 30. Thầy muốn nhấn mạnh: Kỹ năng này không chỉ để sửa cái máy tính hôm nay, mà là năng lực cốt lõi để các em “Tự học suốt đời”. 
+Người 2: Tức là sau này bất kể đi làm ngành gì, gặp phần mềm quản lý lạ hay máy móc mới, miễn là có mạng thì em đều tự xoay xở học được hết đúng không ạ? 
+Người 1: Chính xác! Em đã nắm trong tay chìa khóa vạn năng. Gặp vấn đề chưa biết, cứ rút chìa khóa ra, lên Internet tra cứu và biến nó thành thư viện cá nhân của mình. Đừng bao giờ nói “Em không biết làm” khi em chưa thử Google tìm hiểu nhé.
+
+Slide 31: ĐIỂM KHỞI ĐẦU - NHẬN DIỆN TRẠNG THÁI "BỊ ĐỘNG" 
+Người 1: Chúng ta đi đến một bước chuyển giao quan trọng. Ở Slide 31, hãy nhìn lại phản ứng thông thường của chúng ta. Hầu hết mọi người khi gặp sự cố - như máy tính tự nhiên bị đơ, file tải mãi không được, hay ứng dụng đang làm thì văng liên tục - đều rơi ngay vào trạng thái gọi là “Bị động”. 
+Người 2: Trạng thái bị động là kiểu hoang mang, ngồi buông chuột, thở dài rồi đợi xem nó có tự hết lỗi không đó hả thầy? 
+Người 1: Đúng vậy! Hoặc một phản ứng phổ biến khác là lập tức gọi réo ầm ĩ, bắt phòng IT hoặc cuống cuồng nhờ bạn bè qua sửa hộ ngay lập tức, dù đôi khi đó chỉ là một lỗi cực kỳ nhỏ nhặt. Chúng ta để cho sự cố kiểm soát cảm xúc của mình.
+
+Slide 32: BƯỚC CHUYỂN GIAO - TIẾN TỚI TRẠNG THÁI "CHỦ ĐỘNG" 
+Người 1: Sang Slide 32, đây chính là giải pháp. Mục tiêu cốt lõi của khóa học này là kéo các em thoát khỏi sự hoang mang đó, chuyển hẳn sang trạng thái “Chủ động”. 
+Người 2: Vậy chủ động ở đây tức là mình phải tự tay xử lý luôn thay vì nhờ vả ạ? 
+Người 1: Chính xác. Chủ động nghĩa là em biết cách giữ bình tĩnh để phân tích tình hình. Áp dụng ngay quy trình 4 bước để tự tìm hiểu nguyên nhân gốc rễ, dùng Google để tra cứu giải pháp và cuối cùng là tự tay xử lý triệt để vấn đề. Đó mới là phong cách làm việc của một người chuyên nghiệp!
+
+Slide 33: BA CẤP ĐỘ LÀM CHỦ CÔNG NGHỆ 
+Người 1: Slide 33 chỉ ra 3 cấp độ phát triển của một “Thám tử số”:
+1. Cấp độ 1 - Bắt bệnh (Diagnose): Nhận diện lỗi phần cứng/phần mềm (Chúng ta học ở Phần 1).
+2. Cấp độ 2 - Tra cứu (Research): Tự tra Google, tìm tài liệu và biết cách sàng lọc thông tin (Phần 2 và 3).
+3. Cấp độ 3 - Phân tích & Cải tiến: Khả năng hệ thống hóa dữ liệu, ghi chép lại vấn đề và đưa ra giải pháp để không bao giờ lặp lại lỗi đó nữa. Cấp độ 3 chính là tư duy của một nhà quản lý thực thụ!
+
+Slide 34: ÔN TẬP BƯỚC 1 - NHẬN DIỆN LỖI PHẦN MỀM 
+Người 1: Bây giờ thầy sẽ kiểm tra bài cũ một chút nhé. Chúng ta bắt đầu từ Slide 34 để ôn lại Bước 1: Nhận diện lỗi. Nào, nhớ lại xem các nhóm lỗi phần mềm hoạt động thế nào? Lỗi nào là khó nhằn và nguy hiểm nhất? 
+Người 2: Dạ, có “Lỗi Logic” là nguy hiểm nhất ạ. Nguy hiểm ở chỗ phần mềm không hề báo lỗi, máy vẫn chạy ngon ơ nhưng cho ra kết quả sai bét. Giống như mình gõ nhầm dấu “+” thành “-” trong bảng tính doanh thu vậy.
+
+Slide 35: ÔN TẬP BƯỚC 1 - QUY TRÌNH XỬ LÝ LỖI MẠNG 
+Người 1: Rất nhớ bài! Tiếp tục sang Slide 35, chúng ta ôn lại một tình huống thực tế mà ai cũng gặp. Thế còn “Quy trình cứu hộ Wi-Fi 6 bước” thì sao? Em có nhớ thứ tự các thao tác không? 
+Người 2: Dạ em nhớ tuần tự thế này ạ: Đầu tiên là Nhìn biểu tượng mạng -> Sau đó Kiểm tra đèn trên Router -> Tiếp theo là Khởi động lại Router (nhớ phải đợi 30 giây) -> Kế đến Kiểm tra lại dây cáp -> Xem có cần update Driver card mạng không -> Và bước cuối cùng là mở CMD dùng lệnh ping 8.8.8.8 để đo đường truyền ạ.
+
+Slide 36: TỔNG KẾT ÔN TẬP - NGUYÊN TẮC KIỂM TRA TUẦN TỰ 
+Người 1: Tuyệt vời. Sang Slide 36, thầy muốn nhấn mạnh lại nguyên tắc vàng từ phần ôn tập này. Khi gặp sự cố, các em bắt buộc phải làm tuần tự từng bước kiểm tra loại trừ từ ngoài vào trong, từ dễ đến khó giống như quy trình em vừa trình bày. Tuyệt đối không được nhảy cóc và không bao giờ được đoán mò. Khám đúng bệnh thì mới bốc đúng thuốc được!
+
+Slide 37: ÔN TẬP BƯỚC 2 - NGHỆ THUẬT TÌM KIẾM 
+Người 1: Slide 37 chốt lại nghệ thuật tìm kiếm: Đừng dùng tay không bắt giặc. Phải dùng toán tử "" (Ngoặc kép) để tìm chính xác cụm từ, dùng filetype:pdf khi cần tìm sách/báo cáo và dùng site: để lọc các trang web uy tín (như .edu hoặc .gov). Và tuyệt đối không quên đưa mọi thông tin qua bộ lọc CRAAP (đánh giá độ mới, độ chính xác, mục đích) trước khi áp dụng nhé. 
+Người 2: Kiến thức đã nạp đầy đủ. Em sẵn sàng bước sang Cấp độ 3 (Phân tích dữ liệu và Quản lý) rồi thầy ơi!
+
+Slide 38: CẤP ĐỘ 3 - TỪ SỬA CHỮA ĐẾN QUẢN LÝ DỮ LIỆU 
+Người 1: Chúng ta đã đi qua kỹ năng “chữa cháy” (sửa lỗi máy tính) và “tìm thuốc” (tra cứu tài liệu). Bây giờ ở Slide 38, chúng ta nâng cấp lên Cấp độ 3: Kỹ năng “phòng cháy” và tối ưu hóa quy trình làm việc. 
+Người 2: Phòng cháy tức là mình sao lưu dữ liệu để lỡ máy hỏng thì không bị mất bài đúng không thầy? 
+Người 1: Đó là một phần! Nhưng rộng hơn thế, đó là cách em tổ chức công việc, quản lý thông tin sao cho khoa học nhất. Nếu em có một đống tài liệu tải về từ Google nhưng lại vứt lung tung ở màn hình Desktop, đến lúc cần không tìm thấy thì cũng vô dụng. Đó là lý do chúng ta cần đến các công cụ quản lý số.
+
+Slide 39: BẢNG TÍNH GOOGLE SHEETS - KHÔNG CHỈ LÀ NHẬP SỐ LIỆU 
+Người 1: Nhìn vào Slide 39, đại diện tiêu biểu nhất cho việc quản lý dữ liệu là Google Sheets. 
+Người 2: Cái này thì em quen nè. Sinh viên bọn em hay dùng Sheets để lập danh sách nhóm hoặc chia tiền quỹ lớp. 
+Người 1: Đó mới chỉ là bề nổi của tảng băng chìm! Thay vì chỉ dùng để kẻ bảng nhập chữ, em có thể biến Google Sheets thành một phần mềm quản lý tiến độ dự án chuyên nghiệp. Em có thể thiết lập các hàm tự động, bộ lọc màu (conditional formatting) để cảnh báo những nhiệm vụ sắp trễ deadline, hoặc tạo biểu đồ theo dõi xem ai làm việc hiệu quả nhất trong nhóm. Nó là một cơ sở dữ liệu thu nhỏ, chạy trực tuyến và ai cũng có thể cùng lúc chỉnh sửa được.
+
+Slide 40: LÀM VIỆC NHÓM KIỂU TRUYỀN THỐNG - NHỮNG LỖ HỔNG QUEN THUỘC 
+Người 1: Hãy xem sự khác biệt giữa làm việc kiểu cũ và làm việc “số hóa” nhé. Thầy lấy ví dụ thực tế khi các em chạy đồ án cuối kỳ. Ở Slide 40, chúng ta nhìn vào tình huống TRƯỚC khi áp dụng công cụ số. Đầu tiên là khâu giao việc và xếp lịch. 
+Người 2: Thường thì có bài tập nhóm là bọn em lập ngay một cái group chat trên Zalo hay Messenger rồi nhắn tin chia việc trong đó luôn ạ. 
+Người 1: Đúng, và đó là cách làm việc rất kém hiệu quả! Quản lý việc bằng tin nhắn thì chỉ cần vài người vào chát phiếm là trôi hết thông báo quan trọng, cuối cùng không ai nhớ chính xác mình phải làm gì. Còn quản lý lịch thì sao? Hẹn nhau họp nhóm bằng miệng hoặc nhắn tin vội, đến ngày thì người nhớ người quên, cao su giờ giấc khiến tiến độ chung bị kéo lùi.
+
+Slide 41: KHỦNG HOẢNG DỮ LIỆU - NỖI ÁM ẢNH MANG TÊN "FINAL.DOCX" 
+Người 1: Chưa dừng lại ở đó, sang Slide 41, chúng ta nói đến khâu quản lý File. Đây mới là phần gây ức chế nhất. 
+Người 2: Khúc này là ám ảnh luôn thầy ơi. Nhóm 5 người là mỗi đứa làm một file Word riêng, xong gửi cho nhóm trưởng copy dán lại. Lúc lưu tên thì toàn kiểu “Do_an_ban_cuoi_final_cua_final.docx”. 
+Người 1: Chính xác! Việc gửi file qua lại rải rác như vậy khiến tài liệu bị phân mảnh. Khi mở lên, định dạng chữ và ảnh nhảy loạn hết cả lên, chưa kể nguy cơ làm mất sạch dữ liệu gốc nếu lỡ tay lưu đè (ghi đè) lên file cũ. Hậu quả của toàn bộ quy trình chắp vá này là gì? Các thành viên chửi nhau, đùn đẩy trách nhiệm khi có lỗi xảy ra, tiến độ thì chậm chạp và điểm số lẹt đẹt. Đó là lý do chúng ta buộc phải thay đổi cách làm việc!
+
+Slide 42: HỆ SINH THÁI GOOGLE WORKSPACE - ĐỒNG BỘ MỌI THỨ 
+Người 1: Sang Slide 42, đây là cách một “Thám tử số” quản lý dự án: Tình huống SAU khi số hóa: • Dùng Google Sheets: Bảng phân công rõ ràng hiện trên mạng. Dòng nào của ai, làm phần nào, trạng thái (Đang làm/Đã xong) đổi màu xanh đỏ theo tiến độ. Mở ra là thấy ngay điểm nghẽn nằm ở đâu. • Dùng Google Calendar: Tự động nhắc lịch qua email: “Tối nay 8h họp chốt dàn ý tiểu luận”. Không ai viện cớ quên được nữa. • Dùng Google Drive: Tất cả tài liệu tham khảo, file báo cáo lưu chung trên một thư mục đám mây. Cập nhật theo thời gian thực (Real-time). Em đi đâu, dùng máy tính mượn cũng vẫn làm việc được bình thường. 
+Người 2: Nghe chuyên nghiệp như đi làm công ty thật sự luôn ấy thầy. 
+Người 1: Chính xác! Những công ty lớn, tập đoàn đa quốc gia đều vận hành dựa trên hệ sinh thái đám mây này. Các em làm quen từ bây giờ thì khi ra trường sẽ hòa nhập công việc cực kỳ nhanh.
+
+Slide 43: TỔNG KẾT - TƯ DUY CỦA NGƯỜI GIẢI QUYẾT VẤN ĐỀ CHỦ ĐỘNG 
+Người 1: Chúng ta đến đích rồi! Slide 43 tổng kết lại toàn bộ Module 5. Sau khóa học này, thầy mong các em không chỉ là những sinh viên “chỉ đâu đánh đó”, gõ phím theo mẫu, mà phải trở thành những Nhà giải quyết vấn đề (Problem Solvers) thực thụ. 
+Người 2: Dạ, em sẽ ghim kỹ 3 nguyên tắc cốt lõi này ạ:
+1. Chẩn đoán (Diagnose): Gặp lỗi là phải hỏi “Tại sao?”. Tại sao máy đơ? Tại sao file không mở được? Khám nghiệm hiện trường, không được hoảng loạn, không được khởi động lại máy bừa bãi.
+2. Nghiên cứu (Research): Xem mọi sự cố là một bài test kỹ năng. Không biết thì dùng bộ lọc CRAAP, dùng toán tử nâng cao tra Google, hỏi đúng cách trên diễn đàn. Không bao giờ nói “em chịu” khi chưa tìm kiếm.
+3. Cải tiến (Improve): Không ngừng tối ưu hóa. Lỗi một lần thì tra cách sửa, nhưng để không lặp lại thì phải sắp xếp file, quản lý tiến độ bằng công cụ số như Drive và Sheets. 
+Người 1: Tuyệt vời! Tư duy này không chỉ áp dụng cho máy tính, mà áp dụng cho mọi khó khăn trong công việc và cuộc sống của các em sau này. Chúc các em luôn giữ được cái đầu lạnh và tư duy nhạy bén của một “Thám tử số”! Chào các em!

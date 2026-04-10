@@ -150,9 +150,23 @@ const sessionsData = [
         id: 5,
         title: "Module 5: Giải quyết vấn đề",
         description: "Ứng dụng công nghệ để phân tích và giải quyết các vấn đề thực tiễn.",
-        totalLessons: 0,
+        totalLessons: 1,
         quiz: "MD5.csv",
-        lessons: []
+        lessons: [
+            {
+                id: 51,
+                sessionId: 5,
+                title: "Phần 1: Giải quyết vấn đề",
+                description: "Bài giảng và tài liệu cho Module 5.",
+                video: "Module_1-6/Video/Module_5/index.html",
+                docs: [
+                    { name: "Slide PDF", file: "Module_1-6/Video/Module_5/slide module 5-Giải quyết vấn đề_v2.pdf" },
+                    { name: "Kịch bản (DOCX)", file: "Module_1-6/Video/Module_5/Gemini-Chỉnh sửa kịch bản _Thám tử số_.docx" },
+                    { name: "Infographic", file: "Module_1-6/Video/Module_5/inforgraphic_module 5.png" }
+                ],
+                steps: []
+            }
+        ]
     },
     {
         id: 6,
