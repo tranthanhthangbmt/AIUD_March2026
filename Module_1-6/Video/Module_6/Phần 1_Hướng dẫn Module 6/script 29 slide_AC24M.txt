@@ -1,0 +1,312 @@
+﻿Slide 1: KHỞI ĐỘNG MODULE 6 - KỶ NGUYÊN CỦA TRÍ TUỆ NHÂN TẠO
+Người 1: Chào các “CFO tương lai” của lớp AC24M! Chúng ta vừa hoàn thành Module 5 và đã thành thạo việc xử lý số liệu trên Excel hay phần mềm kế toán. Hôm nay, chúng ta sẽ bước sang một đẳng cấp hoàn toàn mới tại Module 6: Ứng dụng Trí tuệ Nhân tạo (AI).
+Người 2: AI có phải là mấy con robot sẽ cướp việc của kế toán bọn em không thầy? Hay là kiểu ChatGPT mà mấy bạn hay dùng để viết email xin việc ạ?
+Người 1: ChatGPT chỉ là bề nổi thôi. Hãy tưởng tượng thế này: Ở Module 5, các em học cách “Ghi chép quá khứ” (lên sổ sách, lập báo cáo những gì đã xảy ra). Còn ở Module 6 này, chúng ta sẽ học cách dùng công nghệ để “Dự báo tương lai”. AI chính là công cụ giúp các con số không chỉ nằm im trên giấy mà còn biết “nói” và biết “tư vấn”.
+Người 2: Nghe có vẻ cao siêu quá thầy ơi. Em chỉ cần biết Nợ - Có cân bằng là được rồi, học cái này để làm gì?
+Người 1: Để không bị đào thải! Kế toán ngày nay không còn là người ngồi gõ lại hóa đơn nữa, việc đó máy làm hết rồi. Nếu em không hiểu về AI, em sẽ không thể vận hành các hệ thống ERP thông minh, hay thực hiện kiểm toán tự động. Em học để trở thành người phân tích chiến lược, chứ không phải máy nhập liệu chạy bằng cơm! Bắt đầu nhé!
+
+Slide 2: TẠI SAO AI QUAN TRỌNG TRONG KỶ NGUYÊN SỐ?
+Người 1: Sang Slide 2. Tại sao AI lại quan trọng đến mức dân kinh tế - kế toán bắt buộc phải học?
+Người 2: Chắc là để tính toán nhanh hơn Excel phải không thầy?
+Người 1: Đúng nhưng chưa đủ. Nhìn vào slide đi, AI là “Đòn bẩy” cho chuyển đổi số trong tài chính.
+• Về xử lý dữ liệu: AI giúp xử lý Big Data. Một tập đoàn bán lẻ phát sinh hàng triệu giao dịch mỗi ngày, con người không thể soát xét thủ công hết được, nhưng AI có thể “quét” toàn bộ và phát hiện sai sót trong tích tắc.
+• Trong Giáo dục: AI giúp cá nhân hóa. Giống như một gia sư riêng biết em yếu phần Nguyên lý kế toán hay Thuế để bổ trợ đúng chỗ đó.
+• Trong Doanh nghiệp: AI tối ưu dòng tiền.
+o Nó giống như một Giám đốc tài chính ảo, biết lúc nào cần vay vốn, lúc nào cần đầu tư để sinh lời nhất.
+Người 2: Còn với cá nhân em thì sao ạ?
+Người 1: Nó nâng cao “Năng lực cá nhân”. Từ việc giúp em tra cứu luật thuế thông minh hơn, đến việc bảo vệ tài khoản ngân hàng của em khỏi các giao dịch gian lận. Hiểu AI, em sẽ sở hữu một bộ “công cụ kim cương” để cạnh tranh trong ngành.
+
+Slide 3: MỤC TIÊU CỦA MODULE - NẮM VỮNG NỀN TẢNG & TƯ DUY
+Người 1: Vậy học xong Module này, các em thu hoạch được gì? Slide 3 chia làm 3 phần: Kiến thức, Kỹ năng và Thái độ.
+Người 2: Em chỉ quan tâm kỹ năng thôi, làm sao dùng AI để nó tự làm báo cáo tài chính cho em đi chơi là được.
+Người 1: Đừng vội! Muốn dùng phần mềm xịn thì phải hiểu nghiệp vụ.
+• Về Kiến thức: Em phải hiểu nền tảng như Machine Learning (Học máy) là gì, Đạo đức trong AI là gì. Giống như em phải thuộc nằm lòng Nguyên lý kế toán và Chuẩn mực (VAS/IFRS) trước khi dùng phần mềm MISA hay SAP vậy.
+• Về Kỹ năng: Lúc này mới là dùng công cụ: ChatGPT, Copilot, các Plugin phân tích dữ liệu… để giải quyết công việc.
+• Về Thái độ: Đây là cái sống còn của nghề kế toán. Tư duy phản biện và Trách nhiệm.
+Người 2: Trách nhiệm khi dùng AI là sao thầy?
+Người 1: Rất quan trọng! Nếu em dùng AI để “xào nấu” số liệu, tạo ra các hóa đơn khống hay báo cáo ảo, hậu quả là vi phạm pháp luật và đi tù đấy. AI là công cụ, còn Đạo đức nghề nghiệp nằm ở em.
+
+Slide 4: AI LÀ GÌ? - MÔ PHỎNG TRÍ TUỆ CON NGƯỜI
+Người 1: Đi vào chi tiết ở Slide 4. Bản chất AI là gì?
+Người 2: Là máy tính thông minh như con người ạ?
+Người 1: Chính xác là “Mô phỏng các năng lực trí tuệ của con người”. Hãy so sánh nó với một Kế toán trưởng (Chief Accountant) lão luyện:
+1. Học hỏi (Learning): Sinh viên mới ra trường hạch toán hay sai, làm nhiều thì quen tay, nhạy bén. AI cũng vậy, càng nạp nhiều dữ liệu tài chính, nó dự báo càng chuẩn.
+2. Nhận thức (Perception): Kế toán dùng mắt đọc hóa đơn. AI dùng công nghệ OCR (Nhận dạng ký tự quang học) để tự động “đọc” và nhập liệu từ hàng nghìn tờ hóa đơn đỏ cùng lúc.
+3. Hiểu ngôn ngữ: Em hỏi sếp “Sếp ơi, quý này lãi bao nhiêu?”. AI (Chatbot) cũng có thể trả lời ngay lập tức khi em hỏi dữ liệu.
+4. Giải quyết vấn đề: Thấy chi phí tăng cao bất thường, Kế toán trưởng tìm nguyên nhân cắt giảm. AI cũng tự động cảnh báo biến động (Variance Analysis) để em xử lý.
+Người 2: À, ra thế. Tức là nó học cách tư duy của một người làm tài chính chuyên nghiệp.
+Người 1: Chuẩn! Nó là tập hợp nhiều công nghệ để hỗ trợ em ra quyết định.
+
+Slide 5: BÓC TÁCH CÁC LỚP - AI, MACHINE LEARNING & DEEP LEARNING
+Người 1: Các em hay nghe nói đến Machine Learning, Deep Learning. Nó khác gì AI? Nhìn vào hình “bánh bao nhiều lớp” ở Slide 5 nhé.
+Người 2: Nhìn rối quá thầy. Thầy dịch sang ngôn ngữ kế toán cho em dễ hiểu đi.
+Người 1: Ok, hình dung thế này:
+• Vòng tròn lớn nhất (AI): Là Ngành Tài chính - Kế toán nói chung. Nó bao trùm mọi công cụ thông minh giúp quản lý tiền bạc.
+• Vòng tròn ở giữa (Machine Learning - ML): Giống như “Excel nâng cao”.
+o Nó cho phép máy tính học từ dữ liệu lịch sử (ví dụ: dữ liệu bán hàng 3 năm qua) để dự báo doanh thu năm tới mà không cần em kẻ bảng tính thủ công.
+• Vòng tròn nhỏ nhất (Deep Learning - DL): Đây là “Kiểm toán viên cao cấp”.
+o Là kỹ thuật chuyên sâu nhất. Nó dùng “mạng nơ-ron” (mô phỏng não bộ) để xử lý những thứ phức tạp mà mắt thường khó thấy.
+Người 2: Vậy Deep Learning dùng để làm gì trong ngành mình thầy?
+Người 1: Nó chuyên trị những ca khó. Ví dụ: Phân tích chữ ký trên séc để phát hiện giả mạo, hay phát hiện các đường dây rửa tiền tinh vi dựa trên hành vi giao dịch bất thường. Machine Learning là công cụ phân tích phổ biến, còn Deep Learning là vũ khí hạng nặng để xử lý dữ liệu phi cấu trúc.
+
+Slide 6: PHÂN LOẠI AI - AI HẸP (ANI) VÀ AI TỔNG QUÁT (AGI)
+Người 1: Sang Slide 6. Chúng ta thường nghe AI sẽ thống trị thế giới, nhưng thực tế AI đang ở cấp độ nào?
+Người 2: Em thấy nó làm thơ, giải toán, thậm chí thi đỗ chứng chỉ CPA (Kế toán công chứng) rồi. Chắc nó “thành tinh” rồi thầy ạ.
+Người 1: Chưa đâu. Hãy phân biệt rõ hai loại:
+• AI Hẹp (ANI - Artificial Narrow Intelligence): Đây là loại chúng ta đang dùng. Nó cực giỏi nhưng chỉ trong một việc duy nhất.
+o Ví dụ: Phần mềm MISA hay SAP của các em. Nó tính lương, hạch toán cực nhanh, nhưng bảo nó “nếm” xem cafe ngon không hay “tán gẫu” chuyện tình cảm thì nó chịu. Nó giống như một Kế toán viên chuyên trách mảng Công nợ, chỉ biết công nợ thôi.
+• AI Tổng quát (AGI - Artificial General Intelligence): Đây là đích đến tương lai. Một AI có tư duy đa năng như con người.
+o Ví dụ: Một Giám đốc Tài chính (CFO) ảo hoàn hảo. Sáng thì phân tích báo cáo tài chính, trưa đi họp chiến lược, chiều xuống xưởng kiểm tra hàng tồn kho. Hiện tại thế giới chưa đạt được cấp độ này.
+Người 2: May quá, vậy là ghế CFO của em trong tương lai vẫn an toàn!
+
+Slide 7: LỊCH SỬ PHÁT TRIỂN - TỪ BÀN TÍNH ĐẾN CHATGPT
+Người 1: Slide 7. Nhìn lại lịch sử để thấy chúng ta đang ở đâu. Ngành kế toán đã trải qua những cú sốc công nghệ nào?
+Người 2: Chắc là từ lúc bỏ bàn tính gảy chuyển sang máy tính Casio ạ?
+Người 1: Đúng, nhưng có 2 cột mốc lớn hơn liên quan đến dữ liệu:
+• Thập niên 50 - 80 (Khởi đầu): Thời kỳ của Mainframe. Kế toán ghi chép sổ sách giấy tờ thủ công, máy tính chỉ hỗ trợ cộng trừ đơn giản.
+• Thập niên 90 - 2010 (Machine Learning sơ khai): Sự ra đời của Excel và các phần mềm ERP. Máy tính bắt đầu biết “lọc” dữ liệu, chạy Pivot Table. Deep Blue đánh bại vua cờ vua.
+• Hiện tại (Kỷ nguyên Generative AI): ChatGPT và Copilot ra đời. Nó không chỉ “tính” mà còn “tạo ra” nội dung.
+o Liên hệ: Ngày xưa em mất 3 ngày để viết giải trình chênh lệch thuế. Giờ em quăng số liệu vào AI, 30 giây sau nó viết xong bản giải trình cho em sửa. Đó là bước nhảy vọt.
+
+Slide 8: CÁC LĨNH VỰC CỦA AI - XỬ LÝ NGÔN NGỮ TỰ NHIÊN (NLP)
+Người 1: Đi vào cụ thể các “giác quan” của AI. Đầu tiên ở Slide 8 là NLP (Natural Language Processing).
+Người 2: Xử lý ngôn ngữ? Có phải là Google Dịch không thầy?
+Người 1: Đúng, nhưng với dân kế toán, NLP là “trợ lý đọc hiểu”.
+• Trước đây: Muốn kiểm tra 1.000 hợp đồng mua bán xem có điều khoản “phạt chậm thanh toán” hay không, em phải đọc toét mắt cả tuần.
+• Bây giờ: Dùng NLP, em “thả” 1.000 file PDF vào. AI sẽ đọc và trích xuất đúng điều khoản đó ra Excel trong 5 phút.
+• Ứng dụng khác: Chatbot trả lời tự động về Luật Thuế. Em hỏi “Thuế suất GTGT mặt hàng này là 8% hay 10%?”, nó tra luật và trả lời ngay, kèm trích dẫn thông tư.
+Người 2: Nghe như em sắp thất nghiệp mảng Pháp chế kế toán rồi…
+Người 1: Không thất nghiệp, mà em sẽ đỡ phải làm việc tay chân để tập trung vào việc tư vấn phương án thuế tối ưu.
+
+Slide 9: CÁC LĨNH VỰC CỦA AI - THỊ GIÁC MÁY TÍNH (COMPUTER VISION)
+Người 1: Slide 9. AI có “mắt” không? Đó là Computer Vision.
+Người 2: Cái này chắc dành cho mấy bác bảo vệ, camera an ninh thôi chứ kế toán bọn em ngồi phòng lạnh liên quan gì?
+Người 1: Sai lầm to! Đây là công cụ đắc lực cho Kiểm kê và Kiểm soát.
+• Kiểm kê hàng tồn kho: Thay vì em cầm giấy đi đếm từng thùng hàng trong kho rộng 5.000m2. Drone (Flycam) có gắn Camera AI sẽ bay 1 vòng, quét mã vạch/QR Code và đếm số lượng chính xác, tự động đối chiếu với sổ sách.
+• Xử lý hóa đơn đầu vào: Em chụp ảnh tờ hóa đơn đỏ bằng điện thoại. AI sẽ “nhìn” ảnh, tự bóc tách: Tên công ty, Mã số thuế, Số tiền, Ngày tháng… và điền vào phần mềm kế toán. Em không cần gõ lại một chữ nào.
+Người 2: À, cái này em thấy mấy app ngân hàng hay dùng để quét CCCD (eKYC) mở tài khoản nè.
+Người 1: Chính xác. Đó là Computer Vision đấy.
+
+Slide 10: ROBOTICS & TỰ ĐỘNG HÓA QUY TRÌNH (RPA)
+Người 1: Cuối cùng là Slide 10. Khi AI kết hợp với Tự động hóa. Trong ngành mình gọi là RPA (Robotic Process Automation).
+Người 2: Robot ngồi gõ máy tính thay em hả thầy?
+Người 1: Gần như thế. RPA là những “con robot phần mềm”.
+• Bài toán: Cuối tháng, em phải tải sao kê từ 5 ngân hàng về, mở Excel lên, so sánh với sổ cái (Bank Reconciliation). Việc này lặp đi lặp lại, rất chán và dễ sai.
+• Giải pháp: Em cài một con Bot RPA. Đến đúng giờ đó, nó tự đăng nhập ngân hàng, tự tải file, tự so sánh, tự tô màu dòng bị lệch. Sáng hôm sau em đến công ty chỉ việc xử lý những dòng bị lệch đó thôi.
+• Kết luận: Nó giúp kế toán thoát khỏi kiếp “thợ gõ” (Data Entry) để làm việc có giá trị hơn.
+Người 2: Wow, nghe xong 10 slide đầu em thấy mình không phải học để “đấu” lại AI, mà là học để “sai khiến” nó làm việc vặt cho mình.
+Người 1: Chuẩn! Tư duy của một người quản lý (Manager) là phải biết giao việc. Và AI là nhân viên cần mẫn nhất của em.
+
+Slide 11: BƯỚC NGOẶT - SỰ RA ĐỜI CỦA AI TẠO SINH (GENERATIVE AI)
+Người 1: Sang Slide 11. Đây là “ngôi sao” của chúng ta hôm nay: AI Tạo sinh.
+Người 2: Em nghe nói nó biết vẽ tranh, làm thơ. Nhưng kế toán thì cần gì thơ văn hả thầy?
+Người 1: Kế toán không cần thơ, nhưng cần “Tạo ra nội dung mới”.
+• Trước đây (AI truyền thống): Nó chỉ biết phân loại. Ví dụ: Nhìn vào khoản chi này và bảo “Đây là chi phí tiếp khách” (Đúng/Sai).
+• Bây giờ (AI tạo sinh): Nó biết “Sáng tạo”.
+o Ví dụ: Em đưa cho nó bảng cân đối kế toán năm 2024. Em bảo: “Hãy viết cho tôi một bản phân tích tình hình tài chính gửi Hội đồng quản trị, giọng văn chuyên nghiệp, nhấn mạnh vào rủi ro thanh khoản”.
+o 5 giây sau, nó viết xong một bản báo cáo dài 3 trang, văn phong y hệt một Chuyên viên phân tích cấp cao. Đó là sự khác biệt!
+Người 2: Ghê thật! Thế này thì em đỡ phải vò đầu bứt tai mỗi khi sếp bắt viết giải trình.
+
+Slide 12: PHÂN BIỆT AI TRUYỀN THỐNG (DISCRIMINATIVE) VÀ AI TẠO SINH (GENERATIVE)
+Người 1: Để hiểu rõ hơn, nhìn vào bảng so sánh ở Slide 12.
+Người 2: Nhìn giống như so sánh giữa Kiểm toán viên và Kế toán viên thế ạ?
+Người 1: So sánh rất hay!
+• AI Truyền thống (Discriminative AI): Giống như một Kiểm toán viên (Auditor) khó tính.
+o Nhiệm vụ: Soi xét.
+o Ví dụ: Nhìn vào một giao dịch và phán: “Đây là gian lận” hay “Đây là hợp lệ”. Nó phân biệt dựa trên dữ liệu cũ.
+• AI Tạo sinh (Generative AI): Giống như một Kế toán tổng hợp (General Accountant) đa năng.
+o Nhiệm vụ: Sản xuất.
+o Ví dụ: Nó có thể tự soạn thảo hợp đồng, tự thiết kế mẫu hóa đơn, tự viết email đòi nợ khách hàng khéo léo. Nó tạo ra cái chưa từng có dựa trên những gì đã học.
+Người 2: Vậy là một ông chuyên “bắt lỗi”, một ông chuyên “làm việc”. Kết hợp cả hai thì bộ phận kế toán vô đối rồi!
+
+Slide 13: MÔ HÌNH NGÔN NGỮ LỚN (LLM) - “BỘ NÃO” CỦA AI TẠO SINH
+Người 1: Slide 13. Điều gì giúp AI thông minh như vậy? Đó là LLM (Large Language Model).
+Người 2: Mô hình ngôn ngữ lớn? Có phải là nó biết nhiều thứ tiếng không thầy?
+Người 1: Đúng, nhưng “Lớn” ở đây là lượng dữ liệu nó đã học.
+• Hãy tưởng tượng có một sinh viên Kế toán siêu phàm. Cậu ấy đã đọc hết:
+o Toàn bộ Luật Kế toán, Luật Thuế, Thông tư 200.
+o Hàng triệu báo cáo tài chính của các công ty trên sàn chứng khoán.
+o Tất cả giáo trình ACCA, CPA, CFA trên thế giới.
+• LLM chính là cậu sinh viên đó. Nó nạp hết kiến thức nhân loại vào đầu để sẵn sàng trả lời em bất cứ lúc nào. ChatGPT chính là ứng dụng chạy trên nền cái “bộ não” khổng lồ đó.
+Người 2: Thảo nào em hỏi gì về hạch toán nó cũng biết. Nó học nhiều hơn em học cả đời!
+
+Slide 14: CƠ CHẾ HOẠT ĐỘNG - DỰ ĐOÁN TỪ TIẾP THEO (NEXT TOKEN PREDICTION)
+Người 1: Slide 14. Nhưng nó tư duy kiểu gì? Có giống con người không?
+Người 2: Chắc nó hiểu ý nghĩa sâu xa của Chuẩn mực kế toán ạ?
+Người 1: Không hẳn. Về bản chất, nó là một cỗ máy “Dự báo xác suất”.
+• Giống như khi em nhập liệu trên Excel, nó có tính năng Flash Fill tự gợi ý ô tiếp theo ấy.
+• Ví dụ: Khi em viết: “Nợ TK 111, Có TK…”, AI sẽ tính toán xác suất xem tài khoản nào hay đi cùng 111 nhất. Nó sẽ gợi ý ngay là “511” (Doanh thu) hoặc “112” (Rút tiền về), chứ không bao giờ gợi ý “Có TK… con mèo”.
+• Nó ghép từng từ (token) lại với nhau để tạo thành câu trả lời hợp lý nhất về mặt xác suất thống kê.
+Người 2: À, tức là nó giống như một “vua trắc nghiệm”, luôn đoán được đáp án đúng nhất dựa trên thói quen cũ.
+
+Slide 15: CÁC CÔNG CỤ AI TẠO SINH PHỔ BIẾN (THE BIG THREE)
+Người 1: Slide 15. Vậy chúng ta dùng “vũ khí” nào? Giới thiệu 3 cái tên lớn nhất hiện nay.
+Người 2: ChatGPT thì em biết rồi, còn ai nữa ạ?
+Người 1: ChatGPT (OpenAI): Đây là “Kế toán trưởng” phổ biến nhất. Giỏi viết lách, soạn thảo văn bản, lên kế hoạch.
+1. Gemini (Google): Đây là “Chuyên viên phân tích dữ liệu”. Nó kết nối trực tiếp với Google, nên dữ liệu rất cập nhật (real-time). Em hỏi tỷ giá USD hôm nay, nó trả lời chính xác, còn ChatGPT bản thường có thể chỉ biết dữ liệu cũ.
+2. Microsoft Copilot: Đây là “Trợ lý văn phòng” đắc lực nhất cho dân kế toán. Vì sao?
+o Vì nó tích hợp thẳng vào Excel, Word, PowerPoint. Em đang làm bảng lương trên Excel, gõ lệnh gọi Copilot ra, nó tự vẽ biểu đồ, tự tính thuế TNCN cho em luôn.
+Người 2: Copilot nghe “chiến” nhất thầy nhỉ! Đúng là Microsoft hiểu nỗi khổ của dân văn phòng bọn em.
+Người 1: Chính xác. Đây là bộ 3 công cụ mà bất kỳ sinh viên AC24M nào ra trường cũng phải biết dùng nếu không muốn bị tụt hậu.
+
+Slide 16: ÔN TẬP NHANH - CẤU TRÚC “BỘ MÁY” TÀI CHÍNH SỐ
+Người 1: Sang Slide 16. Trước khi dùng AI để soạn thảo văn bản, chúng ta cần ôn lại cấu trúc của nó một chút để không bị “loạn”.
+Người 2: Vẫn là 3 vòng tròn lồng vào nhau. Em nhớ mang máng là AI, Machine Learning với cái gì “Sâu” ấy ạ?
+Người 1: Đúng rồi. Hãy nhìn nó dưới lăng kính của dân tài chính:
+• Vòng tròn lớn nhất (AI): Là toàn bộ Hệ sinh thái Tài chính thông minh. Mục tiêu là tạo ra các hệ thống tự động hóa công việc của con người.
+• Vòng tròn ở giữa (Machine Learning - ML): Giống như Phần mềm Kế toán (Accounting Software).
+o Nó học từ dữ liệu quá khứ. Ví dụ: Em nhập liệu “Tiền điện” vào TK 642 bảy lần, lần thứ tám em vừa gõ “Tiền…” là nó tự định khoản Nợ 642 luôn. Đó là Học máy cơ bản.
+• Vòng tròn nhỏ nhất (Deep Learning - DL): Đây là Thám tử Kiểm toán (Forensic Auditor).
+o Nó dùng mạng nơ-ron để xử lý những thứ “phi cấu trúc” mà phần mềm thường chịu chết.
+o Ví dụ: Phân tích chữ ký trên séc xem có bị giả mạo không, hay nghe trộm các cuộc gọi (dữ liệu âm thanh) để phát hiện giao dịch nội gián.
+Người 2: À, vậy Deep Learning là chuyên trị những ca “khó nhằn” mà Excel bó tay đúng không thầy?
+Người 1: Chính xác!
+
+Slide 17: CÁC “GIÁC QUAN” SỐ - MẮT THẦN VÀ TAI THÍNH CỦA KẾ TOÁN
+Người 1: AI không chỉ biết tính toán, nó còn có các “giác quan” ở Slide 17.
+Người 2: Kế toán thì cần giác quan gì thầy? Em tưởng chỉ cần mắt tinh để soi số liệu thôi chứ?
+Người 1: AI cũng thế, nó có 2 giác quan cực quan trọng với nghề mình:
+• Xử lý Ngôn ngữ Tự nhiên (NLP): Khả năng “Đọc hiểu và Nghe”.
+o Ứng dụng: Em cóp nguyên một văn bản Luật Thuế dài 50 trang vào. Em hỏi: “Mặt hàng này chịu thuế bao nhiêu?”. AI sẽ đọc hiểu luật và trả lời em ngay lập tức. Hoặc Chatbot trả lời khách hàng về thủ tục hoàn thuế.
+• Thị giác Máy tính (Computer Vision): Khả năng “Nhìn”.
+o Ứng dụng: Đây chính là công nghệ OCR (Quét hóa đơn). Em cầm tờ hóa đơn đỏ, chụp ảnh một cái. AI sẽ “nhìn” bức ảnh, tự bóc tách: Mã số thuế, Tên công ty, Số tiền… và đẩy thẳng vào phần mềm MISA. Em không cần gõ tay nữa.
+Người 2: Ôi cái OCR này cứu đời em! Mỗi lần nhập cả chồng hóa đơn đầu vào là em muốn xỉu.
+
+Slide 18: TÁC ĐỘNG CỦA AI - KHI CÔNG NGHỆ “ĐỘ” LẠI NGÀNH TÀI CHÍNH
+Người 1: Có các giác quan đó rồi, AI đang làm thay đổi thế giới thế nào? Xem Slide 18.
+Người 2: Em thấy có Y tế, Giao thông… thế còn Tài chính của mình đâu ạ?
+Người 1: Nhìn vào mục Tài chính và Kinh tế nhé:
+• Tài chính: Phát hiện gian lận (Fraud Detection).
+o AI giống như một hệ thống Camera giám sát 24/7. Nó quét qua hàng triệu giao dịch, thấy giao dịch nào chuyển tiền lúc 2 giờ sáng sang tài khoản lạ là nó “thổi còi” (flag) ngay để em kiểm tra rủi ro.
+• Sản xuất & Kinh doanh: Robot và AI giúp tối ưu hóa.
+o Ví dụ: AI dự báo tháng sau doanh số bán hàng tăng 20%, nó sẽ tự động báo bộ phận Tài chính chuẩn bị dòng tiền nhập hàng.
+• Y tế: Chẩn đoán bệnh chính xác hơn. Giống như Kiểm toán viên soi ra lỗi sai trọng yếu trong báo cáo tài chính vậy.
+Người 2: Tức là nó giúp mình quản trị rủi ro tốt hơn, đỡ bị thất thoát tiền bạc thầy nhỉ.
+
+Slide 19: VĂN BẢN & GEN AI - “TRỢ LÝ PHÁP CHẾ” SIÊU TỐC
+Người 1: Đây là slide “đáng tiền” nhất cho sinh viên Kế toán: Slide 19 - Xử lý văn bản.
+Người 2: Môn Nguyên lý kế toán với Luật kinh tế giáo trình dày cộp, em nhìn là buồn ngủ rồi thầy ơi.
+Người 1: Đừng lo, GenAI (AI tạo sinh) sẽ giải quyết vấn đề đó. Nó tự động hóa tới 80% việc đọc tài liệu.
+• Tóm tắt (Summarization):
+o Tình huống: Bộ Tài chính vừa ra một Thông tư mới dài 50 trang về Hóa đơn điện tử. Em lười đọc?
+o Giải pháp: Quăng file PDF vào AI, bảo nó: “Tóm tắt 5 điểm thay đổi chính ảnh hưởng đến doanh nghiệp của tôi”. 2 phút sau có ngay bản tóm tắt để báo cáo sếp.
+• Hỏi đáp (Q&A):
+o Tình huống: Em đang làm báo cáo tài chính, quên mất quy định về khấu hao TSCĐ.
+o Giải pháp: Hỏi AI: “Thời gian khấu hao tối thiểu của ô tô dưới 9 chỗ là bao nhiêu năm?”. Nó tra luật và trả lời ngay.
+• Dịch thuật: Dịch Chuẩn mực báo cáo tài chính quốc tế (IFRS) từ tiếng Anh sang tiếng Việt cực mượt.
+Người 2: Nghe như em có riêng một thư ký Luật sư bên cạnh vậy!
+
+Slide 20: CÔNG CỤ CỤ THỂ - CHATGPT VÀ NOTEBOOKLM
+Người 1: Vậy dùng công cụ nào để làm “thư ký”? Slide 20 giới thiệu 2 cái tên: ChatGPT và NotebookLM.
+Người 2: Hai cái này khác gì nhau ạ? Dùng cái nào cũng được hả thầy?
+Người 1: Khác nhiều đấy! Dân kế toán phải cực kỳ cẩn trọng chỗ này:
+• ChatGPT (OpenAI): Nó giống như một Trợ lý đa năng.
+o Ưu điểm: Sáng tạo, viết email đòi nợ khéo léo, viết giải trình hay.
+o Nhược điểm: Hay “chém gió” (Ảo giác). Em hỏi về một Thông tư không tồn tại, có khi nó cũng bịa ra số hiệu Thông tư như thật. Dùng để viết văn thì được, dùng để tra luật thì coi chừng sai!
+• NotebookLM (Google): Nó giống như Thư viện số Chính thống.
+o Ưu điểm: Không “ảo giác” (No Hallucination).
+o Cách dùng: Em nạp đúng file PDF Luật Thuế vào. Nó chỉ trả lời dựa trên file đó và luôn trích dẫn nguồn (Điều mấy, Khoản mấy).
+o Bảo mật: Dữ liệu báo cáo tài chính của công ty em nạp vào đây sẽ không bị lộ ra ngoài.
+Người 2: À, em hiểu rồi. Muốn viết email xin sếp tăng lương thì dùng ChatGPT cho văn hay chữ tốt. Còn muốn tra cứu quy định để làm sổ sách thì bắt buộc phải dùng NotebookLM cho chính xác từng con số.
+Người 1: Rất thông minh! Sự chính xác là đạo đức nghề nghiệp của kế toán, nên hãy chọn công cụ cho đúng.
+
+Slide 21: HÌNH ẢNH HÓA - BIẾN SỐ LIỆU KHÔ KHAN THÀNH “NGHỆ THUẬT”
+Người 1: Sang Slide 21. Chúng ta đã biết AI viết lách giỏi, giờ xem nó “vẽ” thế nào.
+Người 2: Kế toán thì cần gì vẽ vời hả thầy? Em tưởng chỉ cần bảng Excel chi chít số là sếp sợ rồi?
+Người 1: Sai lầm! “Một bức ảnh hơn ngàn lời nói”.
+• Vấn đề: Khi em trình bày Báo cáo thường niên (Annual Report) cho Cổ đông, nếu em đưa ra một bảng tính Excel 50 dòng, họ sẽ ngủ gật ngay.
+• Giải pháp GenAI: Em dùng DALL-E 3 hoặc Midjourney.
+o Em gõ lệnh: “Vẽ một biểu đồ Infographic mô tả sự tăng trưởng lợi nhuận quý 3 như một ngọn núi vàng đang vươn lên, phong cách hiện đại, chuyên nghiệp”.
+o Bùm! 30 giây sau em có một hình ảnh minh họa cực đẹp để chèn vào slide thuyết trình. Nó biến báo cáo tài chính khô khan thành một câu chuyện hấp dẫn.
+Người 2: Ồ, thế này thì bài thuyết trình của em “ăn đứt” mấy bạn chỉ biết copy-paste từ Excel sang PowerPoint rồi.
+
+Slide 22: VIDEO - BÁO CÁO TÀI CHÍNH PHONG CÁCH “HOLLYWOOD”
+Người 1: Slide 22. Không chỉ vẽ, AI còn làm được cả Video.
+Người 2: Em làm kế toán chứ có phải TikToker đâu mà cần làm video thầy?
+Người 1: Hãy nghĩ rộng ra.
+• Đào tạo nội bộ: Em là Kế toán trưởng, em muốn hướng dẫn nhân viên mới về “Quy trình thanh toán công tác phí”. Thay vì viết quy trình dài 10 trang giấy, em dùng AI (như Sora hay Google Veo) tạo một video hoạt hình mô phỏng các bước. Nhân viên xem 1 lần là hiểu ngay.
+• Quan hệ nhà đầu tư (IR): Tạo một video ngắn 60 giây tóm tắt kết quả kinh doanh năm để chiếu trong Đại hội đồng cổ đông. Ấn tượng và chuyên nghiệp hơn nhiều so với việc đứng đọc diễn văn.
+Người 2: Công nhận, xem video dễ vào hơn đọc quy trình. Sếp mà thấy em làm được cái này chắc choáng luôn.
+
+Slide 23: TƯƠNG LAI VIỆC LÀM - “THỢ GÕ” HAY “CHIẾN LƯỢC GIA”?
+Người 1: Slide 23. Câu hỏi triệu đô: Liệu AI có cướp mất bát cơm của dân kế toán không?.
+Người 2: Em lo lắm thầy. Nó tự động hóa hết thì em ra trường thất nghiệp à?
+Người 1: Nhìn vào slide: Nó tự động hóa 45% công việc, nhưng là việc gì?.
+• Việc bị thay thế (Thợ gõ): Nhập liệu hóa đơn, đối chiếu công nợ, tính lương cơ bản. Đây là những việc “chân tay”, lặp lại và nhàm chán.
+• Việc còn lại (Chiến lược gia):
+o Tư duy phản biện: Máy báo chi phí tăng, nhưng nguyên nhân là do đầu tư mở rộng hay do lãng phí? Em mới là người tìm ra nguyên nhân.
+o Đồng cảm & Giao tiếp: Khi khách hàng phàn nàn về công nợ, hay giải trình với cơ quan Thuế, cần sự khéo léo của con người mà máy không làm được.
+• Kết luận: Em sẽ chuyển từ người “Ghi chép lịch sử” sang người “Tư vấn tương lai”.
+
+Slide 24: CƠ HỘI HỢP TÁC - MÔ HÌNH KẾ TOÁN “HYBRID”
+Người 1: Vậy cụ thể chúng ta hợp tác với nó thế nào? Slide 24 đưa ra mô hình “Hybrid” (Lai).
+Người 2: Áp dụng vào phòng kế toán mình thì sao thầy?
+Người 1: Hãy tưởng tượng quy trình Đóng sổ cuối tháng (Month-End Close):
+• AI (Thợ phụ - Chatbot/Bot): Nó sẽ làm 80% việc.
+o Tự động tải sao kê ngân hàng 24/7.
+o Tự động khớp lệnh (matching) hóa đơn với phiếu nhập kho.
+o Tự động trả lời các câu hỏi của nhân viên kinh doanh như: “Khách hàng A còn nợ bao nhiêu?”.
+• Em (Thợ cả - Kế toán tổng hợp): Em chỉ làm 20% việc khó.
+o Xử lý các khoản chênh lệch mà máy không khớp được.
+o Phân tích biến động và lập báo cáo quản trị gửi sếp.
+Người 2: Thế thì sướng quá! Em thoát được cảnh ở lại công ty đến 9 giờ tối những ngày cuối tháng rồi.
+
+Slide 25: KẾT QUẢ THỰC TẾ - KHI CON SỐ BIẾT NÓI
+Người 1: Slide 25. Hiệu quả thực tế là gì? Dân tài chính nói chuyện phải có số liệu chứng minh.
+Người 2: Em nhìn bảng số liệu này thấy “khủng” thật.
+Người 1: Phân tích kỹ nhé:
+• Thời gian phản hồi giảm 90%: Tức là trước đây sếp hỏi “Doanh thu hôm nay bao nhiêu?” em mất 5 phút mở phần mềm cộng trừ. Giờ hỏi AI, 30 giây có kết quả.
+• Tỷ lệ giải quyết tự động tăng 200%: Nghĩa là khối lượng công việc tay chân giảm đi 2/3.
+• Sự hài lòng tăng 21%: Các phòng ban khác (Sale, Marketing) hài lòng vì được Kế toán cung cấp số liệu nhanh, hỗ trợ ra quyết định kịp thời chứ không phải chờ đợi “hành chính” như xưa.
+Người 2: Vậy là AI không chỉ giúp mình nhàn hơn mà còn giúp mình có “uy” hơn trong công ty thầy nhỉ!
+Người 1: Chính xác! Đó là giá trị của một Kế toán viên thời đại 4.0.
+
+Slide 26: CON DAO HAI LƯỠI - RỦI RO KHI GIAO TIỀN CHO MÁY
+Người 1: Sang Slide 26. AI mạnh mẽ là thế, nhưng trong ngành Tài chính - Kế toán, sai một ly là đi… cả một gia tài (hoặc đi tù). Tiêu đề slide cảnh báo: “Con dao hai lưỡi”.
+Người 2: Nghe căng thẳng thế thầy. Cụ thể là nguy hiểm gì ạ?
+Người 1: Có 3 cái “bẫy” chết người:
+1. Quyền riêng tư (Privacy): Rủi ro lộ bí mật tài chính.
+o Ví dụ: Em lỡ tay copy bảng lương toàn công ty hoặc bí mật kinh doanh vào ChatGPT để nhờ nó phân tích. Thế là thông tin đó bị lưu lên máy chủ nước ngoài. Nếu bị hack, đối thủ cạnh tranh sẽ biết hết chiến lược giá của công ty em.
+2. Đạo đức & Thiên vị (Ethics & Bias): AI có thể phân biệt đối xử.
+o Ví dụ: Ngân hàng dùng AI để chấm điểm tín dụng (Credit Scoring). Nếu dữ liệu đầu vào bị lệch, AI có thể tự động từ chối cho vay đối với phụ nữ hoặc người ở vùng nông thôn một cách vô lý, dù họ có đủ khả năng trả nợ.
+3. Rủi ro & An ninh (Risks & Security): Tấn công mạng.
+o Ví dụ: Hacker dùng AI để tạo ra giọng nói giả mạo (Deepvoice) của Giám đốc, gọi điện cho Kế toán trưởng yêu cầu chuyển gấp 10 tỷ vào tài khoản lạ. Em mà không tỉnh táo là mất trắng!
+Người 2: Ôi, cái vụ giả giọng sếp em nghe nhiều rồi. Đúng là công nghệ càng cao thì lừa đảo càng tinh vi.
+
+Slide 27: XÂY DỰNG TƯƠNG LAI CÓ TRÁCH NHIỆM - “KÉT SẮT” BẢO VỆ
+Người 1: Biết nguy hiểm rồi thì phải có đồ bảo hộ. Slide 27 là chiếc “Két sắt” bảo vệ chúng ta.
+Người 2: Mình phải làm gì để không bị mất tiền oan hả thầy?
+Người 1: Nhìn vào 3 lớp khóa bảo vệ:
+1. Quyền riêng tư: Phải dùng Mã hóa dữ liệu và Xác thực hai yếu tố (2FA).
+o Liên hệ: Giống như Token/Smart OTP khi chuyển tiền vậy. Dù hacker có mật khẩu của em nhưng không có mã OTP thì cũng không thể rút tiền được.
+2. Đạo đức: Phải có quy trình “Kiểm toán thuật toán” (Audit AI).
+o Liên hệ: Trước khi tin vào kết quả dự báo của AI, em phải kiểm tra lại (Test) xem cách nó tính toán có tuân thủ Chuẩn mực kế toán (VAS/IFRS) hay không. Đừng tin mù quáng.
+3. Rủi ro: Luôn Sao lưu dữ liệu (Backup).
+o Liên hệ: Hệ thống AI có thể sập bất cứ lúc nào. Luôn phải có dữ liệu offline dự phòng để doanh nghiệp vẫn hoạt động được khi mất mạng.
+
+Slide 28: 4 NGUYÊN TẮC VÀNG - “ĐẠO ĐỨC NGHỀ NGHIỆP” THỜI AI
+Người 1: Sang Slide 28. Để hành nghề an toàn, các em phải thuộc lòng 4 Nguyên tắc Vàng này.
+Người 2: Em đọc nhé:
+1. Giám sát của con người là tiên quyết.
+2. Tuân thủ tuyệt đối quy định.
+3. Đào tạo nhân viên.
+4. AI là công cụ, không phải sự thay thế.
+Người 1: Thầy nhấn mạnh nguyên tắc số 1 và 4, sống còn với nghề Kế toán:
+• Nguyên tắc 1 (Human in the loop): AI có thể soạn thảo Báo cáo tài chính, nhưng Em mới là người ký tên và chịu trách nhiệm trước pháp luật.
+o Nếu báo cáo sai, em không thể đổ tại “Do con AI nó làm sai” khi giải trình với Thuế được đâu.
+• Nguyên tắc 4: AI giống như phần mềm Excel hay SAP vậy.
+o Phần mềm xịn giúp em tính nhanh, nhưng nó không thay em đi tù được. Em vẫn là người quyết định cuối cùng về các bút toán nhạy cảm.
+
+Slide 29: KẾT LUẬN - ĐỒNG MINH CHIẾN LƯỢC
+Người 1: Chúng ta đến đích rồi. Slide 29. Thông điệp cuối cùng: “AI là Đồng minh, Con người vẫn là Trung tâm”.
+Người 2: Vậy là em yên tâm không bị AI cướp việc, mà còn được nó làm “trợ lý” cho mình phải không thầy?
+Người 1: Chính xác. Cuộc chơi này là sự cộng hưởng:
+• Máy (AI): Có sức mạnh xử lý Big Data, không biết mệt mỏi, làm việc 24/7.
+• Người (Em): Có Đạo đức nghề nghiệp, Tư duy chiến lược và Sự thấu cảm.
+o Máy có thể tính ra con số lợi nhuận, nhưng chỉ có em mới biết con số đó có ý nghĩa gì với chiến lược phát triển bền vững của công ty.
+Người 1: Chúng ta đã hoàn thành Module 6. Từ nay, đừng nhìn AI như kẻ thù, hãy coi nó là một “Cộng sự số” (Digital Coworker) đắc lực nhất.
+Người 2: Cảm ơn thầy! Giờ em đã hiểu học AI không phải để làm IT, mà để trở thành một Kế toán trưởng thời đại số.
+Người 1: Về nhà, hãy thử dùng ChatGPT để soạn một email gửi khách hàng.
+• Dùng NotebookLM để tra cứu Luật Thuế mới nhất.
+• Và nhớ: Giữ cái đầu lạnh của người làm tài chính. Tận dụng công nghệ nhưng không lệ thuộc vào nó.
+Cả lớp: Chúc các CFO tương lai của AC24M thành công rực rỡ!
