@@ -1,0 +1,55 @@
+﻿
+Slide 1: HÀNH TRÌNH SÁNG TẠO NỘI DUNG SỐ - TỪ Ý TƯỞNG ĐẾN SẢN PHẨM
+Người 1: Chào các kế toán viên tương lai của lớp AC24M! Hôm nay chúng ta bước vào Module 3 - “Hành trình Sáng tạo Nội dung số”. Thông điệp của bài này rất rõ ràng: Khóa học không chỉ dạy công cụ, mà trang bị tư duy của một nhà kiến tạo chuyên nghiệp.
+Người 2: Thầy ơi, em học Kế toán, suốt ngày chỉ đối mặt với Chứng từ, Thuế và Excel. “Sáng tạo nội dung” nghe có vẻ nghệ sĩ quá, có thực sự cần thiết cho nghề của em không ạ?
+Người 1: Rất cần thiết là đằng khác. Khi em làm xong một Báo cáo tài chính, nếu em chỉ quăng cho Giám đốc một file Excel khô khan, sếp em có hiểu ngay được không? Hay em cần biến những con số đó thành biểu đồ, video giải thích dòng tiền để sếp dễ ra quyết định? Trong kỷ nguyên số, Kế toán không chỉ là người “ghi chép” (Bookkeeper) mà là người “tư vấn tài chính”. Nội dung số chính là cách em “bán” giá trị chuyên môn của mình.
+Slide 2: NỀN MÓNG VỮNG CHẮC - MỤC TIÊU & ĐỐI TƯỢNG
+Người 1: Sang Slide 2. Mọi tòa nhà đều cần móng. Chúng ta bắt đầu với hai câu hỏi: “Tại sao phải làm nội dung này” (Mục tiêu) và “Cho ai” (Đối tượng). Đừng làm nội dung theo cảm hứng, hãy đặt mục tiêu SMART.
+Người 2: Áp dụng SMART vào kế toán thì như nào hả thầy? Chẳng lẽ mục tiêu là “Đếm tiền nhanh hơn”?
+Người 1:  Không. Ví dụ em muốn làm Freelancer về dịch vụ báo cáo thuế. Đừng đặt mục tiêu chung chung là “kiếm khách”. Hãy đặt là: “Tìm kiếm 5 khách hàng doanh nghiệp nhỏ (Specific) trong Quý 1 tới (Time-bound) thông qua kênh LinkedIn”. Đó là SMART. Tiếp theo, em phải vẽ ra Chân dung người dùng (User Persona). Khách hàng của em là ai?
+1. Nhân khẩu học: Chủ doanh nghiệp SMEs.
+2. Tâm lý học: Họ sợ bị phạt thuế, thích sự an toàn và minh bạch.
+3. Thói quen số: Họ bận rộn, thích xem tin tức ngắn gọn trên Zalo/LinkedIn hơn là đọc văn bản dài.
+Người 2: Em hiểu rồi. Nếu khách là ông chủ bận rộn mà em viết bài phân tích luật dài 10 trang là họ bỏ qua ngay. Phải làm cái gì đó ngắn gọn, đánh trúng nỗi đau “sợ bị phạt”.
+Slide 3: LẬP BẢN ĐỒ HÀNH ĐỘNG - KẾ HOẠCH & ĐỊNH DẠNG
+Người 1: Khi đã biết đích đến, ta cần bản đồ. Slide 3 giới thiệu Phân cấp Kế hoạch Nội dung. Nó giống như việc em lên kế hoạch nộp tờ khai thuế vậy, phải có tính thời điểm. Đỉnh tháp là Kế hoạch Dài hạn (Năm), Đáy tháp là Ngắn hạn (Ngày).
+Người 2: Thế còn phương tiện truyền tải? Em nên chọn Blog hay Video?
+Người 1: Tùy vào mục tiêu của em. • Bài viết (Blog): Phù hợp để phân tích sâu về thay đổi trong Thông tư, Nghị định mới. Giúp em tối ưu SEO và thể hiện chuyên môn sâu. • Infographic: Cực kỳ hợp với Kế toán. Ví dụ: “Lịch nộp thuế năm 2024” gói gọn trong 1 tấm ảnh. Trực quan, dễ chia sẻ. • Video/Reels: Dùng để giải đáp nhanh các thắc mắc như “Chi phí này có được trừ không?”. Tương tác rất cao.
+Slide 4: XƯỞNG CHẾ TÁC - GIÁ TRỊ & CÔNG CỤ
+Người 1: Vào “Xưởng chế tác” ở Slide 4. Nguyên tắc cốt lõi: Nội dung phải có Giá trị thực sự. Với nghề Kế toán, giá trị lớn nhất em mang lại là “Cung cấp giải pháp”.
+Người 2: Em thấy ở đây có liệt kê nhiều công cụ: Canva, CapCut, Audacity…. Dân tài chính bọn em có cần học hết đống này không thầy?
+Người 1: Em không cần thành chuyên gia đồ họa, nhưng em phải biết dùng cơ bản. • Canva: Giúp em biến Báo cáo tài chính chán ngắt thành Slide đẹp mắt để trình bày trước cổ đông. • CapCut: Giúp em cắt ghép video quay màn hình hướng dẫn sử dụng phần mềm MISA hay HTKK. Đó là những kỹ năng bổ trợ giúp em vượt trội hơn những kế toán viên truyền thống chỉ biết mỗi Excel.
+Slide 5: TỐI ƯU NGUỒN LỰC - QUY TRÌNH AUDIT (RÀ SOÁT)
+Người 1: Slide 5 nói về Tối ưu nguồn lực. Thông điệp là: “Đừng sáng tạo lại từ đầu”. Trong Kế toán có thuật ngữ “Audit” (Kiểm toán/Rà soát). Chúng ta cũng áp dụng y hệt cho nội dung. Quy trình 3 bước: Thu thập - Phân loại - Đánh giá.
+Người 2: Bước “Đánh giá” dùng đèn giao thông kia có ý nghĩa gì ạ?
+Người 1: Đây là cách phân loại độ cập nhật của nội dung: • Đèn Xanh (Evergreen): Những kiến thức nền tảng như “Nguyên lý kế toán kép Nợ/Có”. 100 năm nữa nó vẫn đúng. Giữ lại dùng tiếp. • Đèn Vàng (Cần cập nhật): Ví dụ “Mức giảm trừ gia cảnh”. Số liệu này thay đổi theo năm, cần sửa lại con số rồi mới dùng. • Đèn Đỏ (Lỗi thời): Các Thông tư đã hết hiệu lực. Ví dụ hướng dẫn quyết toán thuế theo quy định cũ. Phải loại bỏ ngay, nếu không sẽ tư vấn sai luật cho khách.
+Người 2: Hay quá! Em có đống bài tập lớn năm ngoái, để em về rà soát lại xem cái nào “Xanh” thì em đăng lên LinkedIn làm Portfolio ngay.
+Slide 6: BẢN VẼ CỦA KIẾN TRÚC SƯ - THIẾT KẾ KHUNG
+Người 1: Sau khi gom đủ nguyên liệu, ta cần bản vẽ thiết kế ở Slide 6. Kế toán làm việc phải có quy trình, viết nội dung cũng thế. Chúng ta có 2 loại khung: Dàn ý (Outline) và Storyboard.
+Người 2: Dàn ý thì em biết, giống mục lục báo cáo. Còn Storyboard là gì ạ?
+Người 1: Storyboard là “Kịch bản phân cảnh”, dùng cho video. Ví dụ em muốn làm video “Hướng dẫn hoàn thuế TNCN”. Em không thể cứ bật máy lên rồi nói lung tung. Em phải vẽ ra các khung: • Khung 1: Quay màn hình đăng nhập eTax. • Khung 2: Cảnh em chỉ chuột vào mục “Kê khai”. • Khung 3: Hiển thị dòng chữ lưu ý quan trọng. Có Storyboard thì video mới mạch lạc, giống như em lập bảng cân đối phát sinh trước khi lên Báo cáo tài chính vậy.
+Slide 7: PHÒNG DỰNG - BIÊN TẬP & CHUYỂN ĐỔI
+Người 1: Có bản vẽ rồi, mời em vào “Phòng Dựng” ở Slide 7. Ở đây chúng ta thực hiện 3 thao tác: Chuẩn hóa, Cập nhật và Chuyển đổi.
+Người 2: “Chuyển đổi” (Repurpose) nghe lạ lạ. Thầy ví dụ cho em được không?
+Người 1: Ví dụ em có một bài tiểu luận môn Kiểm toán dài 20 trang (đây là dạng Bài viết). Ít ai kiên nhẫn đọc hết 20 trang đó trên mạng xã hội. Em hãy dùng kỹ năng “Chuyển đổi”: Tóm tắt 5 ý chính của bài đó, đưa vào 5 tấm ảnh để tạo thành một bài dạng Slide (Carousel) đăng lên Facebook. Từ một bài văn bản -> biến thành Slide ảnh. Đó chính là Repurpose.
+Người 2: À, tức là “bình cũ rượu mới”. Một công đôi việc, tiết kiệm thời gian hẳn.
+Slide 8: VÙNG PHÁP LÝ - RỦI RO BẢN QUYỀN
+Người 1: Nhưng hãy cẩn thận! Slide 8 cảnh báo về “Vùng Pháp Lý”. Kế toán là nghề của sự tuân thủ (Compliance). Vi phạm bản quyền cũng tệ như vi phạm luật thuế vậy.
+Người 2: Những cái gì dễ bị “tuýt còi” nhất hả thầy? Em hay lên Google lấy ảnh minh họa lắm.
+Người 1: Đó là sai lầm chết người! • Hình ảnh: Lấy ảnh trên Google Images hay Pinterest rất dễ dính bản quyền. • Âm nhạc: Video hướng dẫn thuế mà chèn nhạc Sơn Tùng hay nhạc US-UK là bị tắt tiếng ngay. • Logo: Đừng tự ý lấy logo của các công ty Big 4 (như PwC, Deloitte) gắn vào bài mình để gây hiểu lầm là đối tác của họ.
+Slide 9: TẤM BẢN ĐỒ GIẤY PHÉP - TÌM NGUỒN AN TOÀN
+Người 1: Vậy làm sao để tìm “chứng từ hợp lệ” cho nội dung? Slide 9 là tấm bản đồ cho em. Chúng ta có các loại giấy phép: Bản quyền đầy đủ, Creative Commons (CC) và Miền công cộng.
+Người 2: Em muốn tìm ảnh và nhạc miễn phí mà không lo bị kiện thì vào đâu ạ?
+Người 1: Hãy tìm đến các “Nguồn tài nguyên an toàn” (Safe Harbors). • Về Hình ảnh: Vào Unsplash, Pexels, Pixabay. Ảnh ở đây đẹp và cho phép dùng miễn phí. • Về Âm thanh: Vào YouTube Audio Library. Kho nhạc này an toàn tuyệt đối cho video. Nhớ nhé, dùng nguồn sạch giống như việc em dùng hóa đơn đỏ hợp lệ vậy, ngủ ngon không lo nghĩ.
+Slide 10: QUY TẮC ỨNG XỬ - GHI NGUỒN TRAS
+Người 1: Khi dùng đồ của người khác, dù miễn phí, em vẫn phải tuân thủ quy tắc ứng xử. Slide 10 giới thiệu công thức TRAS.
+Người 2: TRAS là viết tắt của gì ạ? Nghe như một chuẩn mực kế toán ấy.
+Người 1: Gần như vậy. Đó là quy tắc trích dẫn nguồn: • T (Title): Tên tác phẩm. • R (Creator): Tên tác giả. • A (Attribution): Link nguồn gốc. • S (Source/License): Loại giấy phép. Khi em trích dẫn số liệu từ Tổng cục Thống kê hay bài viết của chuyên gia, hãy ghi nguồn đầy đủ. Đó là sự liêm chính nghề nghiệp.
+Slide 11: TIÊU CHÍ ĐÁNH GIÁ - BẢN THIẾT KẾ THÀNH CÔNG
+Người 1: Cuối cùng, để qua môn và quan trọng hơn là để sản phẩm của em dùng được trong thực tế, hãy nhìn vào tiêu chí đánh giá ở Slide 11. Thầy không chấm điểm kỹ năng Code, mà chấm tư duy chiến lược.
+Người 2: Cụ thể là thầy soi những gì ạ?
+Người 1: Có 3 yếu tố:
+1. Tư duy Chiến lược (40%): Website/Sản phẩm của em có đúng User Persona không? Giao diện cho giám đốc tài chính thì phải chuyên nghiệp, không được lòe loẹt.
+2. Kỹ năng AI (30%): Thầy sẽ xem câu lệnh (Prompt) em ra lệnh cho AI. Em có biết cách mô tả chi tiết để AI tạo ra đúng cái em cần không?.
+3. Tuân thủ & Tích hợp (30%): Quan trọng nhất! Em có ghi nguồn TRAS ở chân trang không? Có vi phạm bản quyền không?.
+Người 1: Hành trình sáng tạo của các em bắt đầu ngay bây giờ. Hãy biến những con số khô khan thành những câu chuyện tài chính đầy sức thuyết phục nhé!.

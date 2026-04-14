@@ -72,7 +72,7 @@ const sessionsData = [
         id: 3,
         title: "Module 3: Sáng tạo nội dung số",
         description: "Nguyên tắc và công cụ để sáng tạo và thiết kế nội dung trên nền tảng số.",
-        totalLessons: 3,
+        totalLessons: 5,
         quiz: "MD3.csv",
         lessons: [
             {
@@ -100,6 +100,29 @@ const sessionsData = [
                 description: "Bản quyền và nguyên tắc cơ bản.",
                 video: "Module_1-6/Video/Module_3/Phần 3_Digital_Rights_and_Programming/index.html",
                 docs: [],
+                steps: []
+            },
+            {
+                id: 34,
+                sessionId: 3,
+                title: "Phần 4: Shorter",
+                description: "Sử dụng Shorter để tạo video ngắn.",
+                video: "Module_1-6/Video/Module_3/Phần 4_Shorter/index.html",
+                docs: [
+                    { name: "Kịch bản", file: "Module_1-6/Video/Module_3/Phần 4_Shorter/Kịch bản script_Module3_AC24M_v2.txt" }
+                ],
+                steps: []
+            },
+            {
+                id: 35,
+                sessionId: 3,
+                title: "Phần 5: NotebookLM",
+                description: "Công cụ sáng tạo nội dung NotebookLM.",
+                video: "Module_1-6/Video/Module_3/Phần 5_NotebookLM/index.html",
+                docs: [
+                    { name: "Tài liệu PDF", file: "Module_1-6/Video/Module_3/Phần 5_NotebookLM/slide NotebookLM_Công_Cụ_Sáng_Tạo_Nội_Dung.pdf" },
+                    { name: "Kịch bản", file: "Module_1-6/Video/Module_3/Phần 5_NotebookLM/script.docx" }
+                ],
                 steps: []
             }
         ]
