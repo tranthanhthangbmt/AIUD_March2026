@@ -216,9 +216,11 @@ const sessionsData = [
                 sessionId: 6,
                 title: "Phần 2: Working with AI",
                 description: "Kỹ năng làm việc cùng trí tuệ nhân tạo.",
-                video: "",
+                video: "Module_1-6/Video/Module_6/Phần 2_Working with AI/index.html",
                 docs: [
                     { name: "Tài liệu Elite AI", file: "Module_1-6/Video/Module_6/Phần 2_Working with AI/Elite_AI_Intelligence.pdf" },
+                    { name: "Tài liệu Cognitive Gym", file: "Module_1-6/Video/Module_6/Phần 2_Working with AI/The_AI_Cognitive_Gym.pdf" },
+                    { name: "Kịch bản", file: "Module_1-6/Video/Module_6/Phần 2_Working with AI/script.docx" },
                     { name: "Hướng dẫn AI (Phần 1)", file: "Module_1-6/Video/Module_6/Phần 2_Working with AI/Module_6_AI_part_1.md" },
                     { name: "Hướng dẫn AI (Phần 2)", file: "Module_1-6/Video/Module_6/Phần 2_Working with AI/Module_6_AI_part_2.md" }
                 ],
