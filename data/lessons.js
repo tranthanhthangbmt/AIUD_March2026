@@ -195,9 +195,36 @@ const sessionsData = [
         id: 6,
         title: "Module 6: Ứng dụng trí tuệ nhân tạo",
         description: "Tìm hiểu và khai thác các công cụ AI hỗ trợ trong học tập và công việc.",
-        totalLessons: 0,
+        totalLessons: 2,
         quiz: "MD6.csv",
-        lessons: []
+        lessons: [
+            {
+                id: 61,
+                sessionId: 6,
+                title: "Phần 1: Hướng dẫn Module 6",
+                description: "Giới thiệu và hướng dẫn các ứng dụng trong Module 6.",
+                video: "Module_1-6/Video/Module_6/Phần 1_Hướng dẫn Module 6/index.html",
+                docs: [
+                    { name: "Slide PDF", file: "Module_1-6/Video/Module_6/Phần 1_Hướng dẫn Module 6/slide module 6_30slides_v2.pdf" },
+                    { name: "Kịch bản v2", file: "Module_1-6/Video/Module_6/Phần 1_Hướng dẫn Module 6/script_v2.docx" },
+                    { name: "Giao việc cho AI", file: "Module_1-6/Video/Module_6/Phần 1_Hướng dẫn Module 6/giao việc cho AI.txt" }
+                ],
+                steps: []
+            },
+            {
+                id: 62,
+                sessionId: 6,
+                title: "Phần 2: Working with AI",
+                description: "Kỹ năng làm việc cùng trí tuệ nhân tạo.",
+                video: "",
+                docs: [
+                    { name: "Tài liệu Elite AI", file: "Module_1-6/Video/Module_6/Phần 2_Working with AI/Elite_AI_Intelligence.pdf" },
+                    { name: "Hướng dẫn AI (Phần 1)", file: "Module_1-6/Video/Module_6/Phần 2_Working with AI/Module_6_AI_part_1.md" },
+                    { name: "Hướng dẫn AI (Phần 2)", file: "Module_1-6/Video/Module_6/Phần 2_Working with AI/Module_6_AI_part_2.md" }
+                ],
+                steps: []
+            }
+        ]
     },
     {
         id: 6,
