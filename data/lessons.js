@@ -195,36 +195,68 @@ const sessionsData = [
         id: 6,
         title: "Module 6: Ứng dụng trí tuệ nhân tạo",
         description: "Tìm hiểu và khai thác các công cụ AI hỗ trợ trong học tập và công việc.",
-        totalLessons: 2,
+        totalLessons: 3,
         quiz: "MD6.csv",
         lessons: [
             {
                 id: 61,
                 sessionId: 6,
-                title: "Phần 1: Hướng dẫn Module 6",
-                description: "Giới thiệu và hướng dẫn các ứng dụng trong Module 6.",
-                video: "Module_1-6/Video/Module_6/Phần 1_Hướng dẫn Module 6/index.html",
+                title: "Phần 1: AI Foundations and Applications",
+                description: "Khám phá các nền tảng và ứng dụng của trí tuệ nhân tạo.",
+                video: "Module_1-6/Video/Module_6/Phần 1_M6_P1_AI_Foundations_and_Applications/index.html",
                 docs: [
-                    { name: "Slide PDF", file: "Module_1-6/Video/Module_6/Phần 1_Hướng dẫn Module 6/slide module 6_30slides_v2.pdf" },
-                    { name: "Kịch bản v2", file: "Module_1-6/Video/Module_6/Phần 1_Hướng dẫn Module 6/script_v2.docx" },
-                    { name: "Giao việc cho AI", file: "Module_1-6/Video/Module_6/Phần 1_Hướng dẫn Module 6/giao việc cho AI.txt" }
+                    { name: "Slide PDF", file: "Module_1-6/Video/Module_6/Phần 1_M6_P1_AI_Foundations_and_Applications/M6_P1_AI_Foundations_and_Applications.pdf" },
+                    { name: "Kịch bản (DOCX)", file: "Module_1-6/Video/Module_6/Phần 1_M6_P1_AI_Foundations_and_Applications/script.docx" },
+                    { name: "Kịch bản (TXT)", file: "Module_1-6/Video/Module_6/Phần 1_M6_P1_AI_Foundations_and_Applications/script.txt" }
                 ],
-                steps: []
+                steps: [
+                    { title: "Slide 1: Khái niệm cơ bản", content: "Chào mừng các em đến với Module 6: Ứng dụng Trí tuệ Nhân tạo. Bài 1 khám phá các khái niệm cơ bản và ứng dụng phổ biến.", icon: "fa-info-circle" },
+                    { title: "Slide 2: Tầm quan trọng của AI", content: "AI đóng vai trò then chốt trong chuyển đổi số nhờ khả năng xử lý dữ liệu khổng lồ và tự động hóa quy trình.", icon: "fa-lightbulb" },
+                    { title: "Slide 4: Định nghĩa AI", content: "AI là việc mô phỏng trí tuệ con người vào máy móc: Học hỏi, Suy luận, Giải quyết vấn đề, Nhận thức và Ngôn ngữ.", icon: "fa-robot" },
+                    { title: "Slide 5: AI, Machine Learning, Deep Learning", content: "AI (vòng ngoài), Machine Learning (vòng giữa) và Deep Learning (tâm điểm) là các lớp cốt lõi của trí tuệ nhân tạo.", icon: "fa-layer-group" },
+                    { title: "Slide 7: Các nhánh chính của AI", content: "NLP (Ngôn ngữ), Computer Vision (Thị giác), Robotics (Rô-bốt) và Expert Systems (Hệ chuyên gia).", icon: "fa-code-branch" }
+                ]
             },
             {
                 id: 62,
                 sessionId: 6,
-                title: "Phần 2: Working with AI",
-                description: "Kỹ năng làm việc cùng trí tuệ nhân tạo.",
-                video: "Module_1-6/Video/Module_6/Phần 2_Working with AI/index.html",
+                title: "Phần 2: AI Application Blueprint",
+                description: "Chiến lược và mô hình ứng dụng AI trong thực tế.",
+                video: "Module_1-6/Video/Module_6/Phần 2_M6_P2_AI_Application_Blueprint/index.html",
                 docs: [
-                    { name: "Tài liệu Elite AI", file: "Module_1-6/Video/Module_6/Phần 2_Working with AI/Elite_AI_Intelligence.pdf" },
-                    { name: "Tài liệu Cognitive Gym", file: "Module_1-6/Video/Module_6/Phần 2_Working with AI/The_AI_Cognitive_Gym.pdf" },
-                    { name: "Kịch bản", file: "Module_1-6/Video/Module_6/Phần 2_Working with AI/script.docx" },
-                    { name: "Hướng dẫn AI (Phần 1)", file: "Module_1-6/Video/Module_6/Phần 2_Working with AI/Module_6_AI_part_1.md" },
-                    { name: "Hướng dẫn AI (Phần 2)", file: "Module_1-6/Video/Module_6/Phần 2_Working with AI/Module_6_AI_part_2.md" }
+                    { name: "Slide PDF", file: "Module_1-6/Video/Module_6/Phần 2_M6_P2_AI_Application_Blueprint/M6_P2_AI_Application_Blueprint.pdf" },
+                    { name: "Kịch bản (DOCX)", file: "Module_1-6/Video/Module_6/Phần 2_M6_P2_AI_Application_Blueprint/script.docx" },
+                    { name: "Kịch bản (TXT)", file: "Module_1-6/Video/Module_6/Phần 2_M6_P2_AI_Application_Blueprint/script.txt" }
                 ],
-                steps: []
+                steps: [
+                    { title: "Slide 1: Thực hành và Kiến tạo", content: "Bản thiết kế hoàn chỉnh về ứng dụng AI tạo sinh (GenAI) và cách tối ưu hóa sự hợp tác người-máy.", icon: "fa-tools" },
+                    { title: "Slide 4: Cách mạng hóa văn bản", content: "GenAI có thể tóm tắt 50 trang trong 2 phút, dịch thuật 100 ngôn ngữ với độ chính xác 95%.", icon: "fa-file-alt" },
+                    { title: "Slide 6: Kỷ nguyên Video mới", content: "Tạo video từ văn bản (Text-to-Video) với các công cụ như Sora, Veo, mang lại chất lượng điện ảnh.", icon: "fa-video" },
+                    { title: "Slide 9: Prompt Engineering", content: "Công thức 4 bước cho câu lệnh hoàn hảo: Role (Vai trò), Context (Ngữ cảnh), Task (Nhiệm vụ), Format (Định dạng).", icon: "fa-terminal" },
+                    { title: "Slide 13: 4 Nguyên tắc vàng", content: "1. Giám sát con người. 2. Bảo mật & Đạo đức. 3. Đào tạo hiệu quả. 4. AI là công cụ, không phải sự thay thế.", icon: "fa-star" }
+                ]
+            },
+            {
+                id: 63,
+                sessionId: 6,
+                title: "Phần 3: Working with AI",
+                description: "Kỹ năng làm việc thực tế cùng trí tuệ nhân tạo.",
+                video: "Module_1-6/Video/Module_6/Phần 3_Working with AI/index.html",
+                docs: [
+                    { name: "Tài liệu Elite AI", file: "Module_1-6/Video/Module_6/Phần 3_Working with AI/Elite_AI_Intelligence.pdf" },
+                    { name: "Tài liệu Cognitive Gym", file: "Module_1-6/Video/Module_6/Phần 3_Working with AI/The_AI_Cognitive_Gym.pdf" },
+                    { name: "Hướng dẫn AI (Phần 1)", file: "Module_1-6/Video/Module_6/Phần 3_Working with AI/Module_6_AI_part_1.md" },
+                    { name: "Hướng dẫn AI (Phần 2)", file: "Module_1-6/Video/Module_6/Phần 3_Working with AI/Module_6_AI_part_2.md" },
+                    { name: "Kịch bản (DOCX)", file: "Module_1-6/Video/Module_6/Phần 3_Working with AI/script.docx" },
+                    { name: "Kịch bản (TXT)", file: "Module_1-6/Video/Module_6/Phần 3_Working with AI/script.txt" }
+                ],
+                steps: [
+                    { title: "Slide 1: Đừng để AI thay thế bạn", content: "Chuyển đổi từ phụ thuộc công nghệ sang làm chủ tuyệt đối thông qua 'Phòng tập nhận thức'.", icon: "fa-user-shield" },
+                    { title: "Slide 2: Tư duy Rèn luyện", content: "Coi AI như người hỗ trợ trong phòng tập, đối mặt với sức ì nhận thức để tăng trưởng trí tuệ.", icon: "fa-dumbbell" },
+                    { title: "Slide 5: Đồ thị Payoff", content: "Sử dụng AI để 'lười biếng' ở Vùng Lười Biếng và dồn tâm huyết vào Vùng Ám Ảnh (Chiến lược, Sáng tạo).", icon: "fa-chart-line" },
+                    { title: "Slide 6: Khung DRAG", content: "Drafting (Phác thảo), Research (Nghiên cứu), Analysis (Phân tích), Groundwork (Công việc chân tay).", icon: "fa-project-diagram" },
+                    { title: "Slide 11: Quá tải tiến triển", content: "Rèn luyện với 4 cấp độ 'tạ': Làm nóng, Khởi động, Áp lực và Quá tải để hiểu sâu kiến thức.", icon: "fa-weight-hanging" }
+                ]
             }
         ]
     },
