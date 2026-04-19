@@ -14,9 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Session Page (Lessons in a session)
     if (lessonGrid && !lessonContainer) {
-        const sessionId = parseInt(getParams().get('id'));
+        const paramId = getParams().get('id');
+        const sessionId = isNaN(paramId) ? paramId : parseInt(paramId);
         if (sessionId) {
-            const session = sessionsData.find(s => s.id === sessionId);
+            const session = sessionsData.find(s => s.id == sessionId);
             if (session) {
                 renderSessionDetail(session);
             } else {
@@ -30,13 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize Lesson Page
     if (lessonContainer) {
-        const sessionId = parseInt(getParams().get('sessionId'));
-        const lessonId = parseInt(getParams().get('id'));
+        const paramSession = getParams().get('sessionId');
+        const paramLesson = getParams().get('id');
+        const sessionId = isNaN(paramSession) ? paramSession : parseInt(paramSession);
+        const lessonId = isNaN(paramLesson) ? paramLesson : parseInt(paramLesson);
 
         if (sessionId && lessonId) {
-            const session = sessionsData.find(s => s.id === sessionId);
+            const session = sessionsData.find(s => s.id == sessionId);
             if (session) {
-                const lesson = session.lessons.find(l => l.id === lessonId);
+                const lesson = session.lessons.find(l => l.id == lessonId);
                 if (lesson) {
                     renderLessonDetail(lesson, session);
                     initLightbox();
@@ -144,10 +147,20 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // Featured Image
-            const featuredImage = document.getElementById('lesson-featured-image');
             const videoContainer = document.getElementById('video-container');
             const videoFrame = document.getElementById('lesson-video');
+            const featuredImage = document.getElementById('lesson-featured-image');
+            // Video and Featured Image Container Visibility
+            const videoWrapper = document.querySelector('.video-wrapper');
+            if (videoWrapper) {
+                if (lesson.video || lesson.image) {
+                    videoWrapper.style.display = 'block';
+                } else {
+                    videoWrapper.style.display = 'none';
+                }
+            }
 
+            // Featured Image
             if (lesson.image && featuredImage) {
                 featuredImage.src = lesson.image;
                 featuredImage.style.display = 'block';

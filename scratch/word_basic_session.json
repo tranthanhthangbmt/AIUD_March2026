@@ -1,0 +1,369 @@
+{
+    id: 65,
+    title: "Word Cơ Bản",
+    description: "Các bài học cơ bản về Microsoft Word dựa trên giáo trình GCFGlobal.",
+    totalLessons: 19,
+    lessons: [
+        {
+            id: "wb_1",
+            sessionId: 65,
+            title: "Lesson 1: getting-started-with-word",
+            description: "Nội dung chi tiết cho bài Lesson 1: getting-started-with-word.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_1_getting-started-with-word.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 1: getting-started-with-word**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_2",
+            sessionId: 65,
+            title: "Lesson 2: understanding-onedrive",
+            description: "Nội dung chi tiết cho bài Lesson 2: understanding-onedrive.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_2_understanding-onedrive.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 2: understanding-onedrive**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_3",
+            sessionId: 65,
+            title: "Lesson 3: creating-and-opening-documents",
+            description: "Nội dung chi tiết cho bài Lesson 3: creating-and-opening-documents.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_3_creating-and-opening-documents.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 3: creating-and-opening-documents**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_4",
+            sessionId: 65,
+            title: "Lesson 4: saving-and-sharing-documents",
+            description: "Nội dung chi tiết cho bài Lesson 4: saving-and-sharing-documents.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_4_saving-and-sharing-documents.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 4: saving-and-sharing-documents**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_5",
+            sessionId: 65,
+            title: "Lesson 5: text-basics",
+            description: "Nội dung chi tiết cho bài Lesson 5: text-basics.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_5_text-basics.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 5: text-basics**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_6",
+            sessionId: 65,
+            title: "Lesson 6: formatting-text",
+            description: "Nội dung chi tiết cho bài Lesson 6: formatting-text.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_6_formatting-text.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 6: formatting-text**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_7",
+            sessionId: 65,
+            title: "Lesson 7: using-find-and-replace",
+            description: "Nội dung chi tiết cho bài Lesson 7: using-find-and-replace.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_7_using-find-and-replace.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 7: using-find-and-replace**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_8",
+            sessionId: 65,
+            title: "Lesson 8: indents-and-tabs",
+            description: "Nội dung chi tiết cho bài Lesson 8: indents-and-tabs.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_8_indents-and-tabs.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 8: indents-and-tabs**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_9",
+            sessionId: 65,
+            title: "Lesson 9: line-and-paragraph-spacing",
+            description: "Nội dung chi tiết cho bài Lesson 9: line-and-paragraph-spacing.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_9_line-and-paragraph-spacing.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 9: line-and-paragraph-spacing**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_10",
+            sessionId: 65,
+            title: "Lesson 10: lists",
+            description: "Nội dung chi tiết cho bài Lesson 10: lists.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_10_lists.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 10: lists**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_11",
+            sessionId: 65,
+            title: "Lesson 11: links",
+            description: "Nội dung chi tiết cho bài Lesson 11: links.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_11_links.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 11: links**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_12",
+            sessionId: 65,
+            title: "Lesson 12: page-layout",
+            description: "Nội dung chi tiết cho bài Lesson 12: page-layout.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_12_page-layout.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 12: page-layout**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_13",
+            sessionId: 65,
+            title: "Lesson 13: printing-documents",
+            description: "Nội dung chi tiết cho bài Lesson 13: printing-documents.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_13_printing-documents.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 13: printing-documents**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_14",
+            sessionId: 65,
+            title: "Lesson 14: breaks",
+            description: "Nội dung chi tiết cho bài Lesson 14: breaks.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_14_breaks.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 14: breaks**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_15",
+            sessionId: 65,
+            title: "Lesson 15: columns",
+            description: "Nội dung chi tiết cho bài Lesson 15: columns.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_15_columns.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 15: columns**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_16",
+            sessionId: 65,
+            title: "Lesson 16: headers-and-footers",
+            description: "Nội dung chi tiết cho bài Lesson 16: headers-and-footers.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_16_headers-and-footers.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 16: headers-and-footers**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_17",
+            sessionId: 65,
+            title: "Lesson 17: page-numbers",
+            description: "Nội dung chi tiết cho bài Lesson 17: page-numbers.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_17_page-numbers.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 17: page-numbers**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_23",
+            sessionId: 65,
+            title: "Lesson 23: tables",
+            description: "Nội dung chi tiết cho bài Lesson 23: tables.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_23_tables.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 23: tables**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        },
+        {
+            id: "wb_25",
+            sessionId: 65,
+            title: "Lesson 25: checking-spelling-and-grammar",
+            description: "Nội dung chi tiết cho bài Lesson 25: checking-spelling-and-grammar.",
+            docs: [
+                {
+                    name: "Nội Dung Bài Học (Markdown)",
+                    file: "Module_1-6/TaiLieuHuongDan/Word/Basic/Lesson_25_checking-spelling-and-grammar.md"
+                }
+            ],
+            steps: [
+                {
+                    title: "Tài liệu chi tiết",
+                    content: "Vui lòng xem tài liệu đính kèm bên dưới để đọc toàn bộ nội dung của bài **Lesson 25: checking-spelling-and-grammar**. Các tài liệu thực hành (nếu có) có thể tìm thấy trong thư mục practice_files.",
+                    icon: "fa-book-open"
+                }
+            ]
+        }
+    ]
+}
