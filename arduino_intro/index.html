@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám phá Arduino | Nền tảng sáng tạo không giới hạn</title>
+    <meta name="description" content="Trang web giới thiệu về lập trình Arduino, vi điều khiển dành cho người mới rèn luyện sáng tạo và tư duy logic.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">∞</span> Arduino<span class="highlight">Hub</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">Về Arduino</a></li>
+            <li><a href="#components">Thành phần</a></li>
+            <li><a href="#code">Code Mẫu</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="weather-widget" title="Nhiệt độ hiện tại ở Buôn Ma Thuột">
+                <span class="weather-icon">🌡️</span> 
+                <span id="bmt-temp">--°C</span> <span class="weather-loc">BMT</span>
+            </div>
+            <a href="#start" class="cta-btn">Bắt đầu ngay</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge">Dành cho người mới bắt đầu</div>
+            <h1 class="fade-in-up">Biến Ý Tưởng Thành <br><span class="gradient-text">Hiện Thực</span> Với Arduino</h1>
+            <p class="fade-in-up delay-1">Nền tảng vi điều khiển mã nguồn mở mạnh mẽ, dễ học và vô cùng linh hoạt. Khơi dậy đam mê điện tử và lập trình ngay hôm nay.</p>
+            <div class="hero-buttons fade-in-up delay-2">
+                <a href="#about" class="btn primary">Khám phá ngay</a>
+                <a href="https://www.arduino.cc/" target="_blank" class="btn secondary">Trang chủ Arduino ↗</a>
+            </div>
+        </div>
+        <div class="hero-graphic fade-in">
+            <div class="glass-card floating">
+                <div class="board-mockup">
+                    <div class="chip">ATmega328P</div>
+                    <div class="pins top"></div>
+                    <div class="pins bottom"></div>
+                    <div class="usb-port"></div>
+                </div>
+            </div>
+            <div class="glow-orb"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">Arduino là gì?</h2>
+        <div class="cards-grid">
+            <div class="card hover-effect">
+                <div class="icon">🧠</div>
+                <h3>Bộ não trung tâm</h3>
+                <p>Một bo mạch vi điều khiển đóng vai trò như bộ não, nhận tín hiệu từ các cảm biến và điều khiển các thành phần như đèn LED, động cơ.</p>
+            </div>
+            <div class="card hover-effect">
+                <div class="icon">💻</div>
+                <h3>Arduino IDE</h3>
+                <p>Phần mềm lập trình dễ sử dụng với ngôn ngữ viết dựa trên C/C++, giúp bạn dễ dàng viết code và nạp thẳng vào bo mạch.</p>
+            </div>
+            <div class="card hover-effect">
+                <div class="icon">🌍</div>
+                <h3>Cộng đồng khổng lồ</h3>
+                <p>Hàng ngàn thư viện có sẵn và hàng triệu người dùng trên toàn thế giới sẵn sàng hỗ trợ, chia sẻ dự án thực tế.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Section -->
+    <section id="code" class="code-section">
+        <div class="code-container">
+            <div class="code-text">
+                <h2>Bắt đầu với <span class="highlight">Blink</span></h2>
+                <p>Chương trình đầu tiên của mọi lập trình viên Arduino. Chỉ với vài dòng code, bạn đã có thể điều khiển một đèn LED nhấp nháy liên tục.</p>
+                <ul class="features-list">
+                    <li>✔️ Cấu trúc đơn giản (<code>setup</code> và <code>loop</code>)</li>
+                    <li>✔️ Dễ dàng hiểu được chỉ sau 5 phút</li>
+                    <li>✔️ Cầu nối chuyển tiếp sang các thiết bị phức tạp</li>
+                </ul>
+            </div>
+            <div class="code-window glass-effect">
+                <div class="window-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="filename">Blink.ino</span>
+                </div>
+                <pre><code class="language-cpp">
+<span class="comment">// Hàm setup chạy 1 lần khi khởi động</span>
+<span class="keyword">void</span> <span class="function">setup</span>() {
+  <span class="comment">// Cài đặt chân 13 làm đầu ra</span>
+  <span class="function">pinMode</span>(<span class="number">13</span>, <span class="keyword">OUTPUT</span>);
+}
+
+<span class="comment">// Hàm loop chạy lặp lại liên tục</span>
+<span class="keyword">void</span> <span class="function">loop</span>() {
+  <span class="function">digitalWrite</span>(<span class="number">13</span>, <span class="keyword">HIGH</span>);  <span class="comment">// Bật sáng LED</span>
+  <span class="function">delay</span>(<span class="number">1000</span>);             <span class="comment">// Đợi 1 giây</span>
+  <span class="function">digitalWrite</span>(<span class="number">13</span>, <span class="keyword">LOW</span>);   <span class="comment">// Tắt LED</span>
+  <span class="function">delay</span>(<span class="number">1000</span>);             <span class="comment">// Đợi 1 giây</span>
+}
+                </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <footer id="start" class="cta-section text-center">
+        <h2>Sẵn sàng bắt đầu hành trình của bạn?</h2>
+        <p>Sắm ngay một bộ Arduino Starter Kit và bắt tay vào những dự án điên rồ nhất.</p>
+        <button class="btn primary pulse-animation mt-2">Tham gia cộng đồng</button>
+        <p class="copyright">© 2026 ArduinoHub. Thiết kế cho những nhà sáng tạo tương lai.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

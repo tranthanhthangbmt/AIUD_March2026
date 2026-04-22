@@ -261,202 +261,6 @@ const sessionsData = [
         ]
     },
     {
-        id: 6,
-        title: "Buổi 6: Định dạng (văn bản, bảng biểu, Tabstop, tạo ngắt trang)",
-        description: "Làm quen với các thao tác cơ bản trong Microsoft Word: định dạng văn bản, tạo bảng, sử dụng tab stops và ngắt trang.",
-        totalLessons: 4,
-        quiz: "TN_Buoi6.csv",
-        slide: "Slide_Word_Buoi6.pdf",
-        lessons: [
-            {
-                id: 1,
-                sessionId: 1,
-                title: "Bài 1: Định Dạng Văn Bản",
-                description: "Học cách định dạng font chữ, paragraph, và các thiết lập cơ bản trong Word.",
-                video: "https://drive.google.com/file/d/1T94HCZQpXxvXvQINcn1p49ePkvisV20C/preview",
-                tasks: [
-                    { name: "Bài 1.2.1", file: "Lớp-Họ và tên-Bài 1.2.1.docx" }
-                ],
-                docs: [
-                    { name: "Hướng dẫn PDF", file: "Tài liệu buổi 6_Word_Bài 1_ĐỊNH DẠNG VĂN BẢN.pdf" }
-                ],
-
-                steps: [
-                    {
-                        title: "Lý thuyết",
-                        content: "**Định dạng văn bản trong Word bao gồm các thao tác sau:**\n- Chọn font chữ, cỡ chữ, màu sắc, kiểu chữ (in đậm, in nghiêng, gạch chân).\n- Canh lề văn bản (trái, phải, giữa, đều hai bên).\n- Thiết lập khoảng cách dòng và đoạn.\n- Sử dụng các kiểu định dạng sẵn có (Styles) để áp dụng nhanh các định dạng cho văn bản.\n\n**Tại sao định dạng văn bản quan trọng?**\n- Giúp tài liệu trở nên chuyên nghiệp và dễ đọc hơn.\n- Tạo điểm nhấn cho các phần quan trọng trong văn bản.\n- Giúp người đọc dễ dàng theo dõi và hiểu nội dung.",
-                        icon: "fa-info-circle"
-                    },
-                    {
-                        title: "Bước 1: Mở tệp bài tập",
-                        content: "Mở tệp 'Lớp-Họ và tên-Bài 1.2.1.docx' trong mục tài nguyên.",
-                        icon: "fa-folder-open"
-                    },
-                    {
-                        title: "Bước 2: Hiển thị thanh thước, chuyển đơn vị đo",
-                        content: "1. Hiển thị thanh thước: Chọn View -> đánh dấu chọn mục Ruler.\n2. Chuyển đơn vị đo: Chọn File -> chọn Options -> chọn Advanced -> tại mục Display (Show measurements in units of: Centimeters) -> nhấn OK.",
-                        slideImage: "images/Buổi_6/Bài_1/1.2.png",
-                        icon: "fa-ruler"
-                    },
-                    {
-                        title: "Bước 3: Canh chỉnh khổ giấy, hướng giấy, lề",
-                        content: "1. Canh chỉnh khổ giấy: chọn Page Layout -> chọn Size -> chọn A4. \n2. Canh chỉnh hướng giấy: chọn Layout -> chọn Orientation -> chọn hướng giấy đứng (Portrait), hướng giấy ngang (Landscape). \n3. Canh lề: chọn Layout -> chọn Margins -> chọn Custom Margins... -> lề trên(Top): 2 cm, lề dưới (Bottom): 2cm, lề trái (Left): 2.5cm hoặc 3cm, lề phải (Right): 2cm -> nhấn OK.",
-                        slideImage: "images/Buổi_6/Bài_1/1.3.png",
-                        icon: "fa-file-invoice"
-                    },
-                    {
-                        title: "Bước 4: Soạn thảo và định dạng chuyên nghiệp (Modify Style).",
-                        content: "1. Tại thẻ HOME, Click chuột phải vào ô Normal trong khung Styles → chọn Modify. \n2. Thiết lập thông số: Chọn Font Times New Roman, cỡ chữ 13, chọn Canh đều 2 bên (Justified) \n3. Chỉnh giãn dòng/đoạn: Bấm nút Format (góc dưới trái) → chọn Paragraph → Chỉnh Before/After (ví dụ 6pt) và Line spacing (1.5 lines) → OK.",
-                        slideImage: "images/Buổi_6/Bài_1/1.4.png",
-                        icon: "fa-text-height"
-                    },
-                    {
-                        title: "Bước 5: Lưu bài",
-                        content: "Nhấn File -> Save hoặc Ctrl+S để lưu lại kết quả.",
-                        icon: "fa-save"
-                    },
-                ]
-            },
-            {
-                id: 2,
-                sessionId: 1,
-                title: "Bài 2: Bảng Biểu (Table)",
-                description: "Làm việc với bảng: Tạo bảng, gộp ô, định dạng đường viền và màu nền.",
-                video: "https://drive.google.com/file/d/1GV0hJT8kEbYwrMXelJhUsdWP0HuLd0WL/preview",
-                tasks: [
-                    { name: "Bài 2.2.1", file: "Lớp-Họ và tên-Bài 2.2.1.docx" }
-                ],
-                docs: [
-                    { name: "Hướng dẫn PDF", file: "Tài liệu buổi 6_Word_Bài 2_TABLE .pdf" }
-                ],
-                steps: [
-                    {
-                        title: "Lý thuyết",
-                        content: "**Bảng (Table)** trong Word là một công cụ hữu ích để tổ chức và trình bày dữ liệu một cách rõ ràng và có cấu trúc. Bảng giúp người dùng dễ dàng so sánh, phân loại và phân tích thông tin. \n\n**Các thành phần chính của bảng:**\n- **Hàng (Row):** Các dòng ngang trong bảng.\n- **Cột (Column):** Các dòng dọc trong bảng.\n- **Ô (Cell):** Giao điểm giữa hàng và cột, nơi chứa dữ liệu.\n\n**Lợi ích của việc sử dụng bảng:**\n- Tổ chức dữ liệu một cách logic và dễ hiểu.\n- Giúp trình bày thông tin một cách chuyên nghiệp.\n- Dễ dàng chỉnh sửa và định dạng dữ liệu.",
-                        icon: "fa-info-circle"
-                    },
-                    {
-                        title: "Bước 1: Chèn bảng",
-                        content: "Chọn thẻ Insert → chọn Table → chọn Insert Table… → Nhập số cột (Columns) và số hàng (Rows) → OK.",
-                        slideImage: "images/Buổi_6/Bài_2/2.1.png",
-                        icon: "fa-table"
-                    },
-                    {
-                        title: "Bước 2: Chèn thêm cột và dòng vào bảng",
-                        content: "1. để con trỏ chuột vào một ô trong bảng, ô này nằm trước hoặc sau cột định chèn thêm cột vào. \n2. Chọn Table Layout -> chọn Insert Column Left hoặc Insert Column Right để chèn thêm cột vào bảng. \n3. Chọn Insert Row Above hoặc Insert Row Below để chèn thêm dòng vào bảng.",
-                        slideImage: "images/Buổi_6/Bài_2/2.2.png",
-                        icon: "fa-plus-square"
-                    },
-                    {
-                        title: "Bước 3: Gộp ô và tách ô",
-                        content: "1. Chọn trên 2 ô cần gộp -> chọn Table Layout -> Merge Cells để gộp ô. \n2. Chọn trên 2 ô cần tách -> chọn Table Layout -> Split Cells để tách ô.",
-                        slideImage: "images/Buổi_6/Bài_2/2.3.png",
-                        icon: "fa-compress-arrows-alt"
-                    },
-                    {
-                        title: "Bước 4: Lặp lại tiêu đề bảng ở các trang tiếp theo",
-                        content: "1. Chọn tiêu đề Bảng (dòng đầu tiên của Bảng) -> Repeat Header Rows.",
-                        slideImage: "images/Buổi_6/Bài_2/2.4.png",
-                        icon: "fa-redo"
-                    },
-                    {
-                        title: "Bước 5: Chuyển đổi bảng thành text",
-                        content: "1. Chọn toàn bộ Bảng -> Table Layout -> Convert to Text.",
-                        slideImage: "images/Buổi_6/Bài_2/2.5.png",
-                        icon: "fa-exchange-alt"
-                    },
-                    {
-                        title: "Bước 6: Thiết kế bảng",
-                        content: "1. Chọn toàn bộ Bảng -> Table Design.\n2. Tại Table Styles có thể lựa chọn kiểu bảng.\n3. Tại Boders, có thể chọn kiểu viền cho bảng.",
-                        slideImage: "images/Buổi_6/Bài_2/2.6.png",
-                        icon: "fa-paint-brush"
-                    },
-                ]
-            },
-            {
-                id: 3,
-                sessionId: 1,
-                title: "Bài 3: Tab Stop",
-                description: "Sử dụng Tab để căn chỉnh văn bản chuyên nghiệp: Tab trái, phải, giữa, thập phân.",
-                video: "https://drive.google.com/file/d/1G7dTKcHvz2_wtDJd9l277x-khvxTnXpn/preview",
-                tasks: [
-                    { name: "Bài 3.2.1", file: "Lớp-Họ và tên-Bài 3.2.1.docx" },
-                    { name: "Bài 3.2.2", file: "Lớp-Họ và tên-Bài 3.2.2.docx" }
-                ],
-                docs: [
-                    { name: "Hướng dẫn PDF", file: "Tài liệu buổi 6_Word_Bài 3-TABSTOP.pdf" }
-                ],
-                steps: [
-                    {
-                        title: "Lý thuyết",
-                        content: "**Tab Stop** là một công cụ trong Microsoft Word giúp người dùng căn chỉnh văn bản một cách chính xác và nhanh chóng. Khi sử dụng Tab Stop, người dùng có thể định vị con trỏ tại các điểm cụ thể trên dòng văn bản, từ đó dễ dàng tạo ra các khoảng cách đều nhau giữa các đoạn văn bản hoặc các phần tử khác nhau trong tài liệu.\n\n**Các loại Tab Stop phổ biến:**\n- **Left Tab (Tab trái):** Căn lề trái cho văn bản bắt đầu từ vị trí Tab Stop.\n- **Center Tab (Tab giữa):** Căn giữa văn bản tại vị trí Tab Stop.\n- **Right Tab (Tab phải):** Căn lề phải cho văn bản kết thúc tại vị trí Tab Stop.\n- **Decimal Tab (Tab thập phân):** Căn chỉnh số theo dấu thập phân tại vị trí Tab Stop.\n\n**Lợi ích của việc sử dụng Tab Stop:**\n- Giúp tài liệu trở nên gọn gàng và chuyên nghiệp hơn.\n- Dễ dàng điều chỉnh khoảng cách giữa các phần tử trong văn bản.\n- Tiết kiệm thời gian khi soạn thảo và định dạng tài liệu.",
-                        icon: "fa-info-circle"
-                    },
-                    {
-                        title: "Bước 1: Đặt con trỏ vào vị trí cần đặt Tab",
-                        content: "Đặt con trỏ tại vị trí cần đặt Tab.",
-                        icon: "fa-mouse-pointer"
-                    },
-                    {
-                        title: "Bước 2: Đặt vị trí Tab",
-                        content: "1. Đặt chuột lên thước ngang (Ruler) tại vị trí muốn đặt Tab Stop. Nhấn chuột trái để đặt Tab Stop. \n2. Click đúp chuột vào biểu tượng Tab Stop trên thước ngang để mở hộp thoại Tabs.",
-                        slideImage: "images/Buổi_6/Bài_3/3.2.png",
-                        icon: "fa-ruler"
-                    },
-                    {
-                        title: "Bước 3: Chọn Leader",
-                        content: "Chọn kiểu ký tự dẫn (Leader: 1 None, 2...., 3----). Nhấn Set -> OK.",
-                        slideImage: "images/Buổi_6/Bài_3/3.3.png",
-                        icon: "fa-list-ol"
-                    },
-                    {
-                        title: "Bước 4: Sử dụng Tab",
-                        content: "Nhấn phím Tab trên bàn phím để di chuyển con trỏ đến vị trí đã đặt.",
-                        icon: "fa-keyboard"
-                    }
-                ]
-            },
-            {
-                id: 4,
-                sessionId: 1,
-                title: "Bài 4: Tạo Ngắt (Breaks)",
-                description: "Chia cột báo (Columns) và ngắt trang, ngắt đoạn (Section Break).",
-                video: "https://drive.google.com/file/d/1SjenMmbmJWvOBIY9RlZW4qx8xkxJUims/preview",
-                tasks: [
-                    { name: "Bài 4.2.1", file: "Lớp-Họ và tên-Bài 4.2.1.docx" }
-                ],
-                docs: [
-                    { name: "Hướng dẫn PDF", file: "Tài liệu buổi 6_Word_Bài 4_TẠO NGẮT .pdf" }
-                ],
-                steps: [
-                    {
-                        title: "Lý thuyết",
-                        content: "**Breaks (Ngắt)** trong Microsoft Word là một công cụ quan trọng giúp người dùng kiểm soát cách bố trí và trình bày tài liệu. Breaks cho phép bạn chia nhỏ tài liệu thành các phần riêng biệt, giúp dễ dàng quản lý và định dạng nội dung. Có nhiều loại Breaks khác nhau, bao gồm:\n\n- **Page Break (Ngắt trang):** Chuyển con trỏ sang trang mới, thường được sử dụng để bắt đầu một chương hoặc phần mới trong tài liệu.\n- **Column Break (Ngắt cột):** Chuyển con trỏ sang cột tiếp theo trong tài liệu có định dạng cột, hữu ích khi tạo các bản tin hoặc báo cáo.\n- **Section Break (Ngắt đoạn):** Chia tài liệu thành các phần riêng biệt, cho phép áp dụng các định dạng khác nhau cho từng phần, như thay đổi lề, hướng trang hoặc số trang.\n\nSử dụng Breaks một cách hiệu quả giúp tài liệu trở nên chuyên nghiệp hơn và dễ dàng chỉnh sửa khi cần thiết.",
-                        icon: "fa-info-circle"
-                    },
-                    {
-                        title: "Bước 1: Chia cột và ngắt cột",
-                        content: "1. Bôi đen văn bản. Vào Layout -> Columns -> Chọn số cột (Two, Three...)\n2. Đặt con trỏ tại vị trí muốn ngắt sang cột mới. Vào Layout -> Breaks -> Column.",
-                        slideImage: "images/Buổi_6/Bài_4/4.1.png",
-                        icon: "fa-columns"
-                    },
-                    {
-                        title: "Bước 2: Ngắt trang và xóa ngắt trang",
-                        content: "**Ngắt trang:** \nĐặt con trỏ tại vị trí muốn ngắt sang trang mới. Vào Insert -> Page Break.\n**Xóa ngắt trang:** \n1. Gõ Ctrl + H để mở hộp thoại Find and Replace.\n2. Tìm kiếm \"^m\" -> Replace All.",
-                        slideImage: "images/Buổi_6/Bài_4/4.2.png",
-                        icon: "fa-file-alt"
-                    },
-                    {
-                        title: "Bước 3: Ngắt đoạn (Section Break)",
-                        content: "1. Vào Home -> chọn biểu tượng Show/Hide Break Editing Marks.\n2. Chức năng Section Break cung cấp cho người sử dụng 4 lựa chọn: \n- Next Page: Tạo ngắt trang sau đoạn văn.\n- Continuous: Tạo ngắt trang sau đoạn văn.\n- Even Page hoặc Odd Page: Ngắt đoạn và di chuyển văn bản sau dấu ngắt sang trang chẵn hoặc trang lẻ tiếp theo.\n3. Xóa dấu ngắt đoạn: \n- Chọn Home -> chọn icon (Show/Hide Editing Marks) để hiển thị tất cả các dấu đoạn và các ký hiệu định dạng bị ẩn trong tài liệu thông thường. \n- Đặt con trỏ chuột trước dấu ngắt phần / ngắt đoạn và sau đó nhấn phím xóa để xóa. \n- Hoặc gõ Ctrl + H để mở hộp thoại Find and Replace.\n- Tìm kiếm \"^b\" -> Replace All.",
-                        slideImage: "images/Buổi_6/Bài_4/4.3.png",
-                        icon: "fa-cut"
-                    },
-                ]
-            }
-        ]
-    },
-    {
         id: 65,
         title: "Word Cơ Bản",
         description: "Các bài học cơ bản về Microsoft Word dựa trên giáo trình GCFGlobal.",
@@ -1299,6 +1103,202 @@ const sessionsData = [
                         content: "<ol> <li>Open <a href=\"Module_1-6/TaiLieuHuongDan/Word/Basic/practice_files/word_spellinggrammar_practice.docx\">tài liệu thực hành</a> của chúng tôi. Nếu bạn đã tải xuống tài liệu thực hành của chúng tôi để theo dõi bài học, hãy nhớ tải xuống bản sao mới bằng cách nhấp vào liên kết trong bước này.</li> <li>Chạy kiểm tra ** Spelling &amp; Grammar **.</li> <li>** Bỏ qua ** cách viết những cái tên như ** Marcom **.</li> <li>Sửa ** tất cả ** các lỗi chính tả và ngữ pháp khác.</li> <li>Khi bạn hoàn tất, tài liệu của bạn sẽ trông như thế này:</li> </ol> <p><img style=\"max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0;\" alt=\"Spelling and Grammar Challenge\" src=\"Module_1-6/TaiLieuHuongDan/Word/Basic/images/word2016_spelling_img.png\" /></p> <p>/en/word/track-changes-and-comments/content/</p>",
                         icon: "fa-list-ul"
                     }
+                ]
+            }
+        ]
+    },
+    {
+        id: 60,
+        title: "Buổi 6: Định dạng (văn bản, bảng biểu, Tabstop, tạo ngắt trang)",
+        description: "Làm quen với các thao tác cơ bản trong Microsoft Word: định dạng văn bản, tạo bảng, sử dụng tab stops và ngắt trang.",
+        totalLessons: 4,
+        quiz: "TN_Buoi6.csv",
+        slide: "Slide_Word_Buoi6.pdf",
+        lessons: [
+            {
+                id: 1,
+                sessionId: 60,
+                title: "Bài 1: Định Dạng Văn Bản",
+                description: "Học cách định dạng font chữ, paragraph, và các thiết lập cơ bản trong Word.",
+                video: "https://drive.google.com/file/d/1T94HCZQpXxvXvQINcn1p49ePkvisV20C/preview",
+                tasks: [
+                    { name: "Bài 1.2.1", file: "Lớp-Họ và tên-Bài 1.2.1.docx" }
+                ],
+                docs: [
+                    { name: "Hướng dẫn PDF", file: "Tài liệu buổi 6_Word_Bài 1_ĐỊNH DẠNG VĂN BẢN.pdf" }
+                ],
+
+                steps: [
+                    {
+                        title: "Lý thuyết",
+                        content: "**Định dạng văn bản trong Word bao gồm các thao tác sau:**\n- Chọn font chữ, cỡ chữ, màu sắc, kiểu chữ (in đậm, in nghiêng, gạch chân).\n- Canh lề văn bản (trái, phải, giữa, đều hai bên).\n- Thiết lập khoảng cách dòng và đoạn.\n- Sử dụng các kiểu định dạng sẵn có (Styles) để áp dụng nhanh các định dạng cho văn bản.\n\n**Tại sao định dạng văn bản quan trọng?**\n- Giúp tài liệu trở nên chuyên nghiệp và dễ đọc hơn.\n- Tạo điểm nhấn cho các phần quan trọng trong văn bản.\n- Giúp người đọc dễ dàng theo dõi và hiểu nội dung.",
+                        icon: "fa-info-circle"
+                    },
+                    {
+                        title: "Bước 1: Mở tệp bài tập",
+                        content: "Mở tệp 'Lớp-Họ và tên-Bài 1.2.1.docx' trong mục tài nguyên.",
+                        icon: "fa-folder-open"
+                    },
+                    {
+                        title: "Bước 2: Hiển thị thanh thước, chuyển đơn vị đo",
+                        content: "1. Hiển thị thanh thước: Chọn View -> đánh dấu chọn mục Ruler.\n2. Chuyển đơn vị đo: Chọn File -> chọn Options -> chọn Advanced -> tại mục Display (Show measurements in units of: Centimeters) -> nhấn OK.",
+                        slideImage: "images/Buổi_6/Bài_1/1.2.png",
+                        icon: "fa-ruler"
+                    },
+                    {
+                        title: "Bước 3: Canh chỉnh khổ giấy, hướng giấy, lề",
+                        content: "1. Canh chỉnh khổ giấy: chọn Page Layout -> chọn Size -> chọn A4. \n2. Canh chỉnh hướng giấy: chọn Layout -> chọn Orientation -> chọn hướng giấy đứng (Portrait), hướng giấy ngang (Landscape). \n3. Canh lề: chọn Layout -> chọn Margins -> chọn Custom Margins... -> lề trên(Top): 2 cm, lề dưới (Bottom): 2cm, lề trái (Left): 2.5cm hoặc 3cm, lề phải (Right): 2cm -> nhấn OK.",
+                        slideImage: "images/Buổi_6/Bài_1/1.3.png",
+                        icon: "fa-file-invoice"
+                    },
+                    {
+                        title: "Bước 4: Soạn thảo và định dạng chuyên nghiệp (Modify Style).",
+                        content: "1. Tại thẻ HOME, Click chuột phải vào ô Normal trong khung Styles → chọn Modify. \n2. Thiết lập thông số: Chọn Font Times New Roman, cỡ chữ 13, chọn Canh đều 2 bên (Justified) \n3. Chỉnh giãn dòng/đoạn: Bấm nút Format (góc dưới trái) → chọn Paragraph → Chỉnh Before/After (ví dụ 6pt) và Line spacing (1.5 lines) → OK.",
+                        slideImage: "images/Buổi_6/Bài_1/1.4.png",
+                        icon: "fa-text-height"
+                    },
+                    {
+                        title: "Bước 5: Lưu bài",
+                        content: "Nhấn File -> Save hoặc Ctrl+S để lưu lại kết quả.",
+                        icon: "fa-save"
+                    },
+                ]
+            },
+            {
+                id: 2,
+                sessionId: 60,
+                title: "Bài 2: Bảng Biểu (Table)",
+                description: "Làm việc với bảng: Tạo bảng, gộp ô, định dạng đường viền và màu nền.",
+                video: "https://drive.google.com/file/d/1GV0hJT8kEbYwrMXelJhUsdWP0HuLd0WL/preview",
+                tasks: [
+                    { name: "Bài 2.2.1", file: "Lớp-Họ và tên-Bài 2.2.1.docx" }
+                ],
+                docs: [
+                    { name: "Hướng dẫn PDF", file: "Tài liệu buổi 6_Word_Bài 2_TABLE .pdf" }
+                ],
+                steps: [
+                    {
+                        title: "Lý thuyết",
+                        content: "**Bảng (Table)** trong Word là một công cụ hữu ích để tổ chức và trình bày dữ liệu một cách rõ ràng và có cấu trúc. Bảng giúp người dùng dễ dàng so sánh, phân loại và phân tích thông tin. \n\n**Các thành phần chính của bảng:**\n- **Hàng (Row):** Các dòng ngang trong bảng.\n- **Cột (Column):** Các dòng dọc trong bảng.\n- **Ô (Cell):** Giao điểm giữa hàng và cột, nơi chứa dữ liệu.\n\n**Lợi ích của việc sử dụng bảng:**\n- Tổ chức dữ liệu một cách logic và dễ hiểu.\n- Giúp trình bày thông tin một cách chuyên nghiệp.\n- Dễ dàng chỉnh sửa và định dạng dữ liệu.",
+                        icon: "fa-info-circle"
+                    },
+                    {
+                        title: "Bước 1: Chèn bảng",
+                        content: "Chọn thẻ Insert → chọn Table → chọn Insert Table… → Nhập số cột (Columns) và số hàng (Rows) → OK.",
+                        slideImage: "images/Buổi_6/Bài_2/2.1.png",
+                        icon: "fa-table"
+                    },
+                    {
+                        title: "Bước 2: Chèn thêm cột và dòng vào bảng",
+                        content: "1. để con trỏ chuột vào một ô trong bảng, ô này nằm trước hoặc sau cột định chèn thêm cột vào. \n2. Chọn Table Layout -> chọn Insert Column Left hoặc Insert Column Right để chèn thêm cột vào bảng. \n3. Chọn Insert Row Above hoặc Insert Row Below để chèn thêm dòng vào bảng.",
+                        slideImage: "images/Buổi_6/Bài_2/2.2.png",
+                        icon: "fa-plus-square"
+                    },
+                    {
+                        title: "Bước 3: Gộp ô và tách ô",
+                        content: "1. Chọn trên 2 ô cần gộp -> chọn Table Layout -> Merge Cells để gộp ô. \n2. Chọn trên 2 ô cần tách -> chọn Table Layout -> Split Cells để tách ô.",
+                        slideImage: "images/Buổi_6/Bài_2/2.3.png",
+                        icon: "fa-compress-arrows-alt"
+                    },
+                    {
+                        title: "Bước 4: Lặp lại tiêu đề bảng ở các trang tiếp theo",
+                        content: "1. Chọn tiêu đề Bảng (dòng đầu tiên của Bảng) -> Repeat Header Rows.",
+                        slideImage: "images/Buổi_6/Bài_2/2.4.png",
+                        icon: "fa-redo"
+                    },
+                    {
+                        title: "Bước 5: Chuyển đổi bảng thành text",
+                        content: "1. Chọn toàn bộ Bảng -> Table Layout -> Convert to Text.",
+                        slideImage: "images/Buổi_6/Bài_2/2.5.png",
+                        icon: "fa-exchange-alt"
+                    },
+                    {
+                        title: "Bước 6: Thiết kế bảng",
+                        content: "1. Chọn toàn bộ Bảng -> Table Design.\n2. Tại Table Styles có thể lựa chọn kiểu bảng.\n3. Tại Boders, có thể chọn kiểu viền cho bảng.",
+                        slideImage: "images/Buổi_6/Bài_2/2.6.png",
+                        icon: "fa-paint-brush"
+                    },
+                ]
+            },
+            {
+                id: 3,
+                sessionId: 60,
+                title: "Bài 3: Tab Stop",
+                description: "Sử dụng Tab để căn chỉnh văn bản chuyên nghiệp: Tab trái, phải, giữa, thập phân.",
+                video: "https://drive.google.com/file/d/1G7dTKcHvz2_wtDJd9l277x-khvxTnXpn/preview",
+                tasks: [
+                    { name: "Bài 3.2.1", file: "Lớp-Họ và tên-Bài 3.2.1.docx" },
+                    { name: "Bài 3.2.2", file: "Lớp-Họ và tên-Bài 3.2.2.docx" }
+                ],
+                docs: [
+                    { name: "Hướng dẫn PDF", file: "Tài liệu buổi 6_Word_Bài 3-TABSTOP.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "Lý thuyết",
+                        content: "**Tab Stop** là một công cụ trong Microsoft Word giúp người dùng căn chỉnh văn bản một cách chính xác và nhanh chóng. Khi sử dụng Tab Stop, người dùng có thể định vị con trỏ tại các điểm cụ thể trên dòng văn bản, từ đó dễ dàng tạo ra các khoảng cách đều nhau giữa các đoạn văn bản hoặc các phần tử khác nhau trong tài liệu.\n\n**Các loại Tab Stop phổ biến:**\n- **Left Tab (Tab trái):** Căn lề trái cho văn bản bắt đầu từ vị trí Tab Stop.\n- **Center Tab (Tab giữa):** Căn giữa văn bản tại vị trí Tab Stop.\n- **Right Tab (Tab phải):** Căn lề phải cho văn bản kết thúc tại vị trí Tab Stop.\n- **Decimal Tab (Tab thập phân):** Căn chỉnh số theo dấu thập phân tại vị trí Tab Stop.\n\n**Lợi ích của việc sử dụng Tab Stop:**\n- Giúp tài liệu trở nên gọn gàng và chuyên nghiệp hơn.\n- Dễ dàng điều chỉnh khoảng cách giữa các phần tử trong văn bản.\n- Tiết kiệm thời gian khi soạn thảo và định dạng tài liệu.",
+                        icon: "fa-info-circle"
+                    },
+                    {
+                        title: "Bước 1: Đặt con trỏ vào vị trí cần đặt Tab",
+                        content: "Đặt con trỏ tại vị trí cần đặt Tab.",
+                        icon: "fa-mouse-pointer"
+                    },
+                    {
+                        title: "Bước 2: Đặt vị trí Tab",
+                        content: "1. Đặt chuột lên thước ngang (Ruler) tại vị trí muốn đặt Tab Stop. Nhấn chuột trái để đặt Tab Stop. \n2. Click đúp chuột vào biểu tượng Tab Stop trên thước ngang để mở hộp thoại Tabs.",
+                        slideImage: "images/Buổi_6/Bài_3/3.2.png",
+                        icon: "fa-ruler"
+                    },
+                    {
+                        title: "Bước 3: Chọn Leader",
+                        content: "Chọn kiểu ký tự dẫn (Leader: 1 None, 2...., 3----). Nhấn Set -> OK.",
+                        slideImage: "images/Buổi_6/Bài_3/3.3.png",
+                        icon: "fa-list-ol"
+                    },
+                    {
+                        title: "Bước 4: Sử dụng Tab",
+                        content: "Nhấn phím Tab trên bàn phím để di chuyển con trỏ đến vị trí đã đặt.",
+                        icon: "fa-keyboard"
+                    }
+                ]
+            },
+            {
+                id: 4,
+                sessionId: 60,
+                title: "Bài 4: Tạo Ngắt (Breaks)",
+                description: "Chia cột báo (Columns) và ngắt trang, ngắt đoạn (Section Break).",
+                video: "https://drive.google.com/file/d/1SjenMmbmJWvOBIY9RlZW4qx8xkxJUims/preview",
+                tasks: [
+                    { name: "Bài 4.2.1", file: "Lớp-Họ và tên-Bài 4.2.1.docx" }
+                ],
+                docs: [
+                    { name: "Hướng dẫn PDF", file: "Tài liệu buổi 6_Word_Bài 4_TẠO NGẮT .pdf" }
+                ],
+                steps: [
+                    {
+                        title: "Lý thuyết",
+                        content: "**Breaks (Ngắt)** trong Microsoft Word là một công cụ quan trọng giúp người dùng kiểm soát cách bố trí và trình bày tài liệu. Breaks cho phép bạn chia nhỏ tài liệu thành các phần riêng biệt, giúp dễ dàng quản lý và định dạng nội dung. Có nhiều loại Breaks khác nhau, bao gồm:\n\n- **Page Break (Ngắt trang):** Chuyển con trỏ sang trang mới, thường được sử dụng để bắt đầu một chương hoặc phần mới trong tài liệu.\n- **Column Break (Ngắt cột):** Chuyển con trỏ sang cột tiếp theo trong tài liệu có định dạng cột, hữu ích khi tạo các bản tin hoặc báo cáo.\n- **Section Break (Ngắt đoạn):** Chia tài liệu thành các phần riêng biệt, cho phép áp dụng các định dạng khác nhau cho từng phần, như thay đổi lề, hướng trang hoặc số trang.\n\nSử dụng Breaks một cách hiệu quả giúp tài liệu trở nên chuyên nghiệp hơn và dễ dàng chỉnh sửa khi cần thiết.",
+                        icon: "fa-info-circle"
+                    },
+                    {
+                        title: "Bước 1: Chia cột và ngắt cột",
+                        content: "1. Bôi đen văn bản. Vào Layout -> Columns -> Chọn số cột (Two, Three...)\n2. Đặt con trỏ tại vị trí muốn ngắt sang cột mới. Vào Layout -> Breaks -> Column.",
+                        slideImage: "images/Buổi_6/Bài_4/4.1.png",
+                        icon: "fa-columns"
+                    },
+                    {
+                        title: "Bước 2: Ngắt trang và xóa ngắt trang",
+                        content: "**Ngắt trang:** \nĐặt con trỏ tại vị trí muốn ngắt sang trang mới. Vào Insert -> Page Break.\n**Xóa ngắt trang:** \n1. Gõ Ctrl + H để mở hộp thoại Find and Replace.\n2. Tìm kiếm \"^m\" -> Replace All.",
+                        slideImage: "images/Buổi_6/Bài_4/4.2.png",
+                        icon: "fa-file-alt"
+                    },
+                    {
+                        title: "Bước 3: Ngắt đoạn (Section Break)",
+                        content: "1. Vào Home -> chọn biểu tượng Show/Hide Break Editing Marks.\n2. Chức năng Section Break cung cấp cho người sử dụng 4 lựa chọn: \n- Next Page: Tạo ngắt trang sau đoạn văn.\n- Continuous: Tạo ngắt trang sau đoạn văn.\n- Even Page hoặc Odd Page: Ngắt đoạn và di chuyển văn bản sau dấu ngắt sang trang chẵn hoặc trang lẻ tiếp theo.\n3. Xóa dấu ngắt đoạn: \n- Chọn Home -> chọn icon (Show/Hide Editing Marks) để hiển thị tất cả các dấu đoạn và các ký hiệu định dạng bị ẩn trong tài liệu thông thường. \n- Đặt con trỏ chuột trước dấu ngắt phần / ngắt đoạn và sau đó nhấn phím xóa để xóa. \n- Hoặc gõ Ctrl + H để mở hộp thoại Find and Replace.\n- Tìm kiếm \"^b\" -> Replace All.",
+                        slideImage: "images/Buổi_6/Bài_4/4.3.png",
+                        icon: "fa-cut"
+                    },
                 ]
             }
         ]
