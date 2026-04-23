@@ -392,46 +392,6 @@ const sessionsData = [
                         title: "Phần 4: Chia sẻ tài liệu",
                         content: "<p>Word giúp bạn dễ dàng ** Share ** ** và cộng tác ** trên các tài liệu bằng cách sử dụng ** OneDrive **. Trước đây, nếu bạn muốn Share một File với ai đó, bạn có thể gửi nó dưới dạng tệp đính kèm email. Mặc dù thuận tiện nhưng hệ thống này cũng tạo ** nhiều phiên bản ** của cùng một File, điều này có thể gây khó khăn cho việc sắp xếp.</p> <p>Khi bạn Share một tài liệu từ Word, thực tế là bạn đang cấp cho người khác quyền truy cập vào ** chính xác File **. Điều này cho phép bạn và những người Share cùng ** chỉnh sửa cùng một tài liệu ** mà không cần phải theo dõi nhiều phiên bản.</p> <p>Để Share một tài liệu, trước tiên tài liệu đó phải được ** lưu ** ** vào ** ** của bạn ** ** OneDrive **.</p> <h4>Tới Share một tài liệu:</h4> <ol> <li>Nhấp vào tab ** File ** để truy cập ** Hậu trường ** ** View <strong>, sau đó nhấp vào ** Share </strong>.</li> </ol> <p><img style=\"max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0;\" alt=\"clicking the Share option in Backstage view\" src=\"Module_1-6/TaiLieuHuongDan/Word/Basic/images/save_share_command.png\" /> 2. Cửa sổ ** Gửi liên kết ** sẽ xuất hiện.</p> <p>Nhấp vào các nút trong phần tương tác bên dưới để tìm hiểu thêm về các cách khác nhau để Share tài liệu.</p> <p>chỉnh sửa điểm phát sóng<img style=\"max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0;\" alt=\"menu Gửi liên kết để chia sẻ\" src=\"image/share_menu.jpg\" title=\"menu Gửi liên kết để chia sẻ\" /></p>",
                         icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 5: Cài đặt liên kết",
-                        content: "<p>Tại đây, bạn có thể chọn ** ai được phép truy cập File ** của bạn, liệu bạn có muốn ** cho phép chỉnh sửa ** hay không và tùy chọn bao gồm ** ngày hết hạn ** cho File.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 6: Nhập tên hoặc địa chỉ email",
-                        content: "<p>Nhập ** tên ** hoặc ** địa chỉ email ** của người mà bạn muốn Share File của bạn ở đây.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 7: Thêm tin nhắn",
-                        content: "<p>Nếu bạn muốn đưa ** tin nhắn ** vào File của mình, bạn có thể nhập tin nhắn đó vào đây.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 8: Gửi",
-                        content: "<p>Nhấp vào ** Gửi ** để gửi File của bạn tới (những) người nhận.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 9: Sao chép liên kết",
-                        content: "<p>Nhấp vào ** Sao chép liên kết ** để sao chép ** URL ** mà bạn có thể gửi cho người khác qua email, tin nhắn hoặc bất kỳ phương thức nào khác.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 10: Triển vọng",
-                        content: "<p>Nếu bạn muốn sử dụng ** Outlook **, hãy nhấp vào đây để gửi File của bạn qua email.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 11: Gửi một bản sao",
-                        content: "<p>Bạn có thể sử dụng tùy chọn này nếu bạn muốn ** gửi một bản sao ** để người nhận không chỉnh sửa File giống như bạn.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 12: Thử thách!",
-                        content: "<ol> <li>Open <a href=\"Module_1-6/TaiLieuHuongDan/Word/Basic/practice_files/word_saveshare_practice.docx\">tài liệu thực hành</a> của chúng tôi.</li> <li>Sử dụng ** Save As ** để tạo bản sao của tài liệu. Đặt tên cho bản sao New ** Thực hành thử thách tiết kiệm **. Bạn có thể Save nó vào một thư mục trên máy tính hoặc vào ** OneDrive ** của bạn.</li> <li>Export tài liệu của bạn dưới dạng ** PDF **.</li> </ol> <p>/en/word/text-basics/content/</p>",
-                        icon: "fa-list-ul"
                     }
                 ]
             },
@@ -689,77 +649,17 @@ const sessionsData = [
                         icon: "fa-list-ul"
                     },
                     {
-                        title: "Phần 2: Print",
-                        content: "<p>Nhấp vào nút này để Print tài liệu.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 3: Máy in",
-                        content: "<p>Nếu bạn có nhiều máy in, hãy chọn máy in bạn muốn sử dụng.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 4: Print Phạm vi",
-                        content: "<p>Tại đây, bạn có thể chọn Print toàn bộ tài liệu, chỉ trang hiện tại hoặc Print tùy chỉnh cho đến Print các trang cụ thể.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 5: In một mặt và hai mặt",
-                        content: "<p>Chọn Print trên một hoặc cả hai mặt giấy nếu máy in của bạn hỗ trợ cài đặt này.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 6: đối chiếu",
-                        content: "<p>Nếu bạn in nhiều bản sao, bạn có thể chọn cách sắp xếp các trang. ** Đối chiếu ** sẽ sắp xếp chúng theo 1, 2, 3, 1, 2, 3. ** Không đối chiếu ** sẽ sắp xếp chúng theo 1, 1, 2, 2, 3, 3.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 7: Định hướng trang",
-                        content: "<p>Tại đây, bạn có thể chọn hướng dọc (dọc) hoặc ngang (ngang).</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 8: Khổ giấy",
-                        content: "<p>Bạn có thể chọn khổ giấy muốn sử dụng nếu máy in của bạn hỗ trợ cài đặt này.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 9: Lề",
-                        content: "<p>Tại đây, bạn có thể điều chỉnh lề trang.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 10: Chia tỷ lệ",
-                        content: "<p>Tùy chọn này cho phép bạn Print nhiều trang trên một tờ hoặc chia tỷ lệ tài liệu để vừa với một khổ giấy cụ thể.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 11: Bản sao",
-                        content: "<p>Tại đây, bạn có thể chọn số lượng bản sao bạn muốn Print.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 12: Lựa chọn trang",
-                        content: "<p>Bạn có thể nhấp vào mũi tên để View một trang khác trong khung Xem trước.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 13: Zoom Control/ Phóng to trang",
-                        content: "<p>Nhấp và kéo thanh trượt để sử dụng ** Zoom Control **. Số ở bên trái thanh trượt phản ánh phần trăm thu phóng. Bạn có thể nhấp vào nút ** Thu phóng đến trang ** ở bên phải để đặt Zoom Control vừa với một trang trong cửa sổ.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 14: Ngăn xem trước",
+                        title: "Phần 2: Ngăn xem trước",
                         content: "<p>Tại đây, bạn có thể xem bản xem trước tài liệu của bạn sẽ trông như thế nào khi được in.</p> <p>Bạn cũng có thể truy cập khung Print bằng cách nhấn ** Ctrl+P ** trên bàn phím.</p> <h4>Tới Print một tài liệu:</h4> <ol> <li>Điều hướng đến khung ** Print **, sau đó chọn ** máy in ** mong muốn.</li> </ol> <p><img style=\"max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0;\" alt=\"Selecting a printer\" src=\"Module_1-6/TaiLieuHuongDan/Word/Basic/images/printing_to_print_1.png\" /> 2. Nhập số lượng ** bản sao ** bạn muốn Print.</p> <p><img style=\"max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0;\" alt=\"Selecting the number of copies\" src=\"Module_1-6/TaiLieuHuongDan/Word/Basic/images/printing_to_print_2.png\" /> 3. Chọn bất kỳ ** cài đặt ** bổ sung nào nếu cần.</p> <p><img style=\"max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0;\" alt=\"Changing additional settings\" src=\"Module_1-6/TaiLieuHuongDan/Word/Basic/images/printing_to_print_3.png\" /> 4. Nhấp vào ** Print **.</p> <p><img style=\"max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0;\" alt=\"Clicking print\" src=\"Module_1-6/TaiLieuHuongDan/Word/Basic/images/printing_to_print_4.png\" /></p>",
                         icon: "fa-list-ul"
                     },
                     {
-                        title: "Phần 15: tùy chỉnh in ấn",
+                        title: "Phần 3: tùy chỉnh in ấn",
                         content: "<p>Đôi khi bạn có thể thấy không cần thiết phải Print toàn bộ tài liệu của mình, trong trường hợp đó ** in tùy chỉnh ** có thể phù hợp hơn với nhu cầu của bạn. Cho dù bạn đang in ** vài trang riêng lẻ ** hay ** phạm vi trang **, Word đều cho phép bạn ** chỉ định ** chính xác những trang bạn muốn Print.</p> <h4>Để tùy chỉnh Print một tài liệu:</h4> <p>Nếu bạn muốn Print trang hoặc phạm vi trang riêng lẻ, bạn sẽ cần phân tách từng mục bằng ** dấu phẩy ** (ví dụ: 1, 3, 5-7 hoặc 10-14).</p> <ol> <li>Điều hướng đến khung ** Print **.</li> <li>Trong trường ** Trang:**, nhập các trang bạn muốn Print.</li> </ol> <p><img style=\"max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0;\" alt=\"Setting pages to print\" src=\"Module_1-6/TaiLieuHuongDan/Word/Basic/images/printing_custom_print_pages.png\" /> 3. Nhấp vào ** Print **.</p> <p><img style=\"max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0;\" alt=\"Clicking Print\" src=\"Module_1-6/TaiLieuHuongDan/Word/Basic/images/printing_custom_print_print.png\" /></p> <p>Nếu tài liệu của bạn không được in theo cách bạn muốn, bạn có thể cần phải điều chỉnh một số cài đặt của trang Layout. Để tìm hiểu thêm, Review bài học <a href=\"../../page-Layout/1/index.html\">Trang Layout</a> của chúng tôi.</p>",
                         icon: "fa-list-ul"
                     },
                     {
-                        title: "Phần 16: Thử thách!",
+                        title: "Phần 4: Thử thách!",
                         content: "<ol> <li>Open <a href=\"Module_1-6/TaiLieuHuongDan/Word/Basic/practice_files/word_printing_practice.docx\">tài liệu thực hành</a> của chúng tôi.</li> <li>Trong khung ** Print **, hãy thay đổi cài đặt thành Print ** chỉ ** trang 2 và 5.</li> <li>Thay đổi số lượng ** bản sao ** thành 2.</li> <li>Sử dụng các mũi tên ở cuối phần xem trước ** Print ** đến View mỗi trang.</li> <li>Khi bạn hoàn tất, ngăn Print của bạn sẽ trông giống như thế này:</li> </ol> <p>chỉnh sửa điểm phát sóng<img style=\"max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0;\" alt=\"Thử thách in\" src=\"Module_1-6/TaiLieuHuongDan/Word/Basic/images/word2016_printing_img_2.png\" /> 6. Tùy chọn: Nếu có máy in, bạn có thể nhấp vào lệnh ** Print **. Nó phải Print hai bản sao của trang 2 và 5.</p> <p>/en/word/breaks/content/</p>",
                         icon: "fa-list-ul"
                     }
@@ -914,37 +814,7 @@ const sessionsData = [
                         icon: "fa-list-ul"
                     },
                     {
-                        title: "Phần 4: Hàng và Cột",
-                        content: "<p>Sử dụng các lệnh này để nhanh chóng ** Insert ** hoặc ** xóa ** hàng và cột. Điều này có thể đặc biệt hữu ích nếu bạn cần thêm thứ gì đó vào giữa bảng.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 5: Hợp nhất và chia ô",
-                        content: "<p>Một số bảng yêu cầu Layout không tuân theo lưới tiêu chuẩn. Trong những trường hợp này, bạn có thể muốn ** hợp nhất ** nhiều ô (tức là kết hợp chúng thành một) hoặc ** tách ** một ô thành hai.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 6: Thay đổi kích thước ô",
-                        content: "<p>Bạn có thể nhập ** chiều cao hàng ** hoặc ** chiều rộng cột ** mong muốn theo cách thủ công cho các ô của mình. Bạn cũng có thể sử dụng lệnh ** AutoFit ** để tự động điều chỉnh độ rộng cột dựa trên văn bản bên trong.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 7: Phân phối hàng/cột",
-                        content: "<p>Để giữ cho bảng của bạn trông gọn gàng và ngăn nắp, bạn có thể ** phân bổ các hàng hoặc cột bằng nhau **. Điều này sẽ làm cho chúng có cùng kích thước. Bạn có thể áp dụng tính năng này cho ** toàn bộ bảng ** hoặc chỉ ** một phần nhỏ ** của bảng.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 8: Căn chỉnh văn bản ô",
-                        content: "<p>Bằng cách thay đổi ** căn chỉnh ** các ô, bạn có thể kiểm soát chính xác vị trí của văn bản. Trong ví dụ bên dưới, văn bản đã được căn chỉnh về ** trung tâm **.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 9: Thay đổi hướng văn bản",
-                        content: "<p>Bạn có thể dễ dàng thay đổi hướng của văn bản từ ** ngang ** sang ** dọc **. Làm cho văn bản của bạn theo chiều dọc có thể thêm phong cách cho bảng của bạn; nó cũng cho phép bạn thêm ** thêm cột ** vào bảng của mình.</p>",
-                        icon: "fa-list-ul"
-                    },
-                    {
-                        title: "Phần 10: Thử thách!",
+                        title: "Phần 4: Thử thách!",
                         content: "<ol> <li>Open <a href=\"Module_1-6/TaiLieuHuongDan/Word/Basic/practice_files/word_tables_practice.docx\">tài liệu thực hành</a> của chúng tôi.</li> <li>Cuộn đến ** trang 3 ** và chọn tất cả văn bản bên dưới các ngày ** 8 tháng 7 - 12 tháng 7 **.</li> <li>Sử dụng ** Chuyển văn bản thành bảng ** thành Insert văn bản thành bảng ** 6 cột <strong>. Đảm bảo ** Tách văn bản tại Tab </strong>.</li> <li>** Xóa ** cột Thứ Bảy.</li> <li>** Insert một cột ** ở ** trái ** của cột Thứ Sáu và nhập ** Thứ Năm ** vào ô trên cùng.</li> <li>Thay đổi ** kiểu bảng ** thành bất kỳ kiểu nào bắt đầu bằng ** Bảng lưới 5 <strong>. ** Gợi ý </strong>: Tên kiểu xuất hiện khi bạn di chuột qua chúng.</li> <li>Trong trình đơn ** kiểu bảng Options **, hãy bỏ chọn Hàng có dải băng và chọn Cột có dải băng.</li> <li>Chọn ** toàn bộ bảng <strong>. Trong trình đơn thả xuống ** Biên giới </strong>, chọn ** Tất cả biên giới **.</li> <li>Với bảng vẫn được chọn, hãy tăng ** chiều cao hàng của bảng ** lên 0,3\" (0,8 cm).</li> <li>Chọn hàng đầu tiên và thay đổi ** căn chỉnh ô ** thành ** Căn giữa **.</li> <li> <p>Khi bạn hoàn tất, bảng của bạn sẽ trông giống như thế này:</p> <p><img style=\"max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0;\" alt=\"Tables Challenge\" src=\"Module_1-6/TaiLieuHuongDan/Word/Basic/images/word2016_tables_img.png\" /></p> </li> </ol> <p>/en/word/charts/content/</p>",
                         icon: "fa-list-ul"
                     }
