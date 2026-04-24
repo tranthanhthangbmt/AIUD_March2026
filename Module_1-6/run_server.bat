@@ -11,5 +11,5 @@ if %errorlevel% neq 0 (
 )
 
 :: Start server in background
-start "" http://localhost:8000
-python -m http.server 8000
+start "" http://localhost:8000/index.html
+python exam_server.py
