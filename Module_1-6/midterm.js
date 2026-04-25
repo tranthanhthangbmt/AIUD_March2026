@@ -586,9 +586,6 @@ const midtermApp = {
 
         console.log("Saving results to Google Sheets...", payload);
         
-        // Bắt buộc hiện alert để chặn trình duyệt
-        alert("BẮT ĐẦU GỬI ĐIỂM LÊN GOOGLE SHEETS!\nVui lòng nhấn OK và đợi 5 giây...");
-        
         // URL Google Apps Script của bạn
         const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzrOqIP-TVpOJ7-F8YrqJnawZWfSWioWYbS3i5JCUtqpIKYPBtkQVdXrbiFFC18CwB3/exec';
 
@@ -608,13 +605,12 @@ const midtermApp = {
         })
         .then(response => response.text())
         .then(text => {
-            alert("GOOGLE SHEETS PHẢN HỒI:\n" + text);
             try {
                 const data = JSON.parse(text);
                 if(data.status === "success") {
                     debugBox.innerHTML += `[SUCCESS] Đã lưu xong!\n`;
                     this.showToast("Đã nộp bài thành công!", "success");
-                    // Không tự tắt hộp thoại để người dùng đọc được
+                    setTimeout(() => debugBox.remove(), 6000);
                 } else {
                     debugBox.innerHTML += `[ERROR] Google báo lỗi: ${data.message}\n`;
                 }
@@ -623,9 +619,17 @@ const midtermApp = {
             }
         })
         .catch(error => {
-            alert("LỖI MẠNG KHI GỬI:\n" + error.message);
             debugBox.innerHTML += `[ERROR] Lỗi mạng: ${error.message}\n`;
         });
+    },
+
+    // --- Đăng xuất & Cho sinh viên khác thi ---
+    logoutAndRetake: function() {
+        if(confirm("Xóa lịch sử làm bài để cho sinh viên khác vào thi?")) {
+            localStorage.removeItem('midterm_completed');
+            localStorage.removeItem('midterm_state');
+            window.location.reload();
+        }
     },
 
     // --- UI Utilities ---
