@@ -479,7 +479,7 @@ const midtermApp = {
 
         this.state.questions.forEach((q, index) => {
             const userAns = this.state.answers[index];
-            const correctAns = q.Answer.trim().toUpperCase();
+            const correctAns = (q.Answer || "").toString().trim().toUpperCase();
 
             if (!userAns) {
                 unattemptedCount++;
