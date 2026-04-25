@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
 
     <!-- PapaParse -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
@@ -43,7 +45,7 @@
 
     <!-- Anti-cheat & Custom Styling -->
     <link rel="stylesheet" href="midterm-style.css">
-    
+
     <!-- Google Identity Services -->
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
@@ -57,9 +59,10 @@
                 <div class="bg-gradient-to-br from-mit to-red-800 text-white p-2 rounded-lg shadow-inner">
                     <i class="fa-solid fa-building-columns text-xl"></i>
                 </div>
-                <h1 class="text-xl font-display font-bold text-slate-800 hidden sm:block">Hệ Thống Khảo Thí Sinh Viên</h1>
+                <h1 class="text-xl font-display font-bold text-slate-800 hidden sm:block">Hệ Thống Khảo Thí Sinh Viên
+                </h1>
             </div>
-            
+
             <div id="header-user-info" class="hidden flex items-center space-x-3 bg-slate-100 px-4 py-1.5 rounded-full">
                 <img id="user-avatar" src="" alt="Avatar" class="w-7 h-7 rounded-full border-2 border-white shadow-sm">
                 <span id="user-email" class="text-sm font-medium text-slate-700"></span>
@@ -71,7 +74,8 @@
     <main class="flex-grow container mx-auto px-4 py-8 relative">
 
         <!-- Loading Overlay -->
-        <div id="loading" class="hidden fixed inset-0 bg-white/90 backdrop-blur-sm z-[100] flex flex-col justify-center items-center">
+        <div id="loading"
+            class="hidden fixed inset-0 bg-white/90 backdrop-blur-sm z-[100] flex flex-col justify-center items-center">
             <div class="loader-mit mb-4"></div>
             <p id="loading-text" class="text-slate-600 font-medium animate-pulse">Đang chuẩn bị đề thi...</p>
         </div>
@@ -81,37 +85,45 @@
             <div class="bg-white rounded-2xl shadow-xl p-8 border border-slate-100 relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-mit to-red-500"></div>
                 <div class="text-center mb-8">
-                    <div class="w-20 h-20 bg-red-50 text-mit rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div
+                        class="w-20 h-20 bg-red-50 text-mit rounded-full flex items-center justify-center mx-auto mb-4">
                         <i class="fa-solid fa-user-shield text-4xl"></i>
                     </div>
                     <h2 class="text-2xl font-display font-bold text-slate-900">Đăng Nhập Hệ Thống</h2>
-                    <p class="text-slate-500 mt-2 text-sm">Vui lòng sử dụng email của trường Đại Học Đông Á (@donga.edu.vn) để làm bài.</p>
+                    <p class="text-slate-500 mt-2 text-sm">Vui lòng sử dụng email của trường Đại Học Đông Á
+                        (@donga.edu.vn) để làm bài.</p>
                 </div>
-                
+
                 <div class="flex justify-center flex-col gap-4">
                     <!-- Custom Email Login Form -->
                     <div class="mb-2">
-                        <label for="student-email" class="block text-left text-sm font-bold text-slate-700 mb-2">Nhập email trường cung cấp:</label>
+                        <label for="student-email" class="block text-left text-sm font-bold text-slate-700 mb-2">Nhập
+                            email trường cung cấp:</label>
                         <div class="relative">
                             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                 <i class="fa-regular fa-envelope text-slate-400"></i>
                             </div>
-                            <input type="email" id="student-email" placeholder="sv123@donga.edu.vn" class="w-full pl-10 pr-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-mit focus:border-transparent transition-all font-medium">
+                            <input type="email" id="student-email" placeholder="sv123@donga.edu.vn"
+                                class="w-full pl-10 pr-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-mit focus:border-transparent transition-all font-medium">
                         </div>
                     </div>
-                    
-                    <button onclick="midtermApp.customLogin()" class="w-full bg-slate-800 text-white py-3 rounded-lg font-bold hover:bg-slate-700 transition-colors flex items-center justify-center gap-2 shadow-md">
+
+                    <button onclick="midtermApp.customLogin()"
+                        class="w-full bg-slate-800 text-white py-3 rounded-lg font-bold hover:bg-slate-700 transition-colors flex items-center justify-center gap-2 shadow-md">
                         <i class="fa-solid fa-right-to-bracket"></i> Tiếp Tục
                     </button>
-                    
+
                     <!-- Dòng này để giữ tính năng click nhanh nghiệm thu -->
-                    <button onclick="midtermApp.mockLogin()" class="w-full bg-slate-100 text-slate-600 py-2 mt-2 rounded-lg font-medium hover:bg-slate-200 transition-colors text-sm">
+                    <button onclick="midtermApp.mockLogin()"
+                        class="w-full bg-slate-100 text-slate-600 py-2 mt-2 rounded-lg font-medium hover:bg-slate-200 transition-colors text-sm">
                         Hoặc dùng email test mặc định
                     </button>
                 </div>
-                
-                <div id="login-error" class="hidden mt-4 p-3 bg-red-50 border border-red-200 rounded-lg text-red-600 text-sm text-center">
-                    <i class="fa-solid fa-circle-exclamation mr-1"></i> Email không hợp lệ. Vui lòng sử dụng đuôi @donga.edu.vn
+
+                <div id="login-error"
+                    class="hidden mt-4 p-3 bg-red-50 border border-red-200 rounded-lg text-red-600 text-sm text-center">
+                    <i class="fa-solid fa-circle-exclamation mr-1"></i> Email không hợp lệ. Vui lòng sử dụng đuôi
+                    @donga.edu.vn
                 </div>
             </div>
         </div>
@@ -126,14 +138,17 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                     <div class="bg-slate-50 rounded-xl p-5 border border-slate-100 flex items-start gap-4">
-                        <div class="bg-blue-100 text-blue-600 p-3 rounded-lg"><i class="fa-solid fa-list-ol text-xl"></i></div>
+                        <div class="bg-blue-100 text-blue-600 p-3 rounded-lg"><i
+                                class="fa-solid fa-list-ol text-xl"></i></div>
                         <div>
                             <h4 class="font-bold text-slate-800">Cấu trúc đề</h4>
-                            <p class="text-sm text-slate-600 mt-1">60 câu trắc nghiệm (Bốc ngẫu nhiên 10 câu/module từ 1 đến 6).</p>
+                            <p class="text-sm text-slate-600 mt-1">60 câu trắc nghiệm (Bốc ngẫu nhiên 10 câu/module từ 1
+                                đến 6).</p>
                         </div>
                     </div>
                     <div class="bg-slate-50 rounded-xl p-5 border border-slate-100 flex items-start gap-4">
-                        <div class="bg-amber-100 text-amber-600 p-3 rounded-lg"><i class="fa-solid fa-stopwatch text-xl"></i></div>
+                        <div class="bg-amber-100 text-amber-600 p-3 rounded-lg"><i
+                                class="fa-solid fa-stopwatch text-xl"></i></div>
                         <div>
                             <h4 class="font-bold text-slate-800">Thời gian làm bài</h4>
                             <p class="text-sm text-slate-600 mt-1">45 Phút. Hệ thống sẽ tự động nộp khi hết giờ.</p>
@@ -146,23 +161,45 @@
                         <i class="fa-solid fa-triangle-exclamation"></i> Quy chế thi (Bắt buộc)
                     </h3>
                     <ul class="list-disc list-inside text-sm text-slate-700 space-y-2">
-                        <li>Tính năng <b>Copy / Paste</b>, <b>Bôi đen văn bản</b>, và <b>Chuột phải</b> đã bị vô hiệu hóa.</li>
-                        <li>Nghiêm cấm chuyển tab, mở tài liệu khác trong lúc làm bài. Hệ thống sẽ tự động ghi nhận hành vi gian lận nếu bạn rời khỏi màn hình thi.</li>
-                        <li>Điểm số và đáp án sẽ được công bố ngay sau khi nộp bài. Bài làm sẽ được lưu trữ tự động lên hệ thống của Giảng viên.</li>
+                        <li>Tính năng <b>Copy / Paste</b>, <b>Bôi đen văn bản</b>, và <b>Chuột phải</b> đã bị vô hiệu
+                            hóa.</li>
+                        <li>Nghiêm cấm chuyển tab, mở tài liệu khác trong lúc làm bài. Hệ thống sẽ tự động ghi nhận hành
+                            vi gian lận nếu bạn rời khỏi màn hình thi.</li>
+                        <li>Điểm số và đáp án sẽ được công bố ngay sau khi nộp bài. Bài làm sẽ được lưu trữ tự động lên
+                            hệ thống của Giảng viên.</li>
                     </ul>
                 </div>
 
                 <!-- Input Class Name -->
                 <div class="mb-8 p-6 bg-slate-50 border border-slate-200 rounded-xl shadow-inner">
-                    <label for="student-class" class="block text-slate-800 font-bold mb-2">
+                    <label for="student-class-select" class="block text-slate-800 font-bold mb-2">
                         Lớp sinh hoạt của bạn <span class="text-red-500">*</span>
                     </label>
-                    <input type="text" id="student-class" placeholder="VD: BA25M, BA25N..." class="w-full sm:w-1/2 px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-mit focus:border-transparent transition-all uppercase" required>
-                    <p class="text-xs text-slate-500 mt-2"><i class="fa-solid fa-info-circle"></i> Bắt buộc nhập chính xác mã lớp để Giảng viên tổng hợp điểm.</p>
+                    <select id="student-class-select" onchange="midtermApp.handleClassSelection()"
+                        class="w-full sm:w-1/2 px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-mit focus:border-transparent transition-all font-medium text-slate-700"
+                        required>
+                        <option value="">-- Chọn lớp của bạn --</option>
+                        <option value="EL25M">EL25M</option>
+                        <option value="EL25N">EL25N</option>
+                        <option value="BA25M">BA25M</option>
+                        <option value="BA25N">BA25N</option>
+                        <option value="CL24M">CL24M</option>
+                        <option value="CL24N">CL24N</option>
+                        <option value="EE24M">EE24M</option>
+                        <option value="OTHER">Các lớp khác...</option>
+                    </select>
+                    <div id="other-class-container" class="hidden mt-3">
+                        <input type="text" id="student-class" placeholder="Nhập tên lớp của bạn (VD: IT25A)"
+                            class="w-full sm:w-1/2 px-4 py-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-mit focus:border-transparent transition-all uppercase"
+                            required>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-3"><i class="fa-solid fa-info-circle"></i> Bắt buộc chọn chính
+                        xác mã lớp để Giảng viên tổng hợp điểm.</p>
                 </div>
 
                 <div class="flex justify-end">
-                    <button id="btn-start-exam" onclick="midtermApp.startExam()" class="bg-gradient-to-r from-mit to-red-600 text-white px-8 py-3.5 rounded-xl font-bold shadow-lg hover:shadow-red-500/30 transform hover:-translate-y-1 transition-all flex items-center gap-2">
+                    <button id="btn-start-exam" onclick="midtermApp.startExam()"
+                        class="bg-gradient-to-r from-mit to-red-600 text-white px-8 py-3.5 rounded-xl font-bold shadow-lg hover:shadow-red-500/30 transform hover:-translate-y-1 transition-all flex items-center gap-2">
                         <span>Đồng Ý & Bắt Đầu Làm Bài</span>
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
@@ -175,17 +212,20 @@
             <div class="flex flex-col lg:flex-row gap-6 h-full">
                 <!-- Left Column: Question Area -->
                 <div class="lg:w-3/4 flex flex-col">
-                    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8 flex-grow relative flex flex-col min-h-[500px]">
+                    <div
+                        class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8 flex-grow relative flex flex-col min-h-[500px]">
                         <div class="flex justify-between items-center mb-6 pb-4 border-b border-slate-100">
                             <span class="bg-slate-100 text-slate-700 text-sm font-bold px-3 py-1.5 rounded-md">
                                 Câu <span id="current-question-number" class="text-mit">1</span> / 60
                             </span>
-                            <span id="question-module-badge" class="text-xs font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
+                            <span id="question-module-badge"
+                                class="text-xs font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
                                 Module 1
                             </span>
                         </div>
 
-                        <h3 id="question-text" class="text-xl sm:text-2xl font-semibold text-slate-800 mb-8 leading-relaxed flex-grow">
+                        <h3 id="question-text"
+                            class="text-xl sm:text-2xl font-semibold text-slate-800 mb-8 leading-relaxed flex-grow">
                             Đang tải câu hỏi...
                         </h3>
 
@@ -195,10 +235,14 @@
 
                         <!-- Navigation -->
                         <div class="mt-auto flex justify-between pt-6 border-t border-slate-100">
-                            <button onclick="midtermApp.prevQuestion()" class="px-5 py-2.5 bg-white border border-slate-200 text-slate-700 rounded-xl hover:bg-slate-50 transition-colors disabled:opacity-40 disabled:cursor-not-allowed font-medium shadow-sm" id="btn-prev">
+                            <button onclick="midtermApp.prevQuestion()"
+                                class="px-5 py-2.5 bg-white border border-slate-200 text-slate-700 rounded-xl hover:bg-slate-50 transition-colors disabled:opacity-40 disabled:cursor-not-allowed font-medium shadow-sm"
+                                id="btn-prev">
                                 <i class="fa-solid fa-arrow-left mr-2"></i> Câu trước
                             </button>
-                            <button onclick="midtermApp.nextQuestion()" class="px-5 py-2.5 bg-slate-800 text-white rounded-xl hover:bg-slate-700 transition-colors shadow-md disabled:opacity-40 disabled:cursor-not-allowed font-medium" id="btn-next">
+                            <button onclick="midtermApp.nextQuestion()"
+                                class="px-5 py-2.5 bg-slate-800 text-white rounded-xl hover:bg-slate-700 transition-colors shadow-md disabled:opacity-40 disabled:cursor-not-allowed font-medium"
+                                id="btn-next">
                                 Câu tiếp <i class="fa-solid fa-arrow-right ml-2"></i>
                             </button>
                         </div>
@@ -209,33 +253,45 @@
                 <div class="lg:w-1/4">
                     <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sticky top-24">
                         <!-- Timer -->
-                        <div class="bg-slate-50 rounded-xl p-4 mb-6 text-center border border-slate-100 relative overflow-hidden group">
-                            <div class="absolute inset-0 bg-red-50 opacity-0 group-hover:opacity-100 transition-opacity timer-warning-bg hidden"></div>
+                        <div
+                            class="bg-slate-50 rounded-xl p-4 mb-6 text-center border border-slate-100 relative overflow-hidden group">
+                            <div
+                                class="absolute inset-0 bg-red-50 opacity-0 group-hover:opacity-100 transition-opacity timer-warning-bg hidden">
+                            </div>
                             <p class="text-sm text-slate-500 font-medium mb-1 relative z-10">Thời gian còn lại</p>
-                            <div id="timer-display" class="text-3xl font-display font-bold text-slate-800 tracking-tight relative z-10 flex items-center justify-center gap-2">
+                            <div id="timer-display"
+                                class="text-3xl font-display font-bold text-slate-800 tracking-tight relative z-10 flex items-center justify-center gap-2">
                                 <i class="fa-regular fa-clock text-xl text-slate-400"></i>
                                 <span>45:00</span>
                             </div>
                         </div>
 
-                        <h4 class="text-sm font-bold text-slate-800 mb-4 uppercase tracking-wider">Danh sách câu hỏi</h4>
-                        
-                        <div class="grid grid-cols-5 gap-2 max-h-[350px] overflow-y-auto pr-2 custom-scrollbar" id="question-palette">
+                        <h4 class="text-sm font-bold text-slate-800 mb-4 uppercase tracking-wider">Danh sách câu hỏi
+                        </h4>
+
+                        <div class="grid grid-cols-5 gap-2 max-h-[350px] overflow-y-auto pr-2 custom-scrollbar"
+                            id="question-palette">
                             <!-- Palette buttons injected here -->
                         </div>
 
                         <div class="mt-6 pt-4 border-t border-slate-100 space-y-2 text-xs font-medium text-slate-600">
                             <div class="flex items-center justify-between">
-                                <div class="flex items-center"><div class="w-3 h-3 rounded bg-slate-100 border border-slate-200 mr-2"></div> Chưa làm</div>
+                                <div class="flex items-center">
+                                    <div class="w-3 h-3 rounded bg-slate-100 border border-slate-200 mr-2"></div> Chưa
+                                    làm
+                                </div>
                                 <span id="count-unanswered">60</span>
                             </div>
                             <div class="flex items-center justify-between">
-                                <div class="flex items-center"><div class="w-3 h-3 rounded bg-mit mr-2"></div> Đã làm</div>
+                                <div class="flex items-center">
+                                    <div class="w-3 h-3 rounded bg-mit mr-2"></div> Đã làm
+                                </div>
                                 <span id="count-answered">0</span>
                             </div>
                         </div>
 
-                        <button onclick="midtermApp.submitExamConfirm()" class="w-full mt-6 py-3 bg-red-600 text-white rounded-xl font-bold hover:bg-red-700 transition-colors shadow-md shadow-red-500/20">
+                        <button onclick="midtermApp.submitExamConfirm()"
+                            class="w-full mt-6 py-3 bg-red-600 text-white rounded-xl font-bold hover:bg-red-700 transition-colors shadow-md shadow-red-500/20">
                             <i class="fa-solid fa-paper-plane mr-2"></i> Nộp Bài Ngay
                         </button>
                     </div>
@@ -252,21 +308,23 @@
                     <h2 class="text-3xl font-display font-bold mb-2">Kết Quả Kiểm Tra Giữa Kỳ</h2>
                     <p class="text-slate-300" id="result-user-email">sinhvien@donga.edu.vn</p>
                 </div>
-                
+
                 <div class="p-8">
                     <!-- Score Circle -->
                     <div class="flex flex-col md:flex-row items-center justify-center gap-10 mb-10">
                         <div class="relative w-48 h-48">
                             <svg class="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
                                 <circle cx="50" cy="50" r="45" fill="none" stroke="#f1f5f9" stroke-width="8"></circle>
-                                <circle id="score-circle" cx="50" cy="50" r="45" fill="none" stroke="#10b981" stroke-width="8" stroke-dasharray="283" stroke-dashoffset="283" class="transition-all duration-1000 ease-out"></circle>
+                                <circle id="score-circle" cx="50" cy="50" r="45" fill="none" stroke="#10b981"
+                                    stroke-width="8" stroke-dasharray="283" stroke-dashoffset="283"
+                                    class="transition-all duration-1000 ease-out"></circle>
                             </svg>
                             <div class="absolute inset-0 flex flex-col items-center justify-center">
                                 <span id="score-text" class="text-5xl font-display font-bold text-slate-800">0</span>
                                 <span class="text-slate-500 font-medium">/ 10 Điểm</span>
                             </div>
                         </div>
-                        
+
                         <div class="grid grid-cols-2 gap-4 w-full md:w-auto">
                             <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center min-w-[120px]">
                                 <p class="text-xs font-bold text-slate-400 uppercase mb-1">Số câu đúng</p>
@@ -289,7 +347,8 @@
 
                     <!-- Review Answers Button -->
                     <div class="text-center mb-8 border-t border-slate-100 pt-8">
-                        <button onclick="midtermApp.toggleReview()" class="bg-white border-2 border-slate-200 text-slate-700 px-6 py-3 rounded-xl font-bold hover:bg-slate-50 hover:border-slate-300 transition-all">
+                        <button onclick="midtermApp.toggleReview()"
+                            class="bg-white border-2 border-slate-200 text-slate-700 px-6 py-3 rounded-xl font-bold hover:bg-slate-50 hover:border-slate-300 transition-all">
                             <i class="fa-solid fa-list-check mr-2"></i> Xem Chi Tiết Đáp Án
                         </button>
                     </div>
@@ -302,12 +361,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="bg-slate-50 p-4 flex flex-col sm:flex-row justify-center gap-4 border-t border-slate-100">
-                    <button onclick="midtermApp.logoutAndRetake()" class="px-6 py-2 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-lg hover:shadow-lg hover:-translate-y-0.5 transition-all font-bold flex items-center justify-center">
+                    <button onclick="midtermApp.logoutAndRetake()"
+                        class="px-6 py-2 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-lg hover:shadow-lg hover:-translate-y-0.5 transition-all font-bold flex items-center justify-center">
                         <i class="fa-solid fa-users mr-2"></i> Cho sinh viên khác thi
                     </button>
-                    <button onclick="window.location.href='index.html'" class="px-6 py-2 border border-slate-300 text-slate-600 rounded-lg hover:bg-slate-100 transition-colors font-medium flex items-center justify-center">
+                    <button onclick="window.location.href='index.html'"
+                        class="px-6 py-2 border border-slate-300 text-slate-600 rounded-lg hover:bg-slate-100 transition-colors font-medium flex items-center justify-center">
                         <i class="fa-solid fa-house mr-2"></i> Trở về Hệ thống Trắc nghiệm
                     </button>
                 </div>
@@ -317,19 +378,24 @@
     </main>
 
     <!-- Modal Confirm Submit -->
-    <div id="modal-confirm" class="hidden fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
-        <div class="bg-white rounded-2xl shadow-2xl p-6 md:p-8 max-w-sm w-full transform scale-95 transition-transform duration-300" id="modal-confirm-content">
+    <div id="modal-confirm"
+        class="hidden fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-2xl shadow-2xl p-6 md:p-8 max-w-sm w-full transform scale-95 transition-transform duration-300"
+            id="modal-confirm-content">
             <div class="w-16 h-16 bg-red-100 text-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fa-solid fa-paper-plane text-2xl"></i>
             </div>
             <h3 class="text-2xl font-bold text-center text-slate-800 mb-2">Nộp bài thi?</h3>
-            <p class="text-center text-slate-600 mb-6" id="modal-confirm-text">Bạn chưa hoàn thành tất cả câu hỏi. Bạn có chắc chắn muốn nộp bài ngay?</p>
-            
+            <p class="text-center text-slate-600 mb-6" id="modal-confirm-text">Bạn chưa hoàn thành tất cả câu hỏi. Bạn
+                có chắc chắn muốn nộp bài ngay?</p>
+
             <div class="flex gap-3">
-                <button onclick="midtermApp.closeModal()" class="flex-1 px-4 py-2.5 bg-slate-100 text-slate-700 rounded-xl font-medium hover:bg-slate-200 transition-colors">
+                <button onclick="midtermApp.closeModal()"
+                    class="flex-1 px-4 py-2.5 bg-slate-100 text-slate-700 rounded-xl font-medium hover:bg-slate-200 transition-colors">
                     Tiếp tục làm
                 </button>
-                <button onclick="midtermApp.submitExam()" class="flex-1 px-4 py-2.5 bg-red-600 text-white rounded-xl font-bold hover:bg-red-700 transition-colors">
+                <button onclick="midtermApp.submitExam()"
+                    class="flex-1 px-4 py-2.5 bg-red-600 text-white rounded-xl font-bold hover:bg-red-700 transition-colors">
                     Nộp Bài
                 </button>
             </div>
@@ -339,8 +405,8 @@
     <!-- Alert Toast -->
     <div id="toast-container" class="fixed top-20 right-4 z-50 flex flex-col gap-2"></div>
 
-    <!-- Script (Bust cache version 3 for Google Sheets integration) -->
-    <script src="midterm.js?v=3"></script>
+    <!-- Script (Bust cache version 4 for Google Sheets integration) -->
+    <script src="midterm.js?v=4"></script>
 </body>
 
 </html>

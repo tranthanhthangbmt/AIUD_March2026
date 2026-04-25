@@ -58,9 +58,9 @@
                 Trang chủ
             </div>
             <div class="flex items-center space-x-4">
-                <a href="https://docs.google.com/spreadsheets/d/1ZqrJNJwPyd2UvV4so1N0jqzvrX5gylhR_fZ3djw2iMg/edit?usp=sharing" target="_blank" class="text-gray-500 hover:text-mit transition-colors" title="Trang Giảng Viên (Google Sheets)">
+                <button onclick="openTeacherLogin()" class="text-gray-500 hover:text-mit transition-colors" title="Trang Giảng Viên">
                     <i class="fa-solid fa-chalkboard-user text-xl"></i>
-                </a>
+                </button>
                 <button onclick="app.goHome()" class="text-gray-500 hover:text-primary transition-colors" title="Trang chủ trắc nghiệm">
                     <i class="fa-solid fa-house text-xl"></i>
                 </button>
@@ -90,7 +90,7 @@
                         class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all flex items-center">
                         <i class="fa-solid fa-pen-to-square mr-2"></i> Tạo Đề Luyện Tập
                     </button>
-                    <a href="midterm.html"
+                    <a href="midterm.html?nocache=1"
                         class="bg-gradient-to-r from-red-600 to-rose-600 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:shadow-xl hover:shadow-red-500/30 transform hover:-translate-y-1 transition-all flex items-center border-2 border-red-400">
                         <i class="fa-solid fa-graduation-cap mr-2"></i> Thi Giữa Kỳ (Chuẩn MIT)
                     </a>
@@ -244,6 +244,72 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <!-- Teacher Login Modal -->
+    <div id="teacher-login-modal" class="hidden fixed inset-0 bg-gray-900/50 backdrop-blur-sm z-[100] flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl shadow-xl w-full max-w-md p-6 relative">
+            <button onclick="closeTeacherLogin()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div class="text-center mb-6">
+                <div class="w-16 h-16 bg-red-50 text-mit rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fa-solid fa-user-shield text-2xl"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800">Xác Thực Giảng Viên</h2>
+                <p class="text-gray-500 text-sm mt-2">Vui lòng nhập thông tin xác thực để truy cập bảng điểm.</p>
+            </div>
+            
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-1">Tài khoản</label>
+                    <input type="text" id="teacher-username" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mit focus:border-transparent outline-none transition-all" placeholder="Nhập tài khoản...">
+                </div>
+                <div>
+                    <label class="block text-sm font-bold text-gray-700 mb-1">Mật khẩu</label>
+                    <input type="password" id="teacher-password" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mit focus:border-transparent outline-none transition-all" placeholder="Nhập mật khẩu..." onkeypress="if(event.key === 'Enter') checkTeacherLogin()">
+                </div>
+                
+                <div id="teacher-login-error" class="hidden p-3 bg-red-50 text-red-600 text-sm rounded-lg border border-red-200">
+                    <i class="fa-solid fa-circle-exclamation mr-1"></i> Tài khoản hoặc mật khẩu không chính xác!
+                </div>
+                
+                <button onclick="checkTeacherLogin()" class="w-full bg-mit text-white font-bold py-3.5 rounded-xl hover:bg-red-700 transition-colors shadow-md mt-2 flex justify-center items-center gap-2">
+                    <i class="fa-solid fa-right-to-bracket"></i> Đăng Nhập
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTeacherLogin() {
+            document.getElementById('teacher-login-modal').classList.remove('hidden');
+            document.getElementById('teacher-username').value = '';
+            document.getElementById('teacher-password').value = '';
+            document.getElementById('teacher-login-error').classList.add('hidden');
+            setTimeout(() => {
+                document.getElementById('teacher-username').focus();
+            }, 100);
+        }
+
+        function closeTeacherLogin() {
+            document.getElementById('teacher-login-modal').classList.add('hidden');
+        }
+
+        function checkTeacherLogin() {
+            const user = document.getElementById('teacher-username').value.trim();
+            const pass = document.getElementById('teacher-password').value.trim();
+            
+            if (user === 'admin' && pass === '-Abcd1234') {
+                closeTeacherLogin();
+                // Chuyển hướng tới Google Sheets
+                window.open('https://docs.google.com/spreadsheets/d/1ZqrJNJwPyd2UvV4so1N0jqzvrX5gylhR_fZ3djw2iMg/edit?usp=sharing', '_blank');
+            } else {
+                document.getElementById('teacher-login-error').classList.remove('hidden');
+                document.getElementById('teacher-password').value = '';
+                document.getElementById('teacher-password').focus();
+            }
+        }
+    </script>
 </body>
 
 </html>

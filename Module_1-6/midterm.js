@@ -51,10 +51,10 @@ const midtermApp = {
             // Decode JWT to get user info
             const base64Url = response.credential.split('.')[1];
             const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
-            const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+            const jsonPayload = decodeURIComponent(atob(base64).split('').map(function (c) {
                 return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
             }).join(''));
-            
+
             const payload = JSON.parse(jsonPayload);
             const email = payload.email;
 
@@ -84,7 +84,7 @@ const midtermApp = {
     customLogin: function () {
         const emailInput = document.getElementById('student-email');
         const email = emailInput.value.trim();
-        
+
         if (email && email.endsWith(this.config.allowedEmailDomain)) {
             document.getElementById('login-error').classList.add('hidden');
             this.loginSuccess({
@@ -103,12 +103,12 @@ const midtermApp = {
 
     loginSuccess: function (user) {
         this.state.user = user;
-        
+
         // Update header
         const headerInfo = document.getElementById('header-user-info');
         headerInfo.classList.remove('hidden');
         document.getElementById('user-email').textContent = user.email;
-        if(user.picture) {
+        if (user.picture) {
             document.getElementById('user-avatar').src = user.picture;
         } else {
             // Default avatar
@@ -118,34 +118,67 @@ const midtermApp = {
         this.showView('view-intro');
     },
 
+    handleClassSelection: function () {
+        const select = document.getElementById('student-class-select');
+        const otherContainer = document.getElementById('other-class-container');
+        const textInput = document.getElementById('student-class');
+
+        if (select.value === 'OTHER') {
+            otherContainer.classList.remove('hidden');
+            textInput.focus();
+        } else {
+            otherContainer.classList.add('hidden');
+            if (select.value) {
+                textInput.value = select.value;
+            } else {
+                textInput.value = '';
+            }
+        }
+    },
+
     // --- Loading Questions ---
     startExam: async function () {
+        const select = document.getElementById('student-class-select');
         const classInput = document.getElementById('student-class');
-        if (!classInput.value.trim()) {
-            this.showToast("Vui lòng nhập Lớp sinh hoạt của bạn!", "warning");
-            classInput.focus();
+
+        let finalClassName = "";
+
+        if (!select.value) {
+            this.showToast("Vui lòng chọn Lớp sinh hoạt của bạn!", "warning");
+            select.focus();
             return;
         }
-        
-        this.state.user.className = classInput.value.trim().toUpperCase();
+
+        if (select.value === 'OTHER') {
+            if (!classInput.value.trim()) {
+                this.showToast("Vui lòng nhập tên lớp của bạn!", "warning");
+                classInput.focus();
+                return;
+            }
+            finalClassName = classInput.value.trim().toUpperCase();
+        } else {
+            finalClassName = select.value;
+        }
+
+        this.state.user.className = finalClassName;
 
         const loading = document.getElementById('loading');
         loading.classList.remove('hidden');
-        
+
         try {
             await this.loadAllQuestions();
-            
+
             // Initialize Exam State
             this.state.answers = {};
             this.state.currentIndex = 0;
             this.state.isSubmitted = false;
             this.state.cheatCount = 0;
             this.state.startTime = new Date();
-            
+
             this.renderPalette();
             this.renderQuestion();
             this.startTimer();
-            
+
             this.showView('view-quiz');
         } catch (error) {
             console.error("Error loading questions:", error);
@@ -180,10 +213,10 @@ const midtermApp = {
 
         const results = await Promise.all(promises);
         let allPicked = results.flat();
-        
+
         // Final shuffle of all 60 questions
         this.shuffleArray(allPicked);
-        
+
         // Safety check
         if (allPicked.length < this.config.totalQuestions) {
             console.warn(`Only loaded ${allPicked.length} questions. Adjusting total questions.`);
@@ -204,7 +237,7 @@ const midtermApp = {
     setupAntiCheat: function () {
         // Prevent Context Menu
         document.addEventListener('contextmenu', e => {
-            if(!this.state.isSubmitted && document.getElementById('view-quiz').classList.contains('hidden') === false) {
+            if (!this.state.isSubmitted && document.getElementById('view-quiz').classList.contains('hidden') === false) {
                 e.preventDefault();
                 this.recordCheat("Click chuột phải");
             }
@@ -218,7 +251,7 @@ const midtermApp = {
         // Prevent typical inspect element shortcuts (F12, Ctrl+Shift+I, etc)
         document.addEventListener('keydown', e => {
             if (this.state.isSubmitted || document.getElementById('view-quiz').classList.contains('hidden')) return;
-            
+
             // Block Ctrl+C, Ctrl+V, etc
             if (e.ctrlKey || e.metaKey) {
                 if (['c', 'v', 'x', 'p', 's', 'u'].includes(e.key.toLowerCase())) {
@@ -271,7 +304,7 @@ const midtermApp = {
         const m = Math.floor(this.state.timeLeft / 60);
         const s = this.state.timeLeft % 60;
         const display = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-        
+
         const timerContainer = document.getElementById('timer-display').parentElement;
         document.getElementById('timer-display').querySelector('span').textContent = display;
 
@@ -284,7 +317,7 @@ const midtermApp = {
     renderPalette: function () {
         const container = document.getElementById('question-palette');
         container.innerHTML = '';
-        
+
         this.state.questions.forEach((_, index) => {
             const btn = document.createElement('button');
             btn.className = 'palette-item w-full aspect-square rounded-lg bg-slate-100 text-slate-600 text-sm font-medium flex items-center justify-center border border-slate-200 hover:bg-slate-200 focus:outline-none';
@@ -293,7 +326,7 @@ const midtermApp = {
             btn.id = `palette-btn-${index}`;
             container.appendChild(btn);
         });
-        
+
         this.updatePaletteStats();
     },
 
@@ -320,7 +353,7 @@ const midtermApp = {
         // Let's just render them as A, B, C, D to keep it simple, or shuffle based on question ID.
         // For standard MIT exams, randomizing options is good, but without state persistence it might flip when navigating back.
         // We'll store the shuffled order in the question object itself.
-        
+
         if (!question._options) {
             this.shuffleArray(optionKeys);
             question._options = optionKeys;
@@ -331,7 +364,7 @@ const midtermApp = {
         question._options.forEach(opt => {
             const el = document.createElement('div');
             const isSelected = currentAnswer === opt.key;
-            
+
             el.className = `quiz-option p-4 rounded-xl flex items-center gap-4 ${isSelected ? 'selected' : 'border-slate-200 bg-white'}`;
             el.dataset.key = opt.key;
             el.onclick = () => this.selectAnswer(opt.key);
@@ -355,19 +388,19 @@ const midtermApp = {
 
     selectAnswer: function (key) {
         if (this.state.isSubmitted) return;
-        
+
         this.state.answers[this.state.currentIndex] = key;
-        
+
         // Re-render question to show selection
         this.renderQuestion();
-        
+
         // Update palette
         const paletteBtn = document.getElementById(`palette-btn-${this.state.currentIndex}`);
         paletteBtn.classList.remove('bg-slate-100', 'text-slate-600');
         paletteBtn.classList.add('bg-mit', 'text-white', 'border-mit');
-        
+
         this.updatePaletteStats();
-        
+
         // Auto-advance
         if (this.state.currentIndex < this.config.totalQuestions - 1) {
             setTimeout(() => this.nextQuestion(), 400);
@@ -413,7 +446,7 @@ const midtermApp = {
         } else {
             document.getElementById('modal-confirm-text').textContent = "Bạn đã hoàn thành tất cả câu hỏi. Bạn có chắc chắn muốn nộp bài?";
         }
-        
+
         const modal = document.getElementById('modal-confirm');
         modal.classList.remove('hidden');
         setTimeout(() => modal.classList.remove('opacity-0'), 10);
@@ -426,12 +459,12 @@ const midtermApp = {
     },
 
     submitExam: function (autoSubmit = false) {
-        if(!autoSubmit) this.closeModal();
-        
+        if (!autoSubmit) this.closeModal();
+
         clearInterval(this.state.timerInterval);
         this.state.isSubmitted = true;
         this.state.endTime = new Date();
-        
+
         // Disable class to allow selecting text in results view if needed
         document.body.classList.remove('anti-cheat-enabled');
 
@@ -447,7 +480,7 @@ const midtermApp = {
         this.state.questions.forEach((q, index) => {
             const userAns = this.state.answers[index];
             const correctAns = q.Answer.trim().toUpperCase();
-            
+
             if (!userAns) {
                 unattemptedCount++;
             } else if (userAns.trim().toUpperCase() === correctAns) {
@@ -459,7 +492,7 @@ const midtermApp = {
 
         // 10 point scale
         const score = ((correctCount / this.config.totalQuestions) * 10).toFixed(2);
-        
+
         // Time taken
         const timeTakenSec = Math.floor((this.state.endTime - this.state.startTime) / 1000);
         const m = Math.floor(timeTakenSec / 60);
@@ -471,13 +504,13 @@ const midtermApp = {
         document.getElementById('stat-correct').textContent = `${correctCount}/${this.config.totalQuestions}`;
         document.getElementById('stat-wrong').textContent = wrongCount + unattemptedCount;
         document.getElementById('stat-time').textContent = timeStr;
-        
+
         let rank = "Yếu";
         let rankColor = "text-red-600";
         if (score >= 8.5) { rank = "Giỏi"; rankColor = "text-emerald-600"; }
         else if (score >= 7.0) { rank = "Khá"; rankColor = "text-blue-600"; }
         else if (score >= 5.0) { rank = "Trung bình"; rankColor = "text-amber-600"; }
-        
+
         const rankEl = document.getElementById('stat-rank');
         rankEl.textContent = rank;
         rankEl.className = `text-lg font-bold mt-1 ${rankColor}`;
@@ -487,49 +520,49 @@ const midtermApp = {
         const circle = document.getElementById('score-circle');
         const circumference = 283; // 2 * pi * r (r=45)
         const offset = circumference - (score / 10) * circumference;
-        
+
         this.showView('view-result');
-        
+
         setTimeout(() => {
             circle.style.strokeDashoffset = offset;
-            if(score < 5) circle.style.stroke = "#ef4444";
-            else if(score < 8) circle.style.stroke = "#3b82f6";
+            if (score < 5) circle.style.stroke = "#ef4444";
+            else if (score < 8) circle.style.stroke = "#3b82f6";
         }, 500);
 
         this.generateReviewContent();
     },
 
-    toggleReview: function() {
+    toggleReview: function () {
         const area = document.getElementById('review-area');
         area.classList.toggle('hidden');
     },
 
-    generateReviewContent: function() {
+    generateReviewContent: function () {
         const container = document.getElementById('review-list');
         container.innerHTML = '';
 
         this.state.questions.forEach((q, index) => {
             const userAns = this.state.answers[index];
-            const correctAns = q.Answer.trim().toUpperCase();
+            const correctAns = (q.Answer || "").toString().trim().toUpperCase();
             const isCorrect = userAns === correctAns;
             const isUnattempted = !userAns;
 
             let borderClass = isCorrect ? 'border-emerald-500' : 'border-red-500';
-            if(isUnattempted) borderClass = 'border-amber-500';
+            if (isUnattempted) borderClass = 'border-amber-500';
 
             const div = document.createElement('div');
             div.className = `bg-slate-50 border-l-4 ${borderClass} p-5 rounded-r-xl shadow-sm`;
-            
+
             let statusBadge = '';
-            if(isCorrect) statusBadge = '<span class="bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-1 rounded">Đúng</span>';
-            else if(isUnattempted) statusBadge = '<span class="bg-amber-100 text-amber-700 text-xs font-bold px-2 py-1 rounded">Bỏ trống</span>';
+            if (isCorrect) statusBadge = '<span class="bg-emerald-100 text-emerald-700 text-xs font-bold px-2 py-1 rounded">Đúng</span>';
+            else if (isUnattempted) statusBadge = '<span class="bg-amber-100 text-amber-700 text-xs font-bold px-2 py-1 rounded">Bỏ trống</span>';
             else statusBadge = '<span class="bg-red-100 text-red-700 text-xs font-bold px-2 py-1 rounded">Sai</span>';
 
             let optionsHtml = '';
             q._options.forEach(opt => {
                 let optClass = "text-slate-600";
                 let icon = "";
-                
+
                 if (opt.key === correctAns) {
                     optClass = "text-emerald-700 font-bold bg-emerald-50 p-2 rounded";
                     icon = '<i class="fa-solid fa-check text-emerald-500 mr-2"></i>';
@@ -562,7 +595,7 @@ const midtermApp = {
         // Prepare detailed answers
         const detailedAnswers = this.state.questions.map((q, index) => {
             const userAns = this.state.answers[index];
-            const correctAns = q.Answer.trim().toUpperCase();
+            const correctAns = (q.Answer || "").toString().trim().toUpperCase();
             return {
                 questionIndex: index + 1,
                 moduleId: q._moduleId,
@@ -585,48 +618,70 @@ const midtermApp = {
         };
 
         console.log("Saving results to Google Sheets...", payload);
-        
-        // URL Google Apps Script của bạn
+
+        // URL Google Apps Script
         const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzrOqIP-TVpOJ7-F8YrqJnawZWfSWioWYbS3i5JCUtqpIKYPBtkQVdXrbiFFC18CwB3/exec';
 
-        const debugBox = document.createElement('div');
-        debugBox.className = "fixed bottom-4 left-4 p-4 bg-slate-900 text-green-400 font-mono text-sm rounded z-50 whitespace-pre-wrap shadow-2xl border border-green-500/30";
-        debugBox.style.maxWidth = "400px";
-        debugBox.innerHTML = "[SYSTEM] Đang gửi dữ liệu tới Google...\n";
-        document.body.appendChild(debugBox);
+        // Hiển thị Overlay Loading to đùng
+        const overlay = document.createElement('div');
+        overlay.className = "fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-[9999] flex flex-col items-center justify-center";
+        overlay.innerHTML = `
+            <div class="w-16 h-16 border-4 border-mit border-t-transparent rounded-full animate-spin mb-4"></div>
+            <h2 class="text-2xl font-bold text-white mb-2">Đang lưu kết quả lên Google Sheets...</h2>
+            <p class="text-slate-300">Vui lòng không đóng trình duyệt lúc này!</p>
+        `;
+        document.body.appendChild(overlay);
 
-        // Gửi bằng Content-Type text/plain để vượt qua CORS preflight của Google
-        fetch(GOOGLE_SCRIPT_URL, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'text/plain;charset=utf-8',
-            },
-            body: JSON.stringify(payload)
-        })
-        .then(response => response.text())
-        .then(text => {
-            try {
-                const data = JSON.parse(text);
-                if(data.status === "success") {
-                    debugBox.innerHTML += `[SUCCESS] Đã lưu xong!\n`;
-                    this.showToast("Đã nộp bài thành công!", "success");
-                    setTimeout(() => debugBox.remove(), 6000);
-                } else {
-                    debugBox.innerHTML += `[ERROR] Google báo lỗi: ${data.message}\n`;
+        // Dùng phương pháp chèn Form ẩn để vượt mọi rào cản CORS và AdBlock
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.action = GOOGLE_SCRIPT_URL;
+        form.target = 'hidden_iframe';
+        form.style.display = 'none';
+
+        // Fake the POST content as plain text using enctype
+        form.enctype = 'text/plain';
+
+        const input = document.createElement('input');
+        input.name = JSON.stringify(payload);
+        input.value = ''; // We put the payload in the name attribute so it submits as `{"email":"..."}=`
+
+        form.appendChild(input);
+
+        const iframe = document.createElement('iframe');
+        iframe.name = 'hidden_iframe';
+        iframe.style.display = 'none';
+
+        document.body.appendChild(iframe);
+        document.body.appendChild(form);
+
+        iframe.onload = () => {
+            // Success
+            overlay.innerHTML = `
+                <div class="w-20 h-20 bg-emerald-500 rounded-full flex items-center justify-center mb-4 shadow-lg shadow-emerald-500/50">
+                    <i class="fa-solid fa-check text-4xl text-white"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-white mb-2">Đã lưu điểm thành công!</h2>
+                <p class="text-emerald-200 text-lg">Hệ thống đã ghi nhận vào Google Sheets.</p>
+                <button onclick="document.body.removeChild(this.parentElement)" class="mt-6 px-8 py-3 bg-white text-emerald-600 rounded-xl font-bold hover:bg-slate-100 transition-colors">Đóng thông báo này</button>
+            `;
+            setTimeout(() => {
+                if(document.body.contains(overlay)) {
+                    document.body.removeChild(overlay);
                 }
-            } catch(e) {
-                debugBox.innerHTML += `[ERROR] Dữ liệu trả về không phải JSON: ${text.substring(0, 50)}\n`;
-            }
-        })
-        .catch(error => {
-            debugBox.innerHTML += `[ERROR] Lỗi mạng: ${error.message}\n`;
-        });
+            }, 5000);
+            this.showToast("Đã nộp bài thành công!", "success");
+        };
+
+        // Submit form
+        setTimeout(() => {
+            form.submit();
+        }, 500);
     },
 
     // --- Đăng xuất & Cho sinh viên khác thi ---
-    logoutAndRetake: function() {
-        if(confirm("Xóa lịch sử làm bài để cho sinh viên khác vào thi?")) {
-            localStorage.removeItem('midterm_completed');
+    logoutAndRetake: function () {
+        if (confirm("Bắt đầu bài thi mới với tài khoản khác?")) {
             localStorage.removeItem('midterm_state');
             window.location.reload();
         }
@@ -636,10 +691,10 @@ const midtermApp = {
     showToast: function (message, type = "info") {
         const container = document.getElementById('toast-container');
         const toast = document.createElement('div');
-        
+
         let bgClass = "bg-slate-800 text-white";
         let icon = '<i class="fa-solid fa-circle-info text-blue-400"></i>';
-        
+
         if (type === "error" || type === "warning") {
             bgClass = "bg-red-50 text-red-700 border border-red-200";
             icon = '<i class="fa-solid fa-triangle-exclamation text-red-500"></i>';
@@ -650,9 +705,9 @@ const midtermApp = {
 
         toast.className = `px-4 py-3 rounded-xl shadow-lg flex items-center gap-3 toast-enter ${bgClass}`;
         toast.innerHTML = `${icon} <span class="font-medium text-sm">${message}</span>`;
-        
+
         container.appendChild(toast);
-        
+
         setTimeout(() => {
             toast.classList.remove('toast-enter');
             toast.classList.add('toast-leave');
