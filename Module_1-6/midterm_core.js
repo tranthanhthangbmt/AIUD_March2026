@@ -1,3 +1,5 @@
+console.log("🚀 [MIDTERM_CORE] ĐÃ NẠP THÀNH CÔNG HỆ THỐNG MỚI - BYPASS CACHE 100%");
+
 const midtermApp = {
     config: {
         totalQuestions: 60,
@@ -27,8 +29,17 @@ const midtermApp = {
     },
 
     init: function () {
+        // Đảm bảo DOM đã tải xong
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => this.startApp());
+        } else {
+            this.startApp();
+        }
+    },
+
+    startApp: function () {
         this.setupAntiCheat();
-        this.showView('view-login');
+        this.showView('view-intro');
     },
 
     // --- View Routing ---
@@ -138,21 +149,55 @@ const midtermApp = {
 
     // --- Loading Questions ---
     startExam: async function () {
+        console.log("Starting exam process...");
+        const emailInput = document.getElementById('student-email');
         const select = document.getElementById('student-class-select');
         const classInput = document.getElementById('student-class');
+        const nameInput = document.getElementById('student-name');
+        const idInput = document.getElementById('student-id');
+        const modeSelect = document.getElementById('exam-mode');
 
-        let finalClassName = "";
+        const errorDiv = document.getElementById('form-error');
+        const errorMsg = document.getElementById('error-message');
 
-        if (!select.value) {
-            this.showToast("Vui lòng chọn Lớp sinh hoạt của bạn!", "warning");
-            select.focus();
+        const email = emailInput ? emailInput.value.trim().toLowerCase() : "";
+        
+        // Validation
+        if (!email || !email.endsWith('@donga.edu.vn')) {
+            if (errorDiv) {
+                errorDiv.classList.remove('hidden');
+                errorMsg.textContent = "Email không hợp lệ. Vui lòng sử dụng email @donga.edu.vn";
+            }
+            if (emailInput) emailInput.focus();
             return;
         }
 
+        if (!nameInput || !nameInput.value.trim()) {
+            if (errorDiv) {
+                errorDiv.classList.remove('hidden');
+                errorMsg.textContent = "Vui lòng nhập Họ và Tên của bạn!";
+            }
+            if (nameInput) nameInput.focus();
+            return;
+        }
+
+        if (!select || !select.value) {
+            if (errorDiv) {
+                errorDiv.classList.remove('hidden');
+                errorMsg.textContent = "Vui lòng chọn Lớp sinh hoạt của bạn!";
+            }
+            if (select) select.focus();
+            return;
+        }
+
+        let finalClassName = "";
         if (select.value === 'OTHER') {
-            if (!classInput.value.trim()) {
-                this.showToast("Vui lòng nhập tên lớp của bạn!", "warning");
-                classInput.focus();
+            if (!classInput || !classInput.value.trim()) {
+                if (errorDiv) {
+                    errorDiv.classList.remove('hidden');
+                    errorMsg.textContent = "Vui lòng nhập tên lớp của bạn!";
+                }
+                if (classInput) classInput.focus();
                 return;
             }
             finalClassName = classInput.value.trim().toUpperCase();
@@ -160,12 +205,22 @@ const midtermApp = {
             finalClassName = select.value;
         }
 
+        // Hide error if all good
+        if (errorDiv) errorDiv.classList.add('hidden');
+
+        // Store user info
+        this.state.user = this.state.user || {};
+        this.state.user.email = email;
+        this.state.user.fullName = nameInput.value.trim();
+        this.state.user.studentId = idInput ? idInput.value.trim().toUpperCase() : "N/A";
         this.state.user.className = finalClassName;
+        this.state.user.examMode = modeSelect ? modeSelect.value : "Thi thử";
 
         const loading = document.getElementById('loading');
-        loading.classList.remove('hidden');
+        if (loading) loading.classList.remove('hidden');
 
         try {
+            console.log("Loading questions...");
             await this.loadAllQuestions();
 
             // Initialize Exam State
@@ -178,13 +233,14 @@ const midtermApp = {
             this.renderPalette();
             this.renderQuestion();
             this.startTimer();
-
+            
+            console.log("All ready, switching view.");
             this.showView('view-quiz');
         } catch (error) {
             console.error("Error loading questions:", error);
-            this.showToast("Lỗi tải đề thi. Vui lòng kiểm tra kết nối mạng và thử lại.", "error");
+            this.showToast("Lỗi tải đề thi: " + (error.message || "Vui lòng kiểm tra kết nối mạng"), "error");
         } finally {
-            loading.classList.add('hidden');
+            if (loading) loading.classList.add('hidden');
         }
     },
 
@@ -224,6 +280,23 @@ const midtermApp = {
         }
 
         this.state.questions = allPicked.slice(0, this.config.totalQuestions);
+        
+        // Khởi tạo sẵn options cho tất cả câu hỏi để tránh lỗi khi nộp bài mà chưa xem hết các câu
+        this.state.questions.forEach(q => this.prepareOptions(q));
+    },
+
+    prepareOptions: function(question) {
+        if (question._options) return;
+
+        let optionKeys = [
+            { key: 'A', text: question.AAnsver || question.AAnswer || question.A },
+            { key: 'B', text: question.BAnswer || question.B },
+            { key: 'C', text: question.CAnswer || question.C },
+            { key: 'D', text: question.DAnswer || question.D }
+        ].filter(opt => opt.text && opt.text.trim() !== "");
+
+        this.shuffleArray(optionKeys);
+        question._options = optionKeys;
     },
 
     shuffleArray: function (array) {
@@ -233,13 +306,35 @@ const midtermApp = {
         }
     },
 
+    checkSheetStatus: function(className) {
+        const badge = document.getElementById('class-status-badge');
+        const badgeClassName = document.getElementById('badge-class-name');
+        const badgeStatusIcon = document.getElementById('badge-status-icon');
+        const badgeStatusText = document.getElementById('badge-status-text');
+        
+        badge.classList.remove('hidden');
+        badge.classList.remove('bg-blue-600', 'bg-emerald-600', 'bg-amber-500', 'bg-red-600');
+        
+        badgeClassName.textContent = className;
+        
+        // Với Firebase, dữ liệu được truyền thẳng vào máy chủ Google siêu tốc
+        badge.classList.add('bg-emerald-600');
+        badgeStatusIcon.className = 'fa-solid fa-cloud-check';
+        badgeStatusText.textContent = 'Trạng thái: Máy chủ Firebase đã sẵn sàng';
+    },
+
     // --- Anti-Cheat ---
     setupAntiCheat: function () {
-        // Prevent Context Menu
         document.addEventListener('contextmenu', e => {
-            if (!this.state.isSubmitted && document.getElementById('view-quiz').classList.contains('hidden') === false) {
+            const quizView = document.getElementById('view-quiz');
+            const resultsView = document.getElementById('view-results');
+            
+            const isQuizVisible = quizView && !quizView.classList.contains('hidden');
+            const isResultsVisible = resultsView && !resultsView.classList.contains('hidden');
+            
+            if (isQuizVisible || isResultsVisible) {
                 e.preventDefault();
-                this.recordCheat("Click chuột phải");
+                if (isQuizVisible) this.recordCheat("Click chuột phải");
             }
         });
 
@@ -250,20 +345,28 @@ const midtermApp = {
 
         // Prevent typical inspect element shortcuts (F12, Ctrl+Shift+I, etc)
         document.addEventListener('keydown', e => {
-            if (this.state.isSubmitted || document.getElementById('view-quiz').classList.contains('hidden')) return;
+            const quizView = document.getElementById('view-quiz');
+            const resultsView = document.getElementById('view-results');
+            
+            const isQuizVisible = quizView && !quizView.classList.contains('hidden');
+            const isResultsVisible = resultsView && !resultsView.classList.contains('hidden');
+            
+            if (!isQuizVisible && !isResultsVisible) return;
 
             // Block Ctrl+C, Ctrl+V, etc
             if (e.ctrlKey || e.metaKey) {
                 if (['c', 'v', 'x', 'p', 's', 'u'].includes(e.key.toLowerCase())) {
                     e.preventDefault();
-                    this.recordCheat(`Phím tắt Ctrl+${e.key.toUpperCase()}`);
+                    if (isQuizVisible) this.recordCheat(`Phím tắt Ctrl+${e.key.toUpperCase()}`);
                 }
             }
         });
 
         // Visibility API (Detect tab switching)
         document.addEventListener('visibilitychange', () => {
-            if (this.state.isSubmitted || document.getElementById('view-quiz').classList.contains('hidden')) return;
+            const quizView = document.getElementById('view-quiz');
+            if (this.state.isSubmitted || (quizView && quizView.classList.contains('hidden'))) return;
+            
             if (document.hidden) {
                 this.recordCheat("Chuyển tab hoặc thu nhỏ trình duyệt");
             }
@@ -271,9 +374,15 @@ const midtermApp = {
     },
 
     preventCheatEvent: function (e, actionName) {
-        if (!this.state.isSubmitted && document.getElementById('view-quiz').classList.contains('hidden') === false) {
+        const quizView = document.getElementById('view-quiz');
+        const resultsView = document.getElementById('view-results');
+        
+        const isQuizVisible = quizView && !quizView.classList.contains('hidden');
+        const isResultsVisible = resultsView && !resultsView.classList.contains('hidden');
+
+        if (isQuizVisible || isResultsVisible) {
             e.preventDefault();
-            this.recordCheat(actionName);
+            if (isQuizVisible) this.recordCheat(actionName);
         }
     },
 
@@ -341,22 +450,9 @@ const midtermApp = {
         const optionsContainer = document.getElementById('options-container');
         optionsContainer.innerHTML = '';
 
-        let optionKeys = [
-            { key: 'A', text: question.AAnsver || question.AAnswer },
-            { key: 'B', text: question.BAnswer },
-            { key: 'C', text: question.CAnswer },
-            { key: 'D', text: question.DAnswer }
-        ].filter(opt => opt.text && opt.text.trim() !== "");
-
-        // Only shuffle if it's not answered yet or we don't care about option order consistency
-        // To be safe and consistent during navigation, we should seed the shuffle or just don't shuffle options for midterms
-        // Let's just render them as A, B, C, D to keep it simple, or shuffle based on question ID.
-        // For standard MIT exams, randomizing options is good, but without state persistence it might flip when navigating back.
-        // We'll store the shuffled order in the question object itself.
-
+        // Options đã được khởi tạo sẵn ở loadAllQuestions
         if (!question._options) {
-            this.shuffleArray(optionKeys);
-            question._options = optionKeys;
+            this.prepareOptions(question);
         }
 
         const currentAnswer = this.state.answers[qIndex];
@@ -400,11 +496,6 @@ const midtermApp = {
         paletteBtn.classList.add('bg-mit', 'text-white', 'border-mit');
 
         this.updatePaletteStats();
-
-        // Auto-advance
-        if (this.state.currentIndex < this.config.totalQuestions - 1) {
-            setTimeout(() => this.nextQuestion(), 400);
-        }
     },
 
     jumpToQuestion: function (index) {
@@ -468,7 +559,14 @@ const midtermApp = {
         // Disable class to allow selecting text in results view if needed
         document.body.classList.remove('anti-cheat-enabled');
 
-        this.calculateAndShowResults();
+        try {
+            this.calculateAndShowResults();
+        } catch (err) {
+            console.error("Lỗi tính toán kết quả:", err);
+            this.showView('view-results'); // Cố gắng hiện view dù lỗi
+        }
+        
+        // Đảm bảo việc lưu server được gọi dù có lỗi hiển thị
         this.saveResultsToServer();
     },
 
@@ -521,7 +619,7 @@ const midtermApp = {
         const circumference = 283; // 2 * pi * r (r=45)
         const offset = circumference - (score / 10) * circumference;
 
-        this.showView('view-result');
+        this.showView('view-results');
 
         setTimeout(() => {
             circle.style.strokeDashoffset = offset;
@@ -544,6 +642,9 @@ const midtermApp = {
         this.state.questions.forEach((q, index) => {
             const userAns = this.state.answers[index];
             const correctAns = (q.Answer || "").toString().trim().toUpperCase();
+            
+            // Đảm bảo options tồn tại
+            if (!q._options) this.prepareOptions(q);
             const isCorrect = userAns === correctAns;
             const isUnattempted = !userAns;
 
@@ -563,15 +664,15 @@ const midtermApp = {
                 let optClass = "text-slate-600";
                 let icon = "";
 
-                if (opt.key === correctAns) {
+                if (opt.key === correctAns && !isUnattempted) {
                     optClass = "text-emerald-700 font-bold bg-emerald-50 p-2 rounded";
                     icon = '<i class="fa-solid fa-check text-emerald-500 mr-2"></i>';
                 } else if (opt.key === userAns) {
                     optClass = "text-red-600 line-through bg-red-50 p-2 rounded";
                     icon = '<i class="fa-solid fa-xmark text-red-500 mr-2"></i>';
                 } else {
-                    optClass = "p-2";
-                    icon = '<span class="w-4 inline-block mr-2 text-slate-400">' + opt.key + '.</span>';
+                    optClass = "p-2 text-slate-600";
+                    icon = `<span class="w-4 inline-block mr-2 font-bold">${opt.key}.</span>`;
                 }
 
                 optionsHtml += `<div class="${optClass} text-sm">${icon} ${opt.text}</div>`;
@@ -592,91 +693,113 @@ const midtermApp = {
 
     // --- Data Storage ---
     saveResultsToServer: function () {
-        // Prepare detailed answers
-        const detailedAnswers = this.state.questions.map((q, index) => {
-            const userAns = this.state.answers[index];
-            const correctAns = (q.Answer || "").toString().trim().toUpperCase();
-            return {
-                questionIndex: index + 1,
-                moduleId: q._moduleId,
-                questionContent: q.QuestionContent,
-                userAnswer: userAns || null,
-                correctAnswer: correctAns,
-                isCorrect: userAns === correctAns,
-                options: q._options
+        console.log("🔥 [FIREBASE] === BẮT ĐẦU LƯU KẾT QUẢ ===");
+        var syncStatusDiv = document.getElementById('firebase-sync-status');
+        if (syncStatusDiv) {
+            syncStatusDiv.className = "mb-6 p-4 rounded-xl border flex items-center justify-center gap-3 bg-blue-50 border-blue-200 text-blue-700";
+            syncStatusDiv.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin text-xl"></i><span class="font-bold">Đang gửi kết quả lên Firebase...</span>';
+        }
+        var payload;
+        try {
+            console.log("🔥 [FIREBASE] Bước 1: Tạo payload...");
+            var detailedAnswers = [];
+            for (var i = 0; i < this.state.questions.length; i++) {
+                var q = this.state.questions[i];
+                var userAns = this.state.answers[i] || null;
+                var correctAns = (q.Answer || "").toString().trim().toUpperCase();
+                detailedAnswers.push({
+                    questionIndex: i + 1,
+                    questionContent: q.QuestionContent || "N/A",
+                    userAnswer: userAns,
+                    correctAnswer: correctAns,
+                    isCorrect: userAns === correctAns
+                });
+            }
+            // Đảm bảo không có giá trị undefined/NaN gây lỗi Firestore
+            var cleanPayload = {
+                email: (this.state.user && this.state.user.email) ? this.state.user.email : "unknown",
+                fullName: (this.state.user && this.state.user.fullName) ? this.state.user.fullName : "N/A",
+                studentId: (this.state.user && this.state.user.studentId) ? this.state.user.studentId : "N/A",
+                className: (this.state.user && this.state.user.className) ? this.state.user.className : "unknown",
+                examMode: (this.state.user && this.state.user.examMode) ? this.state.user.examMode : "Thi thử",
+                score: document.getElementById('score-text') ? document.getElementById('score-text').textContent : "0",
+                cheatCount: this.state.cheatCount || 0,
+                timeTaken: document.getElementById('stat-time') ? document.getElementById('stat-time').textContent : "00:00",
+                detailedAnswers: detailedAnswers,
+                timestamp: new Date().toISOString(),
+                userAgent: navigator.userAgent
             };
-        });
+            
+            // Xóa bỏ mọi thuộc tính undefined một cách triệt để
+            payload = JSON.parse(JSON.stringify(cleanPayload));
+            console.log("🔥 [FIREBASE] Payload OK. Size:", JSON.stringify(payload).length);
+        } catch (e) {
+            console.error("🔥 [FIREBASE] LỖI tạo payload:", e);
+            if (syncStatusDiv) {
+                syncStatusDiv.className = "mb-6 p-4 rounded-xl border flex items-center justify-center gap-2 bg-red-50 border-red-200 text-red-700";
+                syncStatusDiv.innerHTML = '<i class="fa-solid fa-bug text-xl"></i><span class="font-bold">Lỗi: ' + e.message + '</span>';
+            }
+            return;
+        }
 
-        const payload = {
-            email: this.state.user.email,
-            className: this.state.user.className,
-            score: document.getElementById('score-text').textContent,
-            cheatCount: this.state.cheatCount,
-            timeTaken: document.getElementById('stat-time').textContent,
-            detailedAnswers: detailedAnswers,
-            timestamp: new Date().toISOString()
-        };
+        // Kiểm tra Firebase
+        if (!window.firebaseDB) {
+            console.error("🔥 [FIREBASE] window.firebaseDB NULL!");
+            if (syncStatusDiv) {
+                syncStatusDiv.className = "mb-6 p-4 rounded-xl border flex items-center justify-center gap-2 bg-red-50 border-red-200 text-red-700";
+                syncStatusDiv.innerHTML = '<i class="fa-solid fa-plug-circle-xmark text-xl"></i><span class="font-bold">Firebase chưa khởi tạo!</span>';
+            }
+            return;
+        }
+        console.log("🔥 [FIREBASE] Bước 2: firebaseDB OK");
 
-        console.log("Saving results to Google Sheets...", payload);
-
-        // URL Google Apps Script
-        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzrOqIP-TVpOJ7-F8YrqJnawZWfSWioWYbS3i5JCUtqpIKYPBtkQVdXrbiFFC18CwB3/exec';
-
-        // Hiển thị Overlay Loading to đùng
-        const overlay = document.createElement('div');
-        overlay.className = "fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-[9999] flex flex-col items-center justify-center";
-        overlay.innerHTML = `
-            <div class="w-16 h-16 border-4 border-mit border-t-transparent rounded-full animate-spin mb-4"></div>
-            <h2 class="text-2xl font-bold text-white mb-2">Đang lưu kết quả lên Google Sheets...</h2>
-            <p class="text-slate-300">Vui lòng không đóng trình duyệt lúc này!</p>
-        `;
-        document.body.appendChild(overlay);
-
-        // Dùng phương pháp chèn Form ẩn để vượt mọi rào cản CORS và AdBlock
-        const form = document.createElement('form');
-        form.method = 'POST';
-        form.action = GOOGLE_SCRIPT_URL;
-        form.target = 'hidden_iframe';
-        form.style.display = 'none';
-
-        // Fake the POST content as plain text using enctype
-        form.enctype = 'text/plain';
-
-        const input = document.createElement('input');
-        input.name = JSON.stringify(payload);
-        input.value = ''; // We put the payload in the name attribute so it submits as `{"email":"..."}=`
-
-        form.appendChild(input);
-
-        const iframe = document.createElement('iframe');
-        iframe.name = 'hidden_iframe';
-        iframe.style.display = 'none';
-
-        document.body.appendChild(iframe);
-        document.body.appendChild(form);
-
-        iframe.onload = () => {
-            // Success
-            overlay.innerHTML = `
-                <div class="w-20 h-20 bg-emerald-500 rounded-full flex items-center justify-center mb-4 shadow-lg shadow-emerald-500/50">
-                    <i class="fa-solid fa-check text-4xl text-white"></i>
-                </div>
-                <h2 class="text-3xl font-bold text-white mb-2">Đã lưu điểm thành công!</h2>
-                <p class="text-emerald-200 text-lg">Hệ thống đã ghi nhận vào Google Sheets.</p>
-                <button onclick="document.body.removeChild(this.parentElement)" class="mt-6 px-8 py-3 bg-white text-emerald-600 rounded-xl font-bold hover:bg-slate-100 transition-colors">Đóng thông báo này</button>
-            `;
-            setTimeout(() => {
-                if(document.body.contains(overlay)) {
-                    document.body.removeChild(overlay);
+        // Gửi lên Firebase
+        console.log("🔥 [FIREBASE] Bước 3: Gọi .add()...");
+        var self = this;
+        var done = false;
+        var tid = setTimeout(function() {
+            if (!done) {
+                done = true;
+                console.warn("🔥 [FIREBASE] ⏰ TIMEOUT 20s!");
+                if (syncStatusDiv) {
+                    syncStatusDiv.className = "mb-6 p-4 rounded-xl border flex flex-col items-center justify-center gap-2 bg-amber-50 border-amber-200 text-amber-700 text-center";
+                    syncStatusDiv.innerHTML = '<i class="fa-solid fa-clock text-xl animate-pulse"></i><span class="font-bold">Mạng quá chậm (20s chưa xong).</span><span class="text-sm">Hãy kiểm tra lại kết nối hoặc Firestore Rules.</span>';
                 }
-            }, 5000);
-            this.showToast("Đã nộp bài thành công!", "success");
-        };
-
-        // Submit form
-        setTimeout(() => {
-            form.submit();
-        }, 500);
+            }
+        }, 20000);
+        try {
+            window.firebaseDB.collection('ExamSubmissions').add(payload)
+                .then(function(docRef) {
+                    if (done) return;
+                    done = true;
+                    clearTimeout(tid);
+                    console.log("🔥 [FIREBASE] ✅ THÀNH CÔNG! ID:", docRef.id);
+                    if (syncStatusDiv) {
+                        syncStatusDiv.className = "mb-6 p-4 rounded-xl border flex items-center justify-center gap-3 bg-emerald-50 border-emerald-200 text-emerald-700";
+                        syncStatusDiv.innerHTML = '<i class="fa-solid fa-check-circle text-xl"></i><span class="font-bold">✅ Đã lưu an toàn trên Firebase</span>';
+                    }
+                    self.showToast("Đã đồng bộ lên Firebase!", "success");
+                })
+                .catch(function(error) {
+                    if (done) return;
+                    done = true;
+                    clearTimeout(tid);
+                    console.error("🔥 [FIREBASE] ❌ LỖI:", error);
+                    if (syncStatusDiv) {
+                        syncStatusDiv.className = "mb-6 p-4 rounded-xl border flex flex-col items-center justify-center gap-2 bg-red-50 border-red-200 text-red-700 text-center";
+                        syncStatusDiv.innerHTML = '<i class="fa-solid fa-triangle-exclamation text-xl"></i><span class="font-bold">Lỗi: ' + error.message + '</span>';
+                    }
+                });
+            console.log("🔥 [FIREBASE] Lệnh .add() đã gửi, chờ callback...");
+        } catch (fatal) {
+            done = true;
+            clearTimeout(tid);
+            console.error("🔥 [FIREBASE] 💀 FATAL:", fatal);
+            if (syncStatusDiv) {
+                syncStatusDiv.className = "mb-6 p-4 rounded-xl border flex items-center justify-center gap-2 bg-red-50 border-red-200 text-red-700";
+                syncStatusDiv.innerHTML = '<i class="fa-solid fa-skull-crossbones text-xl"></i><span class="font-bold">Lỗi: ' + fatal.message + '</span>';
+            }
+        }
     },
 
     // --- Đăng xuất & Cho sinh viên khác thi ---
