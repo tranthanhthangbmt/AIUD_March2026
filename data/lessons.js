@@ -1067,11 +1067,15 @@ const sessionsData = [
                 title: "Bài 5: Multilevel List",
                 description: "Tạo danh sách đa cấp với các cấp độ khác nhau.",
                 video: "https://drive.google.com/file/d/1BZ8ABVT0bOa4oD8R2JaZUcQwSGCodK4C/preview",
+                videos: [
+                    "https://mymedia.donga.edu.vn/f/MultiLevelList_Index_caption_1777878466.mp4",
+                    "https://drive.google.com/file/d/1BZ8ABVT0bOa4oD8R2JaZUcQwSGCodK4C/preview"
+                ],
                 tasks: [
                     { name: "Bài 5.2.1", file: "Lớp-Họ và tên-Bài 5.2.1.docx" }
                 ],
                 docs: [
-                    { name: "Hướng dẫn PDF", file: "Tài liệu buổi 6_Word_Bài 5_MULTILEVEL LIST.pdf" }
+                    { name: "Hướng dẫn PDF", file: "Buổi 7/Buổi 02 - Bài 5 đến Bài 7 - WORD NC.pdf" }
                 ],
                 steps: [
                     {
@@ -1116,7 +1120,7 @@ const sessionsData = [
                     { name: "Bài 6.2.1", file: "Lớp-Họ và tên-Bài 6.2.1.docx" }
                 ],
                 docs: [
-                    { name: "Hướng dẫn PDF", file: "Tài liệu buổi 6_Word_Bài 6_HEADER FOOTER.pdf" }
+                    { name: "Hướng dẫn PDF", file: "Buổi 7/Buổi 02 - Bài 5 đến Bài 7 - WORD NC.pdf" }
                 ],
                 steps: [
                     {
@@ -1148,7 +1152,7 @@ const sessionsData = [
                     { name: "Bài 7.2.1", file: "Lớp-Họ và tên-Bài 7.2.1.docx" }
                 ],
                 docs: [
-                    { name: "Hướng dẫn PDF", file: "Tài liệu buổi 6_Word_Bài 7_TOC.pdf" }
+                    { name: "Hướng dẫn PDF", file: "Buổi 7/Buổi 02 - Bài 5 đến Bài 7 - WORD NC.pdf" }
                 ],
                 steps: [
                     {

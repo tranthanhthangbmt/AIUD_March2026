@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Video and Featured Image Container Visibility
             const videoWrapper = document.querySelector('.video-wrapper');
             if (videoWrapper) {
-                if (lesson.video || lesson.image) {
+                if (lesson.video || lesson.image || (lesson.videos && lesson.videos.length > 0)) {
                     videoWrapper.style.display = 'block';
                 } else {
                     videoWrapper.style.display = 'none';
@@ -169,9 +169,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // Video
-            if (videoFrame && videoContainer) {
-                if (lesson.video) {
-                    videoFrame.src = lesson.video;
+            if (videoContainer) {
+                if (lesson.videos && lesson.videos.length > 0) {
+                    videoContainer.innerHTML = '';
+                    lesson.videos.forEach(vidSrc => {
+                        const iframe = document.createElement('iframe');
+                        iframe.src = vidSrc;
+                        iframe.width = "100%";
+                        iframe.height = "480";
+                        iframe.allow = "autoplay";
+                        iframe.allowFullscreen = true;
+                        iframe.style.marginBottom = "1rem";
+                        iframe.style.borderRadius = "8px";
+                        videoContainer.appendChild(iframe);
+                    });
+                    videoContainer.style.display = 'block';
+                } else if (lesson.video) {
+                    videoContainer.innerHTML = `<iframe id="lesson-video" src="${lesson.video}" width="100%" height="480" allow="autoplay" allowfullscreen style="border-radius: 8px;"></iframe>`;
                     videoContainer.style.display = 'block';
                 } else {
                     videoContainer.style.display = 'none';
