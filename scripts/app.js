@@ -359,6 +359,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function formatContent(text) {
         if (!text) return '';
 
+        // If it looks like HTML (starts with < and ends with >), return as is
+        // but still fix any residual **bold** just in case
+        if (text.trim().startsWith('<') && text.trim().endsWith('>')) {
+            return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        }
+
         // 1. Handle Bold (**text**)
         let html = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
 
@@ -366,16 +372,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const lines = html.split('\n');
 
         const formattedLines = lines.map(line => {
+            if (!line.trim()) return '<br>';
             // Check for 2-level indent (+ or - with spaces)
             if (line.trim().startsWith('+ ')) {
-                return `<div style="padding-left: 2rem; position: relative;"><span style="position: absolute; left: 1rem;">◦</span>${line.trim().substring(2)}</div>`;
+                return `<div style="padding-left: 2rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 1rem;">◦</span>${line.trim().substring(2)}</div>`;
             }
             // Check for 1-level indent (- )
             if (line.trim().startsWith('- ')) {
-                return `<div style="padding-left: 1rem; position: relative;"><span style="position: absolute; left: 0;">•</span>${line.trim().substring(2)}</div>`;
+                return `<div style="padding-left: 1rem; position: relative; margin-bottom: 0.5rem;"><span style="position: absolute; left: 0;">•</span>${line.trim().substring(2)}</div>`;
             }
             // Regular line
-            return `<div>${line}</div>`;
+            return `<div style="margin-bottom: 0.5rem;">${line}</div>`;
         });
 
         return formattedLines.join('');

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 24: Định dạng có điều kiện</title>
+<style>
+    body {
+        font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    .lesson-content {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin: 15px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4 {
+        color: #2c3e50;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2.2em;
+        border-bottom: 2px solid #27ae60;
+        padding-bottom: 10px;
+        color: #27ae60;
+    }
+    a {
+        color: #27ae60;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    blockquote {
+        border-left: 4px solid #27ae60;
+        padding-left: 15px;
+        color: #666;
+        background: #f1fff8;
+        padding: 10px 15px;
+        border-radius: 0 4px 4px 0;
+        margin-left: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="lesson-content">
+        <h1>Bài 24: Định dạng có điều kiện</h1>
+<h4>Bài 24: Định dạng có điều kiện</h4>
+<p>/en/excel/biểu đồ/nội dung/</p>
+<h3>Giới thiệu</h3>
+<p>Giả sử bạn có một bảng tính có hàng nghìn hàng dữ liệu. Sẽ cực kỳ khó để nhìn thấy các mô hình và xu hướng chỉ từ việc kiểm tra thông tin thô. Tương tự như biểu đồ và biểu đồ thu nhỏ,<strong>định dạng có điều kiện</strong>cung cấp cách trực quan hóa dữ liệu và làm cho bảng tính dễ hiểu hơn.</p>
+<p>Xem video bên dưới để tìm hiểu thêm về định dạng có điều kiện trong Excel.</p>
+<h4>Hiểu định dạng có điều kiện</h4>
+<p>Định dạng có điều kiện cho phép bạn tự động áp dụng định dạng—chẳng hạn như<strong>màu sắc</strong>,<strong>biểu tượng</strong>và<strong>thanh dữ liệu</strong>—cho một hoặc nhiều ô dựa trên<strong>ô</strong><strong>giá trị</strong>. Để thực hiện việc này, bạn cần tạo một<strong>định dạng có điều kiện</strong><strong>quy tắc</strong>. Ví dụ: quy tắc định dạng có điều kiện có thể là:<strong>Nếu giá trị nhỏ hơn $2000, hãy tô màu đỏ cho ô</strong>. Bằng cách áp dụng quy tắc này, bạn có thể nhanh chóng xem ô nào chứa giá trị nhỏ hơn $2000.</p>
+<p><img alt="Conditional Formatting in Excel" src="images/conditional_formatting_understanding.png" /></p>
+<h4>Để tạo quy tắc định dạng có điều kiện:</h4>
+<p>Trong ví dụ của chúng tôi, chúng tôi có một bảng tính chứa dữ liệu bán hàng và chúng tôi muốn xem nhân viên bán hàng nào đang đáp ứng mục tiêu bán hàng hàng tháng của họ. Mục tiêu bán hàng là $4000 mỗi tháng, vì vậy chúng tôi sẽ tạo quy tắc định dạng có điều kiện cho bất kỳ ô nào chứa giá trị cao hơn 4000.</p>
+<ol>
+<li>Chọn<strong>ô mong muốn</strong>cho quy tắc định dạng có điều kiện.</li>
+</ol>
+<p><img alt="Selecting cells" src="images/conditional_formatting_create_select.png" />
+2. Từ tab<strong>Trang chủ</strong>, hãy nhấp vào lệnh<strong>Định dạng có điều kiện</strong>. Một menu thả xuống sẽ xuất hiện.
+3. Di chuột qua<strong>loại định dạng có điều kiện</strong>mong muốn, sau đó chọn<strong>quy tắc mong muốn</strong>từ trình đơn xuất hiện. Trong ví dụ của chúng tôi, chúng tôi muốn<strong>đánh dấu các ô</strong>có giá trị<strong>lớn hơn</strong>$4000.</p>
+<p><img alt="The Conditional Formatting menu on the Home tab" src="images/conditional_formatting_create_menu.png" />
+4. Một hộp thoại sẽ xuất hiện. Nhập<strong>(các) giá trị mong muốn</strong>vào trường trống. Trong ví dụ của chúng tôi, chúng tôi sẽ nhập 4000 làm giá trị của mình.
+5. Chọn<strong>định dạng</strong><strong>kiểu</strong>từ trình đơn thả xuống. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>Tô màu xanh lục với văn bản màu xanh đậm</strong>, sau đó nhấp vào<strong>OK</strong>.</p>
+<p><img alt="The Greater Than dialog box" src="images/conditional_formatting_create_dialog.png" />
+6. Định dạng có điều kiện sẽ được áp dụng cho các ô đã chọn. Trong ví dụ của chúng tôi, thật dễ dàng để biết nhân viên bán hàng nào đã đạt được mục tiêu doanh số 4000 USD mỗi tháng.</p>
+<p><img alt="A conditional formatting rule is now applied to the worksheet" src="images/conditional_formatting_create_result.png" /></p>
+<p>Bạn có thể áp dụng nhiều quy tắc định dạng có điều kiện cho một phạm vi ô hoặc bảng tính, cho phép bạn trực quan hóa các xu hướng và mẫu khác nhau trong dữ liệu của mình.</p>
+<p><img alt="Multiple conditional formatting rules on the same area of a worksheet" src="images/conditional_formatting_create_multiple.png" /></p>
+<h3>Cài đặt trước định dạng có điều kiện</h3>
+<p>Excel có một số kiểu được xác định trước—hoặc<strong>đặt trước</strong>—bạn có thể sử dụng để nhanh chóng áp dụng định dạng có điều kiện cho dữ liệu của mình. Chúng được nhóm thành ba loại:</p>
+<ul>
+<li><strong>Thanh dữ liệu</strong>là các thanh ngang được thêm vào mỗi ô, giống như<strong>biểu đồ thanh</strong>.</li>
+</ul>
+<p><img alt="Data bars" src="images/conditional_formatting_data_bars.png" />
+* <strong>Thang màu</strong>thay đổi màu của từng ô dựa trên giá trị của nó. Mỗi thang màu sử dụng<strong>chuyển màu hai hoặc ba màu</strong>. Ví dụ: trong thang màu<strong>Xanh-Vàng-Đỏ</strong>, giá trị<strong>cao nhất</strong>là màu xanh lá cây, giá trị<strong>trung bình</strong>là màu vàng và giá trị<strong>thấp nhất</strong>là màu đỏ.</p>
+<p><img alt="Color scales" src="images/conditional_formatting_color_scales.png" />
+* <strong>Bộ biểu tượng</strong>thêm biểu tượng cụ thể vào từng ô dựa trên giá trị của nó.</p>
+<p><img alt="Icon sets" src="images/conditional_formatting_icon_sets.png" /></p>
+<h4>Để sử dụng định dạng có điều kiện đặt trước:</h4>
+<ol>
+<li>Chọn<strong>ô mong muốn</strong>cho quy tắc định dạng có điều kiện.</li>
+</ol>
+<p><img alt="Select cells" src="images/conditional_formatting_preset_select.png" />
+2. Nhấp vào lệnh<strong>Định dạng có điều kiện</strong>. Một menu thả xuống sẽ xuất hiện.
+3. Di chuột qua<strong>giá trị đặt trước mong muốn</strong>, sau đó chọn<strong>kiểu đặt trước</strong>từ trình đơn xuất hiện.</p>
+<p><img alt="The presets on the Conditional Formatting menu" src="images/conditional_formatting_preset_menu.png" />
+4. Định dạng có điều kiện sẽ được áp dụng cho các ô đã chọn.</p>
+<p><img alt="The preset has been applied to the worksheet" src="images/conditional_formatting_preset_result.png" /></p>
+<h3>Loại bỏ định dạng có điều kiện</h3>
+<h4>Để loại bỏ định dạng có điều kiện:</h4>
+<ol>
+<li>Nhấp vào lệnh<strong>Định dạng có điều kiện</strong>. Một menu thả xuống sẽ xuất hiện.</li>
+<li>Di chuột qua<strong>Xóa quy tắc</strong>, sau đó chọn quy tắc bạn muốn xóa. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>Xóa quy tắc khỏi toàn bộ trang tính</strong>để xóa tất cả định dạng có điều kiện khỏi trang tính.</li>
+</ol>
+<p><img alt="Clear Rules on the Conditional Formatting menu" src="images/conditional_formatting_remove_menu.png" />
+3. Định dạng có điều kiện sẽ bị loại bỏ.</p>
+<p><img alt="The conditional formatting has been removed" src="images/conditional_formatting_remove_result.png" /></p>
+<p>Nhấp vào<strong>Quản lý quy tắc</strong>để chỉnh sửa hoặc xóa các quy tắc<strong>riêng lẻ</strong>. Điều này đặc biệt hữu ích nếu bạn đã áp dụng<strong>nhiều quy tắc</strong>cho một trang tính.</p>
+<p><img alt="The Conditional Formatting Rules Manager" src="images/conditional_formatting_remove_manager.png" /></p>
+<h3>Thử thách!</h3>
+<ol>
+<li>Mở <a href="practice_files/excel_conditionalformatting_practice.xlsx">sổ làm việc thực hành</a> của chúng tôi.</li>
+<li>Nhấp vào tab bảng tính<strong>Thử thách</strong>ở phía dưới bên trái của bảng tính.</li>
+<li>Chọn ô<strong>B3:J17</strong>.</li>
+<li>Giả sử bạn là giáo viên và muốn dễ dàng xem tất cả các điểm dưới mức đạt. Áp dụng<strong>Định dạng có điều kiện</strong>sao cho nó<strong>Đánh dấu các ô</strong>chứa các giá trị<strong>Nhỏ hơn 70</strong>với<strong>màu đỏ nhạt</strong>.</li>
+<li>Bây giờ bạn muốn xem các điểm so sánh với nhau như thế nào. Trong tab<strong>Định dạng có điều kiện</strong>, chọn<strong>Bộ biểu tượng</strong>có tên là<strong>3 Biểu tượng (Khoanh tròn)</strong>.<strong>Gợi ý</strong>: Tên của các bộ biểu tượng sẽ xuất hiện khi bạn di chuột qua chúng.</li>
+<li>Bảng tính của bạn sẽ trông như thế này:</li>
+</ol>
+<p><img alt="spreadsheet after completing Challenge" src="images/conditional_formatting_challenge.png" title="spreadsheet after completing Challenge" />
+7. Sử dụng tính năng Quản lý quy tắc, xóa<strong>màu đỏ nhạt</strong>nhưng vẫn giữ<strong>bộ biểu tượng</strong>.</p>
+<p>/en/excel/comments-and-coauthoring/content/</p>
+    </div>
+</body>
+</html>

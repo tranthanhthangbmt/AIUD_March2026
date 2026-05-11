@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài học 28: làm được nhiều việc hơn với bảng xoay</title>
+<style>
+    body {
+        font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    .lesson-content {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin: 15px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4 {
+        color: #2c3e50;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2.2em;
+        border-bottom: 2px solid #27ae60;
+        padding-bottom: 10px;
+        color: #27ae60;
+    }
+    a {
+        color: #27ae60;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    blockquote {
+        border-left: 4px solid #27ae60;
+        padding-left: 15px;
+        color: #666;
+        background: #f1fff8;
+        padding: 10px 15px;
+        border-radius: 0 4px 4px 0;
+        margin-left: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="lesson-content">
+        <h1>Bài học 28: làm được nhiều việc hơn với bảng xoay</h1>
+<h4>Bài học 28: Làm được nhiều việc hơn với PivotTable</h4>
+<p>/en/excel/intro-to-pivottables/content/</p>
+<h3>Giới thiệu</h3>
+<p>Như bạn đã học trong <a href="../../intro-to-pivottables/1/index.html">bài học trước</a> của chúng tôi, PivotTable có thể được sử dụng để tóm tắt và phân tích hầu hết mọi loại dữ liệu. Để thao tác với PivotTable—và hiểu rõ hơn nữa về dữ liệu của bạn—Excel cung cấp ba công cụ bổ sung:<strong>bộ lọc</strong>,<strong>s</strong><strong>licers</strong>và<strong>PivotCharts</strong>.</p>
+<p>Xem video bên dưới để tìm hiểu thêm về cách nâng cao PivotTable.</p>
+<h4>Bộ lọc</h4>
+<p>Đôi khi bạn có thể muốn tập trung vào một phần dữ liệu nhất định của mình.<strong>Bộ lọc</strong>có thể được sử dụng để<strong>thu hẹp</strong>dữ liệu trong PivotTable để bạn chỉ có thể xem thông tin mình cần.</p>
+<h4>Để thêm bộ lọc:</h4>
+<p>Trong ví dụ bên dưới, chúng tôi sẽ lọc ra<strong>nhân viên bán hàng</strong>nhất định để xác định doanh số bán hàng riêng lẻ của họ tác động như thế nào đến từng khu vực.</p>
+<ol>
+<li>Kéo một trường từ<strong>Danh sách trường</strong>vào khu vực<strong>Bộ lọc</strong>. Trong ví dụ này, chúng tôi sẽ sử dụng trường<strong>Nhân viên bán hàng</strong>.</li>
+</ol>
+<p><img alt="dragging a field" src="images/pivotmore_filters_field.png" />
+2. <strong>bộ lọc</strong>sẽ xuất hiện phía trên PivotTable. Nhấp vào<strong>mũi tên thả xuống</strong>, sau đó chọn hộp bên cạnh<strong>Chọn nhiều mục</strong>.</p>
+<p><img alt="enabling select multiple items" src="images/pivotmore_filters_menu.png" />
+3. <strong>Bỏ chọn</strong>hộp bên cạnh bất kỳ mục nào bạn không muốn đưa vào PivotTable. Trong ví dụ của chúng tôi, chúng tôi sẽ bỏ chọn các hộp dành cho một số nhân viên bán hàng, sau đó nhấp vào<strong>OK</strong>.</p>
+<p><img alt="unchecking/deselecting items" src="images/pivotmore_filters_uncheck.png" />
+4. PivotTable sẽ<strong>điều chỉnh</strong>để phản ánh những thay đổi.</p>
+<p><img alt="filtered pivottable" src="images/pivotmore_filters_table.png" /></p>
+<h3>Máy thái</h3>
+<p><strong>Bộ cắt</strong>giúp việc lọc dữ liệu trong PivotTable trở nên dễ dàng hơn nữa. Bộ cắt về cơ bản chỉ là<strong>bộ lọc</strong>nhưng sử dụng dễ dàng hơn và nhanh hơn, cho phép bạn xoay vòng dữ liệu của mình ngay lập tức. Nếu bạn thường xuyên lọc PivotTable của mình, bạn có thể cân nhắc sử dụng bộ cắt thay vì bộ lọc.</p>
+<h4>Để thêm một slicer:</h4>
+<ol>
+<li>Chọn<strong>bất kỳ ô nào</strong>trong PivotTable.</li>
+<li>Từ tab<strong>Analyze</strong>, hãy nhấp vào lệnh<strong>Insert Slicer</strong>.</li>
+</ol>
+<p><img alt="insert slicer command" src="images/pivotmore_slicers_command.png" />
+3. Một hộp thoại sẽ xuất hiện. Đánh dấu vào ô bên cạnh<strong>trường</strong>mong muốn. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>Nhân viên bán hàng</strong>, sau đó nhấp vào<strong>OK</strong>.</p>
+<p><img alt="field dialog box" src="images/pivotmore_slicers_field.png" />
+4. Bộ cắt sẽ xuất hiện bên cạnh PivotTable. Mỗi mục đã chọn sẽ được đánh dấu bằng<strong>màu xanh</strong>. Trong ví dụ bên dưới, bộ cắt chứa tất cả tám nhân viên bán hàng, nhưng hiện chỉ<strong>năm</strong>trong số họ được chọn.</p>
+<p><img alt="slicer and pivottable" src="images/pivotmore_slicers_table.png" />
+5. Cũng giống như các bộ lọc, chỉ các mục<strong>đã chọn</strong>mới được sử dụng trong PivotTable. Khi bạn<strong>chọn</strong>hoặc<strong>bỏ chọn</strong>một mục, PivotTable sẽ ngay lập tức phản ánh sự thay đổi. Hãy thử chọn các mục khác nhau để xem chúng ảnh hưởng như thế nào đến PivotTable. Nhấn và giữ phím<strong>Ctrl</strong>trên bàn phím để chọn<strong>nhiều</strong>mục cùng một lúc.</p>
+<p><img alt="adjusting the pivottable" src="images/pivotmore_slicers_multi.png" /></p>
+<p>Bạn cũng có thể nhấp vào<strong>biểu tượng Bộ lọc</strong>ở góc trên bên phải của bộ cắt để chọn<strong>tất cả</strong>mục cùng một lúc.</p>
+<h3>Biểu đồ Pivot</h3>
+<p><strong>PivotCharts</strong>giống như các biểu đồ thông thường, ngoại trừ việc chúng hiển thị dữ liệu từ<strong>PivotTable</strong>. Giống như các biểu đồ thông thường, bạn sẽ có thể chọn<strong>loại biểu đồ</strong>,<strong>bố cục</strong>và<strong>kiểu</strong>sẽ thể hiện dữ liệu tốt nhất.</p>
+<h4>Để tạo PivotChart:</h4>
+<p>Trong ví dụ bên dưới, PivotTable của chúng tôi hiển thị một phần<strong>số liệu bán hàng</strong>của từng khu vực. Chúng tôi sẽ sử dụng PivotChart để có thể xem thông tin rõ ràng hơn.</p>
+<ol>
+<li>Chọn<strong>bất kỳ ô nào</strong>trong PivotTable của bạn.</li>
+<li>Từ tab<strong>Chèn</strong>, hãy nhấp vào lệnh<strong>PivotChart</strong>.</li>
+</ol>
+<p><img alt="pivotchart command" src="images/pivotmore_charts_command.png" />
+3. Hộp thoại<strong>Chèn biểu đồ</strong>sẽ xuất hiện. Chọn<strong>loại biểu đồ</strong>và<strong>bố cục</strong>mong muốn, sau đó nhấp vào<strong>OK</strong>.</p>
+<p><img alt="chart dialog box" src="images/pivotmore_charts_dialog.png" />
+4. PivotChart sẽ xuất hiện.</p>
+<p><img alt="pivottable, slicer, and pivotchart" src="images/pivotmore_charts_table.png" /></p>
+<p>Hãy thử sử dụng<strong>bộ lọc</strong>hoặc<strong>bộ cắt</strong>để thu hẹp dữ liệu trong PivotChart của bạn. Để xem các tập hợp thông tin con khác nhau, hãy thay đổi<strong>cột</strong>hoặc<strong>hàng</strong>trong PivotTable của bạn. Trong ví dụ bên dưới, chúng tôi đã thay đổi PivotTable để xem<strong>doanh số hàng tháng</strong>của mỗi nhân viên bán hàng.</p>
+<p><img alt="adjusted pivotchart" src="images/pivotmore_charts_adjusted.png" /></p>
+<h3>Thử thách!</h3>
+<ol>
+<li>Mở <a href="practice_files/excel_morepivottables_practice.xlsx">sổ làm việc thực hành</a> của chúng tôi.</li>
+<li>Trong khu vực<strong>Hàng</strong>, hãy xóa<strong>Vùng</strong>và thay thế bằng<strong>Nhân viên bán hàng</strong>.</li>
+<li>Chèn<strong>PivotChart</strong>và chọn loại<strong>Dòng có điểm đánh dấu</strong>.</li>
+<li>Chèn<strong>slicer</strong>cho<strong>Vùng</strong>.</li>
+<li>Sử dụng<strong>slicer</strong>để chỉ hiển thị các vùng<strong>Nam</strong>và<strong>Đông</strong>.</li>
+<li>Thay đổi loại<strong>PivotChart</strong>thành<strong>Cột xếp chồng</strong>.</li>
+<li>Trong khung<strong>Trường PivotChart</strong>ở bên phải, hãy thêm<strong>Tháng</strong>vào khu vực<strong>Chú giải (Chuỗi)</strong>.<strong>Lưu ý</strong>: Bạn cũng có thể bấm vào PivotTable và thêm<strong>Tháng</strong>vào khu vực<strong>Cột</strong>để có kết quả tương tự.</li>
+<li>Khi bạn hoàn tất, sổ làm việc của bạn sẽ trông giống như thế này:</li>
+</ol>
+<p><img alt="More PivotTables" src="images/screen shot 2015-12-01 at 9.16.10 am.png" /></p>
+<p>/en/excel/whatif-analysis/content/</p>
+    </div>
+</body>
+</html>

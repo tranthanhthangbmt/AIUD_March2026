@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 13: giới thiệu công thức</title>
+<style>
+    body {
+        font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    .lesson-content {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin: 15px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4 {
+        color: #2c3e50;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2.2em;
+        border-bottom: 2px solid #27ae60;
+        padding-bottom: 10px;
+        color: #27ae60;
+    }
+    a {
+        color: #27ae60;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    blockquote {
+        border-left: 4px solid #27ae60;
+        padding-left: 15px;
+        color: #666;
+        background: #f1fff8;
+        padding: 10px 15px;
+        border-radius: 0 4px 4px 0;
+        margin-left: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="lesson-content">
+        <h1>Bài 13: giới thiệu công thức</h1>
+<h4>Bài 13: Giới thiệu về Công thức</h4>
+<p>/en/excel/page-layout-and-printing/content/</p>
+<h3>Giới thiệu</h3>
+<p>Một trong những tính năng mạnh mẽ nhất trong Excel là khả năng<strong>tính toán</strong>thông tin số bằng cách sử dụng<strong>công thức</strong>. Giống như một chiếc máy tính, Excel có thể cộng, trừ, nhân và chia. Trong bài học này, chúng tôi sẽ hướng dẫn bạn cách sử dụng<strong>tham chiếu ô</strong>để tạo các công thức đơn giản.</p>
+<p>Hãy xem video bên dưới để tìm hiểu thêm về cách tạo công thức trong Excel.</p>
+<h4>Toán tử toán học</h4>
+<p>Excel sử dụng các toán tử tiêu chuẩn cho các công thức:<strong>dấu cộng</strong>cho phép cộng (<strong>+</strong>),<strong>dấu trừ</strong>cho phép trừ (<strong>-</strong>),<strong>dấu hoa thị</strong>cho phép nhân (<strong>*</strong>),<strong>dấu gạch chéo lên</strong>cho phép chia (<strong>/</strong>) và<strong>dấu mũ</strong>(<strong>^</strong>) cho số mũ.</p>
+<p><img alt="Mathematical operators in Excel" src="images/simpform_graphic_operators4.png" /></p>
+<p>Tất cả các công thức trong Excel phải bắt đầu bằng<strong>dấu bằng</strong>(<strong>=</strong>). Điều này là do ô chứa hoặc bằng công thức và giá trị mà nó tính toán.</p>
+<h4>Hiểu tham chiếu ô</h4>
+<p>Mặc dù bạn có thể tạo các công thức đơn giản trong Excel bằng cách sử dụng các số (ví dụ:<strong>=2+2</strong>hoặc<strong>=5*5</strong>), nhưng hầu hết bạn sẽ sử dụng<strong>địa chỉ ô</strong>để tạo công thức. Điều này được gọi là tạo<strong>tham chiếu ô</strong>. Việc sử dụng tham chiếu ô sẽ đảm bảo rằng công thức của bạn luôn chính xác vì bạn có thể thay đổi giá trị của các ô được tham chiếu mà không cần phải viết lại công thức.</p>
+<p>Trong công thức bên dưới, ô A3 cộng giá trị của ô A1 và A2 bằng cách tạo tham chiếu ô:</p>
+<p><img alt="A formula in Excel using cell references" src="images/formulas_understanding_1.png" /></p>
+<p>Khi bạn nhấn Enter, công thức sẽ tính toán và hiển thị câu trả lời trong ô A3:</p>
+<p><img alt="The formula automatically calculates the result." src="images/formulas_understanding_2.png" /></p>
+<p>Nếu giá trị trong các ô được tham chiếu thay đổi, công thức sẽ tự động tính toán lại:</p>
+<p><img alt="The formula automatically updates if one of the referenced cells changes." src="images/formulas_understanding_3.png" /></p>
+<p>Bằng cách kết hợp toán tử với tham chiếu ô, bạn có thể tạo nhiều công thức đơn giản trong Excel. Công thức cũng có thể bao gồm sự kết hợp của tham chiếu ô và số, như trong các ví dụ bên dưới:</p>
+<p><img alt="Illustration of simple formulas" src="images/simpform_graphic_formulas5.png" /></p>
+<h4>Để tạo một công thức:</h4>
+<p>Trong ví dụ bên dưới, chúng tôi sẽ sử dụng một công thức đơn giản và tham chiếu ô để tính toán ngân sách.</p>
+<ol>
+<li>Chọn<strong>ô</strong>sẽ chứa công thức. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn ô<strong>D12</strong>.</li>
+</ol>
+<p><img alt="Selecting cells" src="images/formulas_create_select.png" />
+2. Nhập<strong>dấu bằng (=)</strong>. Hãy chú ý cách nó xuất hiện trong cả<strong>ô</strong>và<strong>công thức</strong><strong>thanh</strong>.</p>
+<p><img alt="Starting the formula with an equals sign" src="images/formulas_create_equals_sign.png" />
+3. Nhập<strong>ô</strong><strong>địa chỉ</strong>của ô bạn muốn tham chiếu đầu tiên trong công thức: ô<strong>D10</strong>trong ví dụ của chúng tôi.<strong>đường viền màu xanh</strong>sẽ xuất hiện xung quanh ô được tham chiếu.</p>
+<p><img alt="Entering the cell reference for D10" src="images/formulas_create_cell_reference.png" />
+4. Nhập<strong>toán tử toán học</strong>bạn muốn sử dụng. Trong ví dụ của chúng tôi, chúng tôi sẽ nhập<strong>dấu cộng</strong>(<strong>++</strong>).
+5. Nhập<strong>địa chỉ ô</strong>của ô bạn muốn tham chiếu thứ hai trong công thức: ô<strong>D11</strong>trong ví dụ của chúng tôi.<strong>viền màu đỏ</strong>sẽ xuất hiện xung quanh ô được tham chiếu.</p>
+<p><img alt="Entering the addition operator and the reference for cell D11" src="images/formulas_create_operator.png" />
+6. Nhấn<strong>Enter</strong>trên bàn phím của bạn. Công thức sẽ được<strong>tính</strong>và<strong>giá trị</strong>sẽ được hiển thị trong ô. Nếu bạn chọn lại ô, hãy lưu ý rằng ô hiển thị kết quả, trong khi thanh công thức hiển thị công thức.</p>
+<p><img alt="Press enter to complete the formula and display the result" src="images/formulas_create_result.png" /></p>
+<p>Nếu kết quả của một công thức quá lớn để hiển thị trong một ô, nó có thể xuất hiện dưới dạng<strong>dấu thăng</strong>(#######) thay vì một giá trị. Điều này có nghĩa là cột không đủ rộng để hiển thị nội dung ô. Chỉ cần<strong>tăng chiều rộng cột</strong>để hiển thị nội dung ô.</p>
+<h4>Sửa đổi giá trị bằng tham chiếu ô</h4>
+<p>Ưu điểm thực sự của tham chiếu ô là chúng cho phép bạn<strong>cập nhật</strong><strong>dữ liệu</strong>trong bảng tính mà không cần phải viết lại công thức. Trong ví dụ bên dưới, chúng tôi đã sửa đổi giá trị của ô D10 từ $1.200 thành $1.800. Công thức ở ô D12 sẽ tự động tính toán lại và hiển thị giá trị mới ở ô D12.</p>
+<p><img alt="The formula automatically recalculates if a referenced cell is modified." src="images/formulas_modifying.png" /></p>
+<p>Excel<strong>không phải lúc nào cũng cho bạn biết</strong>nếu công thức của bạn có lỗi, vì vậy, bạn có trách nhiệm kiểm tra tất cả các công thức của mình. Để tìm hiểu cách thực hiện việc này, bạn có thể đọc bài học <a href="../../../excelformulas/doublecheck-your-formulas/1/index.html">Kiểm tra kỹ công thức của bạn</a> từ hướng dẫn về <a href="../../../excelformulas/index.html">Công thức Excel</a> của chúng tôi.</p>
+<h4>Để tạo một công thức bằng phương pháp trỏ và nhấp:</h4>
+<p>Thay vì nhập địa chỉ ô theo cách thủ công, bạn có thể<strong>trỏ và nhấp</strong>các ô bạn muốn đưa vào công thức của mình. Phương pháp này có thể tiết kiệm rất nhiều thời gian và công sức khi tạo công thức. Trong ví dụ dưới đây, chúng tôi sẽ tạo một công thức để tính chi phí đặt hàng một số hộp đựng đồ bạc bằng nhựa.</p>
+<ol>
+<li>Chọn<strong>ô</strong>sẽ chứa công thức. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn ô<strong>D4</strong>.</li>
+</ol>
+<p><img alt="Selecting cells" src="images/formulas_pnc_select.png" />
+2. Nhập<strong>dấu bằng (=)</strong>.
+3. Chọn<strong>ô</strong>bạn muốn tham chiếu đầu tiên trong công thức: ô<strong>B4</strong>trong ví dụ của chúng tôi.<strong>địa chỉ ô</strong>sẽ xuất hiện trong công thức.</p>
+<p><img alt="Selecting the first cell to reference in the formula" src="images/formulas_pnc_click_1.png" />
+4. Nhập<strong>toán tử toán học</strong>bạn muốn sử dụng. Trong ví dụ của chúng tôi, chúng tôi sẽ nhập<strong>dấu nhân (*)</strong>.
+5. Chọn<strong>ô</strong>bạn muốn tham chiếu thứ hai trong công thức: ô<strong>C4</strong>trong ví dụ của chúng tôi.<strong>địa chỉ ô</strong>sẽ xuất hiện trong công thức.</p>
+<p><img alt="Selecting the second cell to reference in the formula" src="images/formulas_pnc_click_2.png" />
+6. Nhấn<strong>Enter</strong>trên bàn phím của bạn. Công thức sẽ được<strong>tính</strong>và<strong>giá trị</strong>sẽ được hiển thị trong ô.</p>
+<p><img alt="Press enter to complete the formula and display the result" src="images/formulas_pnc_result.png" /></p>
+<h4>Sao chép công thức bằng núm điều khiển điền</h4>
+<p>Công thức cũng có thể được<strong>sao chép</strong>sang các ô liền kề bằng<strong>điền</strong><strong>tay cầm</strong>, điều này có thể tiết kiệm rất nhiều thời gian và công sức nếu bạn cần thực hiện<strong>cùng một phép tính</strong>nhiều lần trong một trang tính.<strong>Tay điều khiển điền</strong>là hình vuông nhỏ ở góc dưới bên phải của (các) ô đã chọn.</p>
+<ol>
+<li>Chọn ô chứa công thức bạn muốn sao chép. Nhấp và kéo<strong>bộ điều khiển điền</strong>qua các ô bạn muốn điền.</li>
+</ol>
+<p><img alt="Drag the fill handle" src="images/formulas_fill_select2.png" />
+2. Sau khi bạn thả chuột, công thức sẽ được sao chép vào các ô đã chọn.</p>
+<p><img alt="The formula is copied into the selected cells." src="images/formulas_fill_result.png" /></p>
+<h4>Để chỉnh sửa một công thức:</h4>
+<p>Đôi khi bạn có thể muốn sửa đổi một công thức hiện có. Trong ví dụ bên dưới, chúng tôi đã nhập địa chỉ ô không chính xác vào công thức của mình, vì vậy chúng tôi cần phải sửa địa chỉ đó.</p>
+<ol>
+<li>Chọn<strong>ô</strong>chứa công thức bạn muốn chỉnh sửa. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn ô<strong>D12</strong>.</li>
+</ol>
+<p><img alt="Selecting cells" src="images/formulas_edit_select.png" />
+2. Nhấp vào<strong>thanh công thức</strong>để chỉnh sửa công thức. Bạn cũng có thể<strong>bấm đúp</strong>vào ô để xem và chỉnh sửa công thức trực tiếp trong ô.</p>
+<p><img alt="Clicking the formula bar to edit the formula" src="images/formulas_edit_click.png" />
+3. <strong>đường viền</strong>sẽ xuất hiện xung quanh bất kỳ ô được tham chiếu nào. Trong ví dụ của chúng tôi, chúng tôi sẽ thay đổi phần đầu tiên của công thức thành ô tham chiếu<strong>D10</strong>thay vì ô<strong>D9</strong>.</p>
+<p><img alt="Editing the formula" src="images/formulas_edit_edit.png" />
+4. Khi bạn hoàn tất, hãy nhấn<strong>Enter</strong>trên bàn phím hoặc chọn lệnh<strong>Enter</strong>trong thanh công thức.</p>
+<p><img alt="Press enter to finish editing" src="images/formulas_edit_enter.png" />
+5. Công thức sẽ được<strong>cập nhật</strong>và<strong>giá trị mới</strong>sẽ được hiển thị trong ô.</p>
+<p><img alt="The new formula displays its result" src="images/formulas_edit_result.png" /></p>
+<p>Nếu thay đổi ý định, bạn có thể nhấn phím<strong>Esc</strong>trên bàn phím hoặc nhấp vào lệnh<strong>Hủy</strong>trong thanh công thức để tránh vô tình thực hiện các thay đổi đối với công thức của mình.</p>
+<p><img alt="Cancel an edit to a formula" src="images/formulas_edit_cancel.png" /></p>
+<p>Để hiển thị tất cả các công thức trong bảng tính, bạn có thể giữ phím<strong>Ctrl</strong>và nhấn<strong><code>**(dấu huyền). Phím dấu huyền thường nằm ở góc trên bên trái của bàn phím. Bạn có thể nhấn**Ctrl+</code></strong>lần nữa để chuyển về chế độ xem bình thường.</p>
+<h3>Thử thách!</h3>
+<ol>
+<li>Mở <a href="practice_files/excel_introformulas_practice.xlsx">sổ làm việc thực hành</a> của chúng tôi.</li>
+<li>Nhấp vào tab<strong>Thử thách</strong>ở phía dưới bên trái của sổ làm việc.</li>
+<li>Tạo công thức trong ô<strong>D4</strong>nhân số lượng trong<strong>B4</strong>với giá mỗi đơn vị trong ô<strong>C4</strong>.</li>
+<li>Sử dụng<strong>bộ điều khiển điền</strong>để sao chép công thức trong ô<strong>D4</strong>sang các ô<strong>D5:D7</strong>.</li>
+<li>Thay đổi giá mỗi đơn vị của chuối chiên trong ô<strong>C6</strong>thành $2,25. Lưu ý rằng tổng dòng cũng tự động thay đổi.</li>
+<li>Chỉnh sửa công thức tính tổng trong ô<strong>D8</strong>để nó cũng thêm ô<strong>D7</strong>.</li>
+<li>Khi bạn hoàn tất, sổ làm việc của bạn sẽ trông như thế này:</li>
+</ol>
+<p><img alt="Intro Formulas Challenge" src="images/screen shot 2015-11-24 at 3.27.57 pm.png" /></p>
+<p>/en/excel/creating-more-complex-formulas/content/</p>
+    </div>
+</body>
+</html>

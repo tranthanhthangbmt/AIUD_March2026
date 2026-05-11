@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 27: giới thiệu về bảng xoay vòng</title>
+<style>
+    body {
+        font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    .lesson-content {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin: 15px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4 {
+        color: #2c3e50;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2.2em;
+        border-bottom: 2px solid #27ae60;
+        padding-bottom: 10px;
+        color: #27ae60;
+    }
+    a {
+        color: #27ae60;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    blockquote {
+        border-left: 4px solid #27ae60;
+        padding-left: 15px;
+        color: #666;
+        background: #f1fff8;
+        padding: 10px 15px;
+        border-radius: 0 4px 4px 0;
+        margin-left: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="lesson-content">
+        <h1>Bài 27: giới thiệu về bảng xoay vòng</h1>
+<h4>Bài 27: Giới thiệu về PivotTable</h4>
+<p>/en/excel/inspecting-and-protecting-workbooks/content/</p>
+<h3>Giới thiệu</h3>
+<p>Khi bạn có nhiều dữ liệu, đôi khi có thể khó phân tích tất cả thông tin trong bảng tính của bạn.<strong>PivotTables</strong>có thể giúp làm cho bảng tính của bạn dễ quản lý hơn bằng cách<strong>tóm tắt</strong>dữ liệu và cho phép bạn<strong>thao tác</strong>dữ liệu theo nhiều cách khác nhau.</p>
+<p>Xem video bên dưới để tìm hiểu thêm về PivotTable.</p>
+<h4>Sử dụng PivotTable để trả lời câu hỏi</h4>
+<p>Hãy xem xét ví dụ dưới đây. Giả sử chúng ta muốn trả lời câu hỏi<strong>Số lượng bán được của mỗi nhân viên bán hàng là bao nhiêu?</strong>Việc trả lời câu hỏi này có thể tốn thời gian và khó khăn; mỗi nhân viên bán hàng xuất hiện trên nhiều hàng và chúng tôi sẽ cần tính tổng tất cả các đơn hàng khác nhau của họ một cách riêng lẻ. Chúng ta có thể sử dụng lệnh<strong>Subtotal</strong>để giúp tìm tổng số cho mỗi nhân viên bán hàng, nhưng chúng ta vẫn sẽ có nhiều dữ liệu để làm việc.</p>
+<p><img alt="worksheet of sales data" src="images/pivot_question_sheet.png" /></p>
+<p>May mắn thay, PivotTable có thể ngay lập tức<strong>tính toán</strong>và<strong>tóm tắt</strong>dữ liệu theo cách giúp dữ liệu dễ đọc hơn nhiều. Khi chúng ta hoàn tất, PivotTable sẽ trông giống như thế này:</p>
+<p><img alt="sales total by salesperson" src="images/pivot_question_salesperson.png" /></p>
+<p>Sau khi tạo PivotTable, bạn có thể sử dụng nó để trả lời các câu hỏi khác nhau bằng cách sắp xếp lại—hoặc<strong>xoay vòng</strong>—dữ liệu. Ví dụ: giả sử chúng tôi muốn trả lời<strong>Tổng số tiền bán được trong mỗi tháng là bao nhiêu?</strong>Chúng tôi có thể sửa đổi PivotTable của mình để trông như thế này:</p>
+<p><img alt="sales total by month" src="images/pivot_question_month.png" /></p>
+<h4>Để tạo PivotTable:</h4>
+<ol>
+<li>Chọn<strong>bảng</strong>hoặc<strong>ô</strong>(bao gồm tiêu đề cột) mà bạn muốn đưa vào PivotTable của mình.</li>
+</ol>
+<p><img alt="selecting a table" src="images/pivot_create_cells.png" />
+2. Từ tab<strong>Chèn</strong>, hãy nhấp vào lệnh<strong>PivotTable</strong>.</p>
+<p><img alt="pivottable command" src="images/pivot_create_command.png" />
+3. Hộp thoại<strong>Tạo PivotTable</strong>sẽ xuất hiện. Chọn cài đặt của bạn, sau đó nhấp vào<strong>OK</strong>. Trong ví dụ của chúng tôi, chúng tôi sẽ sử dụng<strong>Bảng1</strong>làm dữ liệu nguồn và đặt PivotTable vào<strong>trang tính mới</strong>.</p>
+<p><img alt="pivottable dialog box" src="images/pivot_create_dialog.png" />
+4. <strong>PivotTable</strong>và<strong>Danh sách trường</strong>trống sẽ xuất hiện trong trang tính mới.</p>
+<p><img alt="blank pivottable" src="images/pivot_create_blank2.png" />
+5. Sau khi tạo PivotTable, bạn sẽ cần quyết định<strong>trường</strong>nào cần thêm. Mỗi trường chỉ đơn giản là một<strong>tiêu đề cột</strong>từ dữ liệu nguồn. Trong danh sách<strong>PivotTable</strong><strong>Trường</strong>, hãy chọn hộp cho từng trường bạn muốn thêm. Trong ví dụ của chúng tôi, chúng tôi muốn biết tổng số<strong>số tiền</strong>được bán bởi mỗi<strong>nhân viên bán hàng</strong>, vì vậy chúng tôi sẽ kiểm tra các trường<strong>Salesperson</strong>và<strong>Order</strong><strong>Amount</strong>.</p>
+<p><img alt="selecting fields" src="images/pivot_create_fields.png" />
+6. Các trường đã chọn sẽ được thêm vào một trong bốn khu vực bên dưới. Trong ví dụ của chúng tôi, trường<strong>Nhân viên bán hàng</strong>đã được thêm vào khu vực<strong>Hàng</strong>, trong khi<strong>Số tiền đặt hàng</strong>đã được thêm vào<strong>Giá trị</strong>. Bạn cũng có thể<strong>kéo</strong><strong>và thả</strong>các trường trực tiếp vào khu vực mong muốn.</p>
+<p><img alt="fields added to areas" src="images/pivot_create_drag.png" />
+7. PivotTable sẽ tính toán và tóm tắt các trường đã chọn. Trong ví dụ của chúng tôi, PivotTable hiển thị<strong>số tiền mà mỗi nhân viên bán hàng</strong>đã bán.</p>
+<p><img alt="finished pivottable" src="images/pivot_create_table.png" /></p>
+<p>Cũng giống như bảng tính thông thường, bạn có thể sắp xếp dữ liệu trong PivotTable bằng lệnh<strong>Sắp xếp &amp; Lọc</strong>trên tab Trang chủ. Bạn cũng có thể áp dụng bất kỳ loại<strong>định dạng số</strong>nào bạn muốn. Ví dụ: bạn có thể muốn thay đổi định dạng số thành<strong>Tiền tệ</strong>. Tuy nhiên, hãy lưu ý rằng một số loại định dạng có thể biến mất khi bạn sửa đổi PivotTable.</p>
+<p><img alt="sorted and formatted" src="images/pivot_create_formatting.png" /></p>
+<p>Nếu bạn thay đổi bất kỳ dữ liệu nào trong trang tính nguồn của mình, PivotTable<strong>sẽ không tự động cập nhật</strong>. Để cập nhật thủ công, hãy chọn PivotTable rồi đi tới<strong>Phân tích &gt; Làm mới</strong>.</p>
+<h3>Xoay dữ liệu</h3>
+<p>Một trong những điều tuyệt vời nhất về PivotTable là chúng có thể nhanh chóng<strong>xoay vòng</strong>—hoặc sắp xếp lại—dữ liệu của bạn, cho phép bạn kiểm tra trang tính của mình theo nhiều cách. Xoay dữ liệu có thể giúp bạn trả lời<strong>các câu hỏi khác nhau</strong>và thậm chí<strong>thử nghiệm</strong>dữ liệu của bạn để khám phá các xu hướng và mẫu mới.</p>
+<h4>Để thêm cột:</h4>
+<p>Cho đến nay, PivotTable của chúng tôi chỉ hiển thị<strong>một cột</strong>dữ liệu tại một thời điểm. Để hiển thị<strong>nhiều cột</strong>, bạn cần thêm một trường vào khu vực<strong>Cột</strong>.</p>
+<ol>
+<li>Kéo một trường từ<strong>Danh sách trường</strong>vào khu vực<strong>Cột</strong>. Trong ví dụ của chúng tôi, chúng tôi sẽ sử dụng trường<strong>Tháng</strong>.</li>
+</ol>
+<p><img alt="adding a column" src="images/pivot_column_add2.png" />
+2. PivotTable sẽ bao gồm nhiều cột. Trong ví dụ của chúng tôi, hiện có một cột cho<strong>doanh số hàng tháng</strong>của mỗi người, ngoài<strong>tổng cộng</strong>.</p>
+<p><img alt="finished pivottable" src="images/pivot_column_table.png" /></p>
+<h4>Để thay đổi một hàng hoặc cột:</h4>
+<p><strong>Thay đổi</strong>một hàng hoặc cột có thể mang lại cho bạn cái nhìn hoàn toàn khác về dữ liệu của mình. Tất cả những gì bạn phải làm là<strong>xóa</strong>trường được đề cập, sau đó<strong>thay thế</strong>trường đó bằng trường khác.</p>
+<ol>
+<li>Kéo trường bạn muốn xóa ra khỏi<strong>khu vực hiện tại</strong>của nó. Bạn cũng có thể<strong>bỏ chọn</strong>hộp thích hợp trong<strong>Danh sách trường</strong>. Trong ví dụ này, chúng tôi đã xóa các trường<strong>Tháng</strong>và<strong>Nhân viên bán hàng</strong>.</li>
+</ol>
+<p><img alt="removing fields" src="images/pivot_row_remove.png" />
+2. Kéo<strong>trường mới</strong>vào<strong>vùng mong muốn</strong>. Trong ví dụ của chúng tôi, chúng tôi sẽ đặt trường<strong>Vùng</strong>bên dưới<strong>Hàng</strong>.</p>
+<p><img alt="dragging a field" src="images/pivot_row_add.png" />
+3. PivotTable sẽ điều chỉnh—hoặc xoay—để hiển thị dữ liệu mới. Trong ví dụ của chúng tôi, nó hiện hiển thị<strong>số lượng bán theo từng khu vực</strong>.</p>
+<p><img alt="finished pivottable" src="images/pivot_row_table.png" /></p>
+<h4>Để tìm hiểu thêm:</h4>
+<p>Sau khi bạn cảm thấy thoải mái với PivotTable, hãy xem lại bài học <a href="../../doing-more-with-pivottables/1/index.html">Làm nhiều hơn với PivotTable</a> của chúng tôi để biết thêm các cách tùy chỉnh và thao tác với dữ liệu.</p>
+<h3>Thử thách!</h3>
+<ol>
+<li>Mở <a href="practice_files/excel_intropivottables_practice.xlsx">sổ làm việc thực hành</a> của chúng tôi.</li>
+<li>Tạo<strong>PivotTable</strong>trong một trang tính riêng biệt.</li>
+<li>Chúng tôi muốn trả lời câu hỏi<strong>Tổng số tiền bán được ở mỗi khu vực là bao nhiêu?</strong>Để thực hiện việc này, hãy chọn<strong>Khu vực</strong>và<strong>Số tiền đặt hàng</strong>. Khi bạn hoàn tất, sổ làm việc của bạn sẽ trông như thế này:</li>
+</ol>
+<p><img alt="PivotTable 1" src="images/screen shot 2015-11-27 at 9.54.09 am.png" />
+4. Trong khu vực<strong>Hàng</strong>, hãy xóa<strong>Vùng</strong>và thay thế bằng<strong>Nhân viên bán hàng</strong>.
+5. Thêm<strong>Tháng</strong>vào khu vực<strong>Cột</strong>.
+6. Thay đổi định dạng số của các ô<strong>B5:E13</strong>thành<strong>Tiền tệ</strong>.<strong>Lưu ý</strong>: Bạn có thể phải mở rộng cột C và D để xem các giá trị.
+7. Khi bạn hoàn tất, sổ làm việc của bạn sẽ trông như thế này:</p>
+<p><img alt="Intro to PivotTables" src="images/screen shot 2015-12-01 at 9.09.34 am.png" /></p>
+<p>/en/excel/doing-more-with-pivottables/content/</p>
+    </div>
+</body>
+</html>

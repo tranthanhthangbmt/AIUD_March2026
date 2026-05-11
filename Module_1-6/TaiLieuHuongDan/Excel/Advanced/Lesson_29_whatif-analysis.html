@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 29: phân tích whatif</title>
+<style>
+    body {
+        font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    .lesson-content {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin: 15px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4 {
+        color: #2c3e50;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2.2em;
+        border-bottom: 2px solid #27ae60;
+        padding-bottom: 10px;
+        color: #27ae60;
+    }
+    a {
+        color: #27ae60;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    blockquote {
+        border-left: 4px solid #27ae60;
+        padding-left: 15px;
+        color: #666;
+        background: #f1fff8;
+        padding: 10px 15px;
+        border-radius: 0 4px 4px 0;
+        margin-left: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="lesson-content">
+        <h1>Bài 29: phân tích whatif</h1>
+<h4>Bài học 29: Phân tích giả định</h4>
+<p>/en/excel/doing-more-with-pivottables/content/</p>
+<h3>Giới thiệu</h3>
+<p>Excel bao gồm các công cụ mạnh mẽ để thực hiện các phép tính toán học phức tạp, bao gồm<strong>phân tích giả định</strong>. Tính năng này có thể giúp bạn<strong>thử nghiệm</strong>và<strong>trả lời câu hỏi</strong>với dữ liệu của bạn, ngay cả khi dữ liệu chưa đầy đủ. Trong bài học này, bạn sẽ học cách sử dụng công cụ phân tích giả định có tên<strong>Tìm kiếm mục tiêu</strong>.</p>
+<p>Xem video bên dưới để tìm hiểu thêm về phân tích giả định và Tìm kiếm mục tiêu.</p>
+<h3>Tìm kiếm mục tiêu</h3>
+<p>Bất cứ khi nào bạn tạo một công thức hoặc hàm trong Excel, bạn sẽ ghép nhiều phần khác nhau lại với nhau để tính<strong>kết quả</strong>. <strong>Tìm kiếm mục tiêu</strong>hoạt động theo cách ngược lại: Nó cho phép bạn bắt đầu với<strong>kết quả mong muốn</strong>và tính toán<strong>giá trị đầu vào</strong>sẽ mang lại cho bạn kết quả đó. Chúng tôi sẽ sử dụng một số ví dụ để chỉ ra cách sử dụng Goal Seek.</p>
+<h4>Để sử dụng Tìm kiếm mục tiêu (ví dụ 1):</h4>
+<p>Giả sử bạn đã đăng ký vào một lớp học. Bạn hiện có số điểm là 65 và bạn cần ít nhất 70 điểm để vượt qua lớp học. May mắn thay, bạn có một bài tập cuối cùng có thể giúp nâng cao điểm trung bình của bạn. Bạn có thể sử dụng Goal Seek để tìm hiểu<strong>bạn cần đạt điểm bao nhiêu trong bài tập cuối cùng</strong>để vượt qua lớp học.</p>
+<p>Trong hình ảnh bên dưới, bạn có thể thấy điểm của bốn bài tập đầu tiên là<strong>58</strong>,<strong>70</strong>,<strong>72</strong>và<strong>60</strong>. Mặc dù chúng ta không biết lớp năm sẽ như thế nào, nhưng chúng ta có thể viết một công thức—hoặc hàm—để tính điểm cuối cùng. Trong trường hợp này, mỗi bài tập đều có trọng số như nhau, vì vậy tất cả những gì chúng ta phải làm là tính trung bình cộng của cả năm điểm bằng cách nhập<strong>=AVERAGE(B2:B6)</strong>. Khi chúng tôi sử dụng Tìm kiếm mục tiêu, ô<strong>B6</strong>sẽ hiển thị cho chúng tôi điểm tối thiểu mà chúng tôi cần đạt được cho bài tập đó.</p>
+<p><img alt="the average function being used to average the other class grades" src="images/whatif_grade_formula.png" /></p>
+<ol>
+<li>Chọn ô có giá trị bạn muốn thay đổi. Bất cứ khi nào bạn sử dụng Goal Seek, bạn sẽ cần chọn một ô đã chứa<strong>công thức</strong>hoặc<strong>hàm</strong>. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn ô<strong>B7</strong>vì nó chứa công thức<strong>=AVERAGE(B2:B6)</strong>.</li>
+</ol>
+<p><img alt="selecting cell B7" src="images/whatif_grade_start.png" />
+2. Từ tab<strong>Dữ liệu</strong>, hãy nhấp vào lệnh<strong>What-If</strong><strong>Analysis</strong>, sau đó chọn<strong>Tìm kiếm mục tiêu</strong>từ trình đơn thả xuống.</p>
+<p><img alt="clicking the Goal Seek option from the What-if Analysis command drop-down menu" src="images/whatif_grade_command.png" />
+3. Một hộp thoại sẽ xuất hiện với ba trường. Trường đầu tiên,<strong>Đặt ô:</strong>, sẽ chứa kết quả mong muốn. Trong ví dụ của chúng tôi, ô<strong>B7</strong>đã được chọn.</p>
+<p>Trường thứ hai,<strong>To value:</strong>, là kết quả mong muốn. Trong ví dụ của chúng tôi, chúng tôi sẽ nhập<strong>70</strong>vì chúng tôi cần kiếm được ít nhất số tiền đó để vượt qua lớp học.</p>
+<p>Trường thứ ba,<strong>B</strong><strong><em>y ô thay đổi:</em>*, là ô nơi Goal Seek sẽ đặt câu trả lời. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn ô</strong>B6<strong>vì chúng tôi muốn xác định điểm chúng tôi cần đạt được trong bài tập cuối cùng.
+4. Khi bạn hoàn tất, hãy nhấp vào</strong>OK.</p>
+<p><img alt="đặt tham số trong hộp thoại tìm kiếm mục tiêu" src="image/whatif_grade_dialog.png" /><strong>
+5. Hộp thoại sẽ cho bạn biết liệu Goal Seek có thể tìm ra giải pháp hay không. Nhấp vào</strong>OK**.</p>
+<p><img alt="a successful result in the goal seek dialog box" src="images/whatif_grade_solution.png" />
+6. Kết quả sẽ xuất hiện trong ô được chỉ định. Trong ví dụ của chúng tôi, Goal Seek đã tính toán rằng chúng tôi sẽ cần đạt ít nhất 90 điểm trong bài tập cuối cùng để đạt điểm đậu.</p>
+<p><img alt="the value in cell B6 (90) determined by goal " src="images/whatif_grade_done.png" /></p>
+<h4>Để sử dụng Goal Seek (ví dụ 2):</h4>
+<p>Giả sử bạn đang lên kế hoạch cho một sự kiện và muốn mời càng nhiều người càng tốt mà không vượt quá ngân sách 500 USD. Chúng ta có thể sử dụng Goal Seek để tìm ra số lượng người cần mời. Trong ví dụ bên dưới của chúng tôi, ô<strong>B5</strong>chứa công thức<strong>=B2+B3*B4</strong>để tính tổng chi phí đặt phòng, cộng với chi phí cho mỗi người.</p>
+<ol>
+<li>Chọn ô có giá trị bạn muốn thay đổi. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn ô<strong>B5</strong>.</li>
+</ol>
+<p><img alt="selecting cell B5" src="images/whatif_budget_start.png" />
+2. Từ tab<strong>Dữ liệu</strong>, hãy nhấp vào lệnh<strong>What-If</strong><strong>Analysis</strong>, sau đó chọn<strong>Tìm kiếm mục tiêu</strong>từ trình đơn thả xuống.</p>
+<p><img alt="clicking the Goal Seek option from the What-if Analysis command drop-down menu" src="images/whatif_grade_command.png" />
+3. Một hộp thoại sẽ xuất hiện với ba trường. Trường đầu tiên,<strong>Đặt ô:</strong>, sẽ chứa kết quả mong muốn. Trong ví dụ của chúng tôi, ô<strong>B5</strong>đã được chọn. Trường thứ hai,<strong>Để giá trị:</strong>, là kết quả mong muốn. Trong ví dụ của chúng tôi, chúng tôi sẽ nhập<strong>500</strong>vì chúng tôi chỉ muốn chi 500 đô la.</p>
+<p>Trường thứ ba,<strong>Bằng cách thay đổi ô:</strong>, là ô nơi Goal Seek sẽ đặt câu trả lời. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn ô<strong>B4</strong>vì chúng tôi muốn biết mình có thể mời bao nhiêu khách mà không phải chi quá 500 USD.
+4. Khi bạn hoàn tất, hãy nhấp vào<strong>OK</strong>.</p>
+<p><img alt="setting parameters in the goal seek dialog box" src="images/whatif_budget_dialog.png" />
+5. Hộp thoại sẽ cho bạn biết liệu Goal Seek có thể tìm ra giải pháp hay không. Nhấp vào<strong>OK</strong>.
+6. Kết quả sẽ xuất hiện trong ô được chỉ định. Trong ví dụ của chúng tôi, Goal Seek đã tính toán câu trả lời là khoảng 18,62. Trong trường hợp này, câu trả lời cuối cùng của chúng ta cần phải là một số nguyên, vì vậy chúng ta sẽ cần làm tròn câu trả lời lên hoặc xuống. Vì việc làm tròn số sẽ khiến chúng tôi vượt quá ngân sách nên chúng tôi sẽ<strong>làm tròn</strong>thành 18 khách.</p>
+<p><img alt="the value in cell B4 (18) determined by Goal Seek" src="images/whatif_budget_done.png" /></p>
+<p>Như bạn có thể thấy trong ví dụ trên, một số tình huống sẽ yêu cầu đáp án là số nguyên. Nếu Goal Seek cung cấp cho bạn số thập phân, bạn sẽ cần<strong>làm tròn lên hoặc xuống</strong>, tùy thuộc vào tình huống.</p>
+<h3>Các loại phân tích what-if khác</h3>
+<p>Đối với các dự án nâng cao hơn, bạn có thể muốn xem xét các loại phân tích giả định khác:<strong>kịch bản</strong>và<strong>bảng dữ liệu</strong>. Thay vì bắt đầu từ kết quả mong muốn và làm việc ngược lại, như với Goal Seek, các tùy chọn này cho phép bạn kiểm tra nhiều giá trị và xem kết quả thay đổi như thế nào.</p>
+<ul>
+<li><strong>Kịch bản</strong>cho phép bạn thay thế các giá trị cho<strong>nhiều ô</strong>(tối đa 32) cùng một lúc. Bạn có thể tạo bao nhiêu kịch bản tùy thích rồi so sánh chúng mà không cần thay đổi giá trị theo cách thủ công. Trong ví dụ bên dưới, chúng tôi đang sử dụng các tình huống để so sánh các địa điểm khác nhau cho sự kiện sắp tới.</li>
+</ul>
+<p><img alt="using the Scenarios Manager" src="images/whatif_scenario.png" /></p>
+<p>Để biết thêm thông tin về các kịch bản, hãy đọc <a href="../../../not-offline.html?url=https:/support.microsoft.com/en-us/office/switch-between-various-sets-of-values-by-USE-scenarios-20 68afb1-ecdf-4956-9822-19ec479f55a2?ocmsassetid=hp010072669&amp;ctt=1&amp;correlationid=5c034d22-eb63-470d-9feb-b40a0c7c2f0e&amp;ui=en-us&amp;rs=en-us&amp;ad=us">this bài viết</a> từ Microsoft.</p>
+<ul>
+<li><strong>Bảng dữ liệu</strong>cho phép bạn lấy một hoặc hai biến trong công thức và thay thế chúng bằng<strong>bao nhiêu giá trị khác nhau tùy thích</strong>, sau đó xem kết quả trong bảng. Tùy chọn này đặc biệt mạnh mẽ vì nó hiển thị<strong>nhiều kết quả</strong>cùng một lúc, không giống như các tình huống hoặc Tìm kiếm mục tiêu. Trong ví dụ dưới đây, chúng ta có thể xem 24 kết quả có thể xảy ra đối với khoản vay mua ô tô.</li>
+</ul>
+<p><img alt="using a data table" src="images/whatif_datatable.png" /></p>
+<p>Để biết thêm thông tin về bảng dữ liệu, hãy đọc <a href="../../../not-offline.html?url=https:/support.microsoft.com/en-us/office/calcate-multiple-results-by-USE-a-data-table-e95e24 87-6ca6-4413-ad12-77542a5ea50b?ocmsassetid=hp010342214&amp;ctt=1&amp;correlationid=6fb69dd1-4b01-4468-aae3-44e4669379d4&amp;ui=en-us&amp;rs=en-us&amp;ad=us">this bài viết</a> từ Microsoft.</p>
+<h3>Thử thách!</h3>
+<ol>
+<li>Mở <a href="practice_files/excel_whatifanalysis_practice.xlsx">sổ làm việc thực hành</a> của chúng tôi.</li>
+<li>Nhấp vào tab<strong>Thử thách</strong>ở phía dưới bên trái của sổ làm việc.</li>
+<li>Trong ô<strong>B8</strong>, hãy tạo một<strong>hàm</strong>tính<strong>trung bình</strong>của doanh số bán hàng trong<strong>B2:B7</strong>.</li>
+<li>Sổ làm việc cho thấy số tiền bán hàng hàng tháng của Dave trong nửa đầu năm. Nếu anh ta đạt mức trung bình 200.000 USD vào giữa năm, anh ta sẽ nhận được 5% tiền thưởng. Sử dụng<strong>Tìm kiếm mục tiêu</strong>để biết anh ấy cần bán bao nhiêu trong tháng 6 để kiếm được mức trung bình 200.000 USD.</li>
+<li>Khi bạn hoàn tất, sổ làm việc của bạn sẽ trông như thế này:</li>
+</ol>
+<p><img alt="Goal Seek Challenge" src="images/screen shot 2015-11-25 at 10.36.18 am.png" /></p>
+<p>/en/excel/what-is-office-365/content/</p>
+    </div>
+</body>
+</html>

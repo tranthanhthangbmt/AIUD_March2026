@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 14: Tạo công thức phức tạp hơn</title>
+<style>
+    body {
+        font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    .lesson-content {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin: 15px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4 {
+        color: #2c3e50;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2.2em;
+        border-bottom: 2px solid #27ae60;
+        padding-bottom: 10px;
+        color: #27ae60;
+    }
+    a {
+        color: #27ae60;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    blockquote {
+        border-left: 4px solid #27ae60;
+        padding-left: 15px;
+        color: #666;
+        background: #f1fff8;
+        padding: 10px 15px;
+        border-radius: 0 4px 4px 0;
+        margin-left: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="lesson-content">
+        <h1>Bài 14: Tạo công thức phức tạp hơn</h1>
+<h4>Bài 14: Tạo các công thức phức tạp hơn</h4>
+<p>/en/excel/giới thiệu công thức/nội dung/</p>
+<h3>Giới thiệu</h3>
+<p>Bạn có thể có kinh nghiệm làm việc với các công thức chỉ chứa một toán tử, như<strong>7+9</strong>. Các công thức phức tạp hơn có thể chứa<strong>một số toán tử</strong>, như<strong>5+2*8</strong>. Khi có nhiều thao tác trong một công thức,<strong>thứ tự các phép tính</strong>sẽ cho Excel biết thao tác nào cần tính trước. Để viết công thức cho bạn câu trả lời chính xác, bạn cần hiểu thứ tự thực hiện các phép tính.</p>
+<p>Xem video dưới đây để tìm hiểu thêm về các công thức phức tạp.</p>
+<h4>Trình tự các thao tác</h4>
+<p>Excel tính toán các công thức dựa trên<strong>thứ tự thực hiện</strong>sau:</p>
+<ol>
+<li>Các phép toán được đặt trong<strong>dấu ngoặc đơn</strong></li>
+<li><strong>Tính toán hàm mũ</strong>(ví dụ: 3^2)</li>
+<li><strong>Nhân</strong>và<strong>chia</strong>, tùy theo điều kiện nào đến trước</li>
+<li><strong>Cộng</strong>và<strong>trừ</strong>, tùy điều kiện nào đến trước</li>
+</ol>
+<p>Một từ ghi nhớ có thể giúp bạn ghi nhớ đơn hàng là<strong>PEMDAS</strong>hoặc<strong>P</strong>lease<strong>E</strong>xcuse<strong>M</strong>y<strong>D</strong>ear<strong>A</strong>unt<strong>S</strong>ally.</p>
+<p>Bấm vào các mũi tên trong trình chiếu bên dưới để tìm hiểu cách sử dụng thứ tự các phép tính để tính toán các công thức trong Excel.</p>
+<ul>
+<li><img alt="PEMDAS, 10+(6-3)/2^2*4-1" src="images/complex_order1.png" /></li>
+</ul>
+<p>Mặc dù công thức này có vẻ phức tạp nhưng chúng ta có thể sử dụng thứ tự thực hiện từng bước để tìm ra câu trả lời đúng.
+* <img alt="P dấu ngoặc đơn: 10+(6-3)/2^2*4-1" src="images/complex_order2.png" /></p>
+<p>Đầu tiên, chúng ta sẽ bắt đầu bằng cách tính toán mọi thứ bên trong dấu ngoặc đơn. Trong trường hợp này, chúng ta chỉ cần tính một điều: 6-3=3.
+* <img alt="Số mũ E: 10+3/2^2*4-1" src="images/complex_order3.png" /></p>
+<p>Như bạn có thể thấy, công thức trông đơn giản hơn. Tiếp theo, chúng ta sẽ xem liệu có số mũ nào không. Có một: 2^2=4.
+* <img alt="MD nhân chia, tùy điều kiện nào đến trước: 10+3/4*4-1" src="image/complex_order4.png" /></p>
+<p>Tiếp theo, chúng ta sẽ giải bất kỳ phép nhân và chia nào, thực hiện từ trái sang phải. Vì phép chia đứng trước phép nhân nên nó được tính trước: 3/4=0,75.
+* <img alt="Phép nhân MD, tùy điều kiện nào đến trước: 10+0,75*4-1" src="image/complex_order5.png" /></p>
+<p>Bây giờ, chúng ta sẽ giải phép nhân còn lại: 0,75*4=3.
+* <img alt="Phép trừ cộng AS, tùy điều kiện nào đến trước: 10+3-1" src="images/complex_order6.png" /></p>
+<p>Tiếp theo, chúng ta sẽ tính bất kỳ phép cộng hoặc phép trừ nào, lại thực hiện từ trái sang phải. Phép cộng có trước: 10+3=13.
+* <img alt="Phép trừ cộng AS, tùy điều kiện nào đến trước: 13-1" src="images/complex_order7.png" /></p>
+<p>Cuối cùng, chúng ta có một phép trừ còn lại: 13-1=12.
+* <img alt="answer: 13-1=12" src="images/complex_order8.png" /></p>
+<p>Bây giờ chúng ta đã có câu trả lời: 12. Và đây chính xác là kết quả bạn sẽ nhận được nếu nhập công thức vào Excel.
+* <img alt="GCFLearnFree.org" src="images/complex_order9.png" /></p>
+<h4>Tạo công thức phức tạp</h4>
+<p>Trong ví dụ bên dưới, chúng tôi sẽ trình bày cách Excel sử dụng thứ tự các phép tính để giải một công thức phức tạp hơn. Ở đây, chúng tôi muốn tính chi phí<strong>thuế bán hàng</strong>cho hóa đơn cung cấp dịch vụ ăn uống. Để thực hiện việc này, chúng ta sẽ viết công thức dưới dạng<strong>=(D3+D4+D5)*0.075</strong>trong ô<strong>D6</strong>. Công thức này sẽ cộng giá các mặt hàng của chúng ta, sau đó nhân giá trị đó với thuế suất 7,5% (được viết là 0,075) để tính ra câu trả lời.</p>
+<p><img alt="Creating a complex formula" src="images/complex_tax_formula.png" /></p>
+<p>Excel tuân theo thứ tự thực hiện và trước tiên cộng các giá trị bên trong dấu ngoặc đơn:<strong>(45,80+68,70+159,60) = 274,10</strong>. Sau đó, hệ thống sẽ nhân giá trị đó với thuế suất:<strong>274,10*0,075</strong>. Kết quả sẽ cho thấy thuế bán hàng là<strong>$20,56</strong>.</p>
+<p><img alt="Formula result" src="images/complex_tax_result.png" /></p>
+<p>Điều đặc biệt quan trọng là phải tuân theo thứ tự thực hiện các thao tác khi tạo công thức. Nếu không, Excel sẽ không tính toán kết quả chính xác. Trong ví dụ của chúng tôi, nếu không bao gồm<strong>dấu ngoặc đơn</strong>thì phép nhân được tính trước và kết quả không chính xác. Dấu ngoặc đơn thường là cách tốt nhất để xác định phép tính nào sẽ được thực hiện đầu tiên trong Excel.</p>
+<p><img alt="Formula without parentheses" src="images/complex_tax_incorrect.png" /></p>
+<h4>Để tạo một công thức phức tạp bằng cách sử dụng thứ tự thực hiện các thao tác:</h4>
+<p>Trong ví dụ bên dưới, chúng tôi sẽ sử dụng<strong>tham chiếu ô</strong>cùng với<strong>giá trị số</strong>để tạo một công thức phức tạp giúp tính<strong>tổng phụ</strong>cho hóa đơn cung cấp dịch vụ ăn uống. Công thức sẽ tính toán chi phí của từng mục menu trước, sau đó cộng các giá trị này.</p>
+<ol>
+<li>Chọn<strong>ô</strong>sẽ chứa công thức. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn ô<strong>C5</strong>.</li>
+</ol>
+<p><img alt="Selecting a cell" src="images/complex_subtotal_cell.png" />
+2. Nhập<strong>công thức</strong>của bạn. Trong ví dụ của chúng tôi, chúng tôi sẽ nhập<strong>=B3*C3+B4*C4</strong>. Công thức này sẽ tuân theo thứ tự thực hiện, đầu tiên thực hiện phép nhân:<strong>2,79*35</strong><strong>= 97,65</strong>và<strong>2,29*20 = 45,80</strong>. Sau đó, nó sẽ cộng các giá trị này để tính tổng:<strong>97,65+45,80</strong>.</p>
+<p><img alt="Creating a complex formula" src="images/complex_subtotal_formula.png" />
+3. Kiểm tra kỹ độ chính xác của công thức, sau đó nhấn<strong>Enter</strong>trên bàn phím. Công thức sẽ tính toán và hiển thị<strong>kết quả</strong>. Trong ví dụ của chúng tôi, kết quả cho thấy tổng phụ của đơn hàng là<strong>$143,45</strong>.</p>
+<p><img alt="Formula result" src="images/complex_subtotal_result.png" /></p>
+<p>Bạn có thể thêm<strong>dấu ngoặc đơn</strong>vào bất kỳ phương trình nào để dễ đọc hơn. Mặc dù nó không làm thay đổi kết quả của công thức trong ví dụ này nhưng chúng ta có thể đặt các phép tính nhân trong dấu ngoặc đơn để làm rõ rằng chúng sẽ được tính trước khi phép cộng.</p>
+<p><img alt="Formula with parentheses" src="images/complex_subtotal_parentheses.png" /></p>
+<p>Excel<strong>không phải lúc nào cũng cho bạn biết</strong>nếu công thức của bạn có lỗi, vì vậy, bạn có trách nhiệm kiểm tra tất cả các công thức của mình. Để tìm hiểu cách thực hiện việc này, bạn có thể đọc bài học <a href="../../../excelformulas/doublecheck-your-formulas/1/index.html">Kiểm tra kỹ công thức của bạn</a> từ hướng dẫn về <a href="../../../excelformulas/index.html">Công thức Excel</a> của chúng tôi.</p>
+<h3>Thử thách!</h3>
+<p>Đối với thử thách này, bạn sẽ làm việc với một hóa đơn khác giống như hóa đơn trong ví dụ của chúng tôi. Trong hóa đơn, bạn sẽ thấy số tiền thuế của đơn hàng, tổng số tiền của đơn hàng và tổng số tiền của đơn hàng nếu bạn được giảm giá 10%.</p>
+<ol>
+<li>Mở <a href="practice_files/excel_complexformulas_practice.xlsx">sổ làm việc thực hành</a> của chúng tôi.</li>
+<li>Nhấp vào tab bảng tính<strong>Thử thách</strong>ở phía dưới bên trái của bảng tính.</li>
+<li>Trong ô<strong>D7</strong>, tạo công thức tính thuế cho hóa đơn. Áp dụng mức thuế bán hàng<strong>7,5%</strong>.</li>
+<li>Trong ô<strong>D8</strong>, tạo công thức tìm tổng cho đơn hàng. Nói cách khác, công thức này sẽ thêm các ô<strong>D3:D7</strong>.</li>
+<li>Trong ô<strong>D9</strong>, hãy tạo công thức tính tổng sau khi giảm giá<strong>10%</strong>. Nếu bạn cần trợ giúp để hiểu cách giảm phần trăm trên tổng số, hãy xem lại bài học của chúng tôi về <a href="../../../not-offline.html?url=https:/edu.gcfglobal.org/en/percents/percentages-in-real-life/2">Giảm giá, Giảm giá và Bán hàng</a>.</li>
+<li>Khi bạn hoàn tất, bảng tính của bạn sẽ trông như thế này:</li>
+</ol>
+<p><img alt="Complex Formulas Challenge" src="images/screen shot 2015-11-09 at 2.12.56 pm.png" /></p>
+<p>/en/excel/tham chiếu ô tương đối và tuyệt đối/nội dung/</p>
+    </div>
+</body>
+</html>

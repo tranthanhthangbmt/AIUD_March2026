@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 21: nhóm và tổng phụ</title>
+<style>
+    body {
+        font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    .lesson-content {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin: 15px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4 {
+        color: #2c3e50;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2.2em;
+        border-bottom: 2px solid #27ae60;
+        padding-bottom: 10px;
+        color: #27ae60;
+    }
+    a {
+        color: #27ae60;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    blockquote {
+        border-left: 4px solid #27ae60;
+        padding-left: 15px;
+        color: #666;
+        background: #f1fff8;
+        padding: 10px 15px;
+        border-radius: 0 4px 4px 0;
+        margin-left: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="lesson-content">
+        <h1>Bài 21: nhóm và tổng phụ</h1>
+<h4>Bài 21: Nhóm và tổng phụ</h4>
+<p>/en/excel/filtering-data/content/</p>
+<h3>Giới thiệu</h3>
+<p>Các bảng tính có nhiều nội dung đôi khi có thể khiến bạn cảm thấy choáng ngợp và thậm chí có thể trở nên khó đọc. May mắn thay, Excel có thể sắp xếp dữ liệu thành<strong>nhóm</strong>, cho phép bạn dễ dàng<strong>hiển thị</strong>và<strong>ẩn</strong>các phần khác nhau trong trang tính của mình. Bạn cũng có thể tóm tắt các nhóm khác nhau bằng cách sử dụng lệnh<strong>Tổng phụ</strong>và tạo<strong>phác thảo</strong>cho trang tính của mình.</p>
+<p>Xem video bên dưới để tìm hiểu thêm về nhóm và tổng phụ trong Excel.</p>
+<h4>Để nhóm các hàng hoặc cột:</h4>
+<ol>
+<li>Chọn<strong>hàng</strong>hoặc<strong>cột</strong>bạn muốn nhóm. Trong ví dụ này, chúng tôi sẽ chọn các cột<strong>B</strong>,<strong>C</strong>và<strong>D</strong>.</li>
+</ol>
+<p><img alt="Selecting cells" src="images/subtotals_group_select_cells.png" />
+2. Chọn tab<strong>Dữ liệu</strong>trên<strong>Ribbon</strong>, sau đó nhấp vào lệnh<strong>Group</strong>.</p>
+<p><img alt="The Group button on the Data tab" src="images/subtotals_group_button.png" />
+3. Các hàng hoặc cột đã chọn sẽ được<strong>nhóm lại</strong>. Trong ví dụ của chúng tôi, các cột<strong>B</strong>,<strong>C</strong>và<strong>D</strong>được nhóm lại.</p>
+<p><img alt="The selected cells are now grouped" src="images/subtotals_group_results.png" /></p>
+<p>Để<strong>ungroup</strong>dữ liệu, hãy chọn các hàng hoặc cột được nhóm, sau đó nhấp vào lệnh<strong>Ungroup</strong>.</p>
+<p><img alt="The Ungroup button on the Data tab" src="images/subtotals_group_ungroup.png" /></p>
+<h4>Để ẩn và hiển thị các nhóm:</h4>
+<ol>
+<li>Để ẩn một nhóm, hãy nhấp vào dấu trừ, còn được gọi là nút<strong>Ẩn chi tiết</strong>.</li>
+</ol>
+<p><img alt="The Hide Detail button" src="images/subtotals_group_hide.png" />
+2. Nhóm sẽ<strong>ẩn</strong>. Để hiển thị một nhóm ẩn, hãy nhấp vào dấu cộng, còn được gọi là nút<strong>Hiển thị chi tiết</strong>.</p>
+<p><img alt="The Show Detail button" src="images/subtotals_group_show.png" /></p>
+<h3>Tạo tổng phụ</h3>
+<p>Lệnh<strong>Tổng phụ</strong>cho phép bạn tự động<strong>tạo nhóm</strong>và sử dụng các hàm phổ biến như SUM, COUNT và AVERAGE để giúp<strong>tóm tắt</strong>dữ liệu của bạn. Ví dụ: lệnh<strong>Tổng phụ</strong>có thể giúp tính toán chi phí vật tư văn phòng theo loại từ một đơn hàng tồn kho lớn. Nó sẽ tạo ra một hệ thống phân cấp các nhóm, được gọi là<strong>phác thảo</strong>, để giúp sắp xếp trang tính của bạn.</p>
+<p>Dữ liệu của bạn phải được<strong>sắp xếp</strong>chính xác trước khi sử dụng lệnh Tổng phụ, vì vậy, bạn có thể muốn xem lại bài học của chúng tôi về <a href="../../sorting-data/1/index.html">Sắp xếp dữ liệu</a> để tìm hiểu thêm.</p>
+<h4>Để tạo tổng phụ:</h4>
+<p>Trong ví dụ của chúng tôi, chúng tôi sẽ sử dụng lệnh Tổng phụ với biểu mẫu đặt hàng áo phông để xác định số lượng áo phông được đặt hàng ở mỗi kích cỡ (Nhỏ, Trung bình, Lớn và X-Lớn). Điều này sẽ tạo một<strong>phác thảo</strong>cho bảng tính của chúng ta với một<strong>nhóm</strong>cho mỗi kích cỡ áo phông và sau đó<strong>đếm</strong>tổng số áo sơ mi trong mỗi nhóm.</p>
+<ol>
+<li>Đầu tiên,<strong>sắp xếp</strong>bảng tính của bạn theo dữ liệu bạn muốn tính tổng phụ. Trong ví dụ này, chúng tôi sẽ tạo tổng phụ cho từng kích cỡ áo phông, vì vậy bảng tính của chúng tôi đã được sắp xếp theo kích cỡ áo phông từ nhỏ nhất đến lớn nhất.</li>
+</ol>
+<p><img alt="Selecting cells" src="images/subtotals_create_select.png" />
+2. Chọn tab<strong>Dữ liệu</strong>, sau đó nhấp vào lệnh<strong>Tổng phụ</strong>.</p>
+<p><img alt="The Subtotal button on the Data tab" src="images/subtotals_create_button.png" />
+3. Hộp thoại<strong>Tổng phụ</strong>sẽ xuất hiện. Nhấp vào mũi tên thả xuống cho trường<strong>Tại mỗi thay đổi trong:</strong>để chọn<strong>cột</strong>bạn muốn tính tổng phụ. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>Cỡ áo phông</strong>.
+4. Nhấp vào mũi tên thả xuống cho trường<strong>Sử dụng hàm:</strong>để chọn<strong>hàm</strong>bạn muốn sử dụng. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>COUNT</strong>để đếm số lượng áo sơ mi được đặt theo từng kích cỡ.</p>
+<p><img alt="selecting the Count option" src="images/subtotals_create_dialog1.png" title="selecting the Count option" />
+5. Trong trường<strong>Thêm tổng phụ vào:</strong>, hãy chọn<strong>cột</strong>nơi bạn muốn<strong>tổng phụ được tính</strong>xuất hiện. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>Cỡ áo phông</strong>. Khi bạn hài lòng với lựa chọn của mình, hãy nhấp vào<strong>OK</strong>.</p>
+<p><img alt="adding subtotals to T-shirt Size" src="images/subtotals_create_dialog2.png" title="adding subtotals to T-shirt Size" />
+6. Trang tính sẽ<strong>được trình bày</strong>thành<strong>nhóm</strong>và<strong>tổng phụ</strong>sẽ được liệt kê bên dưới mỗi nhóm. Trong ví dụ của chúng tôi, dữ liệu hiện được nhóm theo kích cỡ áo phông và số lượng áo sơ mi được đặt hàng theo kích thước đó sẽ xuất hiện bên dưới mỗi nhóm.</p>
+<p><img alt="Subtotal rows and groups have been applied to the worksheet" src="images/subtotals_create_result.png" /></p>
+<h4>Để xem nhóm theo cấp độ:</h4>
+<p>Khi bạn tạo tổng phụ, bảng tính của bạn sẽ được chia thành các<strong>mức</strong>khác nhau. Bạn có thể chuyển đổi giữa các cấp độ này để kiểm soát nhanh lượng thông tin được hiển thị trong trang tính bằng cách nhấp vào nút<strong>Cấp</strong>ở bên trái trang tính. Trong ví dụ của chúng tôi, chúng tôi sẽ chuyển đổi giữa cả ba cấp độ trong dàn bài của mình. Mặc dù ví dụ này chỉ chứa ba cấp độ nhưng Excel có thể chứa tới tám cấp độ.</p>
+<ol>
+<li>Nhấp vào<strong>mức thấp nhất</strong>để hiển thị ít chi tiết nhất. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>cấp 1</strong>, chỉ chứa<strong>Grand</strong><strong>Count</strong>hoặc tổng số áo phông được đặt hàng.</li>
+</ol>
+<p><img alt="Setting the group detail to level 1" src="images/subtotals_level_1.png" />
+2. Nhấp vào<strong>cấp độ tiếp theo</strong>để mở rộng chi tiết. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>cấp 2</strong>, chứa mỗi hàng tổng phụ nhưng ẩn tất cả dữ liệu khác khỏi trang tính.</p>
+<p><img alt="Setting the group detail to level 2" src="images/subtotals_level_2.png" />
+3. Nhấp vào<strong>mức cao nhất</strong>để xem và mở rộng tất cả dữ liệu trang tính của bạn. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>cấp 3</strong>.</p>
+<p><img alt="Setting the group detail to level 3" src="images/subtotals_level_3.png" /></p>
+<p>Bạn cũng có thể sử dụng các nút<strong>Hiển thị chi tiết</strong>và<strong>Ẩn</strong><strong>Chi tiết</strong>để hiển thị và ẩn các nhóm trong đường viền.</p>
+<p><img alt="Using the Show and Hide Detail buttons in a subtotal" src="images/subtotals_level_groups.png" /></p>
+<h4>Để loại bỏ tổng phụ:</h4>
+<p>Đôi khi bạn có thể không muốn giữ tổng phụ trong trang tính của mình, đặc biệt nếu bạn muốn sắp xếp lại dữ liệu theo những cách khác nhau. Nếu bạn không muốn sử dụng tính tổng phụ nữa, bạn sẽ cần<strong>xóa</strong><strong>nó</strong>khỏi bảng tính của mình.</p>
+<ol>
+<li>Chọn tab<strong>Dữ liệu</strong>, sau đó nhấp vào lệnh<strong>Tổng phụ</strong>.</li>
+</ol>
+<p><img alt="The Subtotal button on the Data tab" src="images/subtotals_create_button.png" />
+2. Hộp thoại<strong>Tổng phụ</strong>sẽ xuất hiện. Nhấp vào<strong>Xóa</strong><strong>Tất cả</strong>.</p>
+<p><img alt="Removing subtotals in the Subtotal dialog" src="images/subtotals_remove_dialog.png" />
+3. Tất cả dữ liệu trang tính sẽ được<strong>hủy nhóm</strong>và các tổng phụ sẽ bị<strong>xóa</strong>.</p>
+<p>Để xóa tất cả các nhóm mà không xóa tổng phụ, hãy nhấp vào mũi tên thả xuống của lệnh<strong>Ungroup</strong>, sau đó chọn<strong>Xóa dàn bài</strong>.</p>
+<p><img alt="Clear Outline in the Ungroup menu on the Data tab" src="images/subtotals_remove_clear.png" /></p>
+<h3>Thử thách!</h3>
+<ol>
+<li>Mở <a href="practice_files/excel_subtotals_practice.xlsx">sổ làm việc thực hành</a> của chúng tôi.</li>
+<li>Nhấp vào tab<strong>Thử thách</strong>ở phía dưới bên trái của sổ làm việc.</li>
+<li><strong>Sắp xếp</strong>sổ làm việc theo<strong>Cấp</strong>từ nhỏ nhất đến lớn nhất.</li>
+<li>Sử dụng lệnh<strong>Tổng phụ</strong>để nhóm tại mỗi thay đổi trong<strong>Lớp</strong>. Sử dụng hàm<strong>SUM</strong>và thêm tổng phụ vào<strong>Số tiền đã huy động</strong>.</li>
+<li>Chọn<strong>cấp 2</strong>để bạn chỉ nhìn thấy tổng phụ và tổng cuối.</li>
+<li>Khi bạn hoàn tất, sổ làm việc của bạn sẽ trông như thế này:</li>
+</ol>
+<p><img alt="Grouping and Subtotals Challenge" src="images/screen shot 2015-11-25 at 11.48.52 am.png" /></p>
+<p>/en/excel/tables/content/</p>
+    </div>
+</body>
+</html>

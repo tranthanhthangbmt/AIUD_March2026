@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 8: hiểu-định dạng số</title>
+<style>
+    body {
+        font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    .lesson-content {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin: 15px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4 {
+        color: #2c3e50;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2.2em;
+        border-bottom: 2px solid #27ae60;
+        padding-bottom: 10px;
+        color: #27ae60;
+    }
+    a {
+        color: #27ae60;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    blockquote {
+        border-left: 4px solid #27ae60;
+        padding-left: 15px;
+        color: #666;
+        background: #f1fff8;
+        padding: 10px 15px;
+        border-radius: 0 4px 4px 0;
+        margin-left: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="lesson-content">
+        <h1>Bài 8: hiểu-định dạng số</h1>
+<h4>Bài 8: Tìm hiểu định dạng số</h4>
+<p>/en/excel/formatting-cells/content/</p>
+<h3>Các định dạng số là gì?</h3>
+<p>Bất cứ khi nào bạn làm việc với bảng tính, bạn nên sử dụng<strong>định dạng số</strong>thích hợp cho dữ liệu của mình. Các định dạng số cho bảng tính của bạn biết chính xác loại dữ liệu bạn đang sử dụng, như tỷ lệ phần trăm (%), tiền tệ ($), thời gian, ngày tháng, v.v.</p>
+<p>Hãy xem video bên dưới để tìm hiểu thêm về định dạng số trong Excel.</p>
+<h4>Tại sao nên sử dụng định dạng số?</h4>
+<p>Các định dạng số không chỉ giúp bảng tính của bạn dễ đọc hơn mà còn giúp sử dụng dễ dàng hơn. Khi áp dụng định dạng số, bạn sẽ cho bảng tính biết chính xác<strong>loại giá trị</strong>nào được lưu trữ trong một ô. Ví dụ: định dạng<strong>ngày</strong>cho bảng tính biết rằng bạn đang nhập<strong>ngày theo lịch cụ thể</strong>. Điều này cho phép bảng tính hiểu rõ hơn dữ liệu của bạn, điều này có thể giúp đảm bảo rằng dữ liệu của bạn luôn nhất quán và các công thức của bạn được tính toán chính xác.</p>
+<h4>Áp dụng định dạng số</h4>
+<p>Cũng giống như các loại định dạng khác, như thay đổi màu phông chữ, bạn sẽ áp dụng định dạng số bằng cách chọn ô và chọn tùy chọn định dạng mong muốn. Có hai cách chính để chọn định dạng số:</p>
+<ul>
+<li>Đi tới tab<strong>Trang chủ</strong>, nhấp vào trình đơn thả xuống<strong>Định dạng số</strong>trong nhóm<strong>Số</strong>và chọn định dạng mong muốn.</li>
+</ul>
+<p><img alt="The Number Format menu" src="images/number_formats_applying_menu_cropped.png" />
+* Nhấp vào một trong các lệnh định dạng số nhanh bên dưới trình đơn thả xuống.</p>
+<p><img alt="The Number formatting quick commands" src="images/number_formats_applying_quick_cropped.png" /></p>
+<p>Bạn cũng có thể chọn các ô mong muốn và nhấn<strong>Ctrl+1</strong>trên bàn phím để truy cập các tùy chọn định dạng số bổ sung.</p>
+<p>Trong ví dụ này, chúng tôi đã áp dụng định dạng số<strong>Tiền tệ</strong>, định dạng này thêm các ký hiệu tiền tệ ($) và hiển thị hai chữ số thập phân cho bất kỳ giá trị số nào.</p>
+<p><img alt="Applying the Currency format" src="images/number_formats_applying_currency_cropped.png" /></p>
+<p>Nếu bạn chọn bất kỳ ô nào có định dạng số, bạn có thể thấy<strong>giá trị thực</strong>của ô trong thanh công thức. Bảng tính sẽ sử dụng giá trị này cho các công thức và các phép tính khác.</p>
+<p><img alt="The actual value in the formula bar" src="images/number_formats_applying_value.png" /></p>
+<h3>Sử dụng đúng định dạng số</h3>
+<p>Định dạng số có nhiều thứ hơn là chọn ô và áp dụng định dạng. Bảng tính thực sự có thể áp dụng định dạng số<strong>tự động</strong>dựa trên cách bạn nhập dữ liệu. Điều này có nghĩa là bạn sẽ cần nhập dữ liệu theo cách mà chương trình có thể hiểu được, sau đó đảm bảo rằng các ô đang sử dụng định dạng số thích hợp. Ví dụ: hình ảnh bên dưới cho thấy cách sử dụng chính xác các định dạng số cho ngày, tỷ lệ phần trăm và thời gian:</p>
+<p><img alt="chart illustration best practices for number formatting in spreadsheets" src="images/number_format_chart.png" /></p>
+<p>Bây giờ bạn đã biết thêm về cách hoạt động của định dạng số, chúng ta sẽ xem xét một số định dạng số đang hoạt động.</p>
+<h3>Định dạng phần trăm</h3>
+<p>Một trong những định dạng số hữu ích nhất là định dạng<strong>phần trăm</strong>(%). Nó hiển thị các giá trị dưới dạng phần trăm, như<strong>20%</strong>hoặc<strong>55%</strong>. Điều này đặc biệt hữu ích khi tính toán những thứ như chi phí thuế bán hàng hoặc tiền boa. Khi bạn nhập dấu phần trăm (%) sau một số, định dạng số phần trăm sẽ được áp dụng cho ô đó<strong>tự động</strong>.</p>
+<p><img alt="screenshot of excel 2013" src="images/number_percent_intro.png" /></p>
+<p>Như bạn có thể nhớ trong lớp toán, tỷ lệ phần trăm cũng có thể được viết dưới dạng<strong>thập phân</strong>. Vì vậy, 15% tương đương với 0,15, 7,5% là 0,075, 20% là 0,20, 55% là 0,55, v.v. Bạn có thể xem lại <a href="../../../percents/converting-percentages-decimals-and-fractions/1/index.html">bài học này</a> từ <a href="../../../not-offline.html?url=https:/edu.gcfglobal.org/en/topics/math">Hướng dẫn toán học</a> của chúng tôi để tìm hiểu thêm về cách chuyển đổi tỷ lệ phần trăm thành số thập phân.</p>
+<p>Có nhiều khi định dạng phần trăm sẽ hữu ích. Ví dụ: trong các hình ảnh bên dưới, hãy để ý cách<strong>thuế suất bán hàng</strong>được định dạng khác nhau cho mỗi bảng tính (5, 5% và 0,05):</p>
+<p><img alt="image showing correct and incorrect calculations based on percentage formatting" src="images/number_percent_compare_big.png" /></p>
+<p>Như bạn có thể thấy, phép tính trong bảng tính bên trái hoạt động không chính xác. Nếu không có định dạng số phần trăm, bảng tính của chúng tôi cho rằng chúng tôi muốn nhân 22,50 USD với 5 chứ không phải 5%. Và trong khi bảng tính bên phải vẫn hoạt động mà không cần định dạng phần trăm thì bảng tính ở giữa lại dễ đọc hơn.</p>
+<h3>Định dạng ngày</h3>
+<p>Bất cứ khi nào bạn làm việc với<strong>ngày</strong>, bạn sẽ muốn sử dụng định dạng ngày để cho bảng tính biết rằng bạn đang đề cập đến<strong>ngày theo lịch cụ thể</strong>, chẳng hạn như ngày 15 tháng 7 năm 2014. Định dạng ngày cũng cho phép bạn làm việc với một tập hợp các hàm ngày mạnh mẽ sử dụng thông tin ngày và giờ để tính toán câu trả lời.</p>
+<p>Bảng tính không hiểu thông tin giống như cách con người hiểu. Ví dụ: nếu bạn nhập<strong>Tháng 10</strong>vào một ô, bảng tính sẽ không biết bạn đang nhập ngày nên nó sẽ xử lý ngày đó giống như bất kỳ văn bản nào khác. Thay vào đó, khi nhập ngày, bạn sẽ cần sử dụng<strong>định dạng cụ thể</strong>mà bảng tính của bạn hiểu được, như<strong>tháng/ngày/năm</strong>(hoặc<strong>ngày/tháng/năm</strong>tùy thuộc vào quốc gia bạn đang ở). Trong ví dụ bên dưới, chúng tôi sẽ nhập<strong>10/12/2014</strong>cho ngày 12 tháng 10 năm 2014. Sau đó, bảng tính của chúng tôi sẽ tự động áp dụng định dạng số ngày cho ô.</p>
+<p><img alt="screenshot of excel 2013" src="images/number_date_format.png" /></p>
+<p>Bây giờ chúng ta đã định dạng ngày chính xác, chúng ta có thể thực hiện những việc khác nhau với dữ liệu này. Ví dụ: chúng ta có thể sử dụng ô điều khiển điền để tiếp tục ngày tháng trong cột, do đó, một ngày khác sẽ xuất hiện trong mỗi ô:</p>
+<p><img alt="Screenshot of Excel 2013" src="images/number_date_fill.png" /></p>
+<p><img alt="Screenshot of Excel 2013" src="images/number_date_fill_done.png" /></p>
+<p>Nếu định dạng ngày không được áp dụng tự động, điều đó có nghĩa là bảng tính không hiểu dữ liệu bạn đã nhập. Trong ví dụ bên dưới, chúng tôi đã nhập<strong>ngày 15 tháng 3</strong>. Bảng tính không hiểu rằng chúng tôi đang đề cập đến một ngày nên ô này vẫn đang sử dụng định dạng số<strong>chung</strong>.</p>
+<p><img alt="screenshot of excel 2013" src="images/number_date_general.png" /></p>
+<p>Mặt khác, nếu chúng ta gõ<strong>15 tháng 3</strong>(không có chữ "th"), bảng tính<strong>sẽ</strong>nhận ra đó là một ngày. Vì không bao gồm năm nên bảng tính sẽ tự động thêm năm hiện tại để ngày đó có tất cả thông tin cần thiết. Chúng ta cũng có thể nhập ngày theo một số cách khác, chẳng hạn như<strong>15/3</strong>,<strong>15/3/2014</strong>hoặc<strong>15 tháng 3 năm 2014</strong>và bảng tính sẽ vẫn nhận dạng ngày đó là một ngày.</p>
+<p>Hãy thử nhập ngày bên dưới vào bảng tính và xem định dạng ngày có được áp dụng tự động không:</p>
+<ul>
+<li>12/10</li>
+<li>tháng mười</li>
+<li>ngày 12 tháng 10</li>
+<li>Tháng 10 năm 2016</li>
+<li>12/10/2016</li>
+<li>Ngày 12 tháng 10 năm 2016</li>
+<li>2016</li>
+<li>ngày 12 tháng 10</li>
+</ul>
+<p>Nếu bạn muốn thêm ngày hiện tại vào một ô, bạn có thể sử dụng phím tắt<strong>Ctrl+;</strong>, như trong video bên dưới.</p>
+<h4>Các tùy chọn định dạng ngày khác</h4>
+<p>Để truy cập các tùy chọn định dạng ngày khác, hãy chọn trình đơn thả xuống<strong>Định dạng số</strong>và chọn<strong>Định dạng số khác</strong>. Đây là các tùy chọn để hiển thị ngày theo cách khác, chẳng hạn như thêm ngày trong tuần hoặc bỏ qua năm.</p>
+<p><img alt="screenshot of excel 2013" src="images/number_date_more.png" /></p>
+<p>Hộp thoại<strong>Định dạng ô</strong>sẽ xuất hiện. Từ đây, bạn có thể chọn tùy chọn định dạng ngày mong muốn.</p>
+<p><img alt="screenshot of excel 2013" src="images/number_date_dialog.png" /></p>
+<p>Như bạn có thể thấy trong thanh công thức, định dạng ngày tùy chỉnh không chỉ thay đổi ngày thực tế trong ô của chúng ta mà còn cả cách nó được hiển thị.</p>
+<p><img alt="screenshot of excel 2013" src="images/number_date_longdate.png" /></p>
+<h3>Mẹo định dạng số</h3>
+<p>Dưới đây là một số mẹo để có được kết quả tốt nhất với định dạng số:</p>
+<ul>
+<li><strong>Áp dụng định dạng số cho toàn bộ cột</strong>: Nếu bạn dự định sử dụng một cột cho một loại dữ liệu nhất định, như ngày hoặc tỷ lệ phần trăm, bạn có thể thấy dễ dàng nhất khi chọn toàn bộ cột bằng cách nhấp vào chữ cái cột và áp dụng định dạng số mong muốn. Bằng cách này, mọi dữ liệu bạn thêm vào cột này trong tương lai sẽ có định dạng số chính xác. Lưu ý rằng hàng tiêu đề thường không bị ảnh hưởng bởi định dạng số.</li>
+</ul>
+<p><img alt="screenshot of excel 2013" src="images/number_tips_column.png" />
+* <strong>Kiểm tra kỹ các giá trị của bạn sau khi áp dụng định dạng số</strong>: Nếu áp dụng định dạng số cho dữ liệu hiện có, bạn có thể nhận được kết quả không mong muốn. Ví dụ: áp dụng định dạng<strong>phần trăm</strong>(%) cho một ô có giá trị 5 sẽ mang lại cho bạn 500% chứ không phải 5%. Trong trường hợp này, bạn cần nhập lại chính xác các giá trị trong từng ô.</p>
+<p><img alt="Screenshot of Excel 2013" src="images/number_tip_percent_after.png" />
+* Nếu bạn tham chiếu một ô có định dạng số trong công thức, bảng tính có thể tự động áp dụng định dạng số tương tự cho ô mới. Ví dụ: nếu bạn sử dụng một giá trị có định dạng tiền tệ trong công thức thì giá trị được tính cũng sẽ sử dụng định dạng số tiền tệ.</p>
+<p><img alt="screenshot of excel 2013" src="images/number_tip_carryover.png" />
+* Nếu bạn muốn dữ liệu của mình xuất hiện<strong>chính xác như đã nhập,</strong>bạn sẽ cần sử dụng định dạng số<strong>văn bản</strong>. Định dạng này đặc biệt phù hợp với các số mà bạn không muốn thực hiện phép tính, chẳng hạn như số điện thoại, mã zip hoặc các số bắt đầu bằng 0, như<strong>02415</strong>. Để có kết quả tốt nhất, bạn có thể muốn áp dụng định dạng số văn bản trước khi nhập dữ liệu vào các ô này.</p>
+<h4>Tăng số thập phân và giảm số thập phân</h4>
+<p>Các lệnh<strong>Tăng số thập phân</strong>và<strong>Giảm số thập phân</strong>cho phép bạn kiểm soát số lượng vị trí thập phân được hiển thị trong một ô. Các lệnh này không thay đổi giá trị của ô; thay vào đó, chúng hiển thị giá trị ở một số vị trí thập phân đã đặt.</p>
+<p><img alt="The Increase and Decrease Decimal commands" src="images/number_formats_decimal_commands.png" /></p>
+<p>Giảm số thập phân sẽ hiển thị giá trị được làm tròn đến vị trí thập phân đó nhưng giá trị thực tế trong ô vẫn sẽ hiển thị trên thanh công thức.</p>
+<p><img alt="The number may display rounded" src="images/number_format_decimal_rounding.png" /></p>
+<p>Các lệnh<strong>Tăng số thập phân</strong>và<strong>Giảm số thập phân</strong>không hoạt động với một số định dạng số, như<strong>Ngày</strong>và<strong>Phân số</strong>.</p>
+<h3>Thử thách!</h3>
+<ol>
+<li>Mở <a href="practice_files/excel_numberformats_practice.xlsx">sổ làm việc thực hành</a> của chúng tôi.</li>
+<li>Trong ô<strong>D2</strong>, nhập ngày hôm nay và nhấn<strong>Enter</strong>.</li>
+<li>Nhấp vào ô<strong>D2</strong>và xác minh rằng ô đó đang sử dụng định dạng số<strong>Ngày</strong>. Hãy thử thay đổi sang định dạng ngày khác (ví dụ:<strong>Ngày dài</strong>).</li>
+<li>Trong ô<strong>D2</strong>, sử dụng hộp thoại<strong>Định dạng ô</strong>để chọn định dạng ngày<strong>14-Mar-12</strong>.</li>
+<li>Thay đổi thuế suất bán hàng trong ô<strong>D8</strong>thành định dạng<strong>Phần trăm</strong>.</li>
+<li>Áp dụng định dạng<strong>Tiền tệ</strong>cho tất cả<strong>cột B</strong>.</li>
+<li>Trong ô<strong>D8</strong>, sử dụng lệnh<strong>Tăng số thập phân</strong>hoặc<strong>Giảm số thập phân</strong>để thay đổi số vị trí thập phân thành<strong>một</strong>. Bây giờ nó sẽ hiển thị<strong>7,5%</strong>.</li>
+<li>Khi bạn hoàn tất, bảng tính của bạn sẽ trông như thế này:</li>
+</ol>
+<p><img alt="Number Formats Challenge" src="images/screen shot 2015-11-24 at 3.50.56 pm.png" /></p>
+<p>/en/excel/working-with-multiple-worksheets/content/</p>
+    </div>
+</body>
+</html>

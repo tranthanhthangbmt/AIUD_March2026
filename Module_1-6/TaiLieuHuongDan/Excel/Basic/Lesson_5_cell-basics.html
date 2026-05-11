@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 5: kiến ​​thức cơ bản về ô</title>
+<style>
+    body {
+        font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    .lesson-content {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin: 15px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4 {
+        color: #2c3e50;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2.2em;
+        border-bottom: 2px solid #27ae60;
+        padding-bottom: 10px;
+        color: #27ae60;
+    }
+    a {
+        color: #27ae60;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    blockquote {
+        border-left: 4px solid #27ae60;
+        padding-left: 15px;
+        color: #666;
+        background: #f1fff8;
+        padding: 10px 15px;
+        border-radius: 0 4px 4px 0;
+        margin-left: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="lesson-content">
+        <h1>Bài 5: kiến ​​thức cơ bản về ô</h1>
+<h4>Bài học 5: Khái niệm cơ bản về ô</h4>
+<p>/en/excel/save-and-sharing-workbooks/content/</p>
+<h3>Giới thiệu</h3>
+<p>Bất cứ khi nào bạn làm việc với Excel, bạn sẽ nhập thông tin—hoặc<strong>nội dung</strong>—vào<strong>ô</strong>. Các ô là các khối xây dựng cơ bản của một bảng tính. Bạn sẽ cần tìm hiểu kiến ​​thức cơ bản về<strong>ô</strong>và<strong>nội dung ô</strong>để tính toán, phân tích và sắp xếp dữ liệu trong Excel.</p>
+<p>Xem video bên dưới để tìm hiểu thêm về những điều cơ bản khi làm việc với ô.</p>
+<h4>Hiểu ô</h4>
+<p>Mỗi trang tính được tạo thành từ hàng nghìn hình chữ nhật, được gọi là<strong>ô</strong>. Ô là<strong>giao điểm</strong>của<strong>hàng</strong>và<strong>cột</strong>. Nói cách khác, đó là nơi hàng và cột gặp nhau.</p>
+<p>Các cột được xác định bằng<strong>chữ cái</strong><strong>(A, B, C)</strong>, trong khi các hàng được xác định bằng<strong>số (1, 2, 3)</strong>. Mỗi ô có<strong>tên</strong>—hoặc<strong>địa chỉ ô</strong>—dựa trên cột và hàng riêng. Trong ví dụ bên dưới, ô được chọn giao nhau với<strong>cột C</strong>và<strong>hàng 5</strong>nên địa chỉ ô là<strong>C5</strong>.</p>
+<p><img alt="cell C5" src="images/cellb_intro_cell.png" /></p>
+<p>Lưu ý rằng địa chỉ ô cũng xuất hiện trong<strong>hộp Tên</strong>ở góc trên cùng bên trái và<strong>cột</strong>và<strong>tiêu đề hàng</strong>của ô được<strong>đánh dấu</strong>khi ô được chọn.</p>
+<p>Bạn cũng có thể chọn<strong>nhiều ô</strong>cùng một lúc. Một nhóm ô được gọi là<strong>phạm vi ô</strong>. Thay vì chỉ một địa chỉ ô, bạn sẽ tham chiếu đến một phạm vi ô bằng cách sử dụng địa chỉ ô của các ô<strong>đầu tiên</strong>và<strong>cuối</strong>trong phạm vi ô, được phân tách bằng<strong>dấu hai chấm</strong>. Ví dụ: một phạm vi ô bao gồm các ô A1, A2, A3, A4 và A5 sẽ được viết là<strong>A1:A5</strong>. Hãy xem các phạm vi ô khác nhau dưới đây:</p>
+<ul>
+<li>Phạm vi ô**A1:A8</li>
+</ul>
+<p><img alt="phạm vi ô A1:A8" src="image/cellb_intro_range1.png" /><strong>
+* Phạm vi ô</strong>A1:F1</p>
+<p><img alt="phạm vi ô A1:F1" src="images/cellb_intro_range2.png" /><strong>
+* Phạm vi ô</strong>A1:F8</p>
+<p><img alt="phạm vi ô A1:F8" src="image/cellb_intro_range3.png" />**</p>
+<p>Nếu các cột trong bảng tính của bạn được gắn nhãn bằng số thay vì chữ cái, bạn sẽ cần thay đổi<strong>kiểu tham chiếu</strong>mặc định cho Excel. Xem lại phần bổ sung của chúng tôi về <a href="../../what-are-reference-styles/1/index.html">Phong cách tham chiếu là gì?</a> để tìm hiểu cách thực hiện.</p>
+<h4>Để chọn một ô:</h4>
+<p>Để nhập hoặc chỉnh sửa nội dung ô, trước tiên bạn cần<strong>chọn</strong>ô.</p>
+<ol>
+<li>Nhấp vào<strong>ô</strong>để chọn ô đó. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn ô<strong>D9</strong>.</li>
+<li><strong>đường viền</strong>sẽ xuất hiện xung quanh ô đã chọn và<strong>tiêu đề cột</strong>và<strong>tiêu đề hàng</strong>sẽ được đánh dấu. Ô sẽ vẫn được chọn cho đến khi bạn bấm vào một ô khác trong bảng tính.</li>
+</ol>
+<p><img alt="selecting cell D9" src="images/cellb_select.png" /></p>
+<p>Bạn cũng có thể chọn các ô bằng<strong>phím mũi tên</strong>trên bàn phím.</p>
+<h4>Để chọn một phạm vi ô:</h4>
+<p>Đôi khi bạn có thể muốn chọn một nhóm ô lớn hơn hoặc một<strong>phạm vi ô</strong>.</p>
+<ol>
+<li>Nhấp và kéo chuột cho đến khi tất cả<strong>liền kề</strong><strong>ô</strong>bạn muốn chọn được<strong>đánh dấu</strong>. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn phạm vi ô<strong>B5:C18</strong>.</li>
+<li>Nhả chuột để<strong>chọn</strong>phạm vi ô mong muốn. Các ô sẽ vẫn được chọn cho đến khi bạn bấm vào một ô khác trong bảng tính.</li>
+</ol>
+<p><img alt="selecting cell range B5:C18" src="images/cellb_select_range.png" /></p>
+<h3>Nội dung ô</h3>
+<p>Mọi thông tin bạn nhập vào bảng tính sẽ được lưu trữ trong một ô. Mỗi ô có thể chứa các loại<strong>nội dung</strong>khác nhau, bao gồm<strong>văn bản</strong>,<strong>định dạng</strong>,<strong>công thức</strong>và<strong>hàm</strong>.</p>
+<ul>
+<li><strong>Văn bản</strong>:Các ô có thể chứa<strong>văn bản</strong>, chẳng hạn như chữ cái, số và ngày tháng.</li>
+</ul>
+<p><img alt="content entered into cells" src="images/cellb_format_none.png" />
+* <strong>Thuộc tính định dạng</strong>:Các ô có thể chứa<strong>thuộc tính định dạng</strong>thay đổi cách hiển thị chữ cái, số và ngày. Ví dụ: tỷ lệ phần trăm có thể xuất hiện dưới dạng 0,15 hoặc 15%. Bạn thậm chí có thể thay đổi<strong>văn bản</strong>hoặc<strong>màu nền</strong>của ô.</p>
+<p><img alt="the same cell content with different formatting" src="images/cellb_format_table.png" />
+* <strong>Công thức và hàm</strong>: Ô có thể chứa<strong>công thức</strong>và<strong>hàm</strong>tính toán giá trị ô. Trong ví dụ của chúng tôi,<strong>SUM(B2:B8)</strong>thêm giá trị của từng ô trong phạm vi ô B2:B8 và hiển thị tổng số trong ô B9.</p>
+<p><img alt="a cell containing a formula" src="images/cellb_format_formula.png" /></p>
+<h4>Để chèn nội dung:</h4>
+<ol>
+<li>Nhấp vào<strong>ô</strong>để chọn ô đó. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn ô<strong>F9</strong>.</li>
+</ol>
+<p><img alt="selecting cell F9" src="images/cellb_insert_select.png" />
+2. Nhập nội dung nào đó vào ô đã chọn, sau đó nhấn<strong>Enter</strong>trên bàn phím của bạn. Nội dung sẽ xuất hiện trong<strong>ô</strong>và<strong>công thức</strong><strong>thanh</strong>. Bạn cũng có thể nhập và chỉnh sửa nội dung ô trong thanh công thức.</p>
+<p><img alt="typing in a cell" src="images/cellb_insert_done.png" title="typing in a cell" /></p>
+<h4>Để xóa (hoặc xóa) nội dung ô:</h4>
+<ol>
+<li>Chọn<strong>ô</strong>có nội dung bạn muốn xóa. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn phạm vi ô<strong>A10:H10</strong>.</li>
+</ol>
+<p><img alt="selecting cells A10:H10" src="images/cellb_clear_select.png" />
+2. Chọn lệnh<strong>Xóa</strong>trên tab<strong>Trang chủ</strong>, sau đó nhấp vào<strong>Xóa nội dung</strong>.</p>
+<p><img alt="selecting the Clear Contents command" src="images/cellb_clear_command.png" />
+3. Nội dung ô sẽ bị xóa.</p>
+<p><img alt="the cleared cell range" src="images/cellb_clear_done.png" /></p>
+<p>Bạn cũng có thể sử dụng phím<strong>Xóa</strong>trên bàn phím để xóa nội dung khỏi<strong>nhiều ô</strong>cùng một lúc. Phím<strong>Backspace</strong>sẽ chỉ xóa nội dung khỏi một ô mỗi lần.</p>
+<h4>Để xóa ô:</h4>
+<p>Có một sự khác biệt quan trọng giữa việc xóa nội dung của một ô và<strong>xóa chính ô đó</strong>. Nếu bạn xóa toàn bộ ô, các ô bên dưới nó sẽ<strong>dịch chuyển</strong><strong>để điền vào chỗ trống</strong>và<strong>thay thế</strong><strong>các ô đã xóa</strong>.</p>
+<ol>
+<li>Chọn<strong>(các) ô</strong>bạn muốn xóa. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>A10:H10</strong>.</li>
+</ol>
+<p><img alt="selecting cell range A10:H10" src="images/cellb_delete_select.png" />
+2. Chọn lệnh<strong>Xóa</strong>từ tab<strong>Trang chủ</strong>trên<strong>Ribbon</strong>.</p>
+<p><img alt="clicking the Delete command on the Home tab" src="images/cellb_delete_command.png" />
+3. Các ô bên dưới sẽ<strong>dịch chuyển</strong><strong>lên</strong>và<strong>điền vào chỗ trống</strong>.</p>
+<p><img alt="the shifted cells after deleting" src="images/cellb_delete_done.png" /></p>
+<h4>Để sao chép và dán nội dung ô:</h4>
+<p>Excel cho phép bạn<strong>sao chép</strong>nội dung đã được nhập vào bảng tính của bạn và<strong>dán</strong>nội dung này vào các ô khác, điều này có thể giúp bạn tiết kiệm thời gian và công sức.</p>
+<ol>
+<li>Chọn<strong>(các) ô</strong>bạn muốn<strong>sao chép</strong>. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>F9</strong>.</li>
+</ol>
+<p><img alt="selecting cell F9" src="images/cellb_copy_select.png" />
+2. Nhấp vào lệnh<strong>Sao chép</strong>trên tab<strong>Trang chủ</strong>hoặc nhấn<strong>Ctrl+C</strong>trên bàn phím của bạn.</p>
+<p><img alt="clicking the Copy command on the Home tab" src="images/cellb_copy_command.png" />
+3. Chọn<strong>(các) ô</strong>nơi bạn muốn<strong>dán</strong>nội dung. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>F12:F17</strong>. (Các) ô được sao chép sẽ có<strong>hộp nét đứt</strong>xung quanh chúng.</p>
+<p><img alt="selecting a destination for the copied cell(s)" src="images/cellb_copy_paste_destination.png" />
+4. Nhấp vào lệnh<strong>Dán</strong>trên tab<strong>Trang chủ</strong>hoặc nhấn<strong>Ctrl+V</strong>trên bàn phím của bạn.</p>
+<p><img alt="selecting the Paste command" src="images/cellb_copy_paste_comonly.png" />
+5. Nội dung sẽ được<strong>dán</strong>vào các ô đã chọn.</p>
+<p><img alt="the pasted content" src="images/cellb_copy_paste_done.png" /></p>
+<h4>Để truy cập các tùy chọn dán bổ sung:</h4>
+<p>Bạn cũng có thể truy cập<strong>tùy chọn dán bổ sung</strong>, đặc biệt thuận tiện khi làm việc với các ô chứa<strong>công thức</strong>hoặc<strong>định dạng</strong>. Chỉ cần nhấp vào<strong>mũi tên thả xuống</strong>trên lệnh<strong>Dán</strong>để xem các tùy chọn này.</p>
+<p><img alt="clicking the Paste command drop-down menu" src="images/cellb_paste_more.png" /></p>
+<p>Thay vì chọn lệnh từ Ribbon, bạn có thể truy cập lệnh nhanh chóng bằng cách<strong>nhấp chuột phải</strong>. Chỉ cần chọn<strong>ô</strong>bạn muốn<strong>định dạng</strong>, sau đó nhấp chuột phải.<strong>menu thả xuống</strong>sẽ xuất hiện, tại đó bạn sẽ tìm thấy một số<strong>lệnh</strong>cũng nằm trên Ribbon.</p>
+<p><img alt="right-clicking to access cut, copy, and paste options" src="images/cellb_paste_rightclick.png" /></p>
+<h4></h4>
+<h4>Để cắt và dán nội dung ô:</h4>
+<p>Không giống như sao chép và dán,<strong>sao chép</strong>nội dung ô,<strong>cắt</strong>cho phép bạn<strong>di chuyển</strong>nội dung giữa các ô.</p>
+<ol>
+<li>Chọn<strong>(các) ô</strong>bạn muốn<strong>cắt</strong>. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>G5:G6</strong>.</li>
+<li>Nhấp chuột phải và chọn lệnh<strong>Cut</strong>. Bạn cũng có thể sử dụng lệnh trên tab<strong>Trang chủ</strong>hoặc nhấn<strong>Ctrl+X</strong>trên bàn phím.</li>
+</ol>
+<p><img alt="selecting the Cut command from the right-click menu" src="images/cellb_cut_rightclick.png" />
+3. Chọn các ô mà bạn muốn<strong>dán</strong>nội dung. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>F10:F11</strong>. Bây giờ, các ô đã cắt sẽ có<strong>hộp nét đứt</strong>xung quanh chúng.
+4. Nhấp chuột phải và chọn lệnh<strong>Dán</strong>. Bạn cũng có thể sử dụng lệnh trên tab<strong>Trang chủ</strong>hoặc nhấn<strong>Ctrl+V</strong>trên bàn phím.</p>
+<p><img alt="pasting the cut cells" src="images/cellb_paste_rightclickcommand.png" />
+5. Nội dung cắt sẽ được<strong>xóa</strong>khỏi các ô ban đầu và<strong>dán</strong>vào các ô đã chọn.</p>
+<p><img alt="the pasted cells" src="images/cellb_paste_done.png" /></p>
+<h4>Để kéo và thả ô:</h4>
+<p>Thay vì cắt, sao chép và dán, bạn có thể<strong>kéo và thả</strong>ô để di chuyển nội dung của chúng.</p>
+<ol>
+<li>Chọn<strong>(các) ô</strong>bạn muốn<strong>di chuyển</strong>. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>H4:H12</strong>.</li>
+<li>Di chuột qua<strong>đường viền</strong>của (các) ô đã chọn cho đến khi chuột chuyển thành<strong>con trỏ có bốn mũi tên</strong>.</li>
+</ol>
+<p><img alt="hovering over the border of a selected cell range" src="images/cellb_drag_select.png" />
+3. Nhấp và kéo các ô đến<strong>mong muốn</strong><strong>vị trí</strong>. Trong ví dụ của chúng tôi, chúng tôi sẽ chuyển chúng sang<strong>G4:G12</strong>.</p>
+<p><img alt="dragging the cells to a new location" src="images/cellb_drag_during.png" />
+4. Thả chuột. Các ô sẽ được<strong>thả</strong>ở vị trí đã chọn.</p>
+<p><img alt="the dropped cells in their new location" src="images/cellb_drag_done.png" /></p>
+<h4>Để sử dụng núm điều khiển điền:</h4>
+<p>Nếu bạn đang sao chép nội dung ô sang các ô liền kề trong cùng một hàng hoặc cột,<strong>điền vào</strong>là một lựa chọn thay thế phù hợp cho lệnh sao chép và dán.</p>
+<ol>
+<li>Chọn<strong>ô (các)</strong>chứa nội dung bạn muốn sử dụng, sau đó di chuột qua góc dưới bên phải của ô để<strong>bộ điều khiển điền</strong>xuất hiện.</li>
+</ol>
+<p><img alt="the fill handle" src="images/cellb_fill_select.png" />
+2. Nhấp và kéo<strong>bộ điều khiển điền</strong>cho đến khi tất cả các ô bạn muốn điền đều được chọn. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>G13:G17</strong>.</p>
+<p><img alt="dragging the fill handle down" src="images/cellb_fill_down.png" />
+3. Nhả chuột để<strong>điền</strong>các ô đã chọn.</p>
+<p><img alt="the filled cells" src="images/cellb_fill_done.png" /></p>
+<h4>Để tiếp tục một loạt bài có núm điều khiển điền:</h4>
+<p>Tay cầm điền cũng có thể được sử dụng để<strong>tiếp tục</strong><strong>một chuỗi</strong>. Bất cứ khi nào nội dung của một hàng hoặc cột tuân theo một thứ tự tuần tự, như<strong>số</strong><strong>(1, 2, 3)</strong>hoặc<strong>ngày</strong><strong>(Thứ Hai, Thứ Ba, Thứ Tư)</strong>, bộ điều khiển điền có thể đoán điều gì sẽ xảy ra tiếp theo trong chuỗi. Trong hầu hết các trường hợp, bạn sẽ cần chọn<strong>nhiều ô</strong>trước khi sử dụng núm điều khiển điền để giúp Excel xác định thứ tự chuỗi. Chúng ta hãy xem một ví dụ:</p>
+<ol>
+<li>Chọn phạm vi ô chứa chuỗi bạn muốn tiếp tục. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>E4:G4</strong>.</li>
+<li>Nhấp và kéo núm điều khiển điền để tiếp tục chuỗi.</li>
+</ol>
+<p><img alt="continuing a series with the fill handle" src="images/cellb_fillseries.png" />
+3. Thả chuột. Nếu Excel hiểu chuỗi này thì nó sẽ được tiếp tục trong các ô đã chọn. Trong ví dụ của chúng tôi, Excel đã thêm<strong>Phần 4</strong>,<strong>Phần 5</strong>và<strong>Phần 6</strong>vào<strong>H4:J4</strong>.</p>
+<p><img alt="the finished series" src="images/cellb_fillseries_done.png" /></p>
+<p>Bạn cũng có thể<strong>bấm đúp</strong>vào ô điều khiển điền thay vì nhấp và kéo. Điều này có thể hữu ích với các bảng tính lớn hơn, nơi việc nhấp và kéo có thể gặp khó khăn.</p>
+<p>Xem video bên dưới để biết ví dụ về cách bấm đúp vào núm điều khiển điền.</p>
+<h3>Thử thách!</h3>
+<ol>
+<li>Mở <a href="practice_files/excel_cellbasics_practice.xlsx">sổ làm việc thực hành</a> của chúng tôi.</li>
+<li>Chọn ô<strong>D6</strong>và nhập<strong>hlee</strong>.</li>
+<li><strong>Xóa nội dung</strong>ở hàng 14.</li>
+<li><strong>Xóa</strong>cột G.</li>
+<li>Sử dụng<strong>cắt và dán</strong>hoặc<strong>kéo và thả</strong>, di chuyển nội dung của hàng 18 sang hàng 14.</li>
+<li>Sử dụng<strong>bộ điều khiển điền</strong>để đặt dấu X vào các ô F9:F17.</li>
+<li>Khi bạn hoàn tất, sổ làm việc của bạn sẽ trông như thế này:</li>
+</ol>
+<p><img alt="Cell Basics Challenge" src="images/screen shot 2015-11-20 at 1.17.06 pm.png" /></p>
+<p>/en/excel/modifying-columns-rows-and-cells/content/</p>
+    </div>
+</body>
+</html>

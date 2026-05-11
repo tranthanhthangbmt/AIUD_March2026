@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bài 20: lọc dữ liệu</title>
+<style>
+    body {
+        font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+    .lesson-content {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin: 15px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3, h4 {
+        color: #2c3e50;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
+    }
+    h1 {
+        font-size: 2.2em;
+        border-bottom: 2px solid #27ae60;
+        padding-bottom: 10px;
+        color: #27ae60;
+    }
+    a {
+        color: #27ae60;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    blockquote {
+        border-left: 4px solid #27ae60;
+        padding-left: 15px;
+        color: #666;
+        background: #f1fff8;
+        padding: 10px 15px;
+        border-radius: 0 4px 4px 0;
+        margin-left: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="lesson-content">
+        <h1>Bài 20: lọc dữ liệu</h1>
+<h4>Bài 20: Lọc dữ liệu</h4>
+<p>/en/excel/sắp xếp-dữ liệu/nội dung/</p>
+<h3>Giới thiệu</h3>
+<p>Nếu bảng tính của bạn chứa nhiều nội dung thì việc tìm kiếm thông tin một cách nhanh chóng có thể khó khăn.<strong>Bộ lọc</strong>có thể được sử dụng để<strong>thu hẹp</strong>dữ liệu trong bảng tính của bạn, cho phép bạn chỉ xem thông tin bạn cần.</p>
+<p>Hãy xem video bên dưới để tìm hiểu thêm về cách lọc dữ liệu trong Excel.</p>
+<h4>Để lọc dữ liệu:</h4>
+<p>Trong ví dụ của chúng tôi, chúng tôi sẽ áp dụng bộ lọc cho bảng tính nhật ký thiết bị để chỉ hiển thị máy tính xách tay và máy chiếu có sẵn để thanh toán.</p>
+<ol>
+<li>Để quá trình lọc hoạt động chính xác, bảng tính của bạn phải bao gồm<strong>hàng tiêu đề</strong>, được sử dụng để xác định tên của từng cột. Trong ví dụ của chúng tôi, trang tính của chúng tôi được sắp xếp thành các cột khác nhau được xác định bởi các ô tiêu đề ở hàng 1:<strong>ID#</strong>,<strong>Loại</strong>,<strong>Thiết bị</strong><strong>Chi tiết</strong>, v.v.</li>
+</ol>
+<p><img alt="The header row in a spreadsheet" src="images/filtering_howto_header_row.png" />
+2. Chọn tab<strong>Dữ liệu</strong>, sau đó nhấp vào lệnh<strong>Filter</strong>.</p>
+<p><img alt="The Filter button on the Data tab" src="images/filtering_filter_button.png" />
+3. <strong>Mũi tên thả xuống</strong>sẽ xuất hiện trong ô tiêu đề của mỗi cột.
+4. Nhấp vào<strong>mũi tên thả xuống</strong>cho cột bạn muốn lọc. Trong ví dụ của chúng tôi, chúng tôi sẽ lọc cột<strong>B</strong>để chỉ xem một số loại thiết bị nhất định.</p>
+<p><img alt="Dropdown arrows in the header row" src="images/filtering_howto_dropdown_arrow.png" />
+5. <strong>Trình đơn</strong>Bộ lọc<strong><em>*</em>*sẽ xuất hiện.
+6. </strong>Bỏ chọn<strong>hộp bên cạnh</strong>Chọn tất cả**để nhanh chóng bỏ chọn tất cả dữ liệu.</p>
+<p><img alt="The dropdown menu for sorting and filtering" src="images/filtering_howto_dropdown_menu.png" />
+7. <strong>Đánh dấu</strong>các hộp bên cạnh dữ liệu bạn muốn lọc, sau đó nhấp vào<strong>OK</strong>. Trong ví dụ này, chúng tôi sẽ chọn<strong>Máy tính xách tay</strong>và<strong>Máy chiếu</strong>để chỉ xem các loại thiết bị này.</p>
+<p><img alt="Selecting filter categories" src="images/filtering_howto_dropdown_menu_select.png" />
+8. Dữ liệu sẽ được<strong>lọc</strong>, tạm thời ẩn bất kỳ nội dung nào không phù hợp với tiêu chí. Trong ví dụ của chúng tôi, chỉ có máy tính xách tay và máy chiếu mới hiển thị.</p>
+<p><img alt="The worksheet is now filtered" src="images/filtering_howto_after_changes.png" /></p>
+<p>Bạn cũng có thể truy cập các tùy chọn lọc từ lệnh<strong>Sắp xếp &amp; Lọc</strong>trên tab<strong>Trang chủ</strong>.</p>
+<p><img alt="The Filter menu on the Home tab" src="images/filtering_filter_on_home_tab.png" /></p>
+<h4>Để áp dụng nhiều bộ lọc:</h4>
+<p>Các bộ lọc là<strong>tích lũy</strong>, nghĩa là bạn có thể áp dụng<strong>nhiều</strong><strong>bộ lọc</strong>để giúp thu hẹp kết quả của mình. Trong ví dụ này, chúng tôi đã lọc bảng tính của mình để hiển thị máy tính xách tay và máy chiếu và chúng tôi muốn thu hẹp phạm vi hơn nữa để chỉ hiển thị máy tính xách tay và máy chiếu đã được kiểm tra trong tháng 8.</p>
+<ol>
+<li>Nhấp vào<strong>mũi tên thả xuống</strong>cho cột bạn muốn lọc. Trong ví dụ này, chúng tôi sẽ thêm bộ lọc vào cột<strong>D</strong>để xem thông tin theo ngày.</li>
+</ol>
+<p><img alt="Dropdown arrows in the header row" src="images/filtering_multiple_dropdown_arrow.png" />
+2. <strong>Trình đơn Bộ lọc</strong>sẽ xuất hiện.
+3. <strong>Chọn</strong>hoặc<strong>bỏ chọn</strong>các hộp tùy thuộc vào dữ liệu bạn muốn lọc, sau đó nhấp vào<strong>OK</strong>. Trong ví dụ của chúng tôi, chúng tôi sẽ bỏ chọn mọi thứ ngoại trừ<strong>tháng 8</strong>.</p>
+<p><img alt="The dropdown menu for sorting and filtering" src="images/filtering_multiple_dropdown_menu.png" />
+4. Bộ lọc mới sẽ được áp dụng. Trong ví dụ của chúng tôi, trang tính hiện được lọc để chỉ hiển thị máy tính xách tay và máy chiếu đã được kiểm tra trong tháng 8.</p>
+<p><img alt="The worksheet now has two filters" src="images/filtering_multiple_after_changes.png" /></p>
+<h4>Để xóa bộ lọc:</h4>
+<p>Sau khi áp dụng bộ lọc, bạn có thể muốn xóa—hoặc<strong>xóa</strong>—bộ lọc đó khỏi trang tính của mình để bạn có thể lọc nội dung theo nhiều cách khác nhau.</p>
+<ol>
+<li>Nhấp vào<strong>mũi tên thả xuống</strong>cho bộ lọc bạn muốn xóa. Trong ví dụ của chúng tôi, chúng tôi sẽ xóa bộ lọc trong cột<strong>D</strong>.</li>
+</ol>
+<p><img alt="The dropdown button for the filter applied in this column" src="images/filtering_clear_dropdown_button.png" />
+2. <strong>Trình đơn Bộ lọc</strong>sẽ xuất hiện.
+3. Chọn<strong>Xóa bộ lọc khỏi [TÊN CỘT]</strong>từ menu Bộ lọc. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>Xóa bộ lọc từ "Đã kiểm tra</strong>".</p>
+<p><img alt="The Clear Filter menu option" src="images/filtering_clear_dropdown_menu.png" />
+4. Bộ lọc sẽ bị xóa khỏi cột. Dữ liệu bị ẩn trước đó sẽ được hiển thị.</p>
+<p><img alt="The filter has been cleared" src="images/filtering_multiple_dropdown_arrow.png" /></p>
+<p>Để xóa tất cả bộ lọc khỏi bảng tính của bạn, hãy nhấp vào lệnh<strong>Filter</strong>trên tab<strong>Data</strong>.</p>
+<p><img alt="The Filter button on the Data tab" src="images/filtering_filter_button.png" /></p>
+<h3>Lọc nâng cao</h3>
+<p>Nếu bạn cần một bộ lọc cho nội dung nào đó cụ thể thì tính năng lọc cơ bản có thể không cung cấp cho bạn đủ tùy chọn. May mắn thay, Excel bao gồm một số công cụ<strong>nâng cao</strong><strong>lọc</strong><strong>, bao gồm</strong>tìm kiếm<strong>,</strong>văn bản<strong>,</strong>ngày<strong>và</strong>số<strong>**lọc</strong>, có thể thu hẹp kết quả của bạn để giúp tìm thấy chính xác những gì bạn cần.</p>
+<h4>Để lọc bằng tìm kiếm:</h4>
+<p>Excel cho phép bạn<strong>tìm kiếm</strong>dữ liệu có chứa cụm từ, số, ngày tháng chính xác, v.v. Trong ví dụ của chúng tôi, chúng tôi sẽ sử dụng tính năng này để chỉ hiển thị các sản phẩm có thương hiệu<strong>Saris</strong>trong nhật ký thiết bị của chúng tôi.</p>
+<ol>
+<li>Chọn tab<strong>Dữ liệu</strong>, sau đó nhấp vào lệnh<strong>Filter</strong>.<strong>Mũi tên thả xuống</strong>sẽ xuất hiện trong ô tiêu đề của mỗi cột.<strong>Lưu ý</strong>: Nếu bạn đã thêm bộ lọc vào trang tính của mình, bạn có thể bỏ qua bước này.</li>
+<li>Nhấp vào<strong>mũi tên thả xuống</strong>cho cột bạn muốn lọc. Trong ví dụ của chúng tôi, chúng tôi sẽ lọc cột<strong>C</strong>.</li>
+</ol>
+<p><img alt="Dropdown arrows in the header row" src="images/filtering_search_dropdown_button.png" />
+3. <strong>Trình đơn Bộ lọc</strong>sẽ xuất hiện. Nhập<strong>cụm từ tìm kiếm</strong>vào<strong>hộp tìm kiếm</strong>. Kết quả tìm kiếm sẽ tự động xuất hiện bên dưới trường<strong>Văn bản</strong><strong>Bộ lọc</strong>khi bạn nhập. Trong ví dụ của chúng tôi, chúng tôi sẽ nhập<strong>saris</strong>để tìm tất cả thiết bị mang nhãn hiệu Saris. Khi bạn hoàn tất, hãy nhấp vào<strong>OK</strong>.</p>
+<p><img alt="Applying a search filter" src="images/filtering_search_dropdown_menu_callout.png" />
+4. Bảng tính sẽ được<strong>lọc</strong>theo cụm từ tìm kiếm của bạn. Trong ví dụ của chúng tôi, bảng tính hiện được lọc để chỉ hiển thị thiết bị của thương hiệu Saris.</p>
+<p><img alt="The search filter has been applied to the worksheet" src="images/filtering_search_after_changes.png" /></p>
+<h4>Để sử dụng bộ lọc văn bản nâng cao:</h4>
+<p><strong>Bộ lọc văn bản nâng cao</strong>có thể được sử dụng để hiển thị thông tin cụ thể hơn, chẳng hạn như các ô chứa một số ký tự nhất định hoặc dữ liệu loại trừ một từ hoặc số cụ thể. Trong ví dụ của chúng tôi, chúng tôi muốn loại trừ bất kỳ mục nào có chứa từ<strong>máy tính xách tay</strong>.</p>
+<ol>
+<li>Chọn tab<strong>Dữ liệu</strong>, sau đó nhấp vào lệnh<strong>Filter</strong>.<strong>Mũi tên thả xuống</strong>sẽ xuất hiện trong ô tiêu đề của mỗi cột.<strong>Lưu ý</strong>: Nếu bạn đã thêm bộ lọc vào trang tính của mình, bạn có thể bỏ qua bước này.</li>
+<li>Nhấp vào<strong>mũi tên thả xuống</strong>cho cột bạn muốn lọc. Trong ví dụ của chúng tôi, chúng tôi sẽ lọc cột<strong>C</strong>.</li>
+</ol>
+<p><img alt="Dropdown arrows in the header row" src="images/filtering_search_dropdown_button.png" />
+3. <strong>Trình đơn Bộ lọc</strong>sẽ xuất hiện. Di chuột qua<strong>Bộ lọc văn bản</strong>, sau đó chọn bộ lọc văn bản mong muốn từ trình đơn thả xuống. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>Không chứa...</strong>để xem dữ liệu không chứa văn bản cụ thể.</p>
+<p><img alt="Adding a custom filter in the dropdown menu" src="images/filtering_advanced_dropdown_menu.png" />
+4. Hộp thoại<strong>Tự động lọc tùy chỉnh</strong>sẽ xuất hiện. Nhập<strong>văn bản mong muốn</strong>vào bên phải bộ lọc, sau đó nhấp vào<strong>OK</strong>. Trong ví dụ của chúng tôi, chúng tôi sẽ nhập<strong>laptop</strong>để loại trừ bất kỳ mục nào có chứa từ này.</p>
+<p><img alt="The custom filter dialog box" src="images/filtering_advanced_custom_filter.png" />
+5. Dữ liệu sẽ được lọc theo bộ lọc văn bản đã chọn. Trong ví dụ của chúng tôi, bảng tính của chúng tôi hiện hiển thị các mục không chứa từ<strong>máy tính xách tay</strong>.</p>
+<p><img alt="The custom filter has been applied to the worksheet" src="images/filtering_advanced_after_changes.png" /></p>
+<h4>Để sử dụng bộ lọc số nâng cao:</h4>
+<p><strong>Bộ lọc số nâng cao</strong>cho phép bạn thao tác dữ liệu được đánh số theo nhiều cách khác nhau. Trong ví dụ này, chúng tôi sẽ chỉ hiển thị một số loại thiết bị nhất định dựa trên phạm vi số ID.</p>
+<ol>
+<li>Chọn tab<strong>Dữ liệu</strong>trên Ribbon, sau đó nhấp vào lệnh<strong>Filter</strong>.<strong>Mũi tên thả xuống</strong>sẽ xuất hiện trong ô tiêu đề của mỗi cột.<strong>Lưu ý</strong>: Nếu bạn đã thêm bộ lọc vào trang tính của mình, bạn có thể bỏ qua bước này.</li>
+<li>Nhấp vào<strong>mũi tên thả xuống</strong>cho cột bạn muốn lọc. Trong ví dụ của chúng tôi, chúng tôi sẽ lọc cột<strong>A</strong>để chỉ xem một phạm vi số ID nhất định.</li>
+</ol>
+<p><img alt="Dropdown arrows in the header row" src="images/filtering_number_dropdown_button.png" />
+3. <strong>Trình đơn Bộ lọc</strong>sẽ xuất hiện. Di chuột qua<strong>Bộ lọc số</strong>, sau đó chọn bộ lọc số mong muốn từ menu thả xuống. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>Giữa</strong>để xem số ID giữa một phạm vi số cụ thể.</p>
+<p><img alt="Adding a number filter in the dropdown menu" src="images/filtering_number_dropdown_menu.png" />
+4. Hộp thoại<strong>Tự động lọc tùy chỉnh</strong>sẽ xuất hiện. Nhập<strong>số</strong>mong muốn vào bên phải mỗi bộ lọc, sau đó nhấp vào<strong>OK</strong>. Trong ví dụ của chúng tôi, chúng tôi muốn lọc các số ID lớn hơn hoặc bằng<strong>3000</strong>nhưng nhỏ hơn hoặc bằng<strong>6000</strong>, số này sẽ hiển thị số ID trong phạm vi 3000-6000.</p>
+<p><img alt="The number filter dialog box" src="images/filtering_number_dialog_box.png" />
+5. Dữ liệu sẽ được lọc theo bộ lọc số đã chọn. Trong ví dụ của chúng tôi, chỉ các mục có số ID từ<strong>3000</strong>đến<strong>6000</strong>mới hiển thị.</p>
+<p><img alt="The number filter has been applied to the worksheet" src="images/filtering_number_after_changes.png" /></p>
+<h4>Để sử dụng bộ lọc ngày nâng cao:</h4>
+<p><strong>Bộ lọc ngày nâng cao</strong>có thể được sử dụng để xem thông tin trong một khoảng thời gian nhất định, chẳng hạn như năm ngoái, quý tiếp theo hoặc giữa hai ngày. Trong ví dụ này, chúng tôi sẽ sử dụng bộ lọc ngày nâng cao để chỉ xem thiết bị đã được kiểm tra trong khoảng thời gian từ ngày 15 tháng 7 đến ngày 15 tháng 8.</p>
+<ol>
+<li>Chọn tab<strong>Dữ liệu</strong>, sau đó nhấp vào lệnh<strong>Filter</strong>.<strong>Mũi tên thả xuống</strong>sẽ xuất hiện trong ô tiêu đề của mỗi cột.<strong>Lưu ý</strong>: Nếu bạn đã thêm bộ lọc vào trang tính của mình, bạn có thể bỏ qua bước này.</li>
+<li>Nhấp vào<strong>mũi tên thả xuống</strong>cho cột bạn muốn lọc. Trong ví dụ của chúng tôi, chúng tôi sẽ lọc cột<strong>D</strong>để chỉ xem một phạm vi ngày nhất định.</li>
+</ol>
+<p><img alt="Dropdown arrows in the header row" src="images/filtering_date_dropdown_button.png" />
+3. <strong>Trình đơn Bộ lọc</strong>sẽ xuất hiện. Di chuột qua<strong>Bộ lọc ngày</strong>, sau đó chọn bộ lọc ngày mong muốn từ menu thả xuống. Trong ví dụ của chúng tôi, chúng tôi sẽ chọn<strong>Giữa...</strong>để xem thiết bị đã được kiểm tra trong khoảng thời gian từ ngày 15 tháng 7 đến ngày 15 tháng 8.</p>
+<p><img alt="Adding a date filter in the dropdown menu" src="images/filtering_date_dropdown_menu.png" />
+4. Hộp thoại<strong>Tự động lọc tùy chỉnh</strong>sẽ xuất hiện. Nhập<strong>ngày</strong>mong muốn vào bên phải mỗi bộ lọc, sau đó nhấp vào<strong>OK</strong>. Trong ví dụ của chúng tôi, chúng tôi muốn lọc các ngày sau hoặc bằng<strong>ngày 15 tháng 7 năm 2015</strong>và trước hoặc bằng<strong>ngày 15 tháng 8 năm 2015</strong>, sẽ hiển thị một phạm vi giữa các ngày này.</p>
+<p><img alt="The date filter dialog box" src="images/filtering_date_dialog_box.png" />
+5. Bảng tính sẽ được lọc theo bộ lọc ngày đã chọn. Trong ví dụ của chúng tôi, giờ đây chúng tôi có thể xem những mặt hàng nào đã được thanh toán<strong>từ ngày 15 tháng 7 đến ngày 15 tháng 8</strong>.</p>
+<p><img alt="The date filter has been applied to the worksheet" src="images/filtering_date_after_changes.png" /></p>
+<h3>Thử thách!</h3>
+<ol>
+<li>Mở <a href="practice_files/excel_filtering_practice.xlsx">sổ làm việc thực hành</a> của chúng tôi.</li>
+<li>Nhấp vào tab<strong>Thử thách</strong>ở phía dưới bên trái của sổ làm việc.</li>
+<li><strong>Áp dụng bộ lọc</strong>để chỉ hiển thị<strong>Điện tử</strong>và<strong>Dụng cụ</strong>.</li>
+<li>Sử dụng tính năng<strong>Tìm kiếm</strong>để lọc mô tả mục có chứa từ<strong>Sansei</strong>. Sau khi thực hiện việc này, bạn sẽ thấy<strong>sáu</strong>mục nhập.</li>
+<li><strong>Xóa</strong>bộ lọc Mô tả Mục.</li>
+<li>Sử dụng<strong>bộ lọc số</strong>, hiển thị số tiền vay<strong>lớn hơn hoặc bằng</strong>$100.</li>
+<li>Lọc để chỉ hiển thị các mục có thời hạn vào năm 2016.</li>
+<li>Khi bạn hoàn tất, sổ làm việc của bạn sẽ trông như thế này:</li>
+</ol>
+<p><img alt="Filtering Challenge" src="images/screen shot 2015-11-25 at 10.20.05 am.png" /></p>
+<p>/en/excel/groups-and-subtotals/content/</p>
+    </div>
+</body>
+</html>
