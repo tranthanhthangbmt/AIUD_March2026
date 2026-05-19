@@ -213,12 +213,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 </a>
             `}).join('');
 
-                const docsHtml = docs.map(d => `
-                    <a href="${d.file.startsWith('http') ? d.file : 'TaiLieuHuongDan/' + d.file}" class="resource-item" target="_blank">
+                const docsHtml = docs.map(d => {
+                    let docHref = d.file;
+                    if (!docHref.startsWith('http') && !docHref.startsWith('Module_1-6/') && !docHref.includes('../')) {
+                        docHref = 'TaiLieuHuongDan/' + docHref;
+                    }
+                    return `
+                    <a href="${docHref}" class="resource-item" target="_blank">
                         <i class="fas fa-file-pdf"></i>
                         <span>${d.name}</span>
                     </a>
-                `).join('');
+                `}).join('');
 
                 resourceList.innerHTML = tasksHtml + docsHtml;
             }
@@ -330,7 +335,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 const lessonContainer = document.querySelector('.lesson-container');
                 const videoWrapper = document.querySelector('.video-wrapper');
                 
-                if (session.title.startsWith('Module')) {
+                // We only hide it if there are no docs, tasks, and steps.
+                const hasDocs = lesson.docs && lesson.docs.length > 0;
+                const hasTasks = lesson.tasks && lesson.tasks.length > 0;
+                const hasSteps = lesson.steps && lesson.steps.length > 0;
+                const hasSections = lesson.sections && lesson.sections.length > 0;
+                
+                const shouldHideRightPanel = session.title.startsWith('Module') && !hasDocs && !hasTasks && !hasSteps && !hasSections;
+
+                if (shouldHideRightPanel) {
                     if (lessonRight) lessonRight.style.display = 'none';
                     if (lessonContainer) {
                         lessonContainer.style.gridTemplateColumns = '1fr';
