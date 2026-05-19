@@ -1,0 +1,77 @@
+﻿Slide 1: TRANG BÌA - GIÁO TRÌNH KỸ NGHỆ PROMPT HIỆN ĐẠI
+Người 1: Chào mừng các đồng chí đến với chương trình tập huấn "Kỹ nghệ Prompt Hiện đại". Hôm nay, chúng ta sẽ bắt đầu với Phần 1: Nền tảng Khoa học, Đạo đức và Tư duy AI. Khóa học này được thiết kế đặc biệt dành cho Khối Tham mưu và Lãnh đạo Quản lý, với mục tiêu cao nhất là dịch chuyển tư duy từ việc chỉ biết "hỏi đáp tự phát" sang việc thiết lập "Kiến trúc Tác nhân" và quản trị AI an toàn.
+Người 2: Chào thầy ạ. Khi nghe tới từ "Kỹ nghệ Prompt", em thường nghĩ đơn giản là học cách gõ câu hỏi vào ChatGPT sao cho nó trả lời hay hơn. Không biết trong khóa học này có gì khác biệt thưa thầy?
+Người 1: Một thắc mắc rất phổ biến! Khác biệt hoàn toàn đấy. Các đồng chí hãy nhìn vào Tuyên ngôn khóa học trên màn hình: "Mô hình Ngôn ngữ Lớn, hay viết tắt là L-L-M, không phải là một kho tri thức có nhận thức". Ranh giới của một cán bộ chuyên nghiệp không nằm ở việc biết gõ phím, mà nằm ở năng lực điều khiển hành vi máy móc, khả năng đập tan ảo giác của AI, và thiết lập kỷ luật thép về bảo mật dữ liệu. Chúng ta không học cách dùng một công cụ, chúng ta học cách quản trị một thực thể số.
+
+Slide 2: GIÀN GIÁO NHẬN THỨC (COGNITIVE SCAFFOLDING)
+Người 1: Để làm chủ được thực thể số đó, chúng ta cần xây dựng một "Giàn giáo Nhận thức" đi qua 3 trạm cốt lõi trên màn hình. Trạm thứ nhất là Giải mã Hộp đen: ta phải hiểu AI vận hành dựa trên xác suất toán học chứ không phải suy luận logic, và ảo giác là bản tính bẩm sinh của nó. Trạm thứ hai là Bẫy Tâm lý Hành vi: rủi ro lớn nhất không đến từ công nghệ mà đến từ sự lười biếng của con người. Và Trạm thứ ba là Hành lang Pháp lý: làm sao để dùng AI mà không vi phạm Nghị định mười ba về bảo vệ dữ liệu cá nhân.
+Người 2: Ở Trạm số 2 có cụm từ "Thiên kiến tự động hóa", thầy có thể lấy một ví dụ thực tế trong công tác hành chính được không ạ?
+Người 1: Rất sẵn lòng! "Thiên kiến tự động hóa" là khi một chuyên viên nhờ AI viết một báo cáo tổng kết cuối năm. Thấy AI viết quá trơn tru, câu chữ mượt mà, người chuyên viên đó chủ quan lướt qua mà không kiểm tra kỹ, dẫn đến việc trình ký một văn bản có sai sót về mặt số liệu hoặc logic. Vì vậy, mục tiêu của chúng ta là dịch chuyển cách dùng AI: không để AI "tuân lệnh" làm thay mình, mà ép AI phải trở thành "Đối tác tư duy", liên tục thách thức và phản biện lại quan điểm của chúng ta.
+
+Slide 3: LẦM TƯỞNG VÀ SỰ THẬT KHOA HỌC
+Người 1: Giờ ta đi thẳng vào Trạm thứ nhất. Mời các đồng chí nhìn biểu đồ chia làm hai nửa trên slide. Ở bên trái là "Lầm tưởng". Đa số mọi người coi AI là một bộ não khổng lồ, khi ta đặt câu hỏi, AI sẽ "suy nghĩ" về ý nghĩa của câu hỏi đó, rồi chạy đi lục lọi trong một thư viện dữ liệu khổng lồ để nhặt câu trả lời ra cho chúng ta.
+Người 2: Ô, trước giờ em vẫn nghĩ nó hoạt động như Google Search, tìm kiếm dữ liệu rồi tổng hợp lại bằng ngôn ngữ tự nhiên cơ đấy ạ!
+Người 1: Đó là lầm tưởng nguy hiểm nhất! Hãy nhìn sang bên phải: "Sự thật Khoa học". AI thực chất chỉ là một "Cỗ máy dự đoán xác suất". Dựa trên kiến trúc Mạng nơ-ron học sâu gọi là Transformer, máy tính không hề hiểu bạn đang nói gì. Nó chỉ đang tính toán một ma trận toán học khổng lồ để trả lời duy nhất một câu hỏi: "Từ nào, hay token nào, có khả năng xuất hiện cao nhất tiếp theo?". Nó là trò chơi nối chữ ở đẳng cấp hàng tỷ phép tính mỗi giây.
+
+Slide 4: DỰ ĐOÁN TỪ TIẾP THEO (NEXT-TOKEN PREDICTION)
+Người 1: Để hình dung rõ hơn trò chơi nối chữ này, các đồng chí nhìn vào sơ đồ minh họa. Giả sử tôi nhập đầu vào là một câu văn đang viết dở: "Căn cứ Luật Tổ chức chính quyền địa phương năm...". Ngay lập tức, câu này đi qua mạng nơ-ron xử lý. Mạng này sẽ tính toán xác suất cho hàng vạn từ có thể xuất hiện tiếp theo.
+Người 2: À em thấy trên hình rồi. Thuật toán tính ra từ "hai không mười lăm" có xác suất lên tới chín mươi tám phần trăm. Còn từ "hai không mười ba" chỉ có một phẩy năm phần trăm, và từ "nay" là không phẩy năm phần trăm. Nên nó tự động chọn từ "hai không mười lăm" để in ra màn hình đúng không ạ?
+Người 1: Hoàn toàn chính xác! Nó chỉ là sự khớp mẫu thống kê, chứ AI không hề có khả năng "lập luận biểu tượng" hay suy nghĩ logic. Giới hạn nội tại này dẫn đến việc: nếu bài toán quá phức tạp và thiếu đi 'giàn giáo' phân rã từng bước do con người cung cấp, AI chắc chắn sẽ không thể thực hiện được những suy luận logic nhiều bước.
+
+Slide 5: BẢN CHẤT CỦA ẢO GIÁC (HALLUCINATION)
+Người 1: Và từ cơ chế "đoán mò từ tiếp theo" đó, chúng ta đối mặt với hiện tượng nhức nhối nhất của AI: Ảo giác, hay tiếng Anh gọi là Hallucination. Cần khẳng định ngay yếu tố thứ nhất: Ảo giác không phải là một lỗi phần mềm (hay là bug) để mà các kỹ sư có thể lập trình vá lại. Nó là đặc tính bản sinh của các mô hình sinh ngẫu nhiên.
+Người 2: Thế nghĩa là hiện tượng AI tự nhiên bịa ra một cái Thông tư không có thật, hoặc trích dẫn sai số Nghị định là do bản tính của nó ạ? Tại sao nó lại "tự tin nói dối" như vậy hả thầy?
+Người 1: Rất chuẩn. Đó là yếu tố thứ hai trên màn hình. Khi thiếu ngữ cảnh thật, thuật toán của AI được thiết kế để tối ưu hóa sự trôi chảy. Nó bị ép phải tự nội suy, từ đó lắp ghép các từ ngữ tạo ra một câu trả lời hoàn toàn bịa đặt nhưng đọc nghe cực kỳ lọt tai. Yếu tố thứ ba là do AI mặc định không biết từ chối! Nó không được lập trình để nói "Tôi không biết". Nhiệm vụ tối thượng và duy nhất của nó là luôn luôn phải sinh ra từ tiếp theo. Nắm được điểm yếu chí mạng này, ở các phần sau chúng ta mới biết cách lập trình các chốt chặn để "khóa mõm" sự bịa đặt của AI.
+
+Slide 6: MA TRẬN ĐỘ BẤT ĐỊNH (UNCERTAINTY MATRIX)
+Người 1: Từ cơ chế "đoán mò" sinh ra ảo giác ở slide trước, chúng ta bước sang Slide số 6 để giải phẫu nguồn gốc của căn bệnh này dưới góc độ khoa học dữ liệu. Ảo giác xuất phát từ hai dạng độ bất định chính. Thứ nhất là Bất định do Dữ liệu, hay còn gọi là A-lê-a-tô-ríc (Aleatoric). Nó xảy ra khi bản thân dữ liệu đầu vào bị nhiễu, mâu thuẫn hoặc có nhiều cách hiểu, dẫn đến việc AI sinh ra kết quả mâu thuẫn ngay trong cùng một đoạn văn,.
+Người 2: Vậy còn Bất định do Tri thức ở ô bên phải là gì thưa thầy?
+Người 1: Đó là E-pít-tê-míc (Epistemic), xảy ra khi bộ não của AI bị khuyết thiếu thông tin về một mảng kiến thức chuyên biệt nào đó. Lấy ví dụ, khi một địa phương vừa ban hành một Thông tư mới tinh mà AI chưa được học. Vì thuật toán ép nó không được nói "Tôi không biết", nó sẽ tự động lấy râu ông nọ cắm cằm bà kia từ các luật cũ để bịa ra một câu trả lời nghe rất trôi chảy.
+Người 2: Nguy hiểm quá! Vậy làm sao để chúng ta chặn việc nó tự động nội suy linh tinh ạ?
+Người 1: Giải pháp kỹ thuật nằm ở dòng màu xanh bên dưới: Chúng ta phải ép AI thu hẹp "Không gian xác suất" bằng kỹ thuật R-A-G (Retrieval-Augmented Generation), tức là kỹ thuật Neo dữ liệu. Ta sẽ lập trình để cấm AI dùng kiến thức trên mạng, mà chỉ được phép đọc và suy luận dựa trên đúng tệp tài liệu nội bộ mà ta cung cấp cho nó.
+
+Slide 7: MỨC ĐỘ Ỷ LẠI VÀO AI
+Người 1: Tuy nhiên, công nghệ dù có chặn tốt đến đâu cũng không bằng việc chặn rủi ro từ chính tâm lý con người. Mời các đồng chí nhìn vào đồ thị trên màn hình. Đường màu xanh đi xuống đại diện cho "Nỗ lực nhận thức nội tại" của chúng ta, còn đường màu cam đi lên đại diện cho "Sự tự tin giả tạo",.
+Người 2: Em thấy khi mức độ ỷ lại vào AI càng tăng thì hai đường này giao nhau, tạo ra một vùng gạch chéo gọi là "Thiên kiến tự động hóa". Đây chính là căn bệnh lười kiểm tra mà thầy đã nhắc ở phần đầu đúng không ạ?
+Người 1: Hoàn toàn chính xác! Thiên kiến tự động hóa là khi chúng ta tin tưởng mù quáng vào kết quả của máy tính. Khi thấy AI viết một báo cáo quá hay, chúng ta rơi vào trạng thái tự tin giả tạo, chỉ đọc lướt qua kết quả thay vì phân tích sâu. Hệ quả là chúng ta không thể phát hiện ra các sai sót logic cực kỳ tinh vi đang ẩn giấu bên trong,.
+
+Slide 8: SỰ XÓI MÒN TƯ DUY PHẢN BIỆN
+Người 1: Slide 8 sẽ cho các đồng chí thấy rõ hơn hậu quả của căn bệnh lười biếng này qua sơ đồ "Vòng lặp bị cắt đứt". Bình thường, để ra một báo cáo, ta phải đi qua vòng lặp: Đọc tài liệu, Phân tích, Viết, Phản biện rồi mới Nộp. Nhưng bây giờ, người dùng tự cắt đứt quy trình đó, ném tài liệu cho AI Viết, rồi nhảy thẳng đến bước Nộp báo cáo,.
+Người 2: Nếu cứ làm theo đường tắt như vậy thì lâu dần hệ lụy sẽ là gì ạ?
+Người 1: Có ba hệ lụy cực kỳ nghiêm trọng. Một là sụt giảm nỗ lực nhận thức, biến AI thành chiếc nạng thụ động. Hai là rập khuôn ý tưởng, các văn bản mất đi sự thấu cảm và nhạy bén chính trị mà chỉ còn là những khuôn mẫu ngôn ngữ vô hồn. Ba là nguy hiểm nhất: Mất đi vòng lặp học hỏi. Cán bộ tự cắt đứt mình khỏi quá trình "vật lộn" với tư duy, lâu dần năng lực chuyên môn sẽ bị thui chột.
+
+Slide 9: TRỤC CHUYỂN DỊCH NHẬN THỨC
+Người 1: Để AI không "giết chết" tư duy của chúng ta, ta phải chuyển dịch ngay lập tức cách sử dụng nó. Ở bên trái là Mô hình cũ: dùng AI như một "Máy móc Tuân lệnh". Hành vi đặc trưng là hay gõ lệnh yêu cầu "Hãy viết hộ tôi", "Hãy làm thay tôi". Báo cáo làm ra tuy trơn tru nhưng con người hoàn toàn mất kiểm soát về mặt logic,.
+Người 2: Vậy Mô hình chuẩn mực ở bên phải - "Đối tác tư duy" - thì mình phải ra lệnh như thế nào cho đúng ạ?
+Người 1: Chúng ta phải ép AI trở thành "Máy móc Thách thức". Nghĩa là, thay vì bảo nó viết hộ, ta hãy đưa bản nháp của mình cho nó và dùng câu lệnh ép nó đóng vai "Người phản biện", hay còn gọi là kỹ thuật Vấn đáp Xô-cơ-rát (Socratic Questioning),. Hãy yêu cầu nó: "Tìm cho tôi ba lỗ hổng pháp lý trong kế hoạch này". Hành vi này buộc con người phải liên tục giải trình và mài giũa lập luận trước khi ra quyết định cuối cùng.
+
+Slide 10: NGUYÊN LÝ TỐI CAO: HUMAN-IN-THE-LOOP (HITL)
+Người 1: Và để khép lại Phần 1, chúng ta đến với nguyên lý tối cao và bất biến trong kiến trúc AI công vụ: "Human-in-the-loop", tạm dịch là Con người nằm trong vòng lặp kiểm soát. Mời các đồng chí nhìn sơ đồ. AI có thể phân tích dữ liệu siêu tốc, nhưng nó chỉ được phép đưa ra kết quả ở "Trạng thái Đề xuất",.
+Người 2: Biểu tượng ổ khóa màu xanh ở giữa chính là "Chốt chặn con người". Tức là AI tuyệt đối không được tự ý nhảy sang ô "Trạng thái Thực thi" màu đen bên phải đúng không thầy?
+Người 1: Cực kỳ chuẩn xác! Quyền định khung vấn đề và đưa ra phán quyết bắt buộc phải thuộc về con người. Kiến trúc AI công vụ phải tước bỏ tính tự chủ của máy móc. Tuyệt đối không để hệ thống tự động chuyển sang Hành động, ví dụ như tự động gửi email từ chối hồ sơ của người dân, nếu chưa có chữ ký số hoặc lệnh xác nhận trực tiếp từ chuyên gia con người. Nhớ kỹ nguyên lý này, chúng ta mới có thể dùng AI một cách an toàn và đúng đạo đức công vụ.
+
+Slide 11: HÀNH LANG PHÁP LÝ TOÀN CẦU (EU AI ACT & OECD)
+Người 1: Chúng ta đã đi qua khía cạnh khoa học và tâm lý. Bây giờ, mời các đồng chí nhìn lên Slide 11 để đến với "bức tường lửa" thứ ba: Hành lang Pháp lý. Trên màn hình là sơ đồ tháp rủi ro theo Đạo luật Trí tuệ Nhân tạo của Châu Âu, hay còn gọi là E-U A-I Act. Các tác vụ trong khu vực công như phân tích hồ sơ tư pháp, rà soát hành chính hay quyết định trợ cấp đều bị xếp vào nhóm "Rủi ro cao" ở đỉnh tháp,. Đối với nhóm này, luật quốc tế bắt buộc phải có cơ chế Giám sát con người xuyên suốt.
+Người 2: Em thấy ở dưới có một cảnh báo của tổ chức O-E-C-D về "Rửa dữ liệu" hay Data Laundering. Rửa tiền thì em nghe rồi, thế "rửa dữ liệu" trong hành chính công nghĩa là sao thưa thầy?
+Người 1: Một khái niệm rất đáng sợ đấy! "Rửa dữ liệu" là khi dữ liệu đầu vào của chúng ta vốn đã chứa đựng những định kiến, hoặc thông tin thiên lệch, nhưng khi đưa qua AI, nó được xào xáo, gọt giũa lại thành những đoạn văn bản cực kỳ mượt mà, chuyên nghiệp và có vẻ rất "khách quan". Người đọc văn bản đó sẽ bị lừa rằng đây là kết quả công tâm, nhưng thực chất gốc rễ của nó đã bị sai lệch. Đó là lý do kiến trúc AI phải tích hợp các module kiểm toán để đối chiếu lại với nguồn dữ liệu gốc.
+
+Slide 12: HÀNH LANG PHÁP LÝ QUỐC GIA - NGHỊ ĐỊNH 13
+Người 1: Từ quốc tế, chúng ta quay về Việt Nam. Thách thức lớn nhất khi dùng AI ở cơ quan nhà nước là rủi ro rò rỉ thông tin cá nhân. Rất nhiều cán bộ hiện nay có thói quen copy nguyên xi một tờ đơn khiếu nại, có đầy đủ tên tuổi, địa chỉ, lịch sử bệnh án, rồi dán phập vào cửa sổ chat của các AI thương mại để nhờ tóm tắt.
+Người 2: Dạ thú thực là ở phường em, mấy bạn chuyên viên thỉnh thoảng cũng làm thế cho nhanh ạ. Như vậy là vi phạm pháp luật sao thầy?
+Người 1: Vi phạm rất nghiêm trọng! Hành vi "nhập liệu thô ráp" đó trực tiếp vi phạm Nghị định mười ba năm hai không hai ba của Chính phủ về bảo vệ dữ liệu cá nhân. Dữ liệu nhạy cảm phải được bảo vệ tuyệt đối. Các đồng chí nên nhớ, một câu lệnh hay Prompt chuyên nghiệp không bao giờ được phép gửi thẳng dữ liệu thật lên đám mây. Chúng ta bắt buộc phải có một "Giao thức làm sạch dữ liệu" đi kèm,.
+
+Slide 13: GIẢI PHÁP KỸ THUẬT: GIAO THỨC SANITIZATION
+Người 1: Vậy làm sạch dữ liệu như thế nào? Mời các đồng chí nhìn lên màn hình. Thuật ngữ chuyên ngành gọi đây là Giao thức Sa-ni-ti-za-tion (Sanitization) hay Mã hóa phi định danh. Ví dụ, trong hồ sơ ghi là "Ông Nguyễn Văn A, Căn cước công dân số không bốn tám không chín hai...". Trước khi đưa cho AI đọc, đoạn này bắt buộc phải bị biến đổi thành "Ông Chủ_Thể_X, Căn cước công dân số Mã_Định_Danh".
+Người 2: Có nghĩa là công việc "xóa tên" này mình phải làm thủ công trước khi gửi cho AI ạ? Hay AI nó tự xóa cho mình?
+Người 1: Không bao giờ được giao cho AI trên đám mây xóa! Cơ chế bảo vệ này phải được thực hiện "Offline" ngay tại máy tính cục bộ của các đồng chí. Thông tin gốc phải bị tước bỏ hoàn toàn trước khi tiếp xúc với các cỗ máy như Chat-G-P-T hay Gemini, để triệt tiêu vĩnh viễn rủi ro thông tin của người dân bị AI lấy làm dữ liệu học tập.
+
+Slide 14: QUY TRÌNH SANITIZATION 3 TRẠM KHÉP KÍN
+Người 1: Để hình dung rõ hơn, các đồng chí xem quy trình 3 trạm khép kín này. Trạm số 1 nằm ở máy tính cục bộ của chúng ta, thực hiện việc mã hóa, chuyển đổi tên thật thành các biến số an toàn. Sau đó mới chuyển sang Trạm 2 là Đám mây xử lý. Lúc này, AI chỉ nhận được một văn bản đã bị "tẩy trắng", nó phân tích logic, tóm tắt và đưa ra suy luận trên cái văn bản vô danh đó.
+Người 2: À em hiểu rồi. Vậy đến lúc AI trả kết quả về là Trạm số 3, mình lại dùng cái bảng mã ở Trạm 1 để "Giải mã ngược", lắp tên tuổi thật của người dân vào lại đúng vị trí, rồi mới in ra trình sếp ký đúng không thầy?
+Người 1: Quá xuất sắc! Đúng là như vậy. Quá trình đó gọi là De-anonymization (Giải mã ngược). Nhờ quy trình 3 trạm này, chúng ta vừa tận dụng được sức mạnh phân tích siêu việt của AI, lại vừa bảo vệ an toàn tuyệt đối bí mật công vụ và quyền riêng tư của công dân.
+
+Slide 15: TỔNG HỢP PHẦN 1 VÀ BƯỚC SANG THỰC HÀNH
+Người 1: Và Slide 15 này sẽ khép lại toàn bộ Phần 1 của chúng ta ngày hôm nay. Chúng ta đã đập tan lầm tưởng về việc AI "biết suy nghĩ", hiểu nó chỉ là cỗ máy tính toán xác suất,. Chúng ta đã nắm được bẫy tâm lý, quyết tâm dùng AI như một đối tác phản biện chứ không phải kẻ làm thay,. Và cuối cùng là kỷ luật thép về bảo vệ dữ liệu với quy trình Sanitization cùng nguyên tắc chốt chặn con người,.
+Người 2: Vậy thì nền tảng lý thuyết đã vững vàng rồi, ở Phần 2 tiếp theo chúng ta sẽ học cách làm thực tế chứ thưa thầy?
+Người 1: Chắc chắn rồi! Chuyển sang Phần 2, chúng ta sẽ đoạn tuyệt hoàn toàn với việc hỏi đáp tự phát. Thầy sẽ hướng dẫn các đồng chí Hệ thống 5 Cấp độ Kỹ nghệ Prompt,,. Chúng ta sẽ đi từ việc Lập trình ngữ cảnh vi mô cho một đoạn văn, nâng cấp lên việc cấu hình một Bản thể Tác nhân đa luồng, và đỉnh cao nhất là dùng ngôn ngữ tự nhiên để lập trình một Máy trạng thái hữu hạn hay còn gọi là ép AI thực thi từng nhiệm vụ cực kỳ khắt khe. Hãy nghỉ giải lao ít phút trước khi bước vào kỷ nguyên thiết kế AI nhé!
+

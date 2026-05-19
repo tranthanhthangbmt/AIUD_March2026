@@ -195,7 +195,7 @@ const sessionsData = [
         id: 6,
         title: "Module 6: Ứng dụng trí tuệ nhân tạo",
         description: "Tìm hiểu và khai thác các công cụ AI hỗ trợ trong học tập và công việc.",
-        totalLessons: 3,
+        totalLessons: 6,
         quiz: "MD6.csv",
         lessons: [
             {
@@ -257,6 +257,50 @@ const sessionsData = [
                     { title: "Slide 6: Khung DRAG", content: "Drafting (Phác thảo), Research (Nghiên cứu), Analysis (Phân tích), Groundwork (Công việc chân tay).", icon: "fa-project-diagram" },
                     { title: "Slide 11: Quá tải tiến triển", content: "Rèn luyện với 4 cấp độ 'tạ': Làm nóng, Khởi động, Áp lực và Quá tải để hiểu sâu kiến thức.", icon: "fa-weight-hanging" }
                 ]
+            },
+            {
+                id: 64,
+                sessionId: 6,
+                title: "Phần 4: Modern AI Architecture Protocol",
+                description: "Hiểu về cấu trúc và giao thức của AI hiện đại.",
+                video: "Module_1-6/Video/Module_6/Phần 4_Modern_AI_Architecture_Protocol/index.html",
+                docs: [
+                    { name: "Slide PDF", file: "Module_1-6/Video/Module_6/Phần 4_Modern_AI_Architecture_Protocol/Phần 1_Modern_AI_Architecture_Protocol.pdf" },
+                    { name: "Kịch bản (DOCX)", file: "Module_1-6/Video/Module_6/Phần 4_Modern_AI_Architecture_Protocol/script.docx" },
+                    { name: "Kịch bản (TXT)", file: "Module_1-6/Video/Module_6/Phần 4_Modern_AI_Architecture_Protocol/script.txt" }
+                ],
+                steps: []
+            },
+            {
+                id: 65,
+                sessionId: 6,
+                title: "Phần 5: AI Agent Architecture",
+                description: "Kiến trúc của AI Agent và ứng dụng thực tiễn.",
+                video: "Module_1-6/Video/Module_6/Phần 5_AI_Agent_Architecture/index.html",
+                docs: [
+                    { name: "Slide PDF", file: "Module_1-6/Video/Module_6/Phần 5_AI_Agent_Architecture/Phần 2_AI_Agent_Architecture.pdf" },
+                    { name: "Kịch bản (DOCX)", file: "Module_1-6/Video/Module_6/Phần 5_AI_Agent_Architecture/script.docx" },
+                    { name: "Kịch bản (TXT)", file: "Module_1-6/Video/Module_6/Phần 5_AI_Agent_Architecture/script.txt" }
+                ],
+                steps: []
+            },
+            {
+                id: 66,
+                sessionId: 6,
+                title: "Phần Thực hành: Bài tập và Tài liệu tham khảo",
+                description: "Tài liệu thực hành và các câu lệnh prompt mẫu giúp ứng dụng AI vào công việc.",
+                video: "",
+                docs: [
+                    { name: "Bài giảng Tin học văn phòng nâng cao", file: "Module_1-6/Video/Module_6/Thực hành/02. BG_Tin học van phong nao cao (2TC).pdf" },
+                    { name: "Cẩm Nang Kỹ Nghệ Prompt v6", file: "Module_1-6/Video/Module_6/Thực hành/Cẩm Nang Kỹ Nghệ Prompt_v6.pdf" },
+                    { name: "Hướng dẫn thực hành AI for word", file: "Module_1-6/Video/Module_6/Thực hành/Hướng dẫn thực hành_Bài tập_ AI for word_prompt.pdf" },
+                    { name: "Prompt - Instruction office AI trainner", file: "Module_1-6/Video/Module_6/Thực hành/prompt thực chiến/Instruction office AI trainner.txt" },
+                    { name: "Prompt - Tạo slide nhiều phần", file: "Module_1-6/Video/Module_6/Thực hành/prompt thực chiến/prompt tạo slide nhiều phần.txt" },
+                    { name: "Prompt - Tạo slide", file: "Module_1-6/Video/Module_6/Thực hành/prompt thực chiến/prompt tạo slide.txt" },
+                    { name: "Prompt - Tạo audio", file: "Module_1-6/Video/Module_6/Thực hành/prompt thực chiến/tạo audio cho tài liệu với mục đích.txt" },
+                    { name: "Prompt - Tạo instruction", file: "Module_1-6/Video/Module_6/Thực hành/prompt thực chiến/tạo instruction gem_vd1.txt" }
+                ],
+                steps: []
             }
         ]
     },

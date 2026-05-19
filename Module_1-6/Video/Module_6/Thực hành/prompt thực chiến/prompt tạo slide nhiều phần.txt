@@ -1,0 +1,64 @@
+[select tài liệu cần làm slide]
+tôi muốn chia tài liệu này thành 2 phần để hướng dẫn cho sinh viên lớp AI ứng dụng có lý thuyết và thực hành
+=============================================
+Thiết kế nền trắng hoàn toàn, icon đơn giản có màu sắc sinh động, tính học thuật cao. Không tạo ra các hình AI mà chỉ sử dụng các icon đơn giản có màu sắc sinh động. Thiết kế đơn giản mang tính học thuật. Phông nền trắng. Hãy làm slide cho phần 1 cho tôi. Trang 1 có ghi là phần 1/2. Chỉ làm nội dung phần 1. Tổng slide phần này là 15 slide. Phần 2 tôi sẽ làm sau. Nội dung 2 phần như sau "Để hướng dẫn cho sinh viên lớp AI ứng dụng, tài liệu có thể được cấu trúc thành 2 phần cốt lõi: **Phần Lý thuyết (Nền tảng Khoa học & Quản trị AI)** để sinh viên hiểu bản chất "hộp đen" thuật toán, và **Phần Thực hành (Hệ thống 5 cấp độ Kỹ nghệ Prompt)** để sinh viên tự tay lập trình và thiết kế các Tác nhân AI chuyên biệt.
+
+**Phần 1: Lý thuyết – Nền tảng Khoa học, Đạo đức và Tư duy AI**
+Mục tiêu: Giúp sinh viên từ bỏ tâm lý ỷ lại vào máy móc, nắm vững giới hạn của AI và hành lang pháp lý quốc tế lẫn quốc gia.
+
+*   **Bản chất toán học của LLM:** Sinh viên cần nhận thức rằng AI không phải là một kho tri thức tĩnh có nhận thức, mà là một "cỗ máy dự đoán xác suất" (Probability Engine) hoạt động bằng cách tính toán từ (token) có khả năng xuất hiện tiếp theo cao nhất.
+*   **Giải mã hiện tượng Ảo giác (Hallucination):** Ảo giác không phải là lỗi phần mềm (bug) mà là đặc tính bản sinh. Sinh viên cần hiểu nguồn gốc của sự "tự tin nói dối" này bắt nguồn từ độ bất định của dữ liệu và thiếu hụt tri thức nội tại của máy móc.
+*   **Bẫy nhận thức và Nguyên lý "Human-in-the-Loop":** Phân tích về "Thiên kiến tự động hóa" khiến con người dễ tin tưởng mù quáng vào kết quả của AI và suy giảm tư duy phản biện. Quán triệt nguyên tắc con người luôn là chốt chặn cuối cùng trong mọi quyết định, biến AI thành công cụ thách thức tư duy thay vì chỉ biết tuân lệnh. 
+*   **Khung quản trị và Bảo mật dữ liệu:** Giới thiệu Đạo luật AI Châu Âu (EU AI Act), Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân tại Việt Nam. Hướng dẫn quy trình 3 bước làm sạch và mã hóa dữ liệu (Sanitization) trước khi đưa lên đám mây.
+
+**Phần 2: Thực hành – Kỹ nghệ Prompt và Kiến trúc Tác nhân AI**
+Mục tiêu: Dịch chuyển từ phương pháp đặt câu hỏi tự phát (Prompting cá nhân) sang "Lập trình câu lệnh" (Prompt Programming) bằng hệ thống 5 cấp độ tiến hóa.
+
+*   **Cấp độ 1: Lập trình ngữ cảnh (Foundational Prompting):** 
+    *   Sinh viên thực hành kỹ thuật In-Context Learning qua Zero-shot, One-shot và Few-shot.
+    *   Sử dụng công thức cấu trúc vi mô RTF (Role - Task - Format) để định hình văn bản đầu vào.
+    *   "Toán học hóa" văn phong AI bằng cách điều hướng trực tiếp vào hai chỉ số **Perplexity** (độ nhiễu thuật ngữ) và **Burstiness** (độ đột biến cấu trúc câu) nhằm chống lại các công cụ AI Detector và cá nhân hóa văn bản.
+*   **Cấp độ 2: Kiến trúc nhận thức nâng cao:** 
+    *   Can thiệp để AI "nghĩ chậm lại" qua các kỹ thuật: Suy luận chuỗi (Chain of Thought - CoT) giải quyết vấn đề tuyến tính, và Cây tư duy (Tree of Thoughts - ToT) đối với những bài toán đa giải pháp.
+    *   Tạo vòng lặp tự sửa lỗi (Self-Correction / Red Teaming) ép AI tự đóng vai người phản biện để kiểm tra các kẽ hở logic trước khi xuất kết quả.
+*   **Cấp độ 3: Thiết kế Bản thể Tác nhân (Agentic Design):** 
+    *   Sinh viên thực hành cấu hình AI Agent với **khung 6 trụ cột cốt lõi**: Vai trò, Neo dữ liệu chuẩn (Strict Anchoring), Nhiệm vụ, Tư duy nội bộ, Luồng tương tác và Định dạng.
+    *   Lập trình thêm trụ cột thứ 7 (Sự thấu cảm sinh học), áp dụng Microlearning để Tác nhân AI biết nhận diện trạng thái cạn kiệt năng lượng của người dùng và chống quá tải nhận thức.
+*   **Cấp độ 4: Hệ sinh thái Đa tác nhân (Multi-Agent Systems):** 
+    *   Phá vỡ giới hạn đóng băng tri thức của LLM bằng khung **ReAct (Reasoning and Acting)**, ép AI tự động sinh ra các lệnh gọi hàm (API Calls) để tra cứu dữ liệu ngoài đời thực.
+    *   Thực hành thiết lập kịch bản Đa tác nhân dựa trên Lý thuyết Trò chơi (Actor - Critic), để hai AI tự động đối thoại, kiểm thử và vá lỗi lẫn nhau.
+*   **Cấp độ 5: Lập trình Trạng thái và Ràng buộc (FSM Prompting):**
+    *   Đỉnh cao thực hành: Sinh viên dùng ngôn ngữ tự nhiên để lập trình **Máy trạng thái hữu hạn (FSM)**, thiết lập các quy tắc "Thực thi đơn nhiệm" (Atomic Execution) buộc AI phải đi qua từng khâu kiểm duyệt chéo.
+    *   Cấu hình khối lệnh xử lý ngoại lệ (Try-Catch) cho các tình huống thiếu hụt chứng cứ hoặc tiêm dữ liệu mới giữa chừng, và định lượng Niềm tin (Confidence Calibration) để AI tự động cảnh báo rủi ro đỏ khi kết quả trả về không chắc chắn.
+
+====================================================
+
+Thiết kế nền trắng hoàn toàn, icon đơn giản có màu sắc sinh động, tính học thuật cao. Không tạo ra các hình AI mà chỉ sử dụng các icon đơn giản có màu sắc sinh động. Thiết kế đơn giản mang tính học thuật. Phông nền trắng.  Hãy làm slide cho phần 2 cho tôi. Trang 1 có ghi là phần 2/2. Chỉ làm nội dung phần 2. Tổng slide phần này là 15 slide. Phần 1 tôi đã làm rồi. Nội dung 2 phần như sau "Để hướng dẫn cho sinh viên lớp AI ứng dụng, tài liệu có thể được cấu trúc thành 2 phần cốt lõi: **Phần Lý thuyết (Nền tảng Khoa học & Quản trị AI)** để sinh viên hiểu bản chất "hộp đen" thuật toán, và **Phần Thực hành (Hệ thống 5 cấp độ Kỹ nghệ Prompt)** để sinh viên tự tay lập trình và thiết kế các Tác nhân AI chuyên biệt.
+
+**Phần 1: Lý thuyết – Nền tảng Khoa học, Đạo đức và Tư duy AI**
+Mục tiêu: Giúp sinh viên từ bỏ tâm lý ỷ lại vào máy móc, nắm vững giới hạn của AI và hành lang pháp lý quốc tế lẫn quốc gia.
+
+*   **Bản chất toán học của LLM:** Sinh viên cần nhận thức rằng AI không phải là một kho tri thức tĩnh có nhận thức, mà là một "cỗ máy dự đoán xác suất" (Probability Engine) hoạt động bằng cách tính toán từ (token) có khả năng xuất hiện tiếp theo cao nhất.
+*   **Giải mã hiện tượng Ảo giác (Hallucination):** Ảo giác không phải là lỗi phần mềm (bug) mà là đặc tính bản sinh. Sinh viên cần hiểu nguồn gốc của sự "tự tin nói dối" này bắt nguồn từ độ bất định của dữ liệu và thiếu hụt tri thức nội tại của máy móc.
+*   **Bẫy nhận thức và Nguyên lý "Human-in-the-Loop":** Phân tích về "Thiên kiến tự động hóa" khiến con người dễ tin tưởng mù quáng vào kết quả của AI và suy giảm tư duy phản biện. Quán triệt nguyên tắc con người luôn là chốt chặn cuối cùng trong mọi quyết định, biến AI thành công cụ thách thức tư duy thay vì chỉ biết tuân lệnh. 
+*   **Khung quản trị và Bảo mật dữ liệu:** Giới thiệu Đạo luật AI Châu Âu (EU AI Act), Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân tại Việt Nam. Hướng dẫn quy trình 3 bước làm sạch và mã hóa dữ liệu (Sanitization) trước khi đưa lên đám mây.
+
+**Phần 2: Thực hành – Kỹ nghệ Prompt và Kiến trúc Tác nhân AI**
+Mục tiêu: Dịch chuyển từ phương pháp đặt câu hỏi tự phát (Prompting cá nhân) sang "Lập trình câu lệnh" (Prompt Programming) bằng hệ thống 5 cấp độ tiến hóa.
+
+*   **Cấp độ 1: Lập trình ngữ cảnh (Foundational Prompting):** 
+    *   Sinh viên thực hành kỹ thuật In-Context Learning qua Zero-shot, One-shot và Few-shot.
+    *   Sử dụng công thức cấu trúc vi mô RTF (Role - Task - Format) để định hình văn bản đầu vào.
+    *   "Toán học hóa" văn phong AI bằng cách điều hướng trực tiếp vào hai chỉ số **Perplexity** (độ nhiễu thuật ngữ) và **Burstiness** (độ đột biến cấu trúc câu) nhằm chống lại các công cụ AI Detector và cá nhân hóa văn bản.
+*   **Cấp độ 2: Kiến trúc nhận thức nâng cao:** 
+    *   Can thiệp để AI "nghĩ chậm lại" qua các kỹ thuật: Suy luận chuỗi (Chain of Thought - CoT) giải quyết vấn đề tuyến tính, và Cây tư duy (Tree of Thoughts - ToT) đối với những bài toán đa giải pháp.
+    *   Tạo vòng lặp tự sửa lỗi (Self-Correction / Red Teaming) ép AI tự đóng vai người phản biện để kiểm tra các kẽ hở logic trước khi xuất kết quả.
+*   **Cấp độ 3: Thiết kế Bản thể Tác nhân (Agentic Design):** 
+    *   Sinh viên thực hành cấu hình AI Agent với **khung 6 trụ cột cốt lõi**: Vai trò, Neo dữ liệu chuẩn (Strict Anchoring), Nhiệm vụ, Tư duy nội bộ, Luồng tương tác và Định dạng.
+    *   Lập trình thêm trụ cột thứ 7 (Sự thấu cảm sinh học), áp dụng Microlearning để Tác nhân AI biết nhận diện trạng thái cạn kiệt năng lượng của người dùng và chống quá tải nhận thức.
+*   **Cấp độ 4: Hệ sinh thái Đa tác nhân (Multi-Agent Systems):** 
+    *   Phá vỡ giới hạn đóng băng tri thức của LLM bằng khung **ReAct (Reasoning and Acting)**, ép AI tự động sinh ra các lệnh gọi hàm (API Calls) để tra cứu dữ liệu ngoài đời thực.
+    *   Thực hành thiết lập kịch bản Đa tác nhân dựa trên Lý thuyết Trò chơi (Actor - Critic), để hai AI tự động đối thoại, kiểm thử và vá lỗi lẫn nhau.
+*   **Cấp độ 5: Lập trình Trạng thái và Ràng buộc (FSM Prompting):**
+    *   Đỉnh cao thực hành: Sinh viên dùng ngôn ngữ tự nhiên để lập trình **Máy trạng thái hữu hạn (FSM)**, thiết lập các quy tắc "Thực thi đơn nhiệm" (Atomic Execution) buộc AI phải đi qua từng khâu kiểm duyệt chéo.
+    *   Cấu hình khối lệnh xử lý ngoại lệ (Try-Catch) cho các tình huống thiếu hụt chứng cứ hoặc tiêm dữ liệu mới giữa chừng, và định lượng Niềm tin (Confidence Calibration) để AI tự động cảnh báo rủi ro đỏ khi kết quả trả về không chắc chắn.

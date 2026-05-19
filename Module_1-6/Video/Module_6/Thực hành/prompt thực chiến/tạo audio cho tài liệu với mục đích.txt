@@ -1,0 +1,12 @@
+Tạo audio chuyên sâu về tài liệu này. Ở đầu tài liệu nhớ giới thiệu tên của tài liệu và tiêu đề để dễ phân biệt. Tôi chuẩn bị tập huấn cho cán bộ phường, xã về sử dụng AI hiệu quả và trách nhiệm.
+Nội dung toàn bộ tập huấn như sau:
+KHÓA 1: DÀNH CHO KHỐI CÁN BỘ, CÔNG CHỨC XÃ
+Chuyên đề 1: Khai thác ChatGPT trong soạn thảo và xử lý văn bản hành chính 
+Chuyên đề 2: Sử dụng Gemini thiết kế trợ lý ảo để phân tích, dự báo và tổng hợp thông tin 
+Chuyên đề 3: Quản lý tri thức và tài liệu nội bộ với NotebookLM (Trọng tâm Bảo mật & An toàn) 
+Chuyên đề 4: Tạo nội dung truyền thông bằng AI đa phương tiện 
+
+KHÓA 2: DÀNH CHO TỔ CÔNG NGHỆ SỐ CỘNG ĐỒNG, DOANH NGHIỆP, HTX, HỘ KINH DOANH CÁ THỂ 
+Chuyên đề 1: Tổng quan về trí tuệ nhân tạo (AI) và vai trò trong đời sống, hành chính công; Lợi ích của CĐS đối với người dân và doanh nghiệp 
+Chuyên đề 2: Hướng dẫn sử dụng, ứng dụng các công cụ AI phổ biến 
+Chuyên đề 3: Hướng dẫn các ứng dụng hỗ trợ người dân, doanh nghiệp 
