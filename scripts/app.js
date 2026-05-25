@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const docsHtml = docs.map(d => {
                     let docHref = d.file;
-                    if (!docHref.startsWith('http') && !docHref.startsWith('Module_1-6/') && !docHref.includes('../')) {
+                    if (!docHref.startsWith('http') && !docHref.startsWith('Module_1-6/') && !docHref.startsWith('DeBaiThucHanh/') && !docHref.includes('../')) {
                         docHref = 'TaiLieuHuongDan/' + docHref;
                     }
                     return `

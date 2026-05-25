@@ -6627,8 +6627,56 @@ o Gợi ý SUMIF: =SUMIF(Cột_Mã_DV, "DN", Cột_Thành_Tiền)`,
         id: 15,
         title: "Buổi 15: Ôn tập",
         description: "Tổng hợp kiến thức, giải đề thi thử và ôn tập chuẩn bị cho kỳ thi kết thúc học phần.",
-        totalLessons: 13,
+        totalLessons: 16,
         lessons: [
+            {
+                id: 1597,
+                sessionId: 15,
+                title: "📋 Đề thi HK trước - Đề 01",
+                description: "Đề thi và đáp án chính thức học kỳ trước (26/01/2026) - Đề số 01. Xem để nắm cấu trúc đề thi thực tế.",
+                docs: [
+                    { name: "Đề 01 + Đáp án (PDF)", file: "DeBaiThucHanh/Đề thi và đáp án - 26.1.2026/Đề_01_Trí tuệ nhân tạo ứng dụng_3tc_final_ĐápÁn.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "Giới thiệu",
+                        content: "Đây là <strong>đề thi chính thức</strong> của học kỳ trước (ngày 26/01/2026) kèm đáp án chi tiết.\n\n<strong>Mục đích:</strong>\n- Nắm được cấu trúc và độ khó thực tế của đề thi.\n- Luyện tập phân bổ thời gian cho từng phần (Word, Excel, PowerPoint).\n- So sánh bài làm với đáp án để rút kinh nghiệm.\n\n<strong>Lưu ý:</strong> Hãy thử tự làm trong 90 phút trước khi xem đáp án!",
+                        icon: "fa-file-alt"
+                    }
+                ]
+            },
+            {
+                id: 1598,
+                sessionId: 15,
+                title: "📋 Đề thi HK trước - Đề 02",
+                description: "Đề thi và đáp án chính thức học kỳ trước (26/01/2026) - Đề số 02. Xem để nắm cấu trúc đề thi thực tế.",
+                docs: [
+                    { name: "Đề 02 + Đáp án (PDF)", file: "DeBaiThucHanh/Đề thi và đáp án - 26.1.2026/Đề_02_Trí tuệ nhân tạo ứng dụng_3tc_final_ĐápÁn.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "Giới thiệu",
+                        content: "Đây là <strong>đề thi chính thức</strong> của học kỳ trước (ngày 26/01/2026) kèm đáp án chi tiết.\n\n<strong>Mục đích:</strong>\n- Nắm được cấu trúc và độ khó thực tế của đề thi.\n- Luyện tập phân bổ thời gian cho từng phần (Word, Excel, PowerPoint).\n- So sánh bài làm với đáp án để rút kinh nghiệm.\n\n<strong>Lưu ý:</strong> Hãy thử tự làm trong 90 phút trước khi xem đáp án!",
+                        icon: "fa-file-alt"
+                    }
+                ]
+            },
+            {
+                id: 1599,
+                sessionId: 15,
+                title: "📋 Đề thi HK trước - Đề 03",
+                description: "Đề thi và đáp án chính thức học kỳ trước (26/01/2026) - Đề số 03. Xem để nắm cấu trúc đề thi thực tế.",
+                docs: [
+                    { name: "Đề 03 + Đáp án (PDF)", file: "DeBaiThucHanh/Đề thi và đáp án - 26.1.2026/Đề_03_Trí tuệ nhân tạo ứng dụng_3tc_final_ĐápÁn.pdf" }
+                ],
+                steps: [
+                    {
+                        title: "Giới thiệu",
+                        content: "Đây là <strong>đề thi chính thức</strong> của học kỳ trước (ngày 26/01/2026) kèm đáp án chi tiết.\n\n<strong>Mục đích:</strong>\n- Nắm được cấu trúc và độ khó thực tế của đề thi.\n- Luyện tập phân bổ thời gian cho từng phần (Word, Excel, PowerPoint).\n- So sánh bài làm với đáp án để rút kinh nghiệm.\n\n<strong>Lưu ý:</strong> Hãy thử tự làm trong 90 phút trước khi xem đáp án!",
+                        icon: "fa-file-alt"
+                    }
+                ]
+            },
             {
                 id: 1500,
                 sessionId: 15,
