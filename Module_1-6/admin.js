@@ -10,6 +10,7 @@ const AdminApp = {
             document.getElementById('login-modal').classList.replace('flex', 'hidden');
             this.loadClasses(); // Tải danh sách lớp ngay khi vào trang nếu đã login
             this.fetchData(); // Tự động tải nếu đã đăng nhập
+            this.loadKNSConfig();
         }
     },
 
@@ -41,6 +42,7 @@ const AdminApp = {
             this.showToast("Đăng nhập thành công!", "success");
             this.loadClasses(); // Tải danh sách lớp cho dropdown
             this.fetchData();
+            this.loadKNSConfig();
         } else {
             errorMsg.classList.remove('hidden');
         }
@@ -203,6 +205,7 @@ const AdminApp = {
                 <td class="px-6 py-4 font-bold text-slate-900">${student.fullName || 'N/A'}</td>
                 <td class="px-6 py-4 text-slate-600 font-medium">${student.studentId || '-'}</td>
                 <td class="px-6 py-4"><span class="px-2 py-1 bg-indigo-100 text-indigo-700 rounded text-xs font-bold">${student.className || 'N/A'}</span></td>
+                <td class="px-6 py-4"><span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-[10px] font-bold uppercase">${student.examName || 'Word'}</span></td>
                 <td class="px-6 py-4"><span class="px-2 py-1 ${modeClass} rounded text-[10px] font-bold uppercase">${student.examMode || 'Thi thử'}</span></td>
                 <td class="px-6 py-4 font-medium text-slate-600">${student.email}</td>
                 <td class="px-6 py-4"><span class="${scoreClass} text-base">${student.score}</span></td>
@@ -283,7 +286,7 @@ const AdminApp = {
         let csvContent = "data:text/csv;charset=utf-8,\uFEFF"; // BOM cho Excel nhận UTF-8
         
         // Header
-        csvContent += "STT,Ho Ten,Ma ID,Lop,Hinh Thuc,Email,Diem,Thoi_Gian,Gian_Lan,Ngay_Nop\r\n";
+        csvContent += "STT,Ho Ten,Ma ID,Lop,Bai_Thi,Hinh Thuc,Email,Diem,Thoi_Gian,Gian_Lan,Ngay_Nop\r\n";
 
         // Rows
         this.currentData.forEach((row, idx) => {
@@ -295,6 +298,7 @@ const AdminApp = {
                 `"${row.fullName || 'N/A'}"`,
                 row.studentId || "N/A",
                 row.className,
+                row.examName || "Word",
                 row.examMode || "Thi thử",
                 row.email,
                 row.score,
@@ -315,6 +319,60 @@ const AdminApp = {
         document.body.removeChild(link);
         
         this.showToast("Đã tải xuống file CSV", "success");
+    },
+
+    loadKNSConfig: async function() {
+        try {
+            const doc = await window.firebaseDB.collection('ExamSettings').doc('kns_midterm').get();
+            if (doc.exists) {
+                const config = doc.data();
+                document.getElementById('kns-q-per-mod').value = config.questionsPerModule || 10;
+                document.getElementById('kns-time').value = config.timeLimitMinutes || 45;
+                const modules = config.modules || [1,2,3,4,5,6];
+                document.querySelectorAll('.kns-module-checkbox').forEach(cb => {
+                    cb.checked = modules.includes(parseInt(cb.value));
+                });
+            }
+        } catch (e) {
+            console.error("Lỗi tải cấu hình KNS:", e);
+        }
+    },
+
+    saveKNSConfig: async function() {
+        const btn = document.querySelector('#config-kns-modal button.bg-amber-500');
+        const originalHtml = btn.innerHTML;
+        btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Đang lưu...';
+        btn.disabled = true;
+
+        const qPerMod = parseInt(document.getElementById('kns-q-per-mod').value) || 10;
+        const timeLimit = parseInt(document.getElementById('kns-time').value) || 45;
+        const selectedModules = Array.from(document.querySelectorAll('.kns-module-checkbox:checked')).map(cb => parseInt(cb.value));
+
+        if (selectedModules.length === 0) {
+            this.showToast("Phải chọn ít nhất 1 module!", "error");
+            btn.innerHTML = originalHtml;
+            btn.disabled = false;
+            return;
+        }
+
+        try {
+            await window.firebaseDB.collection('ExamSettings').doc('kns_midterm').set({
+                questionsPerModule: qPerMod,
+                timeLimitMinutes: timeLimit,
+                modules: selectedModules,
+                updatedAt: new Date().toISOString()
+            });
+            this.showToast("Đã lưu cấu hình Kỹ Năng Số thành công!", "success");
+            setTimeout(() => {
+                document.getElementById('config-kns-modal').classList.replace('flex', 'hidden');
+            }, 500);
+        } catch (e) {
+            console.error("Lỗi lưu cấu hình KNS:", e);
+            this.showToast("Lỗi lưu cấu hình!", "error");
+        } finally {
+            btn.innerHTML = originalHtml;
+            btn.disabled = false;
+        }
     }
 };
 

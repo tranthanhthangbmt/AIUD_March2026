@@ -100,7 +100,7 @@
                 <div class="bg-gradient-to-br from-mit to-red-800 text-white p-2 rounded-lg shadow-inner">
                     <i class="fa-solid fa-building-columns text-xl"></i>
                 </div>
-                <h1 class="text-xl font-display font-bold text-slate-800 hidden sm:block">Hệ Thống Khảo Thí Sinh Viên
+                <h1 id="header-system-title" class="text-xl font-display font-bold text-slate-800 hidden sm:block">Hệ Thống Khảo Thí Sinh Viên
                 </h1>
             </div>
 
@@ -128,7 +128,7 @@
                     <div class="w-20 h-20 bg-red-50 text-mit rounded-full flex items-center justify-center mx-auto mb-4">
                         <i class="fa-solid fa-user-graduate text-4xl"></i>
                     </div>
-                    <h2 class="text-3xl font-display font-bold text-slate-900">Thông Tin Thí Sinh</h2>
+                    <h2 id="intro-exam-title" class="text-3xl font-display font-bold text-slate-900">Thông Tin Thí Sinh</h2>
                     <p class="text-slate-500 mt-2">Vui lòng hoàn thiện thông tin dưới đây để bắt đầu bài thi.</p>
                 </div>
 
@@ -137,14 +137,14 @@
                         <div class="bg-blue-100 text-blue-600 p-2 rounded-lg"><i class="fa-solid fa-list-ol"></i></div>
                         <div class="text-xs">
                             <h4 class="font-bold text-slate-800">Cấu trúc đề</h4>
-                            <p class="text-slate-500">60 câu (10 câu/module)</p>
+                            <p id="info-struct" class="text-slate-500">60 câu (10 câu/module)</p>
                         </div>
                     </div>
                     <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 flex items-center gap-3">
                         <div class="bg-amber-100 text-amber-600 p-2 rounded-lg"><i class="fa-solid fa-stopwatch"></i></div>
                         <div class="text-xs">
                             <h4 class="font-bold text-slate-800">Thời gian</h4>
-                            <p class="text-slate-500">45 Phút làm bài</p>
+                            <p id="info-time" class="text-slate-500">45 Phút làm bài</p>
                         </div>
                     </div>
                 </div>
@@ -249,7 +249,7 @@
                         class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 sm:p-8 flex-grow relative flex flex-col min-h-[500px]">
                         <div class="flex justify-between items-center mb-6 pb-4 border-b border-slate-100">
                             <span class="bg-slate-100 text-slate-700 text-sm font-bold px-3 py-1.5 rounded-md">
-                                Câu <span id="current-question-number" class="text-mit">1</span> / 60
+                                Câu <span id="current-question-number" class="text-mit">1</span> / <span id="total-question-number">60</span>
                             </span>
                             <span id="question-module-badge"
                                 class="text-xs font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full border border-blue-100">
@@ -338,7 +338,7 @@
                 <!-- Header Result -->
                 <div class="bg-gradient-to-r from-slate-900 to-slate-800 p-8 text-center text-white relative">
                     <div class="absolute top-4 right-4 text-white/20 text-6xl"><i class="fa-solid fa-award"></i></div>
-                    <h2 class="text-3xl font-display font-bold mb-2">Kết Quả Kiểm Tra Giữa Kỳ</h2>
+                    <h2 id="result-exam-title" class="text-3xl font-display font-bold mb-2">Kết Quả Kiểm Tra Giữa Kỳ</h2>
                     <p class="text-slate-300" id="result-user-email">sinhvien@donga.edu.vn</p>
                 </div>
 

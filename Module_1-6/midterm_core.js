@@ -16,6 +16,7 @@ const midtermApp = {
         ]
     },
     state: {
+        examName: "Word", // Default
         user: null, // { email: string, name: string, picture: string }
         questions: [], // Array of 60 questions
         answers: {}, // map index -> selectedKey
@@ -37,9 +38,75 @@ const midtermApp = {
         }
     },
 
-    startApp: function () {
+    startApp: async function () {
         this.setupAntiCheat();
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const examType = urlParams.get('exam');
+
+        if (examType === 'kns') {
+            this.state.examName = "Kỹ Năng Số";
+            
+            // Update UI elements
+            document.title = "Thi Giữa Kỳ Kỹ Năng Số";
+            const headerTitle = document.getElementById('header-system-title');
+            if (headerTitle) headerTitle.innerHTML = "Hệ Thống Khảo Thí - Kỹ Năng Số";
+            
+            const introTitle = document.getElementById('intro-exam-title');
+            if (introTitle) introTitle.innerHTML = "Thi Kỹ Năng Số - Thông Tin Thí Sinh";
+            
+            const resultTitle = document.getElementById('result-exam-title');
+            if (resultTitle) resultTitle.innerHTML = "Kết Quả Thi Kỹ Năng Số";
+            
+            // Fetch config from Firebase
+            await this.fetchKNSConfig();
+        }
+
         this.showView('view-intro');
+    },
+
+    fetchKNSConfig: async function() {
+        const loading = document.getElementById('loading');
+        if (loading) {
+            document.getElementById('loading-text').textContent = "Đang tải cấu hình bài thi...";
+            loading.classList.remove('hidden');
+        }
+
+        try {
+            const doc = await window.firebaseDB.collection('ExamSettings').doc('kns_midterm').get();
+            if (doc.exists) {
+                const conf = doc.data();
+                this.config.questionsPerModule = conf.questionsPerModule || 10;
+                this.config.timeLimitMinutes = conf.timeLimitMinutes || 45;
+                
+                const selectedModules = conf.modules || [1,2,3,4,5,6];
+                
+                // Filter modules
+                const allModules = [
+                    { id: 1, name: "Module 1", file: "DB/MD1.csv" },
+                    { id: 2, name: "Module 2", file: "DB/MD2.csv" },
+                    { id: 3, name: "Module 3", file: "DB/MD3.csv" },
+                    { id: 4, name: "Module 4", file: "DB/MD4.csv" },
+                    { id: 5, name: "Module 5", file: "DB/MD5.csv" },
+                    { id: 6, name: "Module 6", file: "DB/MD6.csv" }
+                ];
+                
+                this.config.modules = allModules.filter(m => selectedModules.includes(m.id));
+                this.config.totalQuestions = this.config.questionsPerModule * this.config.modules.length;
+
+                // Update UI hints for the exam struct
+                const structInfo = document.getElementById('info-struct');
+                if (structInfo) structInfo.textContent = `${this.config.totalQuestions} câu (${this.config.questionsPerModule} câu/module)`;
+                
+                const timeInfo = document.getElementById('info-time');
+                if (timeInfo) timeInfo.textContent = `${this.config.timeLimitMinutes} Phút làm bài`;
+            }
+        } catch (e) {
+            console.error("Lỗi tải cấu hình KNS:", e);
+        } finally {
+            if (loading) loading.classList.add('hidden');
+            document.getElementById('loading-text').textContent = "Đang chuẩn bị đề thi...";
+        }
     },
 
     // --- View Routing ---
@@ -447,6 +514,8 @@ const midtermApp = {
         document.getElementById('question-module-badge').textContent = question._moduleName;
         document.getElementById('question-text').textContent = question.QuestionContent;
 
+        document.getElementById('total-question-number').textContent = this.config.totalQuestions;
+
         const optionsContainer = document.getElementById('options-container');
         optionsContainer.innerHTML = '';
 
@@ -722,6 +791,7 @@ const midtermApp = {
                 studentId: (this.state.user && this.state.user.studentId) ? this.state.user.studentId : "N/A",
                 className: (this.state.user && this.state.user.className) ? this.state.user.className : "unknown",
                 examMode: (this.state.user && this.state.user.examMode) ? this.state.user.examMode : "Thi thử",
+                examName: this.state.examName || "Word",
                 score: document.getElementById('score-text') ? document.getElementById('score-text').textContent : "0",
                 cheatCount: this.state.cheatCount || 0,
                 timeTaken: document.getElementById('stat-time') ? document.getElementById('stat-time').textContent : "00:00",
