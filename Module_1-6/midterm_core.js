@@ -60,6 +60,32 @@ const midtermApp = {
             
             // Fetch config from Firebase
             await this.fetchKNSConfig();
+        } else if (examType === 'word_excel' || examType === 'office') {
+            this.state.examName = "Tin Học Văn Phòng Nâng Cao (Word & Excel)";
+            
+            // Update UI elements
+            document.title = "Thi Giữa Kỳ Tin Học Văn Phòng (Word & Excel)";
+            const headerTitle = document.getElementById('header-system-title');
+            if (headerTitle) headerTitle.innerHTML = "Hệ Thống Khảo Thí - Tin Học Văn Phòng Nâng Cao";
+            
+            const introTitle = document.getElementById('intro-exam-title');
+            if (introTitle) introTitle.innerHTML = "Thi Word & Excel - Thông Tin Thí Sinh";
+            
+            const resultTitle = document.getElementById('result-exam-title');
+            if (resultTitle) resultTitle.innerHTML = "Kết Quả Thi Word & Excel";
+
+            this.config.totalQuestions = 60;
+            this.config.questionsPerModule = 60;
+            this.config.timeLimitMinutes = 45;
+            this.config.modules = [
+                { id: 1, name: "Word & Excel", file: "DB/Word_Excel_Midterm.csv" }
+            ];
+
+            const structInfo = document.getElementById('info-struct');
+            if (structInfo) structInfo.textContent = "60 câu (30 Word + 30 Excel)";
+
+            const timeInfo = document.getElementById('info-time');
+            if (timeInfo) timeInfo.textContent = "45 Phút làm bài";
         }
 
         this.showView('view-intro');
@@ -803,6 +829,45 @@ const midtermApp = {
             // Xóa bỏ mọi thuộc tính undefined một cách triệt để
             payload = JSON.parse(JSON.stringify(cleanPayload));
             console.log("🔥 [FIREBASE] Payload OK. Size:", JSON.stringify(payload).length);
+
+            // -------------------------------------------------------------
+            // ĐỒNG BỘ SONG SONG LÊN GOOGLE TRANG TÍNH (APPS SCRIPT WEBHOOK)
+            // Điểm Giữa kỳ AI Kế toán_15.10.2026
+            // -------------------------------------------------------------
+            try {
+                const sheetUrl = "https://script.google.com/macros/s/AKfycby2cPdyEuXF8Hyda1yiqgF5zFo3Ya5qhMjua2YUkyzcFZ-GdhFRGT19WgjhEgqmi-ziAA/exec";
+                const correctCount = detailedAnswers.filter(a => a.isCorrect).length;
+                const totalQ = this.state.questions.length || 60;
+                const scoreNum = Number(payload.score) || 0;
+                const percent = Math.round((correctCount / totalQ) * 100);
+
+                const sheetPayload = {
+                    submitTime: new Date().toLocaleString('vi-VN'),
+                    fullName: payload.fullName,
+                    studentId: payload.studentId,
+                    className: payload.className,
+                    attemptNumber: 1,
+                    score10: scoreNum,
+                    correctCount: correctCount,
+                    totalQuestions: totalQ,
+                    timeSpent: payload.timeTaken || "",
+                    tabSwitches: payload.cheatCount || 0,
+                    summaryText: `${correctCount}/${totalQ} câu (${percent}%)`
+                };
+
+                fetch(sheetUrl, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                    body: JSON.stringify(sheetPayload)
+                }).then(() => {
+                    console.log("📊 [GOOGLE SHEET] ✅ Đã đồng bộ điểm số lên Google Trang tính (Điểm Giữa kỳ AI Kế toán)!");
+                }).catch(err => {
+                    console.warn("📊 [GOOGLE SHEET] ⚠️ Lỗi kết nối Google Sheet:", err);
+                });
+            } catch(eSheet) {
+                console.error("📊 [GOOGLE SHEET] Lỗi ngoại lệ:", eSheet);
+            }
         } catch (e) {
             console.error("🔥 [FIREBASE] LỖI tạo payload:", e);
             if (syncStatusDiv) {
